@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/about/</loc>
+    <lastmod>2017-11-09T11:27:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/diving-in-bonaire-2016/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</loc>
+    <lastmod>2016-07-27T11:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/nebraska-code-2016/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/microsoft-build-2016/</loc>
+    <lastmod>2016-04-27T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</loc>
+    <lastmod>2016-04-18T16:58:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-5-diving/</loc>
+    <lastmod>2016-04-18T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-4-lodging/</loc>
+    <lastmod>2016-04-11T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-3-on-the-road/</loc>
+    <lastmod>2016-04-04T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</loc>
+    <lastmod>2016-03-31T06:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-2-traveling-photographer/</loc>
+    <lastmod>2016-03-28T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</loc>
+    <lastmod>2016-03-26T11:46:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</loc>
+    <lastmod>2016-03-24T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-1-packing/</loc>
+    <lastmod>2016-03-22T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/generating-authenticator-qr-codes/</loc>
+    <lastmod>2016-03-18T08:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</loc>
+    <lastmod>2016-03-16T08:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</loc>
+    <lastmod>2016-03-09T08:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</loc>
+    <lastmod>2016-01-22T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</loc>
+    <lastmod>2015-09-25T09:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/heartland-developers-conference-2015/</loc>
+    <lastmod>2015-09-24T11:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/kcdc-2015-recap/</loc>
+    <lastmod>2015-09-03T09:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/kcdc-2015-sessions/</loc>
+    <lastmod>2015-06-16T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</loc>
+    <lastmod>2015-04-02T08:23:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/appearances/</loc>
+    <lastmod>2015-04-01T22:00:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/page/xamarin-forms-one-app-to-rule-all-your-platforms/</loc>
+    <lastmod>2015-03-31T17:43:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/training/</loc>
+    <lastmod>2015-03-31T17:31:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</loc>
+    <lastmod>2015-03-27T09:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/kcdnug-last-minute-speaking-or-the-perils-of-running-a-user-group/</loc>
+    <lastmod>2015-03-24T22:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</loc>
+    <lastmod>2015-03-17T08:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</loc>
+    <lastmod>2015-03-03T08:55:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/skillsusa-coding-competition/</loc>
+    <lastmod>2015-02-09T12:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</loc>
+    <lastmod>2014-11-20T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</loc>
+    <lastmod>2014-11-10T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/making-progress-on-your-small-business-goals/</loc>
+    <lastmod>2014-11-10T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/agile-operations/</loc>
+    <lastmod>2014-10-21T16:04:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/speaking/</loc>
+    <lastmod>2014-09-26T16:13:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</loc>
+    <lastmod>2014-09-26T15:28:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</loc>
+    <lastmod>2013-02-09T08:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</loc>
+    <lastmod>2011-09-14T22:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</loc>
+    <lastmod>2011-09-14T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/page/about-duane/</loc>
+    <lastmod>2011-02-14T13:49:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/.net/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/950xl/</loc>
+    <lastmod>2016-07-27T11:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/admin/</loc>
+    <lastmod>2016-01-22T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/agile/</loc>
+    <lastmod>2015-09-24T11:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/bluff/</loc>
+    <lastmod>2016-03-26T11:46:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/build/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/build2016/</loc>
+    <lastmod>2016-04-27T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/buiness/</loc>
+    <lastmod>2014-10-21T16:04:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/business/</loc>
+    <lastmod>2015-03-03T08:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/c#/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/cake/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/chocolatey/</loc>
+    <lastmod>2016-03-24T11:15:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/coding/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/categories/coding/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/community/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/deployment/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/devops/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/directshow/</loc>
+    <lastmod>2011-09-14T18:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/hdc/</loc>
+    <lastmod>2015-09-24T11:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/human/</loc>
+    <lastmod>2016-03-31T06:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/interview/</loc>
+    <lastmod>2015-04-02T08:23:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/judging/</loc>
+    <lastmod>2015-02-09T12:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/kcdc/</loc>
+    <lastmod>2015-06-16T11:15:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/kcdnug/</loc>
+    <lastmod>2015-03-24T22:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/linq/</loc>
+    <lastmod>2015-03-03T08:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/lumia/</loc>
+    <lastmod>2016-04-18T16:58:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/media/</loc>
+    <lastmod>2016-03-24T11:15:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/mobile/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/categories/musings/</loc>
+    <lastmod>2014-11-10T08:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/ncc/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/nebraskacode/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/nui/</loc>
+    <lastmod>2016-03-31T06:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/oss/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/page/</loc>
+    <lastmod>2015-03-31T17:43:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/photography/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/planning/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/plugin/</loc>
+    <lastmod>2016-03-26T11:46:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/powershell/</loc>
+    <lastmod>2016-01-22T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/proxy/</loc>
+    <lastmod>2016-01-22T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/qrcode/</loc>
+    <lastmod>2016-03-18T08:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/reflection/</loc>
+    <lastmod>2014-10-21T16:04:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/review/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/scuba/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/categories/scuba/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/security/</loc>
+    <lastmod>2016-03-18T08:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/silverlight/</loc>
+    <lastmod>2015-03-17T08:40:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/skillsusa/</loc>
+    <lastmod>2015-02-09T12:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/social/</loc>
+    <lastmod>2015-03-03T08:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/speaking/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/categories/speaking/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/stldodn/</loc>
+    <lastmod>2015-09-25T09:10:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/stltechtalk/</loc>
+    <lastmod>2015-04-02T08:23:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/surface/</loc>
+    <lastmod>2013-02-09T08:56:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/technology/</loc>
+    <lastmod>2016-04-27T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/categories/technology/</loc>
+    <lastmod>2016-07-27T11:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/tips/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/travel/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/troubleshooting/</loc>
+    <lastmod>2016-07-27T11:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/twitter/</loc>
+    <lastmod>2015-03-03T08:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/utility/</loc>
+    <lastmod>2016-03-24T11:15:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/vegas/</loc>
+    <lastmod>2016-03-26T11:46:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/video/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/categories/video/</loc>
+    <lastmod>2016-03-26T11:46:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/winphone/</loc>
+    <lastmod>2016-07-27T11:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/xamarin/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/xamarin-forms/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

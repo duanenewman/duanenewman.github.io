@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Merging GoPro Segments Into a Single File -- Duane Newman</title>
+
+    
+
+    
+    <link href="http://duanenewman.net/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/clean-blog.min.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/custom.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://duanenewman.net">Duane Newman</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://duanenewman.net/">Home</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/about/">About</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/blog/">Blog</a>
+                    </li>
+					
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://duanenewman.net/img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Merging GoPro Segments Into a Single File</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">
+                 
+  A 3 minute read,
+
+Posted on Thu, Mar 24, 2016 In <a href="http://duanenewman.net/categories/video">Video</a>
+
+<br />
+Tags <a href="http://duanenewman.net/tags/video">video</a>, <a href="http://duanenewman.net/tags/tips">tips</a>, <a href="http://duanenewman.net/tags/chocolatey">chocolatey</a>, <a href="http://duanenewman.net/tags/media">media</a>, <a href="http://duanenewman.net/tags/utility">utility</a>
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <p>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.</p>  <p>If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage. The FAT file system has been around for a long time and pretty much every OS out there can readily access the contents of a disk formatted with FAT, so it makes a good choice for a device that will be used by consumers. The downside is that FAT has a file size limit of about 4GB, this seemed huge back in the day when hard drives were not even half that size, but is a little lacking in todays world where we measure local storage often in terabytes rather than gigabytes. It is especially small in today’s world of HD (or 4k) video. Fortunately there is a solution once you get it on NTFS (or HFS on OS X) to make your video files all one again. The best part is there is no re-encoding, just re-wrapping of the existing encoded data into a new file, so it is quick and will not degrade your video.</p>  <p>First, you need to get ffmpeg, a free open source tool that handles a wide array of video encoding and decoding needs. It is very popular and the basis for many commercial video manipulation tools. Go over to their <a href="https://www.ffmpeg.org/" target="_blank">website</a> to pick it up, or use a tool like <a href="https://chocolatey.org/" target="_blank">chocolatey</a> to install it in a breeze with the following command: </p>  <blockquote>   <p>choco install ffmpeg</p> </blockquote>  <p>Second, make sure you have a little free space. you will essentially need double the size of your original files in free space for the process to complete.</p>  <p>Third, run the below series of commands to extract the original streams from your original file and then wrap them all together in a new file. I’ve included commands to cleanup the temporary extracted streams as part of the process.</p>  <blockquote>   <p>ffmpeg -i "GOPR1234.MP4" -c copy -bsf h264_mp4toannexb a.ts     <br>ffmpeg -i "GP011234.MP4" -c copy -bsf h264_mp4toannexb b.ts      <br>ffmpeg -i "concat:a.ts|b.ts" -c copy -bsf aac_adtstoasc GoPro-1234-full.mp4      <br>del a.ts      <br>del b.ts</p> </blockquote>  <p>To add more files just add a new extraction line and add the new ts file to your final ffmpeg command</p>  <blockquote>   <p><strong>ffmpeg -i "GP021234.MP4" -c copy -bsf h264_mp4toannexb c.ts</strong>      <br>ffmpeg -i "concat:a.ts|b.ts<strong>|c.ts</strong>" -c copy -bsf aac_adtstoasc GoPro-1234-full.mp4</p> </blockquote>  <p>You can add as many files as needed and playback will be as seamless as the contents of your video file are.</p>  <p>This has been very useful for me with my video editing to create a monolithic file that allows me to do video processing at any point without worrying about everything matching across file boundaries.</p>
+
+                  
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                      <a href="https://twitter.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.instagram.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="http://youtube.com/dnewman31">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.flickr.com/duane_newman/">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.kickstarter.com/profile/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-usd fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted">Copyright Duane Newman</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://duanenewman.net/js/jquery.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/bootstrap.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/clean-blog.js"></script>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2838107-3', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>
+

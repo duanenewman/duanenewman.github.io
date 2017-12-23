@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qrcode on Duane Newman</title>
+    <link>http://duanenewman.net/tags/qrcode/</link>
+    <description>Recent content in Qrcode on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Fri, 18 Mar 2016 08:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/qrcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generating Authenticator QR Codes</title>
+      <link>http://duanenewman.net/blog/post/generating-authenticator-qr-codes/</link>
+      <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/generating-authenticator-qr-codes/</guid>
+      <description>I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on Duane Newman</title>
+    <link>http://duanenewman.net/tags/tips/</link>
+    <description>Recent content in Tips on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Fri, 29 Jul 2016 14:46:23 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diving in Bonaire - 2016</title>
+      <link>http://duanenewman.net/blog/post/diving-in-bonaire-2016/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/diving-in-bonaire-2016/</guid>
+      <description>I decided to take a few minutes and reflect on my recent trip to Bonaire and share some accomplishments and observations. To begin with, the flight there is long. We had two options, 45 minute layover to catch an international flight with all our luggage, or 5 hour layover waiting in the airport. We chose the later since no on wanted to miss a flight that only happens once a day and only on Saturday and Sunday each week.</description>
+    </item>
+    
+    <item>
+      <title>Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)</title>
+      <link>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-5-diving/</link>
+      <pubDate>Mon, 18 Apr 2016 11:15:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-5-diving/</guid>
+      <description>This is part 5 in a series on scuba travel and our trip to Honduras.
+Related Posts
+ Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)  Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)  Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)  Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   Guanaja Diving The diving in Guanaja is fantastic.</description>
+    </item>
+    
+    <item>
+      <title>Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)</title>
+      <link>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-4-lodging/</link>
+      <pubDate>Mon, 11 Apr 2016 11:15:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-4-lodging/</guid>
+      <description>This is part 4 in a series on scuba travel and our trip to Honduras.
+Related Posts
+ Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)  Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)  Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   The Villa   You can read my review of the Villa over on TripAdvisor.</description>
+    </item>
+    
+    <item>
+      <title>Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)</title>
+      <link>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-3-on-the-road/</link>
+      <pubDate>Mon, 04 Apr 2016 11:15:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-3-on-the-road/</guid>
+      <description>This is part 3 in a series on scuba travel and our trip to Honduras.
+Related Posts
+ Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)  Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)  Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   Travel We were traveling from cold weather to warm weather, so we planned ahead and packed shorts in our carry-on so that while we stopped for a layover in Atlanta we could change out of our warmer weather pants.</description>
+    </item>
+    
+    <item>
+      <title>Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)</title>
+      <link>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-2-traveling-photographer/</link>
+      <pubDate>Mon, 28 Mar 2016 11:15:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-2-traveling-photographer/</guid>
+      <description>Traveling with your photography equipment can be challenging when you are taking all your pictures on dry (or at least solid) ground. Add all the equipment you need if you are going to get wet with you camera and it becomes a production just getting it all to your destination. When I first looked into what to do I had a hard time finding information on what other were doing, so I hope you find this helpful as you plan your underwater photography dive trip.</description>
+    </item>
+    
+    <item>
+      <title>Merging GoPro Segments Into a Single File</title>
+      <link>http://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
+      <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
+      <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.
+If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
+    </item>
+    
+    <item>
+      <title>Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)</title>
+      <link>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-1-packing/</link>
+      <pubDate>Tue, 22 Mar 2016 11:15:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-1-packing/</guid>
+      <description>This is part 1 in a series on scuba travel and our trip to Honduras.
+Related Posts
+ Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)  Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)  Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   In January my wife and I took our first real scuba diving vacation with our dive shop, The Playground Dive Shop, to the island of Guanaja, Honduras where we stayed and dived with the Villa on Dunbar Rock.</description>
+    </item>
+    
+    <item>
+      <title>Generating Authenticator QR Codes</title>
+      <link>http://duanenewman.net/blog/post/generating-authenticator-qr-codes/</link>
+      <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/generating-authenticator-qr-codes/</guid>
+      <description>I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.</description>
+    </item>
+    
+    <item>
+      <title>Getting your brand’s Twitter timeline in your mobile app</title>
+      <link>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
+      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
+      <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
+    </item>
+    
+    <item>
+      <title>Lessons Learned from My First Speaking Experience</title>
+      <link>http://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</link>
+      <pubDate>Thu, 20 Nov 2014 09:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</guid>
+      <description>First off, speaking is a rush. It is hard to describe the feeling just after completing a talk. I had to move around, talk to people, see what was going on; it really energized me. I am definitely going to continue to pursue future speaking opportunities as they present themselves, and I’ll keep you posted when they get accepted.
+
+As I mentioned in previous posts, my first talk was on Xamarin Forms, a new technology in a toolset that we are using at Alien Arc, but that is still new to us.</description>
+    </item>
+    
+    <item>
+      <title>Why doesn’t my code work in Xamarin.Forms?</title>
+      <link>http://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</link>
+      <pubDate>Mon, 10 Nov 2014 13:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</guid>
+      <description>If you have tried something in Xamarin.Forms that should work but didn&amp;rsquo;t, don&amp;rsquo;t worry you might not be going crazy (I can&amp;rsquo;t say for sure, I&amp;rsquo;m a programmer, not a psychologist).
+I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months while working on a small project we have as well as in preparation for my upcoming talk at St. Louis Days of .NET. Sometimes in the course of creating a sample project I write some code that I know should work and then watch the exceptions pop-up (or worse, see nothing at all) when I run it.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>All I want for Christmas is a C# Build System -- Duane Newman</title>
+
+    
+
+    
+    <link href="http://duanenewman.net/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/clean-blog.min.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/custom.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://duanenewman.net">Duane Newman</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://duanenewman.net/">Home</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/about/">About</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/blog/">Blog</a>
+                    </li>
+					
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://duanenewman.net/img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>All I want for Christmas is a C# Build System</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">
+                 
+  A 4 minute read,
+
+Posted on Sat, Dec 23, 2017 In <a href="http://duanenewman.net/categories/coding">Coding</a>
+
+<br />
+Tags <a href="http://duanenewman.net/tags/devops">devops</a>, <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman.net/tags/.net">.net</a>, <a href="http://duanenewman.net/tags/cake">cake</a>, <a href="http://duanenewman.net/tags/build">build</a>
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<h1 id="why-so-jolly">Why So Jolly?</h1>
+
+<p>This post is part of the <a href="https://crosscuttingconcerns.com/The-First-C-Advent-Calendar">The First C# Advent Calendar</a>, celebrating all things C#. After you finish here check out the other great posts in the series.</p>
+
+<h1 id="a-c-build-system">A C# Build System</h1>
+
+<p>I&rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&rsquo;ve been happy with the solutions I provided with each of these I&rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects. In the hunt to find something that would work outside of Windows I discovered <a href="https://cakebuild.net/">Cake</a>, and I coulnd&rsquo;t be happier.</p>
+
+<p>Cake? You&rsquo;re making me hungry, what are you talking about? Cake (Stands for C# Make) is a tool for automating your builds that runs cross platform (Windows, OS X, and Linux) and uses a C# Domain Specific Language (DSL). You can use it to manipulate files, run msbuild (or other compilers), execute your unit tests, and prepare your build for publishing.</p>
+
+<p>There are two major points that I want you to get:</p>
+
+<p>1) It is built on Rosolyn with a C# DSL
+2) It is cross-platform</p>
+
+<h1 id="c-dsl-domain-specific-language">C# DSL (Domain Specific Language)</h1>
+
+<p>This means you can write regular C# anywhere inline with your build process, and in fact, the custom DSL that powers Cake is all C# syntax and .NET based. This provides a lot of flexibility for managing all aspects of the build. They are able to leverage C# through the use of Rosolyn, which also allows them to target .NET/mono on Windows, Mac OS, and Linux.</p>
+
+<p>The Cake team has taken other cues from the C# development world, integrating support for extensibility through NuGet packages, making it easy to reference and use NuGet packages in your build process. They even use NuGet to get the core Cake components on your machine. That&rsquo;s right, setting up and using Cake in your project only requires downloading a bootstrapper file for your runtime platform and creating your build script. Running the bootstrapper downloads and expands the Cake (and supporting) NuGet packages, then runs Cake with your build script.</p>
+
+<p>.NET Everywhere!</p>
+
+<h1 id="cross-platform">Cross-Platform</h1>
+
+<p>The cross-platform capabilities really set Cake apart from the other build tools I&rsquo;ve used. This didn&rsquo;t used to be something we even considered with C#/.NET development, but as .NET Core brings our favorite framework to more platforms we need our build system to go with it. This is especially true if you are building mobile apps and need to perform at least some of the compilation steps on a Mac, but is also relevant if you are creating .NET Core projects and primarily develop inside of OS X or Linux.</p>
+
+<p>For me, being able to develop and test my build on my Windows daily dev box, commit it, and then have it run as part of CI on my Mac build server is awesome and saves a lot of headache. However, there are a few things to be aware of, like the fact that not all extensions and other NuGet packages will run in a non-Windows environment.</p>
+
+<p>#Getting Started
+It&rsquo;s easy, you just need to follow these easy steps (on Windows):</p>
+
+<p>1) Download the needed bootstrapper (you can grab the others too)</p>
+
+<pre><code>Invoke-WebRequest https://cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
+Invoke-WebRequest https://cakebuild.net/download/bootstrapper/osx -OutFile buildm.sh
+Invoke-WebRequest https://cakebuild.net/download/bootstrapper/linux -OutFile buildl.sh
+</code></pre>
+
+<p>2) Create your Cake Build file (build.cake)</p>
+
+<pre><code>var target = Argument(&quot;target&quot;, &quot;Default&quot;);
+
+Task(&quot;Default&quot;)
+  .Does(() =&gt;
+  {
+    var christmasDay = new DateTime(2017, 12, 25);
+    var daysToChristmas = (christmasDay - DateTime.Now.Date).TotalDays;
+    var message = daysToChristmas == 0
+                ? &quot;Merry Christmas!&quot;
+                : string.Format(&quot;{0} days to Christmas!&quot;, daysToChristmas);
+    Information(message);
+  });
+
+RunTarget(target);
+</code></pre>
+
+<p>3) Run your build</p>
+
+<pre><code>./build.ps1
+</code></pre>
+
+<p>4) Commit it to version control, get latest on your Mac, and build</p>
+
+<h1 id="vs-code">VS Code</h1>
+
+<p>There is a nice extensions for <a href="https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode">VS Code</a> that give you syntax highlighting, quickstart templates, debugging, and more.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>As you can see, you can write C# anywhere in your build file, because (you guessed it) the entire file is C#! There are a few newer syntax sugar items that don&rsquo;t work at the moment (as far as I know) like string interpolation, but all the power of the .NET framework is there for you.</p>
+
+<p>I&rsquo;ve become a big fan of Cake and it is now my go-to build system when starting a new project.</p>
+
+<h1 id="tl-dr">TL;DR;</h1>
+
+<p>With <a href="https://cakebuild.net/">Cake</a> you can manage your build processes with C# on any platform with .NET available.
+ Get it, use it, you&rsquo;ll love it.</p>
+
+                  
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                      <a href="https://twitter.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.instagram.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="http://youtube.com/dnewman31">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.flickr.com/duane_newman/">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.kickstarter.com/profile/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-usd fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted">Copyright Duane Newman</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://duanenewman.net/js/jquery.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/bootstrap.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/clean-blog.js"></script>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2838107-3', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>
+

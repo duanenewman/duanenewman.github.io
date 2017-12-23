@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Directshow on Duane Newman</title>
+    <link>http://duanenewman.net/tags/directshow/</link>
+    <description>Recent content in Directshow on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Wed, 14 Sep 2011 18:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/directshow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Attaching to external DirectShow graphs using Graph Edit</title>
+      <link>http://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</link>
+      <pubDate>Wed, 14 Sep 2011 18:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</guid>
+      <description>In my day job I work on a product that does a lot of video work and in fact has a custom DirectShow player that gets all our video into WPF. &amp;nbsp;It plays multiple files all synchronized (a real challenge).
+While looking into ways to improve performance I found myself needing to see how my filter graph was being built. &amp;nbsp;I did a little looking and found that creating an instance of DsROTEntry with a reference to the graph makes it available for external viewing.</description>
+    </item>
+    
+  </channel>
+</rss>

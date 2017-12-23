@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photography on Duane Newman</title>
+    <link>http://duanenewman.net/tags/photography/</link>
+    <description>Recent content in Photography on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Fri, 29 Jul 2016 14:46:23 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/photography/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diving in Bonaire - 2016</title>
+      <link>http://duanenewman.net/blog/post/diving-in-bonaire-2016/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/diving-in-bonaire-2016/</guid>
+      <description>I decided to take a few minutes and reflect on my recent trip to Bonaire and share some accomplishments and observations. To begin with, the flight there is long. We had two options, 45 minute layover to catch an international flight with all our luggage, or 5 hour layover waiting in the airport. We chose the later since no on wanted to miss a flight that only happens once a day and only on Saturday and Sunday each week.</description>
+    </item>
+    
+  </channel>
+</rss>

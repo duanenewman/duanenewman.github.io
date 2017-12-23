@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linq on Duane Newman</title>
+    <link>http://duanenewman.net/tags/linq/</link>
+    <description>Recent content in Linq on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Tue, 03 Mar 2015 08:55:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/linq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting your brand’s Twitter timeline in your mobile app</title>
+      <link>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
+      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
+      <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
+    </item>
+    
+    <item>
+      <title>Processing collections with LINQ using the Aggregate extension method</title>
+      <link>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</link>
+      <pubDate>Wed, 14 Sep 2011 22:19:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</guid>
+      <description>Everyone knows one of the easiest ways to process collections of objects is using foreach, it is much more elegant and less error prone (IMHO) than using a for (int x..) and looping by index. &amp;nbsp;However, sometimes you get forced into using the indexer to process a collection. &amp;nbsp;This usually happens when you need to look at the current object in context of the previous. &amp;nbsp;
+The need to use the indexer and have code like obj[i] == obj[i -1] bugged me.</description>
+    </item>
+    
+  </channel>
+</rss>

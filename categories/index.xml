@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Duane Newman</title>
+    <link>http://duanenewman.net/categories/</link>
+    <description>Recent content in Categories on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    
+	<atom:link href="http://duanenewman.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coding</title>
+      <link>http://duanenewman.net/categories/coding/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/categories/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Musings</title>
+      <link>http://duanenewman.net/categories/musings/</link>
+      <pubDate>Mon, 10 Nov 2014 08:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/categories/musings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scuba</title>
+      <link>http://duanenewman.net/categories/scuba/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/categories/scuba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speaking</title>
+      <link>http://duanenewman.net/categories/speaking/</link>
+      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/categories/speaking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>http://duanenewman.net/categories/technology/</link>
+      <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>http://duanenewman.net/categories/video/</link>
+      <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/categories/video/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

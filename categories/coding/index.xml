@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding on Duane Newman</title>
+    <link>http://duanenewman.net/categories/coding/</link>
+    <description>Recent content in Coding on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Sat, 23 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>All I want for Christmas is a C# Build System</title>
+      <link>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</guid>
+      <description>Why So Jolly? This post is part of the The First C# Advent Calendar, celebrating all things C#. After you finish here check out the other great posts in the series.
+A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects.</description>
+    </item>
+    
+    <item>
+      <title>Bluff v1.1 hot off the presses</title>
+      <link>http://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</link>
+      <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
+      <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:
+ Converting the project to .NET 3.5 (from 2.0)  Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now)  Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp  Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13)  And last, but not least, I added a WIX based installer to the project   If you just want grab the latest version jump over to the GitHub release page.</description>
+    </item>
+    
+    <item>
+      <title>Xamarin Build Errors: Please Install Package Xamarin.Android.Support.v4</title>
+      <link>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</link>
+      <pubDate>Wed, 16 Mar 2016 08:45:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</guid>
+      <description>I was out of active Xamarin development for a couple months and recently wanted to jump back in and work on a couple new project ideas. I fired up VS2015 and created a project. It was then that I realized I had not installed the official Xamarin tools since I got my new Surface Book. So I decided it was a good idea to install that latest Xamarin Tools before I did anything else.</description>
+    </item>
+    
+    <item>
+      <title>Bluff: An OSS Extension for Sony Vegas Pro</title>
+      <link>http://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</link>
+      <pubDate>Wed, 09 Mar 2016 08:30:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</guid>
+      <description>Yesterday, my business Alien Arc Technologies, LLC announced the release of version 1.0 of an open source project I’ve been tinkering on recently, called Bluff. This is my first OSS project and I’m excited to have created something that I hope others will find useful, and better yet, will contribute their own ideas to.
+History The project came out of my own personal needs and interest. In 2015 I was introduced to the world of scuba diving and I’ve fallen totally in love with it.</description>
+    </item>
+    
+    <item>
+      <title>Xamarin Forms Windows Phone Deployment Tip #1</title>
+      <link>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</link>
+      <pubDate>Tue, 17 Mar 2015 08:40:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</guid>
+      <description>Here is a helpful tip if you are developing a mobile app using Xamarin Forms and targeting Windows Phone 8.0 (or if you are just writing a WP8.0 Silverlight based app). If you are ready to deploy and filling everything out online it is easier than it first seems. On the Windows Phone Dev Center you will find a helpful link to this article telling you to add some info to the Package.</description>
+    </item>
+    
+    <item>
+      <title>Getting your brand’s Twitter timeline in your mobile app</title>
+      <link>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
+      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
+      <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
+    </item>
+    
+    <item>
+      <title>Why doesn’t my code work in Xamarin.Forms?</title>
+      <link>http://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</link>
+      <pubDate>Mon, 10 Nov 2014 13:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</guid>
+      <description>If you have tried something in Xamarin.Forms that should work but didn&amp;rsquo;t, don&amp;rsquo;t worry you might not be going crazy (I can&amp;rsquo;t say for sure, I&amp;rsquo;m a programmer, not a psychologist).
+I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months while working on a small project we have as well as in preparation for my upcoming talk at St. Louis Days of .NET. Sometimes in the course of creating a sample project I write some code that I know should work and then watch the exceptions pop-up (or worse, see nothing at all) when I run it.</description>
+    </item>
+    
+    <item>
+      <title>Processing collections with LINQ using the Aggregate extension method</title>
+      <link>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</link>
+      <pubDate>Wed, 14 Sep 2011 22:19:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</guid>
+      <description>Everyone knows one of the easiest ways to process collections of objects is using foreach, it is much more elegant and less error prone (IMHO) than using a for (int x..) and looping by index. &amp;nbsp;However, sometimes you get forced into using the indexer to process a collection. &amp;nbsp;This usually happens when you need to look at the current object in context of the previous. &amp;nbsp;
+The need to use the indexer and have code like obj[i] == obj[i -1] bugged me.</description>
+    </item>
+    
+    <item>
+      <title>Attaching to external DirectShow graphs using Graph Edit</title>
+      <link>http://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</link>
+      <pubDate>Wed, 14 Sep 2011 18:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</guid>
+      <description>In my day job I work on a product that does a lot of video work and in fact has a custom DirectShow player that gets all our video into WPF. &amp;nbsp;It plays multiple files all synchronized (a real challenge).
+While looking into ways to improve performance I found myself needing to see how my filter graph was being built. &amp;nbsp;I did a little looking and found that creating an instance of DsROTEntry with a reference to the graph makes it available for external viewing.</description>
+    </item>
+    
+  </channel>
+</rss>

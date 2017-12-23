@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on Duane Newman</title>
+    <link>http://duanenewman.net/categories/technology/</link>
+    <description>Recent content in Technology on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Wed, 27 Jul 2016 11:45:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Strange Keyboard Layout on Windows 10 Mobile &amp; Lumia 950XL</title>
+      <link>http://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</link>
+      <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</guid>
+      <description>I recently encountered a strange issue with the layout of the keyboard on my Lumia 950XL. This happened after a one of the recent OS updates and it took me a little while researching to figure it out. The issue was that my keyboard was all squashed to the left, instead of taking up the full width of the phone. In addition to that the cursor point was on the right hand side of the keyboard.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Build 2016</title>
+      <link>http://duanenewman.net/blog/post/microsoft-build-2016/</link>
+      <pubDate>Wed, 27 Apr 2016 09:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/microsoft-build-2016/</guid>
+      <description>I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.
+This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces.</description>
+    </item>
+    
+    <item>
+      <title>The Return of Visual Voicemail to the Lumia 950 XL (Dual Sim)</title>
+      <link>http://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</link>
+      <pubDate>Mon, 18 Apr 2016 16:58:41 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</guid>
+      <description>For those that purchased an unlocked Lumia 950 XL from Microsoft in the last few months and have been frustrated at the lack of Visual Voice (that’s everyone who bought one) you can rejoice. Last week I had sketchy WiFi access so I just discovered that I had an update available last night. When I went to take a look at the change log I discovered this little gem:
+ Support for Visual Voicemail on Dual SIM phones   It sounds like this has been available in the Windows Insiders build for a little while, but I’ve been hesitant to put my primary phone on the insiders builds.</description>
+    </item>
+    
+    <item>
+      <title>Bringing Sight to the Blind (Seeing AI)</title>
+      <link>http://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</link>
+      <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</guid>
+      <description>Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by Saqib Shaikh, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses.</description>
+    </item>
+    
+    <item>
+      <title>Generating Authenticator QR Codes</title>
+      <link>http://duanenewman.net/blog/post/generating-authenticator-qr-codes/</link>
+      <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/generating-authenticator-qr-codes/</guid>
+      <description>I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.</description>
+    </item>
+    
+    <item>
+      <title>Installing Chocolatey behind a corporate proxy</title>
+      <link>http://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</link>
+      <pubDate>Fri, 22 Jan 2016 12:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</guid>
+      <description>Recently I was working at a project at a new client and needed to add some tools to my development machine. So I turned to one of my favorite tools for getting the apps and tools I need, Chocolatey. The only problem was that I was getting an error installing Chocolatey using the command on their website.
+Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; argument(s): &amp;quot;The remote server returned an error: (407) Proxy Authentication Required.</description>
+    </item>
+    
+    <item>
+      <title>I Can Has Pen Input? (or, My first moments with a Surface Pro)</title>
+      <link>http://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</link>
+      <pubDate>Sat, 09 Feb 2013 08:56:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</guid>
+      <description>I just picked up my Surface Pro from my local Microsoft Store this morning. I&amp;rsquo;m no stranger to Windows 8; I&amp;rsquo;ve been using it on my desktop since RTM (and a little before) and I bought the RT back on launch day. In general I like the changes that have been made and no longer feel at home on Windows 7. I have especially been digging the way the interface was built around touch with my RT, I think that has helped me accept some of the changes experienced with mouse and keyboard only input.</description>
+    </item>
+    
+  </channel>
+</rss>

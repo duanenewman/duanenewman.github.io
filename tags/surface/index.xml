@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Surface on Duane Newman</title>
+    <link>http://duanenewman.net/tags/surface/</link>
+    <description>Recent content in Surface on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Sat, 09 Feb 2013 08:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/surface/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I Can Has Pen Input? (or, My first moments with a Surface Pro)</title>
+      <link>http://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</link>
+      <pubDate>Sat, 09 Feb 2013 08:56:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</guid>
+      <description>I just picked up my Surface Pro from my local Microsoft Store this morning. I&amp;rsquo;m no stranger to Windows 8; I&amp;rsquo;ve been using it on my desktop since RTM (and a little before) and I bought the RT back on launch day. In general I like the changes that have been made and no longer feel at home on Windows 7. I have especially been digging the way the interface was built around touch with my RT, I think that has helped me accept some of the changes experienced with mouse and keyboard only input.</description>
+    </item>
+    
+  </channel>
+</rss>

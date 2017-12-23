@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business on Duane Newman</title>
+    <link>http://duanenewman.net/tags/business/</link>
+    <description>Recent content in Business on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Tue, 03 Mar 2015 08:55:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/business/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting your brand’s Twitter timeline in your mobile app</title>
+      <link>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
+      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
+      <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
+    </item>
+    
+    <item>
+      <title>Making Progress on Your Small Business Goals</title>
+      <link>http://duanenewman.net/blog/post/making-progress-on-your-small-business-goals/</link>
+      <pubDate>Mon, 10 Nov 2014 08:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/making-progress-on-your-small-business-goals/</guid>
+      <description>When Brent and I started Alien Arc we had a few basic goals:
+ To have more flexible working conditions To be more active with the developer community and conferences To create our own products  We&amp;rsquo;ve done a pretty good job in our first 6 months getting started on some of these goals. We are on-site with our primary client, but they are closer and with the consultant relationship it is much easier to deal with any needs for a flexible schedule.</description>
+    </item>
+    
+  </channel>
+</rss>

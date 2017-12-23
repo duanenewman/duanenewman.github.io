@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Musings on Duane Newman</title>
+    <link>http://duanenewman.net/categories/musings/</link>
+    <description>Recent content in Musings on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Mon, 10 Nov 2014 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/categories/musings/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Making Progress on Your Small Business Goals</title>
+      <link>http://duanenewman.net/blog/post/making-progress-on-your-small-business-goals/</link>
+      <pubDate>Mon, 10 Nov 2014 08:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/making-progress-on-your-small-business-goals/</guid>
+      <description>When Brent and I started Alien Arc we had a few basic goals:
+ To have more flexible working conditions To be more active with the developer community and conferences To create our own products  We&amp;rsquo;ve done a pretty good job in our first 6 months getting started on some of these goals. We are on-site with our primary client, but they are closer and with the consultant relationship it is much easier to deal with any needs for a flexible schedule.</description>
+    </item>
+    
+    <item>
+      <title>Agile Operations</title>
+      <link>http://duanenewman.net/blog/post/agile-operations/</link>
+      <pubDate>Tue, 21 Oct 2014 16:04:44 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/agile-operations/</guid>
+      <description>With a new and busy business it is easy to lose track of the little things that need to be done when you are spending every usable minute on billable tasks. This is the challenge we found ourselves faced with a few months into operating Alien Arc.
+Enter Aglie We started a Trello board back when we started the business to track tasks like getting our insurance setup and creating a logo.</description>
+    </item>
+    
+  </channel>
+</rss>

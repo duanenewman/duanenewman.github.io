@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skillsusa on Duane Newman</title>
+    <link>http://duanenewman.net/tags/skillsusa/</link>
+    <description>Recent content in Skillsusa on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Mon, 09 Feb 2015 12:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/skillsusa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SkillsUSA Coding Competition</title>
+      <link>http://duanenewman.net/blog/post/skillsusa-coding-competition/</link>
+      <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/skillsusa-coding-competition/</guid>
+      <description>On Saturday I had an opportunity to be involved in a SkillsUSA district competition as a judge for the coding competition. I was really impressed with the skill that some of these students (all with less than a year of experience) had. The quality of some of the code they wrote really surprised me.
+It was a really enjoyable experience and I was happy to be able to get more involved in the community with the next generation of coders.</description>
+    </item>
+    
+  </channel>
+</rss>
