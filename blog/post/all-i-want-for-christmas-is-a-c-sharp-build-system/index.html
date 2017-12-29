@@ -19,6 +19,9 @@
     
     <link href="http://duanenewman.net/css/clean-blog.min.css" rel="stylesheet">
 
+	
+    <link href="http://duanenewman.net/css/prism.css" rel="stylesheet">
+
     
     <link href="http://duanenewman.net/css/custom.css" rel="stylesheet">
 
@@ -140,35 +143,26 @@ Tags <a href="http://duanenewman.net/tags/devops">devops</a>, <a href="http://du
 It&rsquo;s easy, you just need to follow these easy steps (on Windows):</p>
 
 <p>1) Download the needed bootstrapper (you can grab the others too)</p>
-
-<pre><code>Invoke-WebRequest https://cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
-Invoke-WebRequest https://cakebuild.net/download/bootstrapper/osx -OutFile buildm.sh
-Invoke-WebRequest https://cakebuild.net/download/bootstrapper/linux -OutFile buildl.sh
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
+Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/osx -OutFile buildm.sh
+Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/linux -OutFile buildl.sh</code></pre></div>
 <p>2) Create your Cake Build file (build.cake)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> target = Argument(<span style="color:#e6db74">&#34;target&#34;</span>, <span style="color:#e6db74">&#34;Default&#34;</span>);
 
-<pre><code>var target = Argument(&quot;target&quot;, &quot;Default&quot;);
-
-Task(&quot;Default&quot;)
-  .Does(() =&gt;
-  {
-    var christmasDay = new DateTime(2017, 12, 25);
-    var daysToChristmas = (christmasDay - DateTime.Now.Date).TotalDays;
-    var message = daysToChristmas == 0
-                ? &quot;Merry Christmas!&quot;
-                : string.Format(&quot;{0} days to Christmas!&quot;, daysToChristmas);
+Task(<span style="color:#e6db74">&#34;Default&#34;</span>)
+    .Does(() =&gt;
+    {
+    <span style="color:#66d9ef">var</span> christmasDay = <span style="color:#66d9ef">new</span> DateTime(<span style="color:#ae81ff">2017</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">25</span>);
+    <span style="color:#66d9ef">var</span> daysToChristmas = (christmasDay - DateTime.Now.Date).TotalDays;
+    <span style="color:#66d9ef">var</span> message = daysToChristmas == <span style="color:#ae81ff">0</span>
+                ? <span style="color:#e6db74">&#34;Merry Christmas!&#34;</span>
+                : <span style="color:#66d9ef">string</span>.Format(<span style="color:#e6db74">&#34;{0} days to Christmas!&#34;</span>, daysToChristmas);
     Information(message);
-  });
+    });
 
-RunTarget(target);
-</code></pre>
-
+RunTarget(target);</code></pre></div>
 <p>3) Run your build</p>
-
-<pre><code>./build.ps1
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">./build.ps1</code></pre></div>
 <p>4) Commit it to version control, get latest on your Mac, and build</p>
 
 <h1 id="vs-code">VS Code</h1>
@@ -185,6 +179,10 @@ RunTarget(target);
 
 <p>With <a href="https://cakebuild.net/">Cake</a> you can manage your build processes with C# on any platform with .NET available.
  Get it, use it, you&rsquo;ll love it.</p>
+
+<h1 id="update">Update</h1>
+
+<p>2017-12-29 Cake now supports C# 7.2 syntax with <a href="https://cakebuild.net/blog/2017/12/cake-v0.24.0-released">v0.24.0 update</a>.</p>
 
                   
    <div id="disqus_thread"></div>
@@ -289,6 +287,9 @@ RunTarget(target);
 
     
     <script src="http://duanenewman.net/js/bootstrap.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/prism.js"></script>
 
     
     <script src="http://duanenewman.net/js/clean-blog.js"></script>
