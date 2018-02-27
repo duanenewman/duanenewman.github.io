@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Teach an old Type new tricks with Extension Methods -- Duane Newman</title>
+
+    
+
+    
+    <link href="http://duanenewman.net/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/clean-blog.min.css" rel="stylesheet">
+
+	
+    <link href="http://duanenewman.net/css/prism.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/custom.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://duanenewman.net">Duane Newman</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://duanenewman.net/">Home</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/about/">About</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/blog/">Blog</a>
+                    </li>
+					
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://duanenewman.net/img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Teach an old Type new tricks with Extension Methods</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">
+                 
+  A 4 minute read,
+
+Posted on Tue, Feb 27, 2018 In <a href="http://duanenewman.net/categories/coding">Coding</a>
+
+<br />
+Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman.net/tags/.net">.net</a>, <a href="http://duanenewman.net/tags/tips">tips</a>
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<p>Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.</p>
+
+<h1 id="what-are-extension-methods">What are Extension Methods?</h1>
+
+<p>They are this cool concept introduced with .NET 3.0 and are central to making LINQ usable and convenient (more on that later). They basically allow you to write a method that acts as an extension to an existing class, even if you don&rsquo;t have access to the source code, or if the class is sealed. This can be a great way to make your code flow better and wrap up utilitarian functionality for easy reuse. There are some limitations to extension methods: the code inside an extension method has the same level of access to the class as you would writing any other code outside of the class, meaning you can&rsquo;t access non-public properties or methods.</p>
+
+<h1 id="where-can-i-find-extension-methods-in-net">Where can I find Extension Methods in .NET?</h1>
+
+<p>A great example of extension methods is the implementation of LINQ. If you take a close look at all the functionality that was provided as a part of the LINQ standard you see that all of it was created through extension methods. This was vital to allowing LINQ to be provided through a separate assembly from mscorelib while still being convenient to use and supporting the fluent coding style we are used to today. To provide the same level of functionality it would have required making all classes that inherit IEnumerable<T> instead inherit from some abstract base. That&rsquo;s right, did I forget to mention that Extension Methods can extend on Interfaces too, not just concrete classes? This is another key feature of extension methods, since there is no other convenient way to provide methods with implementations on an interface.</p>
+
+<h1 id="how-do-you-make-an-extension-method">How do you make an extension method?</h1>
+
+<p>To create an extension method you need to adhere to 3 things: the class has to be static, the method has to be static, and the first parameter the method takes has to be of the type you want to extend, and it has to use the [this] keyword.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">namespace</span> MyExtensions
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StringExtensions</span>
+    {
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsNotEmptyOrAsterisk(<span style="color:#66d9ef">this</span> <span style="color:#66d9ef">string</span> input)
+        {
+            <span style="color:#66d9ef">return</span> !input.Equals(<span style="color:#66d9ef">string</span>.Empty) &amp;&amp; !input.Equals(<span style="color:#e6db74">&#34;*&#34;</span>);
+        }
+    }
+}</code></pre></div>
+<p>Using an extension method is really easy, there is just one real requirement (aside from referencing the assembly with the extension methods), you have to either be in the same namespace as your extension method&rsquo;s class or include a using statement for that namespace so the compiler knows where to look for your extension methods. Then you just call it like a regular method.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> MyExtensions;
+...
+<span style="color:#66d9ef">var</span> test = <span style="color:#e6db74">&#34;*&#34;</span>;
+<span style="color:#66d9ef">var</span> pass = test.IsNotEmptyOrAsterisk();</code></pre></div>
+<p>This can be a great way to build a library of functionality that extends base CLR types that you can easily include an reference in all your projects. It also allows you to break code into separate assemblies that you can pick and choose when they are relevant and needed. I use this often when I am working with a third party library that might common code I have to perform on one of the libraries embedded types.</p>
+
+<h1 id="what-can-you-do-with-an-extension-method">What can you do with an Extension Method?</h1>
+
+<p>Anything you can write normally. Here are a couple ideas to get you thinking:</p>
+
+<p>IsIn: I get tired of if statements that require checking a single variable for multiple conditions. For one, I can lose track of where I am, if the conditional check is complex, and then it is often very verbose. This is especially true if I&rsquo;m checking a property of a property in a LINQ statement. Consider the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> OrderLinesICareAbout = orders.Sum(o =&gt; o.Items.Count(l =&gt;
+    (l.ItemType == ItemType.KeyBoard ||
+    l.ItemType == ItemType.Mouse ||
+    l.ItemType == ItemType.GamePad) &amp;&amp;
+    l.Price &lt; <span style="color:#ae81ff">50</span>));</code></pre></div>
+<p>Here is my Extension Method:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsIn&lt;T&gt;(<span style="color:#66d9ef">this</span> T input, <span style="color:#66d9ef">params</span> T<span style="color:#a6e22e">[]</span> values)
+{
+    <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> <span style="color:#66d9ef">value</span> <span style="color:#66d9ef">in</span> values)
+    {
+        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">value</span> == <span style="color:#66d9ef">null</span>) <span style="color:#66d9ef">continue</span>;
+        <span style="color:#66d9ef">if</span> (input.Equals(<span style="color:#66d9ef">value</span>)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+}</code></pre></div>
+<p>Now I can rewrite my code like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">OrderLinesICareAbout = orders.Sum(o =&gt; o.Items.Count(l =&gt;
+    l.ItemType.IsIn(ItemType.KeyBoard, ItemType.Mouse, ItemType.GamePad) &amp;&amp;
+    l.Price &lt; <span style="color:#ae81ff">50</span>));</code></pre></div>
+<p>Another common annoyance is checking if a date is between two dates can be verbose and take a moment to visually parse:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue &gt;= startDate &amp;&amp; DateValue &lt;= endDate;</code></pre></div>
+<p>Add an extension method:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsBetween(<span style="color:#66d9ef">this</span> DateTime input, DateTime start, DateTime end)
+{
+    <span style="color:#66d9ef">return</span> input &gt;= start &amp;&amp; input &lt;= end;
+}</code></pre></div>
+<p>And it becomes much clearer:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue.IsBetween(startDate, endDate);</code></pre></div>
+<p>What have you done with extension methods? Drop a comment below with some of your favorites.</p>
+
+                  
+   <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "duanenewmannet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                      <a href="https://twitter.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.instagram.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="http://youtube.com/dnewman31">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.flickr.com/duane_newman/">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.kickstarter.com/profile/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-usd fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted">Copyright Duane Newman</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://duanenewman.net/js/jquery.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/bootstrap.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/prism.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/clean-blog.js"></script>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2838107-3', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>
+

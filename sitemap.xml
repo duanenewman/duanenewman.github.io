@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</loc>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</loc>
     <lastmod>2017-12-23T00:00:00+00:00</lastmod>
   </url>
@@ -13,7 +18,7 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/blog/post/diving-in-bonaire-2016/</loc>
+    <loc>http://duanenewman.net/blog/post/diving-in-bonaire-2016./</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
   </url>
   
@@ -214,12 +219,12 @@
   
   <url>
     <loc>http://duanenewman.net/</loc>
-    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://duanenewman.net/tags/.net/</loc>
-    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -243,7 +248,7 @@
   
   <url>
     <loc>http://duanenewman.net/blog/</loc>
-    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -278,7 +283,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/c#/</loc>
-    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -307,7 +312,7 @@
   
   <url>
     <loc>http://duanenewman.net/categories/coding/</loc>
-    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -547,7 +552,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/</loc>
-    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -565,7 +570,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/tips/</loc>
-    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

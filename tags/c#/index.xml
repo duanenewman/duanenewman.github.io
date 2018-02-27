@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Sat, 23 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://duanenewman.net/tags/c#/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Teach an old Type new tricks with Extension Methods</title>
+      <link>http://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</link>
+      <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</guid>
+      <description>Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&amp;rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.</description>
+    </item>
     
     <item>
       <title>All I want for Christmas is a C# Build System</title>
