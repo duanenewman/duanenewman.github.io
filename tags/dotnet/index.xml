@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dotnet on Duane Newman</title>
+    <link>http://duanenewman.net/tags/dotnet/</link>
+    <description>Recent content in Dotnet on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Fri, 23 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First MVP Summit</title>
+      <link>http://duanenewman.net/blog/post/my-first-mvp-summit/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/my-first-mvp-summit/</guid>
+      <description>A couple weeks ago I went to my first MVP Summit. The MVP program is a way that Microsoft recognizes &amp;ldquo;technology experts who passionately share their knowledge with the community&amp;rdquo;*. There are several perks to being an MVP. While many may immediately think of the compliemntary MSDN subscription and software licenses from other vendors, I was most excited about the opportunity to go to MVP Summit. As an MVP (under tight NDA) I am able to meet over skype with the various product teams at MS to get a view into where they are headed with thier technologies.</description>
+    </item>
+    
+  </channel>
+</rss>

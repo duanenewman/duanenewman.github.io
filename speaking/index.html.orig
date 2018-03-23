@@ -9,11 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Categories -- Duane Newman</title>
+    <title>Speaking -- Duane Newman</title>
 
-    
-    <link href="http://duanenewman.net/categories/index.xml" rel="alternate" type="application/rss+xml" title="Duane Newman" />
-    <link href="http://duanenewman.net/categories/index.xml" rel="feed" type="application/rss+xml" title="Duane Newman" />
     
 
     
@@ -94,9 +91,7 @@
        <div class="row">
          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
            <div class="site-heading">
-             <h1>Categories</h1>
-             <hr class="small">
-             <span class="subheading">Categories</span>
+             <h1>Speaking</h1>
            </div>
          </div>
        </div>
@@ -105,27 +100,152 @@
 
     
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <ul>
-            
-            
-            <li><a href="http://duanenewman.net/categories/speaking">Speaking</a> 11</li>
-            
-            <li><a href="http://duanenewman.net/categories/coding">Coding</a> 10</li>
-            
-            <li><a href="http://duanenewman.net/categories/technology">Technology</a> 8</li>
-            
-            <li><a href="http://duanenewman.net/categories/scuba">Scuba</a> 6</li>
-            
-            <li><a href="http://duanenewman.net/categories/musings">Musings</a> 2</li>
-            
-            <li><a href="http://duanenewman.net/categories/video">Video</a> 2</li>
-            
-          </ul>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              
+
+<p>I am available to speak at your conference or user group on topics based on C# (with an emphasis on Xamarin, mobile, WPF, and IoT), and DevOps. I have spoken at several events and would be happy to speak at yours. If you have a specific topic related to my areas of focus that you would like me to speak about then please let me know, I’d be happy to put together a presentation that meets your groups needs. Check out my upcoming schedule and past speaking engagements below.</p>
+
+<!--
+## Current Topics
+
+* Xamarin Forms: Writing One App to Rule All Your Platforms
+* Leveraging NuGet In Your Projects
+* Hands Free Mobile UI Testing
+* Uptown Func<>: Delegates for Every Day Development
+* Double Down with DevOps
+* Cross-Platform Mobile with C# and Xamarin (8 hour Workshop)
+-->
+
+<h2 id="2018">2018</h2>
+
+<ul>
+<li>Indy.Code() - April 18, 2018
+
+<ul>
+<li><a href="https://indycode.amegala.com/Sessions/605">Hands Free Mobile UI Testing</a></li>
+<li><a href="https://indycode.amegala.com/Sessions/593">Packaging your world with NuGet</a></li>
+</ul></li>
+<<<<<<< HEAD
+=======
+<li>KC .NET User Group (Lightning Talk)
+
+<ul>
+<li>April 23 - <a href="https://www.meetup.com/KC-NET-User-Group/events/249039263/">Better unit testing with IOC, DI, and Mocking</a></li>
+<li>February 27 - <a href="https://www.meetup.com/KC-NET-User-Group/events/247579338/">Teach an old Type new tricks with Extension Methods</a></li>
+<li>January 30 - <a href="https://www.meetup.com/KC-NET-User-Group/events/245865487/">Understanding .NET Standard</a></li>
+</ul></li>
+>>>>>>> Added Article: My First MVP Summit
+</ul>
+
+<h2 id="2017">2017</h2>
+
+<ul>
+<li>Kansas City Developers Conference 2017 (KCDC) - 2nd–4th August 2017
+
+<ul>
+<li>Hands Free Mobile UI Testing</li>
+</ul></li>
+<li>Detroit.Code() - 10th–12th July 2017
+
+<ul>
+<li>Xamarin Forms: Writing one app to rule all your platforms</li>
+<li>Hands Free Mobile UI Testing</li>
+</ul></li>
+<li>Music City Code 2017 - 1st–3rd June 2017
+
+<ul>
+<li>Uptown Func&lt;&gt; Delegates for Everyday Development</li>
+<li>Hands Free Mobile UI Testing</li>
+<li>Xamarin Forms: Writing one app to rule all your platforms</li>
+</ul></li>
+<li>Nebraska.Code() 2017 - 17th–19th May 2017
+
+<ul>
+<li>Xamarin Forms: Writing one app to rule all your platforms</li>
+<li>Hands Free Mobile UI Testing</li>
+</ul></li>
+<li>Indy.Code() 2017 - 29th–31st March 2017
+
+<ul>
+<li>Uptown Func&lt;&gt;: Delegates for Everyday Development</li>
+<li>Branded for Success</li>
+</ul></li>
+</ul>
+
+<h2 id="2016">2016</h2>
+
+<ul>
+<li>Xamarin Dev Days 2016 - Kansas City - 12th November 2016
+
+<ul>
+<li>Xamarin Forms</li>
+<li>Workshop</li>
+</ul></li>
+<li>Prairie.Code() 2016 - 26th–28th October 2016
+
+<ul>
+<li>Branded for Success</li>
+<li>Uptown Func&lt;&gt;: Delegates for Everyday Development</li>
+</ul></li>
+<li>Heartland Developers Conference (HDC) 2016 - 8th–10th September 2016
+
+<ul>
+<li>Uptown Func&lt;&gt; Delegates for Everyday Development</li>
+</ul></li>
+<li>Music City Code 2016 - 18th–20th August 2016
+
+<ul>
+<li>Xamarin Forms: Writing one app to rule all your platforms</li>
+</ul></li>
+<li>Nebraska.Code() 2016 - 18th–20th May 2016
+
+<ul>
+<li>Xamarin Forms: Writing one app to rule all your platforms</li>
+<li>Branded for Success</li>
+</ul></li>
+</ul>
+
+<h2 id="2015">2015</h2>
+
+<ul>
+<li>St. Louis Days of .NET 2015 - 12th–14th November 2015
+
+<ul>
+<li>Double Down with DevOps</li>
+</ul></li>
+<li>Heartland Developers Conference (HDC) 2015 - 9th–11th September 2015
+
+<ul>
+<li>Double Down with DevOps</li>
+</ul></li>
+<li>KCDC 2015 - 24th–26th June 2015
+
+<ul>
+<li>Workshop: Cross-Platform Mobile with C# &amp; Xamarin</li>
+<li>Xamarin Forms: Writing One App to Rule All Your Platforms</li>
+</ul></li>
+<li>Nebraska Code Conference - 19th–21st March 2015
+
+<ul>
+<li>Xamarin Forms: One App to Rule All Your Platforms</li>
+</ul></li>
+</ul>
+
+<h2 id="2014">2014</h2>
+
+<ul>
+<li>St. Louis Days of .NET 2014 - 13th–15th November 2014
+
+<ul>
+<li>Cross Platform Mobile the Xamarin.Forms Way</li>
+</ul></li>
+</ul>
+
+            </div>
         </div>
-      </div>
     </div>
+
 
     <hr>
     

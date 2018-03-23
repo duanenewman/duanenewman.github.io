@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://duanenewman.net/blog/post/my-first-mvp-summit/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</loc>
     <lastmod>2018-02-27T00:00:00+00:00</lastmod>
   </url>
@@ -219,7 +224,7 @@
   
   <url>
     <loc>http://duanenewman.net/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -248,7 +253,7 @@
   
   <url>
     <loc>http://duanenewman.net/blog/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -341,6 +346,12 @@
   </url>
   
   <url>
+    <loc>http://duanenewman.net/tags/dotnet/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/tags/hdc/</loc>
     <lastmod>2015-09-24T11:45:00+00:00</lastmod>
     <priority>0</priority>
@@ -395,6 +406,12 @@
   </url>
   
   <url>
+    <loc>http://duanenewman.net/tags/microsoft/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/tags/mobile/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
     <priority>0</priority>
@@ -403,6 +420,12 @@
   <url>
     <loc>http://duanenewman.net/categories/musings/</loc>
     <lastmod>2014-11-10T08:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/mvp/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -564,7 +587,7 @@
   
   <url>
     <loc>http://duanenewman.net/categories/technology/</loc>
-    <lastmod>2016-07-27T11:45:00+00:00</lastmod>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -624,7 +647,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/xamarin/</loc>
-    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

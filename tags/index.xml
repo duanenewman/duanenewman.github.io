@@ -166,6 +166,15 @@
     </item>
     
     <item>
+      <title>Dotnet</title>
+      <link>http://duanenewman.net/tags/dotnet/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hdc</title>
       <link>http://duanenewman.net/tags/hdc/</link>
       <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
@@ -247,11 +256,29 @@
     </item>
     
     <item>
+      <title>Microsoft</title>
+      <link>http://duanenewman.net/tags/microsoft/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mobile</title>
       <link>http://duanenewman.net/tags/mobile/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mvp</title>
+      <link>http://duanenewman.net/tags/mvp/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/mvp/</guid>
       <description></description>
     </item>
     
@@ -528,7 +555,7 @@
     <item>
       <title>Xamarin</title>
       <link>http://duanenewman.net/tags/xamarin/</link>
-      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/xamarin/</guid>
       <description></description>

@@ -270,9 +270,15 @@ I&#39;ll be presenting my Xamarin.Forms talk on Thursday morning at 10:10 AM. Co
       
       <guid>http://duanenewman.net/appearances/</guid>
       <description>As I have the opportunity to be a guest on podcasts, shows, and other events I’ll post links here.
+<<<<<<< HEAD
+ Developer On Fire - Episode 283 | Duane Newman - Socially Engaged November 2, 2017 
+ Interview with STL Tech Talk at the St. Louis Days of .NET Conference November 14, 2014 
+  </description>
+=======
  AskTHAT live with Duane Newman - The State of Cross Platform Mobile March 19, 2018 
  Developer On Fire - Episode 283 | Duane Newman - Socially Engaged November 2, 2017 
  Interview with STL Tech Talk at the St. Louis Days of .NET Conference November 14, 2014</description>
+>>>>>>> Added Article: My First MVP Summit
     </item>
     
     <item>

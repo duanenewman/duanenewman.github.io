@@ -9,11 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Categories -- Duane Newman</title>
+    <title>Appearances -- Duane Newman</title>
 
-    
-    <link href="http://duanenewman.net/categories/index.xml" rel="alternate" type="application/rss+xml" title="Duane Newman" />
-    <link href="http://duanenewman.net/categories/index.xml" rel="feed" type="application/rss+xml" title="Duane Newman" />
     
 
     
@@ -94,9 +91,7 @@
        <div class="row">
          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
            <div class="site-heading">
-             <h1>Categories</h1>
-             <hr class="small">
-             <span class="subheading">Categories</span>
+             <h1>Appearances</h1>
            </div>
          </div>
        </div>
@@ -105,27 +100,35 @@
 
     
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <ul>
-            
-            
-            <li><a href="http://duanenewman.net/categories/speaking">Speaking</a> 11</li>
-            
-            <li><a href="http://duanenewman.net/categories/coding">Coding</a> 10</li>
-            
-            <li><a href="http://duanenewman.net/categories/technology">Technology</a> 8</li>
-            
-            <li><a href="http://duanenewman.net/categories/scuba">Scuba</a> 6</li>
-            
-            <li><a href="http://duanenewman.net/categories/musings">Musings</a> 2</li>
-            
-            <li><a href="http://duanenewman.net/categories/video">Video</a> 2</li>
-            
-          </ul>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <p>As I have the opportunity to be a guest on podcasts, shows, and other events I’ll post links here.</p>
+
+<ul>
+<<<<<<< HEAD
+=======
+<li><p><a href="https://www.youtube.com/watch?v=Y62FXp4blQs" target="_blank">AskTHAT live with Duane Newman - The State of Cross Platform Mobile</a>
+<br/>March 19, 2018<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y62FXp4blQs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></li>
+
+>>>>>>> Added Article: My First MVP Summit
+<li><p><a href="http://developeronfire.com/podcast/episode-283-duane-newman-socially-engaged" target="_blank">Developer On Fire - Episode 283 | Duane Newman - Socially Engaged</a>
+<br/>November 2, 2017
+<br/><audio src="http://traffic.libsyn.com/developeronfire/DeveloperOnFire-283-DuaneNewman.mp3" id="episode-audio" controls="controls"></audio></p></li>
+
+<li><p><a href="https://www.youtube.com/watch?v=z6YSNvWQJfU" target="_blank">Interview with STL Tech Talk at the St. Louis Days of .NET Conference</a>
+<<<<<<< HEAD
+<br/>November 14, 2014
+=======
+<br/>November 14, 2014<br/>
+>>>>>>> Added Article: My First MVP Summit
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z6YSNvWQJfU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></li>
+</ul>
+
+            </div>
         </div>
-      </div>
     </div>
+
 
     <hr>
     
