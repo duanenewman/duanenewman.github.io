@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Tue, 27 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://duanenewman.net/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Better Unit Testing with IoC, DI, and Mocking</title>
+      <link>http://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</guid>
+      <description>When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instanciating the class we want to test less painful.</description>
+    </item>
     
     <item>
       <title>Teach an old Type new tricks with Extension Methods</title>

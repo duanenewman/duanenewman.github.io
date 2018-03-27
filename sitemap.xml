@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</loc>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/blog/post/my-first-mvp-summit/</loc>
     <lastmod>2018-03-23T00:00:00+00:00</lastmod>
   </url>
@@ -224,13 +229,7 @@
   
   <url>
     <loc>http://duanenewman.net/</loc>
-    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://duanenewman.net/tags/.net/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -253,7 +252,7 @@
   
   <url>
     <loc>http://duanenewman.net/blog/</loc>
-    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -288,7 +287,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/c#/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -317,13 +316,19 @@
   
   <url>
     <loc>http://duanenewman.net/categories/coding/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://duanenewman.net/tags/community/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/dependency-injection/</loc>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -340,6 +345,12 @@
   </url>
   
   <url>
+    <loc>http://duanenewman.net/tags/di/</loc>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/tags/directshow/</loc>
     <lastmod>2011-09-14T18:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -347,7 +358,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/dotnet/</loc>
-    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -366,6 +377,12 @@
   <url>
     <loc>http://duanenewman.net/tags/interview/</loc>
     <lastmod>2015-04-02T08:23:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/ioc/</loc>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -575,7 +592,13 @@
   
   <url>
     <loc>http://duanenewman.net/tags/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <lastmod>2016-07-27T11:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/tdd/</loc>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -593,7 +616,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/tips/</loc>
-    <lastmod>2018-02-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -612,6 +635,12 @@
   <url>
     <loc>http://duanenewman.net/tags/twitter/</loc>
     <lastmod>2015-03-03T08:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/unit-testing/</loc>
+    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Fri, 23 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://duanenewman.net/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Better Unit Testing with IoC, DI, and Mocking</title>
+      <link>http://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</guid>
+      <description>When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instanciating the class we want to test less painful.</description>
+    </item>
     
     <item>
       <title>My First MVP Summit</title>
@@ -19,6 +28,45 @@
       
       <guid>http://duanenewman.net/blog/post/my-first-mvp-summit/</guid>
       <description>A couple weeks ago I went to my first MVP Summit. The MVP program is a way that Microsoft recognizes &amp;ldquo;technology experts who passionately share their knowledge with the community&amp;rdquo;*. There are several perks to being an MVP. While many may immediately think of the compliemntary MSDN subscription and software licenses from other vendors, I was most excited about the opportunity to go to MVP Summit. As an MVP (under tight NDA) I am able to meet over skype with the various product teams at MS to get a view into where they are headed with thier technologies.</description>
+    </item>
+    
+    <item>
+      <title>Teach an old Type new tricks with Extension Methods</title>
+      <link>http://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</link>
+      <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</guid>
+      <description>Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&amp;rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.</description>
+    </item>
+    
+    <item>
+      <title>All I want for Christmas is a C# Build System</title>
+      <link>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</guid>
+      <description>Why So Jolly? This post is part of the The First C# Advent Calendar, celebrating all things C#. After you finish here check out the other great posts in the series.
+A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects.</description>
+    </item>
+    
+    <item>
+      <title>Processing collections with LINQ using the Aggregate extension method</title>
+      <link>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</link>
+      <pubDate>Wed, 14 Sep 2011 22:19:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</guid>
+      <description>Everyone knows one of the easiest ways to process collections of objects is using foreach, it is much more elegant and less error prone (IMHO) than using a for (int x..) and looping by index. &amp;nbsp;However, sometimes you get forced into using the indexer to process a collection. &amp;nbsp;This usually happens when you need to look at the current object in context of the previous. &amp;nbsp;
+The need to use the indexer and have code like obj[i] == obj[i -1] bugged me.</description>
+    </item>
+    
+    <item>
+      <title>Attaching to external DirectShow graphs using Graph Edit</title>
+      <link>http://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</link>
+      <pubDate>Wed, 14 Sep 2011 18:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</guid>
+      <description>In my day job I work on a product that does a lot of video work and in fact has a custom DirectShow player that gets all our video into WPF. &amp;nbsp;It plays multiple files all synchronized (a real challenge).
+While looking into ways to improve performance I found myself needing to see how my filter graph was being built. &amp;nbsp;I did a little looking and found that creating an instance of DsROTEntry with a reference to the graph makes it available for external viewing.</description>
     </item>
     
   </channel>
