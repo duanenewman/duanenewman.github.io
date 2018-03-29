@@ -154,7 +154,7 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
 
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Reset()
     {
-        OnReset?.Invoke(<span style="color:#66d9ef">this</span>, EventArgs.Empty);
+        OnReset?.Invoke(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">EventArgs</span>.Empty);
     }
 }
 
@@ -162,7 +162,7 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
 {
     <span style="color:#66d9ef">public</span> ResettableLifetimeManager(LifetimeResetter lifetimeResetter)
     {
-        lifetimeResetter.OnReset += (o, args) =&gt; instance = <span style="color:#66d9ef">null</span>;
+        <span style="color:#a6e22e">lifetimeResetter</span>.OnReset += (o, args) =&gt; instance = <span style="color:#66d9ef">null</span>;
     }
 
     <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">object</span> instance;
@@ -202,7 +202,7 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
 
     <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> RegisterResettableType&lt;T&gt;(<span style="color:#66d9ef">params</span> InjectionMember<span style="color:#a6e22e">[]</span> injectionMembers)
     {
-        Container.RegisterType&lt;T&gt;(<span style="color:#66d9ef">new</span> ResettableLifetimeManager(Resetter), injectionMembers);
+        <span style="color:#a6e22e">Container</span>.RegisterType&lt;T&gt;(<span style="color:#66d9ef">new</span> ResettableLifetimeManager(Resetter), injectionMembers);
     }
 }</code></pre></div>
 <h2 id="automating-the-reset">Automating the reset</h2>
@@ -211,7 +211,7 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#a6e22e">[SetUp]</span>
 <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> OnTestSetup()
 {
-    Resetter.Reset();
+    <span style="color:#a6e22e">Resetter</span>.Reset();
 }</code></pre></div>
 <h2 id="adding-support-for-mocking">Adding Support for Mocking</h2>
 
@@ -226,7 +226,7 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
     <span style="color:#66d9ef">var</span> mock = <span style="color:#66d9ef">new</span> Mock&lt;T&gt;();
     <span style="color:#66d9ef">var</span> onCreatedCallback = onCreatedCallbackFactory();
     onCreatedCallback?.Invoke(mock);
-    <span style="color:#66d9ef">return</span> mock.Object;
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">mock</span>.Object;
 }</code></pre></div>
 <h2 id="putting-it-all-together">Putting it All Together</h2>
 
@@ -240,7 +240,7 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
         <span style="color:#75715e">//setup the IOrderService for all tests
 </span><span style="color:#75715e"></span>        RegisterResettableType&lt;IOrderService&gt;(() =&gt; mock =&gt; 
         {
-            mock.Setup(s =&gt; s.GetOrders())
+            <span style="color:#a6e22e">mock</span>.Setup(s =&gt; <span style="color:#a6e22e">s</span>.GetOrders())
                 .Returns(<span style="color:#66d9ef">new</span> List&lt;Order&gt;());
         });
     }<span style="color:#a6e22e">
@@ -248,10 +248,10 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
 </span><span style="color:#a6e22e">    [Test]</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> CreatingOrderViewModelCallsOrderServiceGetOrdersOnce()
     {
-        <span style="color:#66d9ef">var</span> viewModel = Container.Resolve&lt;OrderViewModel&gt;();
+        <span style="color:#66d9ef">var</span> viewModel = <span style="color:#a6e22e">Container</span>.Resolve&lt;OrderViewModel&gt;();
 
-        <span style="color:#66d9ef">var</span> service = Mock.Get(Container.Resolve&lt;IOrderService&gt;());
-        service.Verify(s =&gt; s.GetOrders(), Times.Once);
+        <span style="color:#66d9ef">var</span> service = <span style="color:#a6e22e">Mock</span>.Get(<span style="color:#a6e22e">Container</span>.Resolve&lt;IOrderService&gt;());
+        <span style="color:#a6e22e">service</span>.Verify(s =&gt; <span style="color:#a6e22e">s</span>.GetOrders(), <span style="color:#a6e22e">Times</span>.Once);
     }
 }</code></pre></div>
 <h2 id="final-thoughts">Final Thoughts</h2>
