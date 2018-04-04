@@ -40,6 +40,51 @@
     </item>
     
     <item>
+      <title>Adaptive User Interfaces with Xamarin.Forms</title>
+      <link>http://duanenewman.net/speaking/adaptive-ui-with-xamarin-forms/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/speaking/adaptive-ui-with-xamarin-forms/</guid>
+      <description>Let&amp;rsquo;s take Xamarin.Forms beyond Hello World and explore how to create apps that adapt to your users devices in the real-world. As an app developer, you don&amp;rsquo;t want your apps to just look great in portrait or landscape on a phone, you want to provide a larger display experience option. In this session we will build an app that spans platforms and device types, giving users a rich experience , regardless of platform or form factor.</description>
+    </item>
+    
+    <item>
+      <title>Creating Reusable Packages for Mobile Development with Xamarin and NuGet</title>
+      <link>http://duanenewman.net/speaking/reusable-packages-mobile-development-xamarin-nuget/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/speaking/reusable-packages-mobile-development-xamarin-nuget/</guid>
+      <description>Living in the Xamarin mobile development trenches? Then you have probably created or at least thought about a few cross-platform aids. Sharing that platform agnostic code with new projects is easy, but things can get tricky with platform-specific implementations, right? Wouldn&amp;rsquo;t it be great if you could manage and maintain that functionality in reusable packages? We&amp;rsquo;ll explore how to structure your projects and configure a single NuGet package to install shared and platform libraries.</description>
+    </item>
+    
+    <item>
+      <title>Hands Free Mobile UI Testing</title>
+      <link>http://duanenewman.net/speaking/hands-free-mobile-ui-testing/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/speaking/hands-free-mobile-ui-testing/</guid>
+      <description>Testing your mobile app against the sea of mobile devices can be daunting, and even limiting to testing with recent popular devices can be cumbersome and expensive. Not to mention the wear and tear on your thumbs with all that tapping and swiping! Wouldn&amp;rsquo;t it be great if you could apply your well-honed app logic unit testing skills and practices to your UI testing? I&amp;rsquo;ve got great news, you can!</description>
+    </item>
+    
+    <item>
+      <title>Packaging your world with NuGet</title>
+      <link>http://duanenewman.net/speaking/packaging-your-world-with-nuget/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/speaking/packaging-your-world-with-nuget/</guid>
+      <description>Whether you are creating an open source library or building enterprise app core components, you need to get that functionality into other projects. But developing these resources is usually easier than consuming them. How about a worry free way to distribute and reference those resources in your project that will let you stay up to date, but allow you to avoid problems that may introduce breaking changes or new bugs?</description>
+    </item>
+    
+    <item>
+      <title>Putting the Fun in Func with Lambdas &amp; LINQ</title>
+      <link>http://duanenewman.net/speaking/putting-the-fun-in-func-with-lambdas-and-linq/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/speaking/putting-the-fun-in-func-with-lambdas-and-linq/</guid>
+      <description>Working with delegates in C# is easier than ever with .NET&amp;rsquo;s generic Action and Func types. Understanding .NET delegates is key to harnessing the power of language features like Lambdas and LINQ. In this session, we&amp;rsquo;ll dig into delegates, exploring what they are, how they work, and how they can help you be a SOLID developer. Don&amp;rsquo;t let delegates put you in a Func, take Action, and learn how to make your code simpler, cleaner, and more flexible.</description>
+    </item>
+    
+    <item>
       <title>All I want for Christmas is a C# Build System</title>
       <link>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
@@ -388,15 +433,6 @@ I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months
       <guid>http://duanenewman.net/blog/post/agile-operations/</guid>
       <description>With a new and busy business it is easy to lose track of the little things that need to be done when you are spending every usable minute on billable tasks. This is the challenge we found ourselves faced with a few months into operating Alien Arc.
 Enter Aglie We started a Trello board back when we started the business to track tasks like getting our insurance setup and creating a logo.</description>
-    </item>
-    
-    <item>
-      <title>Speaking</title>
-      <link>http://duanenewman.net/speaking/</link>
-      <pubDate>Fri, 26 Sep 2014 16:13:57 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/speaking/</guid>
-      <description>I am available to speak at your conference or user group on topics based on C# (with an emphasis on Xamarin, mobile, WPF, and IoT), and DevOps. I have spoken at several events and would be happy to speak at yours. If you have a specific topic related to my areas of focus that you would like me to speak about then please let me know, I’d be happy to put together a presentation that meets your groups needs.</description>
     </item>
     
     <item>
