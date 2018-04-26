@@ -161,7 +161,7 @@ Task(<span style="color:#e6db74">&#34;Default&#34;</span>)
     .Does(() =&gt;
     {
     <span style="color:#66d9ef">var</span> christmasDay = <span style="color:#66d9ef">new</span> DateTime(<span style="color:#ae81ff">2017</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">25</span>);
-    <span style="color:#66d9ef">var</span> daysToChristmas = (christmasDay - <span style="color:#a6e22e">DateTime</span>.<span style="color:#a6e22e">Now</span>.Date).TotalDays;
+    <span style="color:#66d9ef">var</span> daysToChristmas = (christmasDay - DateTime.Now.Date).TotalDays;
     <span style="color:#66d9ef">var</span> message = daysToChristmas == <span style="color:#ae81ff">0</span>
                 ? <span style="color:#e6db74">&#34;Merry Christmas!&#34;</span>
                 : <span style="color:#66d9ef">string</span>.Format(<span style="color:#e6db74">&#34;{0} days to Christmas!&#34;</span>, daysToChristmas);

@@ -137,7 +137,7 @@ Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman
     {
         <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsNotEmptyOrAsterisk(<span style="color:#66d9ef">this</span> <span style="color:#66d9ef">string</span> input)
         {
-            <span style="color:#66d9ef">return</span> !<span style="color:#a6e22e">input</span>.Equals(<span style="color:#66d9ef">string</span>.Empty) &amp;&amp; !<span style="color:#a6e22e">input</span>.Equals(<span style="color:#e6db74">&#34;*&#34;</span>);
+            <span style="color:#66d9ef">return</span> !input.Equals(<span style="color:#66d9ef">string</span>.Empty) &amp;&amp; !input.Equals(<span style="color:#e6db74">&#34;*&#34;</span>);
         }
     }
 }</code></pre></div>
@@ -145,7 +145,7 @@ Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> MyExtensions;
 ...
 <span style="color:#66d9ef">var</span> test = <span style="color:#e6db74">&#34;*&#34;</span>;
-<span style="color:#66d9ef">var</span> pass = <span style="color:#a6e22e">test</span>.IsNotEmptyOrAsterisk();</code></pre></div>
+<span style="color:#66d9ef">var</span> pass = test.IsNotEmptyOrAsterisk();</code></pre></div>
 <p>This can be a great way to build a library of functionality that extends base CLR types that you can easily include an reference in all your projects. It also allows you to break code into separate assemblies that you can pick and choose when they are relevant and needed. I use this often when I am working with a third party library that might common code I have to perform on one of the libraries embedded types.</p>
 
 <h1 id="what-can-you-do-with-an-extension-method">What can you do with an Extension Method?</h1>
@@ -153,25 +153,25 @@ Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman
 <p>Anything you can write normally. Here are a couple ideas to get you thinking:</p>
 
 <p>IsIn: I get tired of if statements that require checking a single variable for multiple conditions. For one, I can lose track of where I am, if the conditional check is complex, and then it is often very verbose. This is especially true if I&rsquo;m checking a property of a property in a LINQ statement. Consider the following:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> OrderLinesICareAbout = <span style="color:#a6e22e">orders</span>.Sum(o =&gt; <span style="color:#a6e22e">o</span>.<span style="color:#a6e22e">Items</span>.Count(l =&gt;
-    (<span style="color:#a6e22e">l</span>.ItemType == <span style="color:#a6e22e">ItemType</span>.KeyBoard ||
-    <span style="color:#a6e22e">l</span>.ItemType == <span style="color:#a6e22e">ItemType</span>.Mouse ||
-    <span style="color:#a6e22e">l</span>.ItemType == <span style="color:#a6e22e">ItemType</span>.GamePad) &amp;&amp;
-    <span style="color:#a6e22e">l</span>.Price &lt; <span style="color:#ae81ff">50</span>));</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> OrderLinesICareAbout = orders.Sum(o =&gt; o.Items.Count(l =&gt;
+    (l.ItemType == ItemType.KeyBoard ||
+    l.ItemType == ItemType.Mouse ||
+    l.ItemType == ItemType.GamePad) &amp;&amp;
+    l.Price &lt; <span style="color:#ae81ff">50</span>));</code></pre></div>
 <p>Here is my Extension Method:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsIn&lt;T&gt;(<span style="color:#66d9ef">this</span> T input, <span style="color:#66d9ef">params</span> T<span style="color:#a6e22e">[]</span> values)
 {
     <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> <span style="color:#66d9ef">value</span> <span style="color:#66d9ef">in</span> values)
     {
         <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">value</span> == <span style="color:#66d9ef">null</span>) <span style="color:#66d9ef">continue</span>;
-        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">input</span>.Equals(<span style="color:#66d9ef">value</span>)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+        <span style="color:#66d9ef">if</span> (input.Equals(<span style="color:#66d9ef">value</span>)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
     }
     <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
 }</code></pre></div>
 <p>Now I can rewrite my code like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">OrderLinesICareAbout = <span style="color:#a6e22e">orders</span>.Sum(o =&gt; <span style="color:#a6e22e">o</span>.<span style="color:#a6e22e">Items</span>.Count(l =&gt;
-    <span style="color:#a6e22e">l</span>.<span style="color:#a6e22e">ItemType</span>.IsIn(<span style="color:#a6e22e">ItemType</span>.KeyBoard, <span style="color:#a6e22e">ItemType</span>.Mouse, <span style="color:#a6e22e">ItemType</span>.GamePad) &amp;&amp;
-    <span style="color:#a6e22e">l</span>.Price &lt; <span style="color:#ae81ff">50</span>));</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">OrderLinesICareAbout = orders.Sum(o =&gt; o.Items.Count(l =&gt;
+    l.ItemType.IsIn(ItemType.KeyBoard, ItemType.Mouse, ItemType.GamePad) &amp;&amp;
+    l.Price &lt; <span style="color:#ae81ff">50</span>));</code></pre></div>
 <p>Another common annoyance is checking if a date is between two dates can be verbose and take a moment to visually parse:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue &gt;= startDate &amp;&amp; DateValue &lt;= endDate;</code></pre></div>
 <p>Add an extension method:</p>
@@ -180,7 +180,7 @@ Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman
     <span style="color:#66d9ef">return</span> input &gt;= start &amp;&amp; input &lt;= end;
 }</code></pre></div>
 <p>And it becomes much clearer:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = <span style="color:#a6e22e">DateValue</span>.IsBetween(startDate, endDate);</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue.IsBetween(startDate, endDate);</code></pre></div>
 <p>What have you done with extension methods? Drop a comment below with some of your favorites.</p>
 
                   
