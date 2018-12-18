@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-	<meta name="generator" content="Hugo 0.36" />
+	<meta name="generator" content="Hugo 0.52" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -123,21 +123,21 @@
 				
 				
 					               <div class="post-preview">
-                 <a href="http://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/">
-                      <h2 class="post-title">Better Unit Testing with IoC, DI, and Mocking</h2>
+                 <a href="http://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/">
+                      <h2 class="post-title">Keeping Observable Collections Up To Date</h2>
                       <h3 class="post-subtitle"></h3>
                     </a>
                     <p class="post-meta">
                       
   A 6 minute read,
 
-Posted on Tue, Mar 27, 2018 In <a href="http://duanenewman.net/categories/coding">Coding</a>
+Posted on Tue, Dec 18, 2018 In <a href="http://duanenewman.net/categories/coding">Coding</a>
 
 <br />
-Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman.net/tags/unit-testing">unit testing</a>, <a href="http://duanenewman.net/tags/di">di</a>, <a href="http://duanenewman.net/tags/dependency-injection">dependency injection</a>, <a href="http://duanenewman.net/tags/ioc">ioc</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/tips">tips</a>, <a href="http://duanenewman.net/tags/tdd">tdd</a>
+Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/csadvent">csadvent</a>, <a href="http://duanenewman.net/tags/mvvm">mvvm</a>, <a href="http://duanenewman.net/tags/observable">observable</a>, <a href="http://duanenewman.net/tags/api">api</a>, <a href="http://duanenewman.net/tags/wpf">wpf</a>, <a href="http://duanenewman.net/tags/uwp">uwp</a>, <a href="http://duanenewman.net/tags/xamarin">xamarin</a>
 
 				  </p>
-				  <p> When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instanciating the class we want to test less painful.</p>
+				  <p> One of the powerful capabilities we&rsquo;ve learned to leverage when using the MVVM pattern for XAML based apps, whether for the desktop or mobile platforms, is data binding. Binding allows us to easily keep our View up to date with changes in the ViewModel. These bindings are typically pretty quick when not abused, but there are situations where they can become less than performant, causing visual anomalies such as flickering or even impacting general app performance.</p>
                 </div>
                 <hr>
 
@@ -240,14 +240,17 @@ Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman
     <script src="http://duanenewman.net/js/clean-blog.js"></script>
 
     
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-2838107-3', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-2838107-3', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
 
 

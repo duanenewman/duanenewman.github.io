@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Api</title>
+      <link>http://duanenewman.net/tags/api/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bluff</title>
       <link>http://duanenewman.net/tags/bluff/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
@@ -86,10 +95,10 @@
     
     <item>
       <title>C#</title>
-      <link>http://duanenewman.net/tags/c#/</link>
-      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      <link>http://duanenewman.net/tags/c/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/c#/</guid>
+      <guid>http://duanenewman.net/tags/c/</guid>
       <description></description>
     </item>
     
@@ -126,6 +135,15 @@
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Csadvent</title>
+      <link>http://duanenewman.net/tags/csadvent/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/csadvent/</guid>
       <description></description>
     </item>
     
@@ -177,7 +195,7 @@
     <item>
       <title>Dotnet</title>
       <link>http://duanenewman.net/tags/dotnet/</link>
-      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/dotnet/</guid>
       <description></description>
@@ -301,6 +319,15 @@
     </item>
     
     <item>
+      <title>Mvvm</title>
+      <link>http://duanenewman.net/tags/mvvm/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/mvvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ncc</title>
       <link>http://duanenewman.net/tags/ncc/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
@@ -324,6 +351,15 @@
       <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/nui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Observable</title>
+      <link>http://duanenewman.net/tags/observable/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/observable/</guid>
       <description></description>
     </item>
     
@@ -562,6 +598,15 @@
     </item>
     
     <item>
+      <title>Uwp</title>
+      <link>http://duanenewman.net/tags/uwp/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/uwp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Vegas</title>
       <link>http://duanenewman.net/tags/vegas/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
@@ -589,9 +634,18 @@
     </item>
     
     <item>
+      <title>Wpf</title>
+      <link>http://duanenewman.net/tags/wpf/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/wpf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Xamarin</title>
       <link>http://duanenewman.net/tags/xamarin/</link>
-      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/xamarin/</guid>
       <description></description>
