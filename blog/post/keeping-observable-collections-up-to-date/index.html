@@ -129,7 +129,14 @@ Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman
 <p>One of these situations that can really affect performance is binding a frequently changing observable collection to your UI, especially with a complex DataTemplate. We can run into this problem when we are doing something like polling an API that returns a collection that updates frequently. This can be even worse if an item can be added or removed from the list over time.</p>
 
 <p>A simple solution to this problem might be to just rebuild the list each time. While that might seem to work well enough with just a few items or a basic UI layout it will result in the creation and disposal of a lot of objects. That constant churn of object construction and destruction will ramp up both the CPU and memory usage of your application.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> updatedBloggers = BloggerService.GetSantasBloggers();
+SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;BloggerViewModel&gt;(
+    updatedBloggers.Select(u =&gt; <span style="color:#66d9ef">new</span> BloggerViewModel(u.Id)
+    {
+        Name = u.Name,
+        Blog = u.Blog,
+        NaughtyNiceRating = u.NaughtyNiceRating
+    }));</code></pre></div>
 <h2 id="a-solution">A Solution</h2>
 
 <p>I solved this by writing code to compare my incoming list with my displayed list and to update the existing list to match. We want to achieve three steps with this code: 1) remove items that are no longer present, 2) update items that are in both lists, and 3) add new items from our incoming list. There is an optional 4th step that my code doesn&rsquo;t cover, ordering the list of current items to match the order from our incoming list.</p>
@@ -240,6 +247,31 @@ Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman
         targetCollection.Add(mapper(item));
     }
 }</code></pre></div>
+<h3 id="implementing">Implementing</h3>
+
+<p>Now that we have the extension methods in place it is pretty easy to use. All we have to do is get our updated data from the API and call the method.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> modelToViewModelMatcher = <span style="color:#66d9ef">new</span> Func&lt;BloggerViewModel, Blogger, <span style="color:#66d9ef">bool</span>&gt;(
+    (vm, model) =&gt; vm.Id == model.Id);
+
+<span style="color:#66d9ef">var</span> mapBloggerToBloggerViewModel = <span style="color:#66d9ef">new</span> Func&lt;Blogger, BloggerViewModel&gt;(m =&gt; 
+    <span style="color:#66d9ef">new</span> BloggerViewModel(m.Id)
+    {
+        Name = m.Name,
+        Blog = m.Blog,
+        NaughtyNiceRating = m.NaughtyNiceRating
+    });
+
+<span style="color:#66d9ef">var</span> viewModelUpdater = <span style="color:#66d9ef">new</span> Action&lt;BloggerViewModel, Blogger&gt;((vm, model) =&gt; 
+    { 
+        vm.NaughtyNiceRating = model.NaughtyNiceRating; 
+        vm.JustAdded = <span style="color:#66d9ef">false</span>; 
+    });
+    
+<span style="color:#66d9ef">var</span> updatedBloggers = BloggerService.GetSantasBloggers();
+
+SantasBloggers.UpdateItems(
+    updatedBloggers, modelToViewModelMatcher, 
+    mapBloggerToBloggerViewModel, viewModelUpdater);</code></pre></div>
 <h2 id="performance">Performance</h2>
 
 <p>My <a href="https://github.com/duanenewman/SantasBloggers">Santa&rsquo;s Bloggers</a> sample project has a simple implementation of this extension that allows us to do some simple performance checks. When it first launches it is using simple code that just rebuilds the UI list each time. Run it and let the performance monitor settle down, you will see a regular spike on the CPU and hit to the garbage collector. Now check the box to enable the extension method and the garbage collection and CPU spike stop almost immediately. This is on a simple app with a very basic Item Template, imagine a template showing more data, or graphics, doing the same thing.</p>
