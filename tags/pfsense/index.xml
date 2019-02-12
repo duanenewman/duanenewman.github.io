@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pfsense on Duane Newman</title>
+    <link>http://duanenewman.net/tags/pfsense/</link>
+    <description>Recent content in Pfsense on Duane Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Tue, 12 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://duanenewman.net/tags/pfsense/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Indirect connections with Plex and pfSense</title>
+      <link>http://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/</guid>
+      <description>I&amp;rsquo;ve recently built a custom FreeNAS file server in my house to act as high capacity storage for my personal photos &amp;amp; videos, a Plex Media Server, and an S3 server for offsite backup for my business and family, among a few other minor things. At the same time I also replaced my Ubiquiti EdgeRouter X with a custom pfSense router (primarily for better remote VPN and P2P VPN support).</description>
+    </item>
+    
+  </channel>
+</rss>

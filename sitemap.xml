@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/</loc>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
   </url>
@@ -259,7 +264,7 @@
   
   <url>
     <loc>http://duanenewman.net/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -288,7 +293,7 @@
   
   <url>
     <loc>http://duanenewman.net/blog/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -507,6 +512,12 @@
   </url>
   
   <url>
+    <loc>http://duanenewman.net/tags/network/</loc>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/tags/nui/</loc>
     <lastmod>2016-03-31T06:30:00+00:00</lastmod>
     <priority>0</priority>
@@ -531,6 +542,12 @@
   </url>
   
   <url>
+    <loc>http://duanenewman.net/tags/pfsense/</loc>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/tags/photography/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
     <priority>0</priority>
@@ -539,6 +556,12 @@
   <url>
     <loc>http://duanenewman.net/tags/planning/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/plex/</loc>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -664,7 +687,7 @@
   
   <url>
     <loc>http://duanenewman.net/categories/technology/</loc>
-    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

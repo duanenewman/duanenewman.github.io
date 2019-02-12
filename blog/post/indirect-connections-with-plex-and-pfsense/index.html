@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Indirect connections with Plex and pfSense -- Duane Newman</title>
+
+    
+
+    
+    <link href="http://duanenewman.net/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/clean-blog.min.css" rel="stylesheet">
+
+	
+    <link href="http://duanenewman.net/css/prism.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/custom.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://duanenewman.net">Duane Newman</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://duanenewman.net/">Home</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/blog/">Blog</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/appearances/">Appearances</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/speaking/">Speaking</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/about/">About</a>
+                    </li>
+					
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://duanenewman.net/img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Indirect connections with Plex and pfSense</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">
+                 
+  A 2 minute read,
+
+Posted on Tue, Feb 12, 2019 In <a href="http://duanenewman.net/categories/technology">Technology</a>
+
+<br />
+Tags <a href="http://duanenewman.net/tags/pfsense">pfsense</a>, <a href="http://duanenewman.net/tags/plex">plex</a>, <a href="http://duanenewman.net/tags/network">network</a>
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<p>I&rsquo;ve recently built a custom FreeNAS file server in my house to act as high capacity storage for my personal photos &amp; videos, a Plex Media Server, and an S3 server for offsite backup for my business and family, among a few other minor things. At the same time I also replaced my Ubiquiti EdgeRouter X with a custom pfSense router (primarily for better remote VPN and P2P VPN support).</p>
+
+<h2 id="enabling-remote-access-for-plex">Enabling Remote Access for Plex</h2>
+
+<p>Once I had it all done and configured I noticed that my plex server was reporting as unreachable to the outside world.. Not ideal, if I want to watch a movie from my collection while I&rsquo;m traveling. It didn&rsquo;t take long to realize that pfSense had UPnP disabled by default..</p>
+
+<p><img class="img-thumbnail pull-right" src="pfsenseupnp.png" alt="UPnP & NAT-PMP Settings" width="300" /></p>
+
+<p>In the pfSense WebUI I navigated to <strong>Services -&gt; UPnP &amp; NAT-PMP</strong>. There I checked Enable UPnP &amp; NAT-PMP, Allow UPnP Port Mapping, &amp; Allow NAT-PMP Port Mapping. I could have done a static port forward (and maybe I still will) but I figured UPnP also might be useful to make sure my XBox and Steam games didn&rsquo;t have issues either. After saving and applying these changes and having plex recheck remote access it came up green with &ldquo;Fully accessible outside your network&rdquo;.</p>
+
+<h2 id="fixing-indirect-access-on-the-lan">Fixing Indirect Access on the LAN</h2>
+
+<p>I thought it was all great then I noticed that when I accessed Plex from my local network it was showing up as <strong>indirect</strong>, which caused it to transcode everything like it was coming from the internet.</p>
+
+<p><img class="img-thumbnail  pull-right" src="plexindirect.png" alt="Plex Server Indirect" width="300" /></p>
+
+<p>After too much time searching for things like &ldquo;plex indirect pfsense&rdquo; and trying solutions for <em>similar</em> problems the closest I got was a forum post indicating it was a DNS Rebinding issue with plex Secure Connections, but I didn&rsquo;t know how to fix it. I finally stumbled across a link to <a href="https://support.plex.tv/articles/206225077-how-to-use-secure-server-connections/">this plex support article</a> that directly pointed the way on pfSense (which never showed up on my normal searches because it doesn&rsquo;t have the word &ldquo;indirect&rdquo; anywhere). The solution was pretty easy too, I navigated over to <strong>Services -&gt; DNS Resolver -&gt; General Settings</strong> and scrolled down and clicked the &ldquo;Show Custom Options&rdquo; button, which displayed the <strong>Custom options</strong> entry where I added the following:</p>
+
+<pre><code>server:
+private-domain: &quot;plex.direct&quot;
+</code></pre>
+
+<p><img class="img-thumbnail " src="customoptions.png" alt="pfSense DNS Resolver Custom Options"  /></p>
+
+<h2 id="bingo-direct-secure-lan-connection">Bingo! Direct &amp; Secure LAN Connection</h2>
+
+<p><img class="img-thumbnail pull-left" src="plexdirect.png" alt="Plex Server Direct" width="300" /></p>
+
+<p>I wasted a lot of time trying to figure out the solution to this and while I have mostly written up this post to help me remember how I got this working, I hope this helps someone else waste a little less time.</p>
+
+                  <div style="clear:both"></div>
+
+
+   <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "duanenewmannet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                      <a href="https://twitter.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.instagram.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="http://youtube.com/dnewman31">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.flickr.com/duane_newman/">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.kickstarter.com/profile/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-usd fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted">Copyright Duane Newman</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://duanenewman.net/js/jquery.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/bootstrap.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/prism.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/clean-blog.js"></script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-2838107-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+
+</html>
+
