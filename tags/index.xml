@@ -94,15 +94,6 @@
     </item>
     
     <item>
-      <title>C#</title>
-      <link>http://duanenewman.net/tags/c/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Cake</title>
       <link>http://duanenewman.net/tags/cake/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
@@ -144,6 +135,15 @@
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/csadvent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Csharp</title>
+      <link>http://duanenewman.net/tags/csharp/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/csharp/</guid>
       <description></description>
     </item>
     

@@ -102,7 +102,7 @@
 Posted on Sat, Dec 23, 2017 In <a href="http://duanenewman.net/categories/coding">Coding</a>
 
 <br />
-Tags <a href="http://duanenewman.net/tags/devops">devops</a>, <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/cake">cake</a>, <a href="http://duanenewman.net/tags/build">build</a>
+Tags <a href="http://duanenewman.net/tags/devops">devops</a>, <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/cake">cake</a>, <a href="http://duanenewman.net/tags/build">build</a>
 
                </span>
              </div>
@@ -124,7 +124,7 @@ Tags <a href="http://duanenewman.net/tags/devops">devops</a>, <a href="http://du
 
 <h1 id="a-c-build-system">A C# Build System</h1>
 
-<p>I&rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&rsquo;ve been happy with the solutions I provided with each of these I&rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects. In the hunt to find something that would work outside of Windows I discovered <a href="https://cakebuild.net/">Cake</a>, and I coulnd&rsquo;t be happier.</p>
+<p>I&rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&rsquo;ve been happy with the solutions I provided with each of these I&rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects. In the hunt to find something that would work outside of Windows I discovered <a href="https://cakebuild.net/">Cake</a>, and I couldn&rsquo;t be happier.</p>
 
 <p>Cake? You&rsquo;re making me hungry, what are you talking about? Cake (Stands for C# Make) is a tool for automating your builds that runs cross platform (Windows, OS X, and Linux) and uses a C# Domain Specific Language (DSL). You can use it to manipulate files, run msbuild (or other compilers), execute your unit tests, and prepare your build for publishing.</p>
 
@@ -147,8 +147,9 @@ Tags <a href="http://duanenewman.net/tags/devops">devops</a>, <a href="http://du
 
 <p>For me, being able to develop and test my build on my Windows daily dev box, commit it, and then have it run as part of CI on my Mac build server is awesome and saves a lot of headache. However, there are a few things to be aware of, like the fact that not all extensions and other NuGet packages will run in a non-Windows environment.</p>
 
-<p>#Getting Started
-It&rsquo;s easy, you just need to follow these easy steps (on Windows):</p>
+<h1 id="getting-started">Getting Started</h1>
+
+<p>It&rsquo;s easy, you just need to follow these easy steps (on Windows):</p>
 
 <p>1) Download the needed bootstrapper (you can grab the others too)</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
@@ -175,7 +176,7 @@ RunTarget(target);</code></pre></div>
 
 <h1 id="vs-code">VS Code</h1>
 
-<p>There is a nice extensions for <a href="https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode">VS Code</a> that give you syntax highlighting, quickstart templates, debugging, and more.</p>
+<p>There is a nice extensions for <a href="https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode">VS Code</a> that give you syntax highlighting, quick start templates, debugging, and more.</p>
 
 <h1 id="conclusion">Conclusion</h1>
 

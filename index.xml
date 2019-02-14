@@ -9,7 +9,7 @@
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 12 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://duanenewman.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,6 +19,13 @@
       
       <guid>http://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/</guid>
       <description>I&amp;rsquo;ve recently built a custom FreeNAS file server in my house to act as high capacity storage for my personal photos &amp;amp; videos, a Plex Media Server, and an S3 server for offsite backup for my business and family, among a few other minor things. At the same time I also replaced my Ubiquiti EdgeRouter X with a custom pfSense router (primarily for better remote VPN and P2P VPN support).</description>
+      
+      <category>pfsense</category>
+      
+      <category>plex</category>
+      
+      <category>network</category>
+      
     </item>
     
     <item>
@@ -28,6 +35,25 @@
       
       <guid>http://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</guid>
       <description>One of the powerful capabilities we&amp;rsquo;ve learned to leverage when using the MVVM pattern for XAML based apps, whether for the desktop or mobile platforms, is data binding. Binding allows us to easily keep our View up to date with changes in the ViewModel. These bindings are typically pretty quick when not abused, but there are situations where they can become less than performant, causing visual anomalies such as flickering or even impacting general app performance.</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>csadvent</category>
+      
+      <category>mvvm</category>
+      
+      <category>observable</category>
+      
+      <category>api</category>
+      
+      <category>wpf</category>
+      
+      <category>uwp</category>
+      
+      <category>xamarin</category>
+      
     </item>
     
     <item>
@@ -37,6 +63,23 @@
       
       <guid>http://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</guid>
       <description>When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instantiating the class we want to test less painful.</description>
+      
+      <category>csharp</category>
+      
+      <category>unit testing</category>
+      
+      <category>di</category>
+      
+      <category>dependency injection</category>
+      
+      <category>ioc</category>
+      
+      <category>dotnet</category>
+      
+      <category>tips</category>
+      
+      <category>tdd</category>
+      
     </item>
     
     <item>
@@ -46,6 +89,15 @@
       
       <guid>http://duanenewman.net/blog/post/my-first-mvp-summit/</guid>
       <description>A couple weeks ago I went to my first MVP Summit. The MVP program is a way that Microsoft recognizes &amp;ldquo;technology experts who passionately share their knowledge with the community&amp;rdquo;*. There are several perks to being an MVP. While many may immediately think of the compliemntary MSDN subscription and software licenses from other vendors, I was most excited about the opportunity to go to MVP Summit. As an MVP (under tight NDA) I am able to meet over skype with the various product teams at MS to get a view into where they are headed with thier technologies.</description>
+      
+      <category>mvp</category>
+      
+      <category>dotnet</category>
+      
+      <category>xamarin</category>
+      
+      <category>microsoft</category>
+      
     </item>
     
     <item>
@@ -55,51 +107,13 @@
       
       <guid>http://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</guid>
       <description>Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&amp;rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.</description>
-    </item>
-    
-    <item>
-      <title>Adaptive User Interfaces with Xamarin.Forms</title>
-      <link>http://duanenewman.net/speaking/adaptive-ui-with-xamarin-forms/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/speaking/adaptive-ui-with-xamarin-forms/</guid>
-      <description>Let&amp;rsquo;s take Xamarin.Forms beyond Hello World and explore how to create apps that adapt to your users devices in the real-world. As an app developer, you don&amp;rsquo;t want your apps to just look great in portrait or landscape on a phone, you want to provide a larger display experience option. In this session we will build an app that spans platforms and device types, giving users a rich experience , regardless of platform or form factor.</description>
-    </item>
-    
-    <item>
-      <title>Creating Reusable Packages for Mobile Development with Xamarin and NuGet</title>
-      <link>http://duanenewman.net/speaking/reusable-packages-mobile-development-xamarin-nuget/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <category>csharp</category>
       
-      <guid>http://duanenewman.net/speaking/reusable-packages-mobile-development-xamarin-nuget/</guid>
-      <description>Living in the Xamarin mobile development trenches? Then you have probably created or at least thought about a few cross-platform aids. Sharing that platform agnostic code with new projects is easy, but things can get tricky with platform-specific implementations, right? Wouldn&amp;rsquo;t it be great if you could manage and maintain that functionality in reusable packages? We&amp;rsquo;ll explore how to structure your projects and configure a single NuGet package to install shared and platform libraries.</description>
-    </item>
-    
-    <item>
-      <title>Hands Free Mobile UI Testing</title>
-      <link>http://duanenewman.net/speaking/hands-free-mobile-ui-testing/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <category>dotnet</category>
       
-      <guid>http://duanenewman.net/speaking/hands-free-mobile-ui-testing/</guid>
-      <description>Testing your mobile app against the sea of mobile devices can be daunting, and even limiting to testing with recent popular devices can be cumbersome and expensive. Not to mention the wear and tear on your thumbs with all that tapping and swiping! Wouldn&amp;rsquo;t it be great if you could apply your well-honed app logic unit testing skills and practices to your UI testing? I&amp;rsquo;ve got great news, you can!</description>
-    </item>
-    
-    <item>
-      <title>Packaging your world with NuGet</title>
-      <link>http://duanenewman.net/speaking/packaging-your-world-with-nuget/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <category>tips</category>
       
-      <guid>http://duanenewman.net/speaking/packaging-your-world-with-nuget/</guid>
-      <description>Whether you are creating an open source library or building enterprise app core components, you need to get that functionality into other projects. But developing these resources is usually easier than consuming them. How about a worry free way to distribute and reference those resources in your project that will let you stay up to date, but allow you to avoid problems that may introduce breaking changes or new bugs?</description>
-    </item>
-    
-    <item>
-      <title>Putting the Fun in Func with Lambdas &amp; LINQ</title>
-      <link>http://duanenewman.net/speaking/putting-the-fun-in-func-with-lambdas-and-linq/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/speaking/putting-the-fun-in-func-with-lambdas-and-linq/</guid>
-      <description>Working with delegates in C# is easier than ever with .NET&amp;rsquo;s generic Action and Func types. Understanding .NET delegates is key to harnessing the power of language features like Lambdas and LINQ. In this session, we&amp;rsquo;ll dig into delegates, exploring what they are, how they work, and how they can help you be a SOLID developer. Don&amp;rsquo;t let delegates put you in a Func, take Action, and learn how to make your code simpler, cleaner, and more flexible.</description>
     </item>
     
     <item>
@@ -110,16 +124,17 @@
       <guid>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</guid>
       <description>Why So Jolly? This post is part of the The First C# Advent Calendar, celebrating all things C#. After you finish here check out the other great posts in the series.
 A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects.</description>
-    </item>
-    
-    <item>
-      <title>About Duane</title>
-      <link>http://duanenewman.net/about/</link>
-      <pubDate>Thu, 09 Nov 2017 11:27:06 -0600</pubDate>
       
-      <guid>http://duanenewman.net/about/</guid>
-      <description>Duane - The Developer Duane is Co-Founder of Alien Arc Technologies, LLC where he focuses on creating apps targeting mobile devices, modern desktops, and the Internet of Things. He has a passion for automation and reducing daily friction with software and he strives to bring solutions that improve or eliminate costly duplication and repetitive processes so more important things can be done.
-Duane - The Community Advocate Duane enjoys an active role supporting the software development community, both locally, and on the road.</description>
+      <category>devops</category>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>cake</category>
+      
+      <category>build</category>
+      
     </item>
     
     <item>
@@ -129,6 +144,21 @@ Duane - The Community Advocate Duane enjoys an active role supporting the softwa
       
       <guid>http://duanenewman.net/blog/post/diving-in-bonaire-2016./</guid>
       <description>I decided to take a few minutes and reflect on my recent trip to Bonaire and share some accomplishments and observations. To begin with, the flight there is long. We had two options, 45 minute layover to catch an international flight with all our luggage, or 5 hour layover waiting in the airport. We chose the later since no on wanted to miss a flight that only happens once a day and only on Saturday and Sunday each week.</description>
+      
+      <category>Photography</category>
+      
+      <category>planning</category>
+      
+      <category>review</category>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>Tips</category>
+      
+      <category>video</category>
+      
     </item>
     
     <item>
@@ -138,6 +168,13 @@ Duane - The Community Advocate Duane enjoys an active role supporting the softwa
       
       <guid>http://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</guid>
       <description>I recently encountered a strange issue with the layout of the keyboard on my Lumia 950XL. This happened after a one of the recent OS updates and it took me a little while researching to figure it out. The issue was that my keyboard was all squashed to the left, instead of taking up the full width of the phone. In addition to that the cursor point was on the right hand side of the keyboard.</description>
+      
+      <category>WinPhone</category>
+      
+      <category>950XL</category>
+      
+      <category>Troubleshooting</category>
+      
     </item>
     
     <item>
@@ -147,6 +184,27 @@ Duane - The Community Advocate Duane enjoys an active role supporting the softwa
       
       <guid>http://duanenewman.net/blog/post/nebraska-code-2016/</guid>
       <description>Another Nebraska.Code() is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference.</description>
+      
+      <category>Coding</category>
+      
+      <category>Community</category>
+      
+      <category>Deployment</category>
+      
+      <category>mobile</category>
+      
+      <category>NCC</category>
+      
+      <category>NebraskaCode</category>
+      
+      <category>OSS</category>
+      
+      <category>Speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
     </item>
     
     <item>
@@ -157,6 +215,15 @@ Duane - The Community Advocate Duane enjoys an active role supporting the softwa
       <guid>http://duanenewman.net/blog/post/microsoft-build-2016/</guid>
       <description>I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.
 This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces.</description>
+      
+      <category>Xamarin</category>
+      
+      <category>Technology</category>
+      
+      <category>Build2016</category>
+      
+      <category>OSS</category>
+      
     </item>
     
     <item>
@@ -167,6 +234,11 @@ This year&#39;s build was pretty exciting for .NET developers. With strong progr
       <guid>http://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</guid>
       <description>For those that purchased an unlocked Lumia 950 XL from Microsoft in the last few months and have been frustrated at the lack of Visual Voice (that’s everyone who bought one) you can rejoice. Last week I had sketchy WiFi access so I just discovered that I had an update available last night. When I went to take a look at the change log I discovered this little gem:
  Support for Visual Voicemail on Dual SIM phones   It sounds like this has been available in the Windows Insiders build for a little while, but I’ve been hesitant to put my primary phone on the insiders builds.</description>
+      
+      <category>Lumia</category>
+      
+      <category>WinPhone</category>
+      
     </item>
     
     <item>
@@ -178,6 +250,13 @@ This year&#39;s build was pretty exciting for .NET developers. With strong progr
       <description>This is part 5 in a series on scuba travel and our trip to Honduras.
 Related Posts
  Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)  Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)  Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)  Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   Guanaja Diving The diving in Guanaja is fantastic.</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>Tips</category>
+      
     </item>
     
     <item>
@@ -189,6 +268,13 @@ Related Posts
       <description>This is part 4 in a series on scuba travel and our trip to Honduras.
 Related Posts
  Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)  Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)  Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   The Villa   You can read my review of the Villa over on TripAdvisor.</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>tips</category>
+      
     </item>
     
     <item>
@@ -200,6 +286,13 @@ Related Posts
       <description>This is part 3 in a series on scuba travel and our trip to Honduras.
 Related Posts
  Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)  Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)  Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   Travel We were traveling from cold weather to warm weather, so we planned ahead and packed shorts in our carry-on so that while we stopped for a layover in Atlanta we could change out of our warmer weather pants.</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>tips</category>
+      
     </item>
     
     <item>
@@ -209,6 +302,15 @@ Related Posts
       
       <guid>http://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</guid>
       <description>Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by Saqib Shaikh, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses.</description>
+      
+      <category>Technology</category>
+      
+      <category>Human</category>
+      
+      <category>NUI</category>
+      
+      <category>Build2016</category>
+      
     </item>
     
     <item>
@@ -218,6 +320,13 @@ Related Posts
       
       <guid>http://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-2-traveling-photographer/</guid>
       <description>Traveling with your photography equipment can be challenging when you are taking all your pictures on dry (or at least solid) ground. Add all the equipment you need if you are going to get wet with you camera and it becomes a production just getting it all to your destination. When I first looked into what to do I had a hard time finding information on what other were doing, so I hope you find this helpful as you plan your underwater photography dive trip.</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>tips</category>
+      
     </item>
     
     <item>
@@ -228,6 +337,19 @@ Related Posts
       <guid>http://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
       <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:
  Converting the project to .NET 3.5 (from 2.0)  Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now)  Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp  Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13)  And last, but not least, I added a WIX based installer to the project   If you just want grab the latest version jump over to the GitHub release page.</description>
+      
+      <category>Bluff</category>
+      
+      <category>Coding</category>
+      
+      <category>OSS</category>
+      
+      <category>plugin</category>
+      
+      <category>vegas</category>
+      
+      <category>video</category>
+      
     </item>
     
     <item>
@@ -238,6 +360,17 @@ Related Posts
       <guid>http://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
       <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.
 If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
+      
+      <category>video</category>
+      
+      <category>tips</category>
+      
+      <category>chocolatey</category>
+      
+      <category>media</category>
+      
+      <category>utility</category>
+      
     </item>
     
     <item>
@@ -249,6 +382,13 @@ If you are not familiar with file systems this may seem odd, but it is a well kn
       <description>This is part 1 in a series on scuba travel and our trip to Honduras.
 Related Posts
  Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)  Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)  Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   In January my wife and I took our first real scuba diving vacation with our dive shop, The Playground Dive Shop, to the island of Guanaja, Honduras where we stayed and dived with the Villa on Dunbar Rock.</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>Tips</category>
+      
     </item>
     
     <item>
@@ -258,6 +398,15 @@ Related Posts
       
       <guid>http://duanenewman.net/blog/post/generating-authenticator-qr-codes/</guid>
       <description>I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.</description>
+      
+      <category>QRCode</category>
+      
+      <category>Security</category>
+      
+      <category>tips</category>
+      
+      <category>Technology</category>
+      
     </item>
     
     <item>
@@ -267,6 +416,15 @@ Related Posts
       
       <guid>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</guid>
       <description>I was out of active Xamarin development for a couple months and recently wanted to jump back in and work on a couple new project ideas. I fired up VS2015 and created a project. It was then that I realized I had not installed the official Xamarin tools since I got my new Surface Book. So I decided it was a good idea to install that latest Xamarin Tools before I did anything else.</description>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
+      <category>Coding</category>
+      
+      <category>Troubleshooting</category>
+      
     </item>
     
     <item>
@@ -277,6 +435,15 @@ Related Posts
       <guid>http://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</guid>
       <description>Yesterday, my business Alien Arc Technologies, LLC announced the release of version 1.0 of an open source project I’ve been tinkering on recently, called Bluff. This is my first OSS project and I’m excited to have created something that I hope others will find useful, and better yet, will contribute their own ideas to.
 History The project came out of my own personal needs and interest. In 2015 I was introduced to the world of scuba diving and I’ve fallen totally in love with it.</description>
+      
+      <category>OSS</category>
+      
+      <category>vegas</category>
+      
+      <category>video</category>
+      
+      <category>plugin</category>
+      
     </item>
     
     <item>
@@ -287,6 +454,17 @@ History The project came out of my own personal needs and interest. In 2015 I wa
       <guid>http://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</guid>
       <description>Recently I was working at a project at a new client and needed to add some tools to my development machine. So I turned to one of my favorite tools for getting the apps and tools I need, Chocolatey. The only problem was that I was getting an error installing Chocolatey using the command on their website.
 Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; argument(s): &amp;quot;The remote server returned an error: (407) Proxy Authentication Required.</description>
+      
+      <category>chocolatey</category>
+      
+      <category>proxy</category>
+      
+      <category>powershell</category>
+      
+      <category>admin</category>
+      
+      <category>utility</category>
+      
     </item>
     
     <item>
@@ -296,6 +474,13 @@ Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; 
       
       <guid>http://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</guid>
       <description>I&#39;ve been selected to speak at the upcoming St. Louis Days of .NET (STLDODN) on November 12th-14th. I will be presenting my new talk on DevOps, Double Down with DevOps, and am excited about the opportunity to give this topic some attention. Why Speak on DevOps? As a developer I am often frustrated with the amount of manual processes that seem to exist between development and production. Many of us have found ourselves in the situation where we had a single point of failure for a process, the 1 person at the company that knows how to release the new software, or configure the server, or any number of other things that will invariably go wrong when when they are on vacation (or worse, just go on hold).</description>
+      
+      <category>speaking</category>
+      
+      <category>STLDODN</category>
+      
+      <category>DevOps</category>
+      
     </item>
     
     <item>
@@ -305,6 +490,17 @@ Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; 
       
       <guid>http://duanenewman.net/blog/post/heartland-developers-conference-2015/</guid>
       <description>This was my first year speaking at the Heartland Developers Conference in Omaha, although I’ve attended many times through the years as an attendee. The experience was quite a lot of fun, and I had a good time hanging out with old friends and making a few new ones. My wife came with me and good time watching all of us “geeks” hangout. This was the first time doing a new talk, and the first talk that didn’t involve any demo’s, and it was not scheduled until Friday morning.</description>
+      
+      <category>agile</category>
+      
+      <category>DevOps</category>
+      
+      <category>Community</category>
+      
+      <category>Speaking</category>
+      
+      <category>HDC</category>
+      
     </item>
     
     <item>
@@ -314,6 +510,15 @@ Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; 
       
       <guid>http://duanenewman.net/blog/post/kcdc-2015-recap/</guid>
       <description>In preparation for my fall conference lineup I thought I would take a minute to reflect on this year’s Kansas City Developers Conference. Once again, I am impressed with the quality of conference that the KCDC crew puts together. Kudos go to Boone, Jon, and Lee for nurturing a small weekend event into what is, today, one of the top conferences in the Midwest for developers (of any discipline). I’ve had the opportunity to go to some of the “BIG” (and expensive) developer conferences out there and experience what they feel like, and to me KCDC has that same polished feel of conferences that cost 10x as much to attend.</description>
+      
+      <category>Community</category>
+      
+      <category>speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
     </item>
     
     <item>
@@ -324,6 +529,15 @@ Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; 
       <guid>http://duanenewman.net/blog/post/kcdc-2015-sessions/</guid>
       <description>KCDC is just a week away and I&#39;m busy updating my materials. I&#39;m looking forward to meeting some great developers and catching up with what is quickly becoming a close group of speaker friends.
 I&#39;ll be presenting my Xamarin.Forms talk on Thursday morning at 10:10 AM. Conference mornings are always a little rough, but I like getting the talk done early, then I get to relax, network, and enjoy seeing my friends presenting their talks.</description>
+      
+      <category>KCDC</category>
+      
+      <category>speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
     </item>
     
     <item>
@@ -333,37 +547,17 @@ I&#39;ll be presenting my Xamarin.Forms talk on Thursday morning at 10:10 AM. Co
       
       <guid>http://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</guid>
       <description>Back in November 2014 at the St. Louis Days of .NET conference I sat down with JJ Hammond from STL Tech Talk for an interview. It was a lot of fun and I had a great time talking about Xamarin, Xamarin.Forms, and mobile development for the C# developer. It got lost somewhere among all the other interview videos, but thanks to Kevin and JJ it is was found and is now posted for your viewing pleasure.</description>
-    </item>
-    
-    <item>
-      <title>Appearances</title>
-      <link>http://duanenewman.net/appearances/</link>
-      <pubDate>Wed, 01 Apr 2015 22:00:47 +0000</pubDate>
       
-      <guid>http://duanenewman.net/appearances/</guid>
-      <description>As I have the opportunity to be a guest on podcasts, shows, and other events I’ll post links here.
- AskTHAT live with Duane Newman - The State of Cross Platform Mobile March 19, 2018 
- Developer On Fire - Episode 283 | Duane Newman - Socially Engaged November 2, 2017 
- Interview with STL Tech Talk at the St. Louis Days of .NET Conference November 14, 2014</description>
-    </item>
-    
-    <item>
-      <title>Xamarin Forms: One App to Rule All Your Platforms</title>
-      <link>http://duanenewman.net/page/xamarin-forms-one-app-to-rule-all-your-platforms/</link>
-      <pubDate>Tue, 31 Mar 2015 17:43:05 +0000</pubDate>
+      <category>Xamarin</category>
       
-      <guid>http://duanenewman.net/page/xamarin-forms-one-app-to-rule-all-your-platforms/</guid>
-      <description>Are you seeking the Holy Grail of Write Once Run Anywhere app development? Then Xamarin Forms might be what you are looking for. This session will give you the information you need to understand Xamarin Forms and how it can be used to lower the friction of cross platform mobile development. You will see how easy it is to simultaneously create your app for iOS, Android, and Windows Phone.
-What People have said about this talk  The demo was good for the level of .</description>
-    </item>
-    
-    <item>
-      <title>Training</title>
-      <link>http://duanenewman.net/training/</link>
-      <pubDate>Tue, 31 Mar 2015 17:31:00 +0000</pubDate>
+      <category>Xamarin Forms</category>
       
-      <guid>http://duanenewman.net/training/</guid>
-      <description>I love learning something new, and I also love teaching and helping others understand what I have learned through my experiences. Training &amp;amp; Project Kick-Start If you are looking for a resource to bring custom in house training to your developers I can do full day&amp;nbsp;or week long&amp;nbsp;group workshops&amp;nbsp;that help your team get up to speed on .NET and C#, WPF, Mobile development, or ASP.NET. I don’t just talk about development though, with years of experience handling operations for small development teams I bring my experience with DevOps to your team and can get them up to speed on the tools at their disposal, such as PowerShell, Octopus Deploy, TFS, and Visual Studio Team Services.</description>
+      <category>STLDODN</category>
+      
+      <category>Interview</category>
+      
+      <category>StlTechTalk</category>
+      
     </item>
     
     <item>
@@ -373,6 +567,21 @@ What People have said about this talk  The demo was good for the level of .</des
       
       <guid>http://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</guid>
       <description>It was a pleasure to attend and speak at Nebraska.Code() this year. The guys in Lincoln are great and really put on a good conference. One of the neat parts of being a speaker is getting to know a lot of other great speakers as you go from one conference to another together. I&#39;ve found that as soon as one conference is over I&#39;m looking forward to the next one and the chance to hang out with the gang.</description>
+      
+      <category>speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
+      <category>Community</category>
+      
+      <category>mobile</category>
+      
+      <category>review</category>
+      
+      <category>NCC</category>
+      
     </item>
     
     <item>
@@ -382,6 +591,13 @@ What People have said about this talk  The demo was good for the level of .</des
       
       <guid>http://duanenewman.net/blog/post/kcdnug-last-minute-speaking-or-the-perils-of-running-a-user-group/</guid>
       <description>What a crazy user group meeting tonight. Through some schedule mix-ups (partly due to having things scheduled too far in advance and not following up) we ended up with no sponsor and no speaker. I was originally not going to make it to tonight’s meeting due to some schedule conflicts, but they cleared up at the last minute so I joined Brent to help run the meeting. When we go there we discovered that due to schedule conflicts they had we were in a different room, so we got busy redirecting everyone to the new room.</description>
+      
+      <category>speaking</category>
+      
+      <category>Community</category>
+      
+      <category>KCDNUG</category>
+      
     </item>
     
     <item>
@@ -391,6 +607,19 @@ What People have said about this talk  The demo was good for the level of .</des
       
       <guid>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</guid>
       <description>Here is a helpful tip if you are developing a mobile app using Xamarin Forms and targeting Windows Phone 8.0 (or if you are just writing a WP8.0 Silverlight based app). If you are ready to deploy and filling everything out online it is easier than it first seems. On the Windows Phone Dev Center you will find a helpful link to this article telling you to add some info to the Package.</description>
+      
+      <category>mobile</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
+      <category>WinPhone</category>
+      
+      <category>Silverlight</category>
+      
+      <category>Deployment</category>
+      
     </item>
     
     <item>
@@ -400,6 +629,23 @@ What People have said about this talk  The demo was good for the level of .</des
       
       <guid>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
       <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
+      
+      <category>twitter</category>
+      
+      <category>Xamarin</category>
+      
+      <category>business</category>
+      
+      <category>Coding</category>
+      
+      <category>tips</category>
+      
+      <category>linq</category>
+      
+      <category>social</category>
+      
+      <category>mobile</category>
+      
     </item>
     
     <item>
@@ -410,6 +656,17 @@ What People have said about this talk  The demo was good for the level of .</des
       <guid>http://duanenewman.net/blog/post/skillsusa-coding-competition/</guid>
       <description>On Saturday I had an opportunity to be involved in a SkillsUSA district competition as a judge for the coding competition. I was really impressed with the skill that some of these students (all with less than a year of experience) had. The quality of some of the code they wrote really surprised me.
 It was a really enjoyable experience and I was happy to be able to get more involved in the community with the next generation of coders.</description>
+      
+      <category>Technology</category>
+      
+      <category>SkillsUSA</category>
+      
+      <category>Judging</category>
+      
+      <category>Coding</category>
+      
+      <category>Community</category>
+      
     </item>
     
     <item>
@@ -421,6 +678,17 @@ It was a really enjoyable experience and I was happy to be able to get more invo
       <description>First off, speaking is a rush. It is hard to describe the feeling just after completing a talk. I had to move around, talk to people, see what was going on; it really energized me. I am definitely going to continue to pursue future speaking opportunities as they present themselves, and I’ll keep you posted when they get accepted.
 
 As I mentioned in previous posts, my first talk was on Xamarin Forms, a new technology in a toolset that we are using at Alien Arc, but that is still new to us.</description>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
+      <category>tips</category>
+      
+      <category>speaking</category>
+      
+      <category>STLDODN</category>
+      
     </item>
     
     <item>
@@ -431,6 +699,13 @@ As I mentioned in previous posts, my first talk was on Xamarin Forms, a new tech
       <guid>http://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</guid>
       <description>If you have tried something in Xamarin.Forms that should work but didn&amp;rsquo;t, don&amp;rsquo;t worry you might not be going crazy (I can&amp;rsquo;t say for sure, I&amp;rsquo;m a programmer, not a psychologist).
 I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months while working on a small project we have as well as in preparation for my upcoming talk at St. Louis Days of .NET. Sometimes in the course of creating a sample project I write some code that I know should work and then watch the exceptions pop-up (or worse, see nothing at all) when I run it.</description>
+      
+      <category>tips</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
     </item>
     
     <item>
@@ -441,6 +716,11 @@ I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months
       <guid>http://duanenewman.net/blog/post/making-progress-on-your-small-business-goals/</guid>
       <description>When Brent and I started Alien Arc we had a few basic goals:
  To have more flexible working conditions To be more active with the developer community and conferences To create our own products  We&amp;rsquo;ve done a pretty good job in our first 6 months getting started on some of these goals. We are on-site with our primary client, but they are closer and with the consultant relationship it is much easier to deal with any needs for a flexible schedule.</description>
+      
+      <category>business</category>
+      
+      <category>planning</category>
+      
     </item>
     
     <item>
@@ -451,6 +731,13 @@ I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months
       <guid>http://duanenewman.net/blog/post/agile-operations/</guid>
       <description>With a new and busy business it is easy to lose track of the little things that need to be done when you are spending every usable minute on billable tasks. This is the challenge we found ourselves faced with a few months into operating Alien Arc.
 Enter Aglie We started a Trello board back when we started the business to track tasks like getting our insurance setup and creating a logo.</description>
+      
+      <category>reflection</category>
+      
+      <category>buiness</category>
+      
+      <category>agile</category>
+      
     </item>
     
     <item>
@@ -460,6 +747,11 @@ Enter Aglie We started a Trello board back when we started the business to track
       
       <guid>http://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</guid>
       <description>I’ve been wanting to start speaking at conferences for a while now, but have always been nervous about it. I’ve really wanted to do this for a long time but I specifically remember in 2013 I went to KCDC and was all energized about sharing as a speaker. I decided that I was going to work on having a presentation for the next year. When KCDC 2014 was announced earlier this year I realized I hadn’t even thought about a topic since the week after last years conference.</description>
+      
+      <category>STLDODN</category>
+      
+      <category>Xamarin</category>
+      
     </item>
     
     <item>
@@ -469,6 +761,11 @@ Enter Aglie We started a Trello board back when we started the business to track
       
       <guid>http://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</guid>
       <description>I just picked up my Surface Pro from my local Microsoft Store this morning. I&amp;rsquo;m no stranger to Windows 8; I&amp;rsquo;ve been using it on my desktop since RTM (and a little before) and I bought the RT back on launch day. In general I like the changes that have been made and no longer feel at home on Windows 7. I have especially been digging the way the interface was built around touch with my RT, I think that has helped me accept some of the changes experienced with mouse and keyboard only input.</description>
+      
+      <category>review</category>
+      
+      <category>surface</category>
+      
     </item>
     
     <item>
@@ -479,6 +776,11 @@ Enter Aglie We started a Trello board back when we started the business to track
       <guid>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</guid>
       <description>Everyone knows one of the easiest ways to process collections of objects is using foreach, it is much more elegant and less error prone (IMHO) than using a for (int x..) and looping by index. &amp;nbsp;However, sometimes you get forced into using the indexer to process a collection. &amp;nbsp;This usually happens when you need to look at the current object in context of the previous. &amp;nbsp;
 The need to use the indexer and have code like obj[i] == obj[i -1] bugged me.</description>
+      
+      <category>dotnet</category>
+      
+      <category>linq</category>
+      
     </item>
     
     <item>
@@ -489,16 +791,13 @@ The need to use the indexer and have code like obj[i] == obj[i -1] bugged me.</d
       <guid>http://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</guid>
       <description>In my day job I work on a product that does a lot of video work and in fact has a custom DirectShow player that gets all our video into WPF. &amp;nbsp;It plays multiple files all synchronized (a real challenge).
 While looking into ways to improve performance I found myself needing to see how my filter graph was being built. &amp;nbsp;I did a little looking and found that creating an instance of DsROTEntry with a reference to the graph makes it available for external viewing.</description>
-    </item>
-    
-    <item>
-      <title>About Duane</title>
-      <link>http://duanenewman.net/page/about-duane/</link>
-      <pubDate>Mon, 14 Feb 2011 13:49:42 +0000</pubDate>
       
-      <guid>http://duanenewman.net/page/about-duane/</guid>
-      <description>I am a technology enthusiast with a passion for good software. I’ve been programming professionally since the mid ‘90s and have worked on software solutions in many industries including warehousing, real estate, insurance, and law enforcement.
-Like many software developers my interest in programming began as a kid playing video games on my C-64 and the families first “IBM-Compatible” computer. On the PC I learned the ins and outs of system configuration to get the latest revolutionary games (like Doom and DN3D) to run.</description>
+      <category>media</category>
+      
+      <category>directshow</category>
+      
+      <category>dotnet</category>
+      
     </item>
     
   </channel>
