@@ -12,6 +12,20 @@
         <atom:link href="http://duanenewman.net/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Processing collections with LINQ using the Aggregate extension method</title>
+      <link>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</link>
+      <pubDate>Wed, 14 Sep 2011 22:19:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</guid>
+      <description>Everyone knows one of the easiest ways to process collections of objects is using foreach, it is much more elegant and less error prone (IMHO) than using a for (int x..) and looping by index. &amp;nbsp;However, sometimes you get forced into using the indexer to process a collection. &amp;nbsp;This usually happens when you need to look at the current object in context of the previous. &amp;nbsp;
+The need to use the indexer and have code like obj[i] == obj[i -1] bugged me.</description>
+      
+      <category>dotnet</category>
+      
+      <category>linq</category>
+      
+    </item>
     
     <item>
       <title>Attaching to external DirectShow graphs using Graph Edit</title>
