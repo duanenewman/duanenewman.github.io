@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Concurrent Reads and Locked Writes with In-Memory Objects -- Duane Newman</title>
+
+    
+
+    
+    <link href="http://duanenewman.net/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/clean-blog.min.css" rel="stylesheet">
+
+	
+    <link href="http://duanenewman.net/css/prism.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/custom.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://duanenewman.net">Duane Newman</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://duanenewman.net/">Home</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/blog/">Blog</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/appearances/">Appearances</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/speaking/">Speaking</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/about/">About</a>
+                    </li>
+					
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://duanenewman.net/img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Concurrent Reads and Locked Writes with In-Memory Objects</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">
+                 
+  A 4 minute read,
+
+Posted on Tue, Feb 19, 2019 In <a href="http://duanenewman.net/categories/coding">Coding</a>
+
+<br />
+Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/framework">framework</a>, <a href="http://duanenewman.net/tags/builtin">builtin</a>, <a href="http://duanenewman.net/tags/tips">tips</a>, <a href="http://duanenewman.net/tags/lock">lock</a>
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a List&lt;T&gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads. The multi-threading was perfect for reading, but as soon as they started updating the collection (or any sub-collections on the individual items involved in queries) they, unsurprisingly, started getting <a href="https://docs.microsoft.com/en-us/dotnet/api/system.invalidoperationexception" target="_blank">InvalidOperationExceptions</a> with the message &ldquo;Collection was modified; enumeration operation may not execute.&rdquo;</p>
+
+<h2 id="quick-fix">Quick Fix</h2>
+
+<p>They needed a quick solution to the exceptions so I put together a simple class to manage locking on updates, while allowing concurrent reads.  (I won&rsquo;t get into if there was a better overall solution to what they already had implemented)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReadUpdateLocker</span>
+{
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">object</span> UpdateLock = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">object</span>();
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">object</span> CounterLock = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">object</span>();
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> ReadCount = <span style="color:#ae81ff">0</span>;
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> IncrementReadCounter()
+    {       
+        <span style="color:#66d9ef">lock</span> (UpdateLock)
+        {
+            Interlocked.Increment(<span style="color:#66d9ef">ref</span> ReadCount);
+        }
+    }
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> DecrementReadCounter()
+    {
+        Interlocked.Decrement(<span style="color:#66d9ef">ref</span> ReadCount);
+    }
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoRead(Action readAction)
+    {
+        <span style="color:#66d9ef">try</span>
+        {
+            IncrementReadCounter();
+
+            readAction.Invoke();
+        }
+        <span style="color:#66d9ef">finally</span>
+        {
+            DecrementReadCounter();
+        }
+    }
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoUpdate(Action updateAction)
+    {
+        <span style="color:#66d9ef">lock</span> (UpdateLock)
+        {
+            <span style="color:#75715e">//wait for counter to hit 0;        
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">while</span> (ReadCount &gt; <span style="color:#ae81ff">0</span>)
+            {
+                Thread.Sleep(<span style="color:#ae81ff">0</span>);
+            }
+
+            updateAction.Invoke();
+        }
+    }
+}</code></pre></div>
+<p>Basically this allowed the reads to come in concurrently without being blocked, until an update was requested. When an update came in it would lock on the UpdateLock object and hold the lock until all the active read threads finished, which decremented the read counter back to 0. After the update finished and released the lock any incoming reads would resume with minimal impact.</p>
+
+<h2 id="making-it-easier">Making it Easier</h2>
+
+<p>So we had a solution that worked, but it required reading and updating code to keep track of both the in-memory list of data as well as the instance of the locking class. So I did a little refactoring so that the data was hidden behind the locking mechanism, which then guarded all access to the collection through the locks. This  simplified the calling code by removing the need to keep track of two objects, and preventing exceptions for accidental unlocked access to the data.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InstanceReadUpdateLocker</span>&lt;T&gt;
+{
+    <span style="color:#66d9ef">private</span> ReadUpdateLocker locker = <span style="color:#66d9ef">new</span> ReadUpdateLocker();
+    <span style="color:#66d9ef">private</span> T Data { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+
+    <span style="color:#66d9ef">public</span> InstanceReadUpdateLocker(T data)
+    {
+        Data = data;
+    }
+    
+    <span style="color:#66d9ef">public</span> T DoRead(Func&lt;T, T&gt; readAction)
+    {
+        <span style="color:#66d9ef">var</span> result = <span style="color:#66d9ef">default</span>(T);
+        locker.DoRead (() =&gt; result = readAction(Data));
+        <span style="color:#66d9ef">return</span> result;
+    }
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoUpdate(Action&lt;T&gt; updateAction)
+    {
+        locker.DoUpdate (() =&gt; updateAction(Data));
+    }
+}</code></pre></div>
+<p>Now all reads and updates to the data went through the class and this worked well.</p>
+
+<h2 id="reinventing-the-wheel">Reinventing the Wheel</h2>
+
+<p>After I finished the proof of concept and implemented it around their calls I got to thinking this has to be a common problem and there must be other implementations out there. What I found was the need to constantly investigate what the .NET framework has to offer and avoid reinventing the wheel.</p>
+
+<p>I present to you the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.readerwriterlock" target="_blank">ReaderWriterLock</a> class. Yes, a class designed to allow your code to track read and write locks. However, if you look at the sample implementation it is a bit more involved to use, because it is also more flexible. I wanted to be able to use it as simply as my above InstanceReadUpdateLocker class. So I wrote this little class to wrap the locking functionality, but still provide simple usage from calling code.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InstanceReaderWriterLock</span>&lt;T&gt;
+{
+    <span style="color:#66d9ef">private</span> ReaderWriterLock locker = <span style="color:#66d9ef">new</span> ReaderWriterLock();
+    <span style="color:#66d9ef">private</span> T Data { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> timeout = <span style="color:#ae81ff">500</span>;
+
+    <span style="color:#66d9ef">public</span> InstanceReaderWriterLock(T data)
+    {
+        Data = data;
+    }
+
+    <span style="color:#66d9ef">public</span> T DoRead(Func&lt;T, T&gt; readAction)
+    {
+        <span style="color:#66d9ef">try</span>
+        {
+            locker.AcquireReaderLock(timeout);
+
+            <span style="color:#66d9ef">return</span> readAction.Invoke(Data);
+        }
+        <span style="color:#66d9ef">finally</span>
+        {
+            locker.ReleaseReaderLock();
+        }
+    }
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoUpdate(Action&lt;T&gt; updateAction)
+    {
+        <span style="color:#66d9ef">try</span>
+        {
+            locker.AcquireWriterLock(timeout);
+
+            updateAction.Invoke(Data);
+        }
+        <span style="color:#66d9ef">finally</span>
+        {
+            locker.ReleaseWriterLock();
+        }
+    }
+}</code></pre></div>
+<p>After implementing this class and doing a little testing it turns out that using the ReaderWriterLock to handle the locking was faster (and more consistent). It ran about 30% faster than my ReadUpdateLockers best time and always came in with very similar results, while my results would sometimes be up to 30% longer than my best time (making it almost twice as long as the ReadUpdateLocker). I&rsquo;m sure Microsoft has taken the time to implement optimizations at the IL or machine level.</p>
+
+<h2 id="wrapup">Wrapup</h2>
+
+<p>The moral of the story is if you think you are creating something that seems like a common need, take a quick look to make sure there isn&rsquo;t already one built for you.</p>
+
+<p>Here is a <a href="https://gist.github.com/duanenewman/6bf027fae3aab5aa85342eb34c94d9d4" target="_blank">gist</a> that you can drop in LinqPad to see the initial problem and all the above solutions with some random multi-threaded calls.</p>
+
+                  <div style="clear:both"></div>
+
+
+   <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "duanenewmannet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                      <a href="https://twitter.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.instagram.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="http://youtube.com/dnewman31">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.flickr.com/duane_newman/">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.kickstarter.com/profile/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-usd fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted">Copyright Duane Newman</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://duanenewman.net/js/jquery.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/bootstrap.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/prism.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/clean-blog.js"></script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-2838107-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+
+</html>
+

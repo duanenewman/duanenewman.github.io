@@ -76,6 +76,15 @@
     </item>
     
     <item>
+      <title>Builtin</title>
+      <link>http://duanenewman.net/tags/builtin/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/builtin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Buiness</title>
       <link>http://duanenewman.net/tags/buiness/</link>
       <pubDate>Tue, 21 Oct 2014 16:04:44 +0000</pubDate>
@@ -141,7 +150,7 @@
     <item>
       <title>Csharp</title>
       <link>http://duanenewman.net/tags/csharp/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/csharp/</guid>
       <description></description>
@@ -195,9 +204,18 @@
     <item>
       <title>Dotnet</title>
       <link>http://duanenewman.net/tags/dotnet/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Framework</title>
+      <link>http://duanenewman.net/tags/framework/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/framework/</guid>
       <description></description>
     </item>
     
@@ -270,6 +288,15 @@
       <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/linq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lock</title>
+      <link>http://duanenewman.net/tags/lock/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/lock/</guid>
       <description></description>
     </item>
     
@@ -573,7 +600,7 @@
     <item>
       <title>Tips</title>
       <link>http://duanenewman.net/tags/tips/</link>
-      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/tips/</guid>
       <description></description>

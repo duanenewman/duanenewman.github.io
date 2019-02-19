@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</loc>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
   </url>
@@ -264,7 +269,7 @@
   
   <url>
     <loc>http://duanenewman.net/</loc>
-    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -293,7 +298,7 @@
   
   <url>
     <loc>http://duanenewman.net/blog/</loc>
-    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -311,6 +316,12 @@
   <url>
     <loc>http://duanenewman.net/tags/build2016/</loc>
     <lastmod>2016-04-27T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/builtin/</loc>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -351,7 +362,7 @@
   
   <url>
     <loc>http://duanenewman.net/categories/coding/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -369,7 +380,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/csharp/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -405,7 +416,13 @@
   
   <url>
     <loc>http://duanenewman.net/tags/dotnet/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/framework/</loc>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -454,6 +471,12 @@
   <url>
     <loc>http://duanenewman.net/tags/linq/</loc>
     <lastmod>2015-03-03T08:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/lock/</loc>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -693,7 +716,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/tips/</loc>
-    <lastmod>2018-03-27T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

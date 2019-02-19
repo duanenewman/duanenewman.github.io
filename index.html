@@ -123,21 +123,21 @@
 				
 				
 					               <div class="post-preview">
-                 <a href="http://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/">
-                      <h2 class="post-title">Indirect connections with Plex and pfSense</h2>
+                 <a href="http://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/">
+                      <h2 class="post-title">Concurrent Reads and Locked Writes with In-Memory Objects</h2>
                       <h3 class="post-subtitle"></h3>
                     </a>
                     <p class="post-meta">
                       
-  A 2 minute read,
+  A 4 minute read,
 
-Posted on Tue, Feb 12, 2019 In <a href="http://duanenewman.net/categories/technology">Technology</a>
+Posted on Tue, Feb 19, 2019 In <a href="http://duanenewman.net/categories/coding">Coding</a>
 
 <br />
-Tags <a href="http://duanenewman.net/tags/pfsense">pfsense</a>, <a href="http://duanenewman.net/tags/plex">plex</a>, <a href="http://duanenewman.net/tags/network">network</a>
+Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/framework">framework</a>, <a href="http://duanenewman.net/tags/builtin">builtin</a>, <a href="http://duanenewman.net/tags/tips">tips</a>, <a href="http://duanenewman.net/tags/lock">lock</a>
 
 				  </p>
-				  <p> I&rsquo;ve recently built a custom FreeNAS file server in my house to act as high capacity storage for my personal photos &amp; videos, a Plex Media Server, and an S3 server for offsite backup for my business and family, among a few other minor things. At the same time I also replaced my Ubiquiti EdgeRouter X with a custom pfSense router (primarily for better remote VPN and P2P VPN support).</p>
+				  <p> The Problem On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a List&lt;T&gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads.</p>
                 </div>
                 <hr>
 
