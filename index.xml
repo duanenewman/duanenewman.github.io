@@ -13,28 +13,6 @@
     
     
     <item>
-      <title>Concurrent Reads and Locked Writes with In-Memory Objects</title>
-      <link>http://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</guid>
-      <description>The Problem On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a List&amp;lt;T&amp;gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads.</description>
-      
-      <category>csharp</category>
-      
-      <category>dotnet</category>
-      
-      <category>framework</category>
-      
-      <category>builtin</category>
-      
-      <category>tips</category>
-      
-      <category>lock</category>
-      
-    </item>
-    
-    <item>
       <title>Indirect connections with Plex and pfSense</title>
       <link>http://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/</link>
       <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
