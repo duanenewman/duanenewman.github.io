@@ -17,7 +17,7 @@
       <link>http://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/1</guid>
+      <guid>http://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</guid>
       <description>The Problem On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a List&amp;lt;T&amp;gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads.</description>
       
       <category>csharp</category>
