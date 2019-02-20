@@ -355,14 +355,14 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/coding/</loc>
-    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <loc>http://duanenewman.net/categories/coding/</loc>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://duanenewman.net/categories/coding/</loc>
-    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    <loc>http://duanenewman.net/tags/coding/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -625,13 +625,13 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/scuba/</loc>
+    <loc>http://duanenewman.net/categories/scuba/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://duanenewman.net/categories/scuba/</loc>
+    <loc>http://duanenewman.net/tags/scuba/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -661,13 +661,13 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/speaking/</loc>
+    <loc>http://duanenewman.net/categories/speaking/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://duanenewman.net/categories/speaking/</loc>
+    <loc>http://duanenewman.net/tags/speaking/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -703,14 +703,14 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/technology/</loc>
-    <lastmod>2016-04-27T09:00:00+00:00</lastmod>
+    <loc>http://duanenewman.net/categories/technology/</loc>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://duanenewman.net/categories/technology/</loc>
-    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+    <loc>http://duanenewman.net/tags/technology/</loc>
+    <lastmod>2016-04-27T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -763,14 +763,14 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/video/</loc>
-    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+    <loc>http://duanenewman.net/categories/video/</loc>
+    <lastmod>2016-03-26T11:46:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://duanenewman.net/categories/video/</loc>
-    <lastmod>2016-03-26T11:46:24+00:00</lastmod>
+    <loc>http://duanenewman.net/tags/video/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
