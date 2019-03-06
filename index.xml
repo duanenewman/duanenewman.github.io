@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Mar 2019 00:00:00 -0600</lastBuildDate>
     
         <atom:link href="http://duanenewman.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Running PowerShell Scripts From C#</title>
+      <link>http://duanenewman.net/blog/post/running-powershell-scripts-from-csharp/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 -0600</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/running-powershell-scripts-from-csharp/</guid>
+      <description>Sometimes the little things can trip up your code, even when you think you are doing all the right things. We recently ran into an issue with a utility that runs an included PowerShell script as part of it operation. When the app was first put into use it seemed to be fine. Recently, it was deployed into a folder with spaces in the name and it began to blow up.</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>powershell</category>
+      
+    </item>
     
     <item>
       <title>Concurrent Reads and Locked Writes with In-Memory Objects</title>

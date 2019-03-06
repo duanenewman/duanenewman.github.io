@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://duanenewman.net/blog/post/running-powershell-scripts-from-csharp/</loc>
+    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</loc>
     <lastmod>2019-02-19T00:00:00+00:00</lastmod>
   </url>
@@ -269,7 +274,7 @@
   
   <url>
     <loc>http://duanenewman.net/</loc>
-    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
   </url>
   
   <url>
@@ -298,7 +303,7 @@
   
   <url>
     <loc>http://duanenewman.net/blog/</loc>
-    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
   </url>
   
   <url>
@@ -362,7 +367,7 @@
   
   <url>
     <loc>http://duanenewman.net/categories/coding/</loc>
-    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -380,7 +385,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/csharp/</loc>
-    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -416,7 +421,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/dotnet/</loc>
-    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -596,7 +601,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/powershell/</loc>
-    <lastmod>2016-01-22T12:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   

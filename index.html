@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-	<meta name="generator" content="Hugo 0.52" />
+	<meta name="generator" content="Hugo 0.54.0" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -123,21 +123,21 @@
 				
 				
 					               <div class="post-preview">
-                 <a href="http://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/">
-                      <h2 class="post-title">Concurrent Reads and Locked Writes with In-Memory Objects</h2>
+                 <a href="http://duanenewman.net/blog/post/running-powershell-scripts-from-csharp/">
+                      <h2 class="post-title">Running PowerShell Scripts From C#</h2>
                       <h3 class="post-subtitle"></h3>
                     </a>
                     <p class="post-meta">
                       
-  A 4 minute read,
+  A 2 minute read,
 
-Posted on Tue, Feb 19, 2019 In <a href="http://duanenewman.net/categories/coding">Coding</a>
+Posted on Wed, Mar 6, 2019 In <a href="http://duanenewman.net/categories/coding">Coding</a>
 
 <br />
-Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/framework">framework</a>, <a href="http://duanenewman.net/tags/builtin">builtin</a>, <a href="http://duanenewman.net/tags/tips">tips</a>, <a href="http://duanenewman.net/tags/lock">lock</a>
+Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/powershell">powershell</a>
 
 				  </p>
-				  <p> The Problem On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a List&lt;T&gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads.</p>
+				  <p> Sometimes the little things can trip up your code, even when you think you are doing all the right things. We recently ran into an issue with a utility that runs an included PowerShell script as part of it operation. When the app was first put into use it seemed to be fine. Recently, it was deployed into a folder with spaces in the name and it began to blow up.</p>
                 </div>
                 <hr>
 
