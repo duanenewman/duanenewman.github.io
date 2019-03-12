@@ -150,7 +150,7 @@
     <item>
       <title>Csharp</title>
       <link>http://duanenewman.net/tags/csharp/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 -0600</pubDate>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>http://duanenewman.net/tags/csharp/</guid>
       <description></description>
@@ -204,7 +204,7 @@
     <item>
       <title>Dotnet</title>
       <link>http://duanenewman.net/tags/dotnet/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 -0600</pubDate>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>http://duanenewman.net/tags/dotnet/</guid>
       <description></description>
@@ -216,6 +216,15 @@
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gtk</title>
+      <link>http://duanenewman.net/tags/gtk/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/gtk/</guid>
       <description></description>
     </item>
     
@@ -373,6 +382,15 @@
     </item>
     
     <item>
+      <title>Netstandard</title>
+      <link>http://duanenewman.net/tags/netstandard/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/netstandard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Network</title>
       <link>http://duanenewman.net/tags/network/</link>
       <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
@@ -459,6 +477,15 @@
       <pubDate>Wed, 06 Mar 2019 00:00:00 -0600</pubDate>
       
       <guid>http://duanenewman.net/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prism</title>
+      <link>http://duanenewman.net/tags/prism/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/prism/</guid>
       <description></description>
     </item>
     
@@ -699,7 +726,7 @@
     <item>
       <title>Xamarin</title>
       <link>http://duanenewman.net/tags/xamarin/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>http://duanenewman.net/tags/xamarin/</guid>
       <description></description>

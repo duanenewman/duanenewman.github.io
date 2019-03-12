@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</loc>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/blog/post/running-powershell-scripts-from-csharp/</loc>
     <lastmod>2019-03-06T00:00:00-06:00</lastmod>
   </url>
@@ -44,6 +49,11 @@
   
   <url>
     <loc>http://duanenewman.net/speaking/reusable-packages-mobile-development-xamarin-nuget/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/speaking/hacking-your-car/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -274,7 +284,7 @@
   
   <url>
     <loc>http://duanenewman.net/</loc>
-    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -303,7 +313,7 @@
   
   <url>
     <loc>http://duanenewman.net/blog/</loc>
-    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -367,7 +377,7 @@
   
   <url>
     <loc>http://duanenewman.net/categories/coding/</loc>
-    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -385,7 +395,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/csharp/</loc>
-    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -421,13 +431,19 @@
   
   <url>
     <loc>http://duanenewman.net/tags/dotnet/</loc>
-    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://duanenewman.net/tags/framework/</loc>
     <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/gtk/</loc>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -540,6 +556,12 @@
   </url>
   
   <url>
+    <loc>http://duanenewman.net/tags/netstandard/</loc>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/tags/network/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -602,6 +624,12 @@
   <url>
     <loc>http://duanenewman.net/tags/powershell/</loc>
     <lastmod>2019-03-06T00:00:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/prism/</loc>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -793,7 +821,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/xamarin/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
