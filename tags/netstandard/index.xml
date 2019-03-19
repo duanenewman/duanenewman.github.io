@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Tue, 12 Mar 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://duanenewman.net/tags/netstandard/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Forcing a Specific Target Platform With PackageReference</title>
+      <link>http://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</guid>
+      <description>In my last post about Using Prism with Xamarin.Forms &amp;amp; GTK# I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &amp;lt;PackageReference&amp;gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.
+Using Package Reference If you already have packages installed and are using a packages.</description>
+    </item>
     
     <item>
       <title>Using Prism With Xamarin.Forms &amp; GTK</title>

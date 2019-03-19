@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Forcing a Specific Target Platform With PackageReference -- Duane Newman</title>
+
+    
+
+    
+    <link href="http://duanenewman.net/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/clean-blog.min.css" rel="stylesheet">
+
+	
+    <link href="http://duanenewman.net/css/prism.css" rel="stylesheet">
+
+    
+    <link href="http://duanenewman.net/css/custom.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://duanenewman.net">Duane Newman</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://duanenewman.net/">Home</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/blog/">Blog</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/appearances/">Appearances</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/speaking/">Speaking</a>
+                    </li>
+					
+                    <li>
+                        <a href="http://duanenewman.net/about/">About</a>
+                    </li>
+					
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://duanenewman.net/img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Forcing a Specific Target Platform With PackageReference</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">
+                 
+  A 3 minute read,
+
+Posted on Mon, Mar 18, 2019 In <a href="http://duanenewman.net/categories/coding">Coding</a>
+
+<br />
+Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/netstandard">netstandard</a>, <a href="http://duanenewman.net/tags/csproj">csproj</a>, <a href="http://duanenewman.net/tags/packagereference">packagereference</a>, <a href="http://duanenewman.net/tags/nuget">nuget</a>, <a href="http://duanenewman.net/tags/prismlib">prismlib</a>, <a href="http://duanenewman.net/tags/msbuild">msbuild</a>, <a href="http://duanenewman.net/tags/tips">tips</a>
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<p>In my last post about <a href="../using-prism-with-xamarin-forms-and-gtk">Using Prism with Xamarin.Forms &amp; GTK#</a> I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the <code>&lt;PackageReference&gt;</code> tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.</p>
+
+<h2 id="using-package-reference">Using Package Reference</h2>
+
+<p><img src="convertconfigtoreference2.png" class="img-thumbnail pull-right" alt="Convert Packages.config to PackageReference" /> If you already have packages installed and are using a <code>packages.config</code> file then you will need to convert your project to use <code>PackageReference</code>. You can follow the steps here: <a href="https://docs.microsoft.com/en-us/nuget/reference/migrate-packages-config-to-package-reference" target="_blank">Migrate from packages.config to PackageReference</a>. The short version is to right-click on <code>packages.config</code> and select <code>Migrate Packages.config to PackageReference...</code>.</p>
+
+<div style="clear:both"></div>
+
+<p>If you just started a new project and do not have any NuGet packages yet then you can switch to using <code>PackageReference</code> in your Visual Studio settings by going to <code>Tools -&gt; Options -&gt; NuGet Package Manager -&gt; General</code> and set <code>Default package management format</code> to <code>PackageReference</code>. Then add your packages as usual.</p>
+
+<h2 id="forcing-the-specific-dll-you-want">Forcing the Specific DLL you want</h2>
+
+<p>In order to override the use of Target Platform to add references to the versions we want we need to do two things:</p>
+
+<ol>
+<li>Tell the project to ignore libs from the <code>PackageReference</code></li>
+<li>Tell the project to use our specific references</li>
+</ol>
+
+<h3 id="exclude-libraries-from-packagereference">Exclude Libraries From PackageReference</h3>
+
+<p>If your reference is inherited because of a higher level reference (i.e. <code>Prism.Core</code> comes from referencing another package, like <code>Prism.DryIoc.Forms</code> or <code>Prism.Unity.Forms</code>) we need to explicitly reference the package first, then we can update the reference to ignore the libs. After the package is referenced unload your project (right-click the project and select <code>Unload Project</code>), then right-click the unloaded project node and select <code>edit (ProjectName).csproj</code>.</p>
+
+<p>Find the <code>&lt;PackageReference&gt;</code> tag for your package in the csproj. It will look something like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;ItemGroup&gt;</span>
+    <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Prism.Core&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;Version&gt;</span>7.1.0.431<span style="color:#f92672">&lt;/Version&gt;</span>
+    <span style="color:#f92672">&lt;/PackageReference&gt;</span>
+<span style="color:#f92672">&lt;/ItemGroup&gt;</span></code></pre></div>
+<p>We need to make a tweak and tell NuGet to ignore the lib assets by adding the <code>ExcludeAssets</code> attribute with the value <code>Compile</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;ItemGroup&gt;</span>
+    <span style="color:#f92672">&lt;PackageReference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Prism.Core&#34;</span> <span style="color:#a6e22e">ExcludeAssets=</span><span style="color:#e6db74">&#34;Compile&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;Version&gt;</span>7.1.0.431<span style="color:#f92672">&lt;/Version&gt;</span>
+    <span style="color:#f92672">&lt;/PackageReference&gt;</span>
+<span style="color:#f92672">&lt;/ItemGroup&gt;</span></code></pre></div>
+<p>More info on the <code>PackageReference</code> node can be found here: <a href="https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files" target="_blank">Package references (PackageReference) in project files</a>.</p>
+
+<h3 id="add-reference-to-desired-target-framework-assembly">Add Reference to Desired Target Framework Assembly</h3>
+
+<p>Now when you build you will not get any <code>&lt;Reference&gt;</code> nodes auto added for this package. So that means we need to tell the project about the reference, but where are those NuGet packages kept when using package references (there is no <code>packages</code> folder with our solution)? How do we get to that path? MSBuild provides a variable we can use, NuGetPackageRoot. If you are trying to find this folder on your machine it is usually located at <code>c:\users\[username]\.nuget\packages</code>. Add the following block to your csproj (after the <code>PackageReference</code> we just updated):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;ItemGroup&gt;</span>
+    <span style="color:#f92672">&lt;Reference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Prism, Version=7.1.0.431, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;HintPath&gt;</span>$(NuGetPackageRoot)prism.core\7.1.0.431\lib\netstandard2.0\Prism.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
+    <span style="color:#f92672">&lt;/Reference&gt;</span>
+<span style="color:#f92672">&lt;/ItemGroup&gt;</span></code></pre></div>
+<p>* Make sure the <code>Include</code> attribute has the correct values for your assembly</p>
+
+<p>Now when you build and run your project it will ignore the binaries in the NuGet&rsquo;s lib folder and only add the references you specified.</p>
+
+                  <div style="clear:both"></div>
+
+
+   <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "duanenewmannet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                      <a href="https://twitter.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.instagram.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="http://youtube.com/dnewman31">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.flickr.com/duane_newman/">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.kickstarter.com/profile/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-usd fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted">Copyright Duane Newman</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://duanenewman.net/js/jquery.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/bootstrap.min.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/prism.js"></script>
+
+    
+    <script src="http://duanenewman.net/js/clean-blog.js"></script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-2838107-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+
+</html>
+

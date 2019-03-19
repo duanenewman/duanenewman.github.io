@@ -150,9 +150,18 @@
     <item>
       <title>Csharp</title>
       <link>http://duanenewman.net/tags/csharp/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>http://duanenewman.net/tags/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Csproj</title>
+      <link>http://duanenewman.net/tags/csproj/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/csproj/</guid>
       <description></description>
     </item>
     
@@ -204,7 +213,7 @@
     <item>
       <title>Dotnet</title>
       <link>http://duanenewman.net/tags/dotnet/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>http://duanenewman.net/tags/dotnet/</guid>
       <description></description>
@@ -346,6 +355,15 @@
     </item>
     
     <item>
+      <title>Msbuild</title>
+      <link>http://duanenewman.net/tags/msbuild/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/msbuild/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mvp</title>
       <link>http://duanenewman.net/tags/mvp/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
@@ -384,7 +402,7 @@
     <item>
       <title>Netstandard</title>
       <link>http://duanenewman.net/tags/netstandard/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>http://duanenewman.net/tags/netstandard/</guid>
       <description></description>
@@ -396,6 +414,15 @@
       <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nuget</title>
+      <link>http://duanenewman.net/tags/nuget/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/nuget/</guid>
       <description></description>
     </item>
     
@@ -423,6 +450,15 @@
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/oss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Packagereference</title>
+      <link>http://duanenewman.net/tags/packagereference/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/packagereference/</guid>
       <description></description>
     </item>
     
@@ -481,11 +517,11 @@
     </item>
     
     <item>
-      <title>Prism</title>
-      <link>http://duanenewman.net/tags/prism/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      <title>Prismlib</title>
+      <link>http://duanenewman.net/tags/prismlib/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>http://duanenewman.net/tags/prism/</guid>
+      <guid>http://duanenewman.net/tags/prismlib/</guid>
       <description></description>
     </item>
     
@@ -627,7 +663,7 @@
     <item>
       <title>Tips</title>
       <link>http://duanenewman.net/tags/tips/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>http://duanenewman.net/tags/tips/</guid>
       <description></description>

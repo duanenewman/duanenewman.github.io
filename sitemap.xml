@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</loc>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</loc>
     <lastmod>2019-03-12T00:00:00-05:00</lastmod>
   </url>
@@ -284,7 +289,7 @@
   
   <url>
     <loc>http://duanenewman.net/</loc>
-    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -313,7 +318,7 @@
   
   <url>
     <loc>http://duanenewman.net/blog/</loc>
-    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -377,7 +382,7 @@
   
   <url>
     <loc>http://duanenewman.net/categories/coding/</loc>
-    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -395,7 +400,13 @@
   
   <url>
     <loc>http://duanenewman.net/tags/csharp/</loc>
-    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/csproj/</loc>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -431,7 +442,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/dotnet/</loc>
-    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -526,6 +537,12 @@
   </url>
   
   <url>
+    <loc>http://duanenewman.net/tags/msbuild/</loc>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://duanenewman.net/categories/musings/</loc>
     <lastmod>2014-11-10T08:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -557,13 +574,19 @@
   
   <url>
     <loc>http://duanenewman.net/tags/netstandard/</loc>
-    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://duanenewman.net/tags/network/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/nuget/</loc>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -582,6 +605,12 @@
   <url>
     <loc>http://duanenewman.net/tags/oss/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/packagereference/</loc>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -628,8 +657,8 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/prism/</loc>
-    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
+    <loc>http://duanenewman.net/tags/prismlib/</loc>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -749,7 +778,7 @@
   
   <url>
     <loc>http://duanenewman.net/tags/tips/</loc>
-    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
