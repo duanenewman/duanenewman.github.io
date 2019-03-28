@@ -159,13 +159,17 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
 
 <p>Now when you build you will not get any <code>&lt;Reference&gt;</code> nodes auto added for this package. So that means we need to tell the project about the reference, but where are those NuGet packages kept when using package references (there is no <code>packages</code> folder with our solution)? How do we get to that path? MSBuild provides a variable we can use, NuGetPackageRoot. If you are trying to find this folder on your machine it is usually located at <code>c:\users\[username]\.nuget\packages</code>. Add the following block to your csproj (after the <code>PackageReference</code> we just updated):</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;ItemGroup&gt;</span>
-    <span style="color:#f92672">&lt;Reference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Prism, Version=7.1.0.431, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;Reference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Prism&#34;</span><span style="color:#f92672">&gt;</span>
         <span style="color:#f92672">&lt;HintPath&gt;</span>$(NuGetPackageRoot)prism.core\7.1.0.431\lib\netstandard2.0\Prism.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
     <span style="color:#f92672">&lt;/Reference&gt;</span>
 <span style="color:#f92672">&lt;/ItemGroup&gt;</span></code></pre></div>
-<p>* Make sure the <code>Include</code> attribute has the correct values for your assembly</p>
-
 <p>Now when you build and run your project it will ignore the binaries in the NuGet&rsquo;s lib folder and only add the references you specified.</p>
+
+<h4 id="caveat">Caveat</h4>
+
+<p>You will need to track version number changes and update the <code>&lt;Reference&gt;</code> node when you update to a new version.</p>
+
+<h2 id="update-a-better-way">Update - A better way!</h2>
 
                   <div style="clear:both"></div>
 
