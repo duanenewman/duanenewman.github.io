@@ -136,7 +136,8 @@ SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;
         Name = u.Name,
         Blog = u.Blog,
         NaughtyNiceRating = u.NaughtyNiceRating
-    }));</code></pre></div>
+    }));
+</code></pre></div>
 <h2 id="a-solution">A Solution</h2>
 
 <p>I solved this by writing code to compare my incoming list with my displayed list and to update the existing list to match. We want to achieve three steps with this code: 1) remove items that are no longer present, 2) update items that are in both lists, and 3) add new items from our incoming list. There is an optional 4th step that my code doesn&rsquo;t cover, ordering the list of current items to match the order from our incoming list.</p>
@@ -151,7 +152,8 @@ SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;
 <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> item <span style="color:#66d9ef">in</span> itemsToRemove)
 {
     existingCollection.Remove(item);
-}</code></pre></div>
+}
+</code></pre></div>
 <h3 id="updating-existing-items">Updating Existing Items</h3>
 
 <p>After we have removed the old items from the list we need to update the remaining items with the new values.</p>
@@ -159,7 +161,8 @@ SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;
 {
     <span style="color:#66d9ef">var</span> updatedItem = updateCollection.First(u =&gt; item.Id == u.Id));
     item.Property = updatedItem.Property
-}</code></pre></div>
+}
+</code></pre></div>
 <h3 id="adding-new-items">Adding new Items</h3>
 
 <p>Finally, we need to add in any new items from our update list.</p>
@@ -169,7 +172,8 @@ SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;
 <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> item <span style="color:#66d9ef">in</span> itemsToAdd)
 {
     existingCollection.Add(item);
-}</code></pre></div>
+}
+</code></pre></div>
 <h2 id="making-it-better-with-extension-methods">Making it Better with Extension Methods</h2>
 
 <p>You might have noticed that we are doing some repetitive iterations when we remove and update the collection, and this code is very specific to our app. Let&rsquo;s make the code a little more generic and put it in some extension methods so we can reuse it. We&rsquo;ll start by creating the extension class and main entry point:</p>
@@ -193,7 +197,8 @@ SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;
 
         AddNewItemsToTarget(targetCollection, updateCollection, comparer, mapper);
     }
-}</code></pre></div>
+}
+</code></pre></div>
 <p>The UpdateItems method has been made generic and setup to accept 2 types, one for the target (UI list), and one for the incoming updates. This allows you to handle converting models/DTOs into a viewmodel or other suitable type for you UI. It also accepts a comparer delegate that returns a bool if the source and target item match (and allows you to do that check however you need), a mapper delegate that accepts an update item and returns an object valid for the target list (for doing inserts of new records), and an updater delegate that takes in the matched target and update items and allows you to apply the changes to your target item. The method then creates a list to hold references to items that need to be removed from the target list and then calls 3 other methods.</p>
 
 <h3 id="update-existing-items-and-identify-removed-items">Update Existing Items And Identify Removed Items</h3>
@@ -216,7 +221,8 @@ SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;
         }
         updater?.Invoke(targetItem, updateItem);
     }
-}</code></pre></div>
+}
+</code></pre></div>
 <h3 id="remove-old-items-from-target">Remove Old Items From Target</h3>
 
 <p>After we finish updating the existing items we pass the aggregated list of items to remove into the aptly named RemoveOldItemsFromTarget method. As you might guess, this method is pretty simple and does exactly what it says.</p>
@@ -228,7 +234,8 @@ SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;
     {
         targetCollection.Remove(item);
     }
-}</code></pre></div>
+}
+</code></pre></div>
 <h3 id="add-new-items-to-target">Add New Items To Target</h3>
 
 <p>The final step to this process is to add any new items in the update list to the target list. To do this we flip the looping and enumerate the update collection while checking if the item is in the target list. If it is not found we use the mapper delegate to convert the type (if needed), and then we iterate through the list of items to add and insert them into the target collection.</p>
@@ -246,7 +253,8 @@ SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;
     {
         targetCollection.Add(mapper(item));
     }
-}</code></pre></div>
+}
+</code></pre></div>
 <h3 id="implementing">Implementing</h3>
 
 <p>Now that we have the extension methods in place it is pretty easy to use. All we have to do is get our updated data from the API and call the method.</p>
@@ -271,7 +279,8 @@ SantasBloggers = <span style="color:#66d9ef">new</span> ObservableCollection&lt;
 
 SantasBloggers.UpdateItems(
     updatedBloggers, modelToViewModelMatcher, 
-    mapBloggerToBloggerViewModel, viewModelUpdater);</code></pre></div>
+    mapBloggerToBloggerViewModel, viewModelUpdater);
+</code></pre></div>
 <h2 id="performance">Performance</h2>
 
 <p>My <a href="https://github.com/duanenewman/SantasBloggers">Santa&rsquo;s Bloggers</a> sample project has a simple implementation of this extension that allows us to do some simple performance checks. When it first launches it is using simple code that just rebuilds the UI list each time. Run it and let the performance monitor settle down, you will see a regular spike on the CPU and hit to the garbage collector. Now check the box to enable the extension method and the garbage collection and CPU spike stop almost immediately. This is on a simple app with a very basic Item Template, imagine a template showing more data, or graphics, doing the same thing.</p>

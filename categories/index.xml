@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
+    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://duanenewman.net/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -21,11 +22,11 @@
     </item>
     
     <item>
-      <title>Musings</title>
-      <link>http://duanenewman.net/categories/musings/</link>
-      <pubDate>Mon, 10 Nov 2014 08:00:00 +0000</pubDate>
+      <title>Technology</title>
+      <link>http://duanenewman.net/categories/technology/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/categories/musings/</guid>
+      <guid>http://duanenewman.net/categories/technology/</guid>
       <description></description>
     </item>
     
@@ -48,20 +49,20 @@
     </item>
     
     <item>
-      <title>Technology</title>
-      <link>http://duanenewman.net/categories/technology/</link>
-      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/categories/technology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Video</title>
       <link>http://duanenewman.net/categories/video/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
       
       <guid>http://duanenewman.net/categories/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Musings</title>
+      <link>http://duanenewman.net/categories/musings/</link>
+      <pubDate>Mon, 10 Nov 2014 08:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/categories/musings/</guid>
       <description></description>
     </item>
     

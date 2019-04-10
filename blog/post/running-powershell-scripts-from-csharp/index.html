@@ -127,7 +127,8 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
         UseShellExecute = <span style="color:#66d9ef">false</span>
     };
     Process.Start(startInfo);
-}</code></pre></div>
+}
+</code></pre></div>
 <p>The error we were getting from PowerShell was along the lines of <code>The term 'C:\my' is not recognized as the name of a cmdlet, function, script file, or operable program</code>, and before looking at the code I figured I had not quoted the file name. But as you can see from the above code, the filename was indeed quoted (I&rsquo;m not a noob, after all). This puzzled me a bit and it took some digging to see the cause of the error. Here is the fixed code, can you spot the change?</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">void</span> NoError()
 {
@@ -139,7 +140,8 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
         UseShellExecute = <span style="color:#66d9ef">false</span>
     };
     Process.Start(startInfo);
-}</code></pre></div>
+}
+</code></pre></div>
 <p>When you pass a string to the PowerShell executable it treats it as the <code>Command</code> switch, which is pure PowerShell script. If you want it to explicitly treat it as a script file can use the <code>-File</code> parameter. It just happened to work with paths without spaces, since you can call a script that way. If you do need to pass script text that needs complex quoting (or perhaps line breaks), you can use the <code>EncodedCommand</code> switch, which accepts Base64 encoded content.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">void</span> Base64EncodedCommand()
 {
@@ -156,7 +158,8 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
         UseShellExecute = <span style="color:#66d9ef">false</span>
     };
     Process.Start(startInfo);
-}</code></pre></div>
+}
+</code></pre></div>
 <p>Now you can enjoy launching PowerShell scripts from your C# code without limits.</p>
 
                   <div style="clear:both"></div>

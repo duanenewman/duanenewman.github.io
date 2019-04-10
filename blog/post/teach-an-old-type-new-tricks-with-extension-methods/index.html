@@ -140,12 +140,14 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
             <span style="color:#66d9ef">return</span> !input.Equals(<span style="color:#66d9ef">string</span>.Empty) &amp;&amp; !input.Equals(<span style="color:#e6db74">&#34;*&#34;</span>);
         }
     }
-}</code></pre></div>
+}
+</code></pre></div>
 <p>Using an extension method is really easy, there is just one real requirement (aside from referencing the assembly with the extension methods), you have to either be in the same namespace as your extension method&rsquo;s class or include a using statement for that namespace so the compiler knows where to look for your extension methods. Then you just call it like a regular method.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> MyExtensions;
 ...
 <span style="color:#66d9ef">var</span> test = <span style="color:#e6db74">&#34;*&#34;</span>;
-<span style="color:#66d9ef">var</span> pass = test.IsNotEmptyOrAsterisk();</code></pre></div>
+<span style="color:#66d9ef">var</span> pass = test.IsNotEmptyOrAsterisk();
+</code></pre></div>
 <p>This can be a great way to build a library of functionality that extends base CLR types that you can easily include an reference in all your projects. It also allows you to break code into separate assemblies that you can pick and choose when they are relevant and needed. I use this often when I am working with a third party library that might common code I have to perform on one of the libraries embedded types.</p>
 
 <h1 id="what-can-you-do-with-an-extension-method">What can you do with an Extension Method?</h1>
@@ -157,7 +159,8 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
     (l.ItemType == ItemType.KeyBoard ||
     l.ItemType == ItemType.Mouse ||
     l.ItemType == ItemType.GamePad) &amp;&amp;
-    l.Price &lt; <span style="color:#ae81ff">50</span>));</code></pre></div>
+    l.Price &lt; <span style="color:#ae81ff">50</span>));
+</code></pre></div>
 <p>Here is my Extension Method:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsIn&lt;T&gt;(<span style="color:#66d9ef">this</span> T input, <span style="color:#66d9ef">params</span> T<span style="color:#a6e22e">[]</span> values)
 {
@@ -167,20 +170,25 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
         <span style="color:#66d9ef">if</span> (input.Equals(<span style="color:#66d9ef">value</span>)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
     }
     <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-}</code></pre></div>
+}
+</code></pre></div>
 <p>Now I can rewrite my code like this:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">OrderLinesICareAbout = orders.Sum(o =&gt; o.Items.Count(l =&gt;
     l.ItemType.IsIn(ItemType.KeyBoard, ItemType.Mouse, ItemType.GamePad) &amp;&amp;
-    l.Price &lt; <span style="color:#ae81ff">50</span>));</code></pre></div>
+    l.Price &lt; <span style="color:#ae81ff">50</span>));
+</code></pre></div>
 <p>Another common annoyance is checking if a date is between two dates can be verbose and take a moment to visually parse:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue &gt;= startDate &amp;&amp; DateValue &lt;= endDate;</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue &gt;= startDate &amp;&amp; DateValue &lt;= endDate;
+</code></pre></div>
 <p>Add an extension method:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsBetween(<span style="color:#66d9ef">this</span> DateTime input, DateTime start, DateTime end)
 {
     <span style="color:#66d9ef">return</span> input &gt;= start &amp;&amp; input &lt;= end;
-}</code></pre></div>
+}
+</code></pre></div>
 <p>And it becomes much clearer:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue.IsBetween(startDate, endDate);</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue.IsBetween(startDate, endDate);
+</code></pre></div>
 <p>What have you done with extension methods? Drop a comment below with some of your favorites.</p>
 
                   <div style="clear:both"></div>

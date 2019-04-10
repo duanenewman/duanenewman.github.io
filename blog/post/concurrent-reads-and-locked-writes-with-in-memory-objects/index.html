@@ -172,7 +172,8 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
             updateAction.Invoke();
         }
     }
-}</code></pre></div>
+}
+</code></pre></div>
 <p>Basically this allowed the reads to come in concurrently without being blocked, until an update was requested. When an update came in it would lock on the UpdateLock object and hold the lock until all the active read threads finished, which decremented the read counter back to 0. After the update finished and released the lock any incoming reads would resume with minimal impact.</p>
 
 <h2 id="making-it-easier">Making it Easier</h2>
@@ -199,7 +200,8 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
     {
         locker.DoUpdate (() =&gt; updateAction(Data));
     }
-}</code></pre></div>
+}
+</code></pre></div>
 <p>Now all reads and updates to the data went through the class and this worked well.</p>
 
 <h2 id="reinventing-the-wheel">Reinventing the Wheel</h2>
@@ -245,7 +247,8 @@ Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://du
             locker.ReleaseWriterLock();
         }
     }
-}</code></pre></div>
+}
+</code></pre></div>
 <p>After implementing this class and doing a little testing it turns out that using the <code>ReaderWriterLock</code> to handle the locking was faster (and more consistent). It ran about 30% faster than my <code>ReadUpdateLocker</code>&rsquo;s best time and always came in with very consistent results, while my results would sometimes be up to 30% longer than my best time (making it almost twice as long as the <code>ReadUpdateLocker</code>). I&rsquo;m sure Microsoft has taken the time to implement optimizations at the IL or machine level.</p>
 
 <h2 id="wrap-up">Wrap-up</h2>

@@ -7,76 +7,121 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Wed, 27 Jul 2016 11:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://duanenewman.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>950xl</title>
-      <link>http://duanenewman.net/tags/950xl/</link>
-      <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
+      <title>csharp</title>
+      <link>http://duanenewman.net/tags/csharp/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>http://duanenewman.net/tags/950xl/</guid>
+      <guid>http://duanenewman.net/tags/csharp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Admin</title>
-      <link>http://duanenewman.net/tags/admin/</link>
-      <pubDate>Fri, 22 Jan 2016 12:00:00 +0000</pubDate>
+      <title>csproj</title>
+      <link>http://duanenewman.net/tags/csproj/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>http://duanenewman.net/tags/admin/</guid>
+      <guid>http://duanenewman.net/tags/csproj/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Agile</title>
-      <link>http://duanenewman.net/tags/agile/</link>
-      <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
+      <title>dotnet</title>
+      <link>http://duanenewman.net/tags/dotnet/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>http://duanenewman.net/tags/agile/</guid>
+      <guid>http://duanenewman.net/tags/dotnet/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Api</title>
-      <link>http://duanenewman.net/tags/api/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <title>msbuild</title>
+      <link>http://duanenewman.net/tags/msbuild/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>http://duanenewman.net/tags/api/</guid>
+      <guid>http://duanenewman.net/tags/msbuild/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Bluff</title>
-      <link>http://duanenewman.net/tags/bluff/</link>
-      <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
+      <title>netstandard</title>
+      <link>http://duanenewman.net/tags/netstandard/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>http://duanenewman.net/tags/bluff/</guid>
+      <guid>http://duanenewman.net/tags/netstandard/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Build</title>
-      <link>http://duanenewman.net/tags/build/</link>
-      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      <title>nuget</title>
+      <link>http://duanenewman.net/tags/nuget/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>http://duanenewman.net/tags/build/</guid>
+      <guid>http://duanenewman.net/tags/nuget/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Build2016</title>
-      <link>http://duanenewman.net/tags/build2016/</link>
-      <pubDate>Wed, 27 Apr 2016 09:00:00 +0000</pubDate>
+      <title>packagereference</title>
+      <link>http://duanenewman.net/tags/packagereference/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>http://duanenewman.net/tags/build2016/</guid>
+      <guid>http://duanenewman.net/tags/packagereference/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Builtin</title>
+      <title>prismlib</title>
+      <link>http://duanenewman.net/tags/prismlib/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/prismlib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>http://duanenewman.net/tags/tips/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xamarin</title>
+      <link>http://duanenewman.net/tags/xamarin/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/xamarin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gtk</title>
+      <link>http://duanenewman.net/tags/gtk/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/gtk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>powershell</title>
+      <link>http://duanenewman.net/tags/powershell/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 -0600</pubDate>
+      
+      <guid>http://duanenewman.net/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>builtin</title>
       <link>http://duanenewman.net/tags/builtin/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -85,25 +130,178 @@
     </item>
     
     <item>
-      <title>Buiness</title>
-      <link>http://duanenewman.net/tags/buiness/</link>
-      <pubDate>Tue, 21 Oct 2014 16:04:44 +0000</pubDate>
+      <title>framework</title>
+      <link>http://duanenewman.net/tags/framework/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/buiness/</guid>
+      <guid>http://duanenewman.net/tags/framework/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Business</title>
-      <link>http://duanenewman.net/tags/business/</link>
-      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      <title>lock</title>
+      <link>http://duanenewman.net/tags/lock/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/business/</guid>
+      <guid>http://duanenewman.net/tags/lock/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Cake</title>
+      <title>network</title>
+      <link>http://duanenewman.net/tags/network/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pfsense</title>
+      <link>http://duanenewman.net/tags/pfsense/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/pfsense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plex</title>
+      <link>http://duanenewman.net/tags/plex/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/plex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>api</title>
+      <link>http://duanenewman.net/tags/api/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csadvent</title>
+      <link>http://duanenewman.net/tags/csadvent/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/csadvent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mvvm</title>
+      <link>http://duanenewman.net/tags/mvvm/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/mvvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>observable</title>
+      <link>http://duanenewman.net/tags/observable/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/observable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uwp</title>
+      <link>http://duanenewman.net/tags/uwp/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/uwp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wpf</title>
+      <link>http://duanenewman.net/tags/wpf/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/wpf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dependency injection</title>
+      <link>http://duanenewman.net/tags/dependency-injection/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/dependency-injection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>di</title>
+      <link>http://duanenewman.net/tags/di/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/di/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ioc</title>
+      <link>http://duanenewman.net/tags/ioc/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/ioc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tdd</title>
+      <link>http://duanenewman.net/tags/tdd/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/tdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unit testing</title>
+      <link>http://duanenewman.net/tags/unit-testing/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/unit-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microsoft</title>
+      <link>http://duanenewman.net/tags/microsoft/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mvp</title>
+      <link>http://duanenewman.net/tags/mvp/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/mvp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>build</title>
+      <link>http://duanenewman.net/tags/build/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cake</title>
       <link>http://duanenewman.net/tags/cake/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
@@ -112,11 +310,92 @@
     </item>
     
     <item>
-      <title>Chocolatey</title>
-      <link>http://duanenewman.net/tags/chocolatey/</link>
-      <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
+      <title>devops</title>
+      <link>http://duanenewman.net/tags/devops/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/chocolatey/</guid>
+      <guid>http://duanenewman.net/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photography</title>
+      <link>http://duanenewman.net/tags/photography/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scuba</title>
+      <link>http://duanenewman.net/tags/scuba/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/scuba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>http://duanenewman.net/tags/travel/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>planning</title>
+      <link>http://duanenewman.net/tags/planning/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/planning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>http://duanenewman.net/tags/review/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>http://duanenewman.net/tags/video/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>950XL</title>
+      <link>http://duanenewman.net/tags/950xl/</link>
+      <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/950xl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://duanenewman.net/tags/troubleshooting/</link>
+      <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WinPhone</title>
+      <link>http://duanenewman.net/tags/winphone/</link>
+      <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/winphone/</guid>
       <description></description>
     </item>
     
@@ -139,42 +418,6 @@
     </item>
     
     <item>
-      <title>Csadvent</title>
-      <link>http://duanenewman.net/tags/csadvent/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/csadvent/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Csharp</title>
-      <link>http://duanenewman.net/tags/csharp/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/csharp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Csproj</title>
-      <link>http://duanenewman.net/tags/csproj/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/csproj/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dependency Injection</title>
-      <link>http://duanenewman.net/tags/dependency-injection/</link>
-      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/dependency-injection/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Deployment</title>
       <link>http://duanenewman.net/tags/deployment/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
@@ -184,205 +427,7 @@
     </item>
     
     <item>
-      <title>Devops</title>
-      <link>http://duanenewman.net/tags/devops/</link>
-      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Di</title>
-      <link>http://duanenewman.net/tags/di/</link>
-      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/di/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Directshow</title>
-      <link>http://duanenewman.net/tags/directshow/</link>
-      <pubDate>Wed, 14 Sep 2011 18:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/directshow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dotnet</title>
-      <link>http://duanenewman.net/tags/dotnet/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/dotnet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Framework</title>
-      <link>http://duanenewman.net/tags/framework/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/framework/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gtk</title>
-      <link>http://duanenewman.net/tags/gtk/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/gtk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hdc</title>
-      <link>http://duanenewman.net/tags/hdc/</link>
-      <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/hdc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Human</title>
-      <link>http://duanenewman.net/tags/human/</link>
-      <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/human/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Interview</title>
-      <link>http://duanenewman.net/tags/interview/</link>
-      <pubDate>Thu, 02 Apr 2015 08:23:02 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/interview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ioc</title>
-      <link>http://duanenewman.net/tags/ioc/</link>
-      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/ioc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Judging</title>
-      <link>http://duanenewman.net/tags/judging/</link>
-      <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/judging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kcdc</title>
-      <link>http://duanenewman.net/tags/kcdc/</link>
-      <pubDate>Tue, 16 Jun 2015 11:15:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/kcdc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kcdnug</title>
-      <link>http://duanenewman.net/tags/kcdnug/</link>
-      <pubDate>Tue, 24 Mar 2015 22:30:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/kcdnug/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linq</title>
-      <link>http://duanenewman.net/tags/linq/</link>
-      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/linq/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lock</title>
-      <link>http://duanenewman.net/tags/lock/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/lock/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lumia</title>
-      <link>http://duanenewman.net/tags/lumia/</link>
-      <pubDate>Mon, 18 Apr 2016 16:58:41 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/lumia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Media</title>
-      <link>http://duanenewman.net/tags/media/</link>
-      <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/media/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Microsoft</title>
-      <link>http://duanenewman.net/tags/microsoft/</link>
-      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/microsoft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mobile</title>
-      <link>http://duanenewman.net/tags/mobile/</link>
-      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/mobile/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Msbuild</title>
-      <link>http://duanenewman.net/tags/msbuild/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/msbuild/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mvp</title>
-      <link>http://duanenewman.net/tags/mvp/</link>
-      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/mvp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mvvm</title>
-      <link>http://duanenewman.net/tags/mvvm/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/mvvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ncc</title>
+      <title>NCC</title>
       <link>http://duanenewman.net/tags/ncc/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
@@ -391,7 +436,7 @@
     </item>
     
     <item>
-      <title>Nebraskacode</title>
+      <title>NebraskaCode</title>
       <link>http://duanenewman.net/tags/nebraskacode/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
@@ -400,209 +445,11 @@
     </item>
     
     <item>
-      <title>Netstandard</title>
-      <link>http://duanenewman.net/tags/netstandard/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/netstandard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Network</title>
-      <link>http://duanenewman.net/tags/network/</link>
-      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/network/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nuget</title>
-      <link>http://duanenewman.net/tags/nuget/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/nuget/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nui</title>
-      <link>http://duanenewman.net/tags/nui/</link>
-      <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/nui/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Observable</title>
-      <link>http://duanenewman.net/tags/observable/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/observable/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Oss</title>
+      <title>OSS</title>
       <link>http://duanenewman.net/tags/oss/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/oss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Packagereference</title>
-      <link>http://duanenewman.net/tags/packagereference/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/packagereference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pfsense</title>
-      <link>http://duanenewman.net/tags/pfsense/</link>
-      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/pfsense/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Photography</title>
-      <link>http://duanenewman.net/tags/photography/</link>
-      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/photography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Planning</title>
-      <link>http://duanenewman.net/tags/planning/</link>
-      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/planning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plex</title>
-      <link>http://duanenewman.net/tags/plex/</link>
-      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/plex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plugin</title>
-      <link>http://duanenewman.net/tags/plugin/</link>
-      <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/plugin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Powershell</title>
-      <link>http://duanenewman.net/tags/powershell/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 -0600</pubDate>
-      
-      <guid>http://duanenewman.net/tags/powershell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Prismlib</title>
-      <link>http://duanenewman.net/tags/prismlib/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/prismlib/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Proxy</title>
-      <link>http://duanenewman.net/tags/proxy/</link>
-      <pubDate>Fri, 22 Jan 2016 12:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/proxy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Qrcode</title>
-      <link>http://duanenewman.net/tags/qrcode/</link>
-      <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/qrcode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reflection</title>
-      <link>http://duanenewman.net/tags/reflection/</link>
-      <pubDate>Tue, 21 Oct 2014 16:04:44 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/reflection/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Review</title>
-      <link>http://duanenewman.net/tags/review/</link>
-      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scuba</title>
-      <link>http://duanenewman.net/tags/scuba/</link>
-      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/scuba/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security</title>
-      <link>http://duanenewman.net/tags/security/</link>
-      <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Silverlight</title>
-      <link>http://duanenewman.net/tags/silverlight/</link>
-      <pubDate>Tue, 17 Mar 2015 08:40:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/silverlight/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Skillsusa</title>
-      <link>http://duanenewman.net/tags/skillsusa/</link>
-      <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/skillsusa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Social</title>
-      <link>http://duanenewman.net/tags/social/</link>
-      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/social/</guid>
       <description></description>
     </item>
     
@@ -616,38 +463,29 @@
     </item>
     
     <item>
-      <title>Stldodn</title>
-      <link>http://duanenewman.net/tags/stldodn/</link>
-      <pubDate>Fri, 25 Sep 2015 09:10:00 +0000</pubDate>
+      <title>Xamarin Forms</title>
+      <link>http://duanenewman.net/tags/xamarin-forms/</link>
+      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/stldodn/</guid>
+      <guid>http://duanenewman.net/tags/xamarin-forms/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Stltechtalk</title>
-      <link>http://duanenewman.net/tags/stltechtalk/</link>
-      <pubDate>Thu, 02 Apr 2015 08:23:02 +0000</pubDate>
+      <title>mobile</title>
+      <link>http://duanenewman.net/tags/mobile/</link>
+      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/stltechtalk/</guid>
+      <guid>http://duanenewman.net/tags/mobile/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Surface</title>
-      <link>http://duanenewman.net/tags/surface/</link>
-      <pubDate>Sat, 09 Feb 2013 08:56:00 +0000</pubDate>
+      <title>Build2016</title>
+      <link>http://duanenewman.net/tags/build2016/</link>
+      <pubDate>Wed, 27 Apr 2016 09:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/surface/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tdd</title>
-      <link>http://duanenewman.net/tags/tdd/</link>
-      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/tdd/</guid>
+      <guid>http://duanenewman.net/tags/build2016/</guid>
       <description></description>
     </item>
     
@@ -661,70 +499,52 @@
     </item>
     
     <item>
-      <title>Tips</title>
-      <link>http://duanenewman.net/tags/tips/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      <title>Lumia</title>
+      <link>http://duanenewman.net/tags/lumia/</link>
+      <pubDate>Mon, 18 Apr 2016 16:58:41 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/tips/</guid>
+      <guid>http://duanenewman.net/tags/lumia/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Travel</title>
-      <link>http://duanenewman.net/tags/travel/</link>
-      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      <title>Human</title>
+      <link>http://duanenewman.net/tags/human/</link>
+      <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/travel/</guid>
+      <guid>http://duanenewman.net/tags/human/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Troubleshooting</title>
-      <link>http://duanenewman.net/tags/troubleshooting/</link>
-      <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
+      <title>NUI</title>
+      <link>http://duanenewman.net/tags/nui/</link>
+      <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/troubleshooting/</guid>
+      <guid>http://duanenewman.net/tags/nui/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Twitter</title>
-      <link>http://duanenewman.net/tags/twitter/</link>
-      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      <title>Bluff</title>
+      <link>http://duanenewman.net/tags/bluff/</link>
+      <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/twitter/</guid>
+      <guid>http://duanenewman.net/tags/bluff/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Unit Testing</title>
-      <link>http://duanenewman.net/tags/unit-testing/</link>
-      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      <title>plugin</title>
+      <link>http://duanenewman.net/tags/plugin/</link>
+      <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/unit-testing/</guid>
+      <guid>http://duanenewman.net/tags/plugin/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Utility</title>
-      <link>http://duanenewman.net/tags/utility/</link>
-      <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/utility/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Uwp</title>
-      <link>http://duanenewman.net/tags/uwp/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/uwp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vegas</title>
+      <title>vegas</title>
       <link>http://duanenewman.net/tags/vegas/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
       
@@ -733,47 +553,227 @@
     </item>
     
     <item>
-      <title>Video</title>
-      <link>http://duanenewman.net/tags/video/</link>
-      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      <title>chocolatey</title>
+      <link>http://duanenewman.net/tags/chocolatey/</link>
+      <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/video/</guid>
+      <guid>http://duanenewman.net/tags/chocolatey/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Winphone</title>
-      <link>http://duanenewman.net/tags/winphone/</link>
-      <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
+      <title>media</title>
+      <link>http://duanenewman.net/tags/media/</link>
+      <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/winphone/</guid>
+      <guid>http://duanenewman.net/tags/media/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Wpf</title>
-      <link>http://duanenewman.net/tags/wpf/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <title>utility</title>
+      <link>http://duanenewman.net/tags/utility/</link>
+      <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/wpf/</guid>
+      <guid>http://duanenewman.net/tags/utility/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Xamarin</title>
-      <link>http://duanenewman.net/tags/xamarin/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      <title>QRCode</title>
+      <link>http://duanenewman.net/tags/qrcode/</link>
+      <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/xamarin/</guid>
+      <guid>http://duanenewman.net/tags/qrcode/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Xamarin Forms</title>
-      <link>http://duanenewman.net/tags/xamarin-forms/</link>
-      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      <title>Security</title>
+      <link>http://duanenewman.net/tags/security/</link>
+      <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/tags/xamarin-forms/</guid>
+      <guid>http://duanenewman.net/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>admin</title>
+      <link>http://duanenewman.net/tags/admin/</link>
+      <pubDate>Fri, 22 Jan 2016 12:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>proxy</title>
+      <link>http://duanenewman.net/tags/proxy/</link>
+      <pubDate>Fri, 22 Jan 2016 12:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>STLDODN</title>
+      <link>http://duanenewman.net/tags/stldodn/</link>
+      <pubDate>Fri, 25 Sep 2015 09:10:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/stldodn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HDC</title>
+      <link>http://duanenewman.net/tags/hdc/</link>
+      <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/hdc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>agile</title>
+      <link>http://duanenewman.net/tags/agile/</link>
+      <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>KCDC</title>
+      <link>http://duanenewman.net/tags/kcdc/</link>
+      <pubDate>Tue, 16 Jun 2015 11:15:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/kcdc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interview</title>
+      <link>http://duanenewman.net/tags/interview/</link>
+      <pubDate>Thu, 02 Apr 2015 08:23:02 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>StlTechTalk</title>
+      <link>http://duanenewman.net/tags/stltechtalk/</link>
+      <pubDate>Thu, 02 Apr 2015 08:23:02 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/stltechtalk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>KCDNUG</title>
+      <link>http://duanenewman.net/tags/kcdnug/</link>
+      <pubDate>Tue, 24 Mar 2015 22:30:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/kcdnug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Silverlight</title>
+      <link>http://duanenewman.net/tags/silverlight/</link>
+      <pubDate>Tue, 17 Mar 2015 08:40:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/silverlight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>business</title>
+      <link>http://duanenewman.net/tags/business/</link>
+      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/business/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linq</title>
+      <link>http://duanenewman.net/tags/linq/</link>
+      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/linq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>social</title>
+      <link>http://duanenewman.net/tags/social/</link>
+      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/social/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>twitter</title>
+      <link>http://duanenewman.net/tags/twitter/</link>
+      <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Judging</title>
+      <link>http://duanenewman.net/tags/judging/</link>
+      <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/judging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SkillsUSA</title>
+      <link>http://duanenewman.net/tags/skillsusa/</link>
+      <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/skillsusa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>buiness</title>
+      <link>http://duanenewman.net/tags/buiness/</link>
+      <pubDate>Tue, 21 Oct 2014 16:04:44 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/buiness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reflection</title>
+      <link>http://duanenewman.net/tags/reflection/</link>
+      <pubDate>Tue, 21 Oct 2014 16:04:44 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/reflection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>surface</title>
+      <link>http://duanenewman.net/tags/surface/</link>
+      <pubDate>Sat, 09 Feb 2013 08:56:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/surface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>directshow</title>
+      <link>http://duanenewman.net/tags/directshow/</link>
+      <pubDate>Wed, 14 Sep 2011 18:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/directshow/</guid>
       <description></description>
     </item>
     
