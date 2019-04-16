@@ -123,22 +123,23 @@
 				
 				
 					               <div class="post-preview">
-                 <a href="http://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/">
-                      <h2 class="post-title">Forcing a Specific Target Platform With PackageReference</h2>
+                 <a href="http://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/">
+                      <h2 class="post-title">A Better Way to Override References With PackageReference</h2>
                       <h3 class="post-subtitle"></h3>
                     </a>
                     <p class="post-meta">
                       
-  A 3 minute read,
+  A 1 minute read,
 
-Posted on Mon, Mar 18, 2019 In <a href="http://duanenewman.net/categories/coding">Coding</a>
+Posted on Mon, Apr 1, 2019 In <a href="http://duanenewman.net/categories/coding">Coding</a>
 
 <br />
-Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/netstandard">netstandard</a>, <a href="http://duanenewman.net/tags/csproj">csproj</a>, <a href="http://duanenewman.net/tags/packagereference">packagereference</a>, <a href="http://duanenewman.net/tags/nuget">nuget</a>, <a href="http://duanenewman.net/tags/prismlib">prismlib</a>, <a href="http://duanenewman.net/tags/msbuild">msbuild</a>, <a href="http://duanenewman.net/tags/tips">tips</a>
+Tags <a href="http://duanenewman.net/tags/csharp">csharp</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>
 
 				  </p>
-				  <p> In my last post about Using Prism with Xamarin.Forms &amp; GTK# I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &lt;PackageReference&gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.
-Using Package Reference If you already have packages installed and are using a packages.</p>
+				  <p> Recently, there was a new feature added to msbuild (working in Visual Studio 2019 15.9.9) that generates a variable for each package that contains the full path to the package version being used. All you have to do is add an attribute to each &lt;PackageReference&gt; you want need to work with.
+There are just two changes to what we did before:
+ Add GeneratePathProperty attribute to &lt;PackageReference&gt; Switch to Pkg&lt;Package_Name&gt; variable in &lt;HintPath&gt;  Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</p>
                 </div>
                 <hr>
 

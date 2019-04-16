@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="http://duanenewman.net/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Better Way to Override References With PackageReference</title>
+      <link>http://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
+      
+      <guid>http://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</guid>
+      <description>Recently, there was a new feature added to msbuild (working in Visual Studio 2019 15.9.9) that generates a variable for each package that contains the full path to the package version being used. All you have to do is add an attribute to each &amp;lt;PackageReference&amp;gt; you want need to work with.
+There are just two changes to what we did before:
+ Add GeneratePathProperty attribute to &amp;lt;PackageReference&amp;gt; Switch to Pkg&amp;lt;Package_Name&amp;gt; variable in &amp;lt;HintPath&amp;gt;  Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</description>
+    </item>
     
     <item>
       <title>Forcing a Specific Target Platform With PackageReference</title>

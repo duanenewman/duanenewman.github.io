@@ -4,23 +4,46 @@
   
   <url>
     <loc>http://duanenewman.net/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://duanenewman.net/blog/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://duanenewman.net/categories/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://duanenewman.net/categories/coding/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/csharp/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/dotnet/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -30,25 +53,7 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://duanenewman.net/tags/csharp/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://duanenewman.net/tags/csproj/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://duanenewman.net/tags/dotnet/</loc>
     <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -95,13 +100,13 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/xamarin/</loc>
+    <loc>http://duanenewman.net/tags/gtk/</loc>
     <lastmod>2019-03-12T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/gtk/</loc>
+    <loc>http://duanenewman.net/tags/xamarin/</loc>
     <lastmod>2019-03-12T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
