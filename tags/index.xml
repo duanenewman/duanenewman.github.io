@@ -454,15 +454,6 @@
     </item>
     
     <item>
-      <title>Speaking</title>
-      <link>http://duanenewman.net/tags/speaking/</link>
-      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/speaking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Xamarin Forms</title>
       <link>http://duanenewman.net/tags/xamarin-forms/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
@@ -477,6 +468,15 @@
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>speaking</title>
+      <link>http://duanenewman.net/tags/speaking/</link>
+      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/speaking/</guid>
       <description></description>
     </item>
     

@@ -448,12 +448,6 @@
   </url>
   
   <url>
-    <loc>http://duanenewman.net/tags/speaking/</loc>
-    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://duanenewman.net/tags/xamarin-forms/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
     <priority>0</priority>
@@ -461,6 +455,12 @@
   
   <url>
     <loc>http://duanenewman.net/tags/mobile/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://duanenewman.net/tags/speaking/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
     <priority>0</priority>
   </url>
