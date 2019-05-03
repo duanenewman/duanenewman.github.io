@@ -9,11 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>C# -- Duane Newman</title>
+    <title>Unit Testing Prism Apps With Ease -- Duane Newman</title>
 
-    
-    <link href="http://duanenewman.net/tags/c#/index.xml" rel="alternate" type="application/rss+xml" title="Duane Newman" />
-    <link href="http://duanenewman.net/tags/c#/index.xml" rel="feed" type="application/rss+xml" title="Duane Newman" />
     
 
     
@@ -89,15 +86,13 @@
 
 
     
-    <header class="intro-header" style="background-image: url('http://duanenewman.net/img/home-bg.jpg')">
-            
+    <header class="intro-header" style="background-image: url('http://duanenewman.net/img/speaking-bg.jpg')">
+        
      <div class="container">
        <div class="row">
          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
            <div class="site-heading">
-             <h1>C#</h1>
-             <hr class="small">
-             <span class="subheading"></span>
+             <h1>Unit Testing Prism Apps With Ease</h1>
            </div>
          </div>
        </div>
@@ -106,64 +101,26 @@
 
     
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              
+
+<p>Prism makes it easy to use dependency injection and keep our apps modular. This modularity is great for testing, but all that dependency injection magic can make our test code seem more complex and filled with a lot of ceremony just to create a testable instance of a ViewModel and its dependencies. I&rsquo;ve learned to embrace magic and I&rsquo;ll share tips on how to take advantage of the same IoC container strategy used at runtime to make instantiating the class we want to test less painful. We&rsquo;ll tap into the life-cycle or our unit testing framework and combine a mocking framework and a custom lifetime manager for our IoC container to make sure each test has clean dependencies and keep us from ever directly instantiating our ViewModels or dependencies again. A great side-effect is that our tests become more resilient against changing dependencies that do not concern the test. Skip all the setup ceremony and get straight to the actual test.</p>
+
+<h2 id="learning-objectives">Learning Objectives</h2>
+
+<ul>
+<li>Attendees will learn how to harness IoC in their unit tests to simplify instance creation</li>
+<li>Attendees will learn how to use Action<T> delegate methods to manage setup of mocked types and override/append setup per test</li>
+<li>Attendees will be shown How to convert existing tests to use these methodologies</li>
+</ul>
+
+<h2 id="level-intermediate">Level: Intermediate</h2>
+
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          
-              <div class="post-preview">
-  <p class="post-meta">
-    <strong><a href="http://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/">Better Unit Testing with IoC, DI, and Mocking</a></strong>
-    <br /> 
-  A 6 minute read,
-
-Posted on Tue, Mar 27, 2018 In <a href="http://duanenewman.net/categories/coding">Coding</a>
-
-<br />
-Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman.net/tags/unit-testing">unit testing</a>, <a href="http://duanenewman.net/tags/di">di</a>, <a href="http://duanenewman.net/tags/dependency-injection">dependency injection</a>, <a href="http://duanenewman.net/tags/ioc">ioc</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/tips">tips</a>, <a href="http://duanenewman.net/tags/tdd">tdd</a>
-
-    
-  </p>
-</div>
-          
-              <div class="post-preview">
-  <p class="post-meta">
-    <strong><a href="http://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/">Teach an old Type new tricks with Extension Methods</a></strong>
-    <br /> 
-  A 4 minute read,
-
-Posted on Tue, Feb 27, 2018 In <a href="http://duanenewman.net/categories/coding">Coding</a>
-
-<br />
-Tags <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/tips">tips</a>
-
-    
-  </p>
-</div>
-          
-              <div class="post-preview">
-  <p class="post-meta">
-    <strong><a href="http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/">All I want for Christmas is a C# Build System</a></strong>
-    <br /> 
-  A 4 minute read,
-
-Posted on Sat, Dec 23, 2017 In <a href="http://duanenewman.net/categories/coding">Coding</a>
-
-<br />
-Tags <a href="http://duanenewman.net/tags/devops">devops</a>, <a href="http://duanenewman.net/tags/c">c#</a>, <a href="http://duanenewman.net/tags/dotnet">dotnet</a>, <a href="http://duanenewman.net/tags/cake">cake</a>, <a href="http://duanenewman.net/tags/build">build</a>
-
-    
-  </p>
-</div>
-          
-          
-
-        </div>
-      </div>
     </div>
+
 
     <hr>
     
@@ -248,14 +205,17 @@ Tags <a href="http://duanenewman.net/tags/devops">devops</a>, <a href="http://du
     <script src="http://duanenewman.net/js/clean-blog.js"></script>
 
     
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-2838107-3', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-2838107-3', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
 
 

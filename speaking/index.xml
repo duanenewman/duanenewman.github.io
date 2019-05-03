@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Sep 2014 16:13:57 +0000</lastBuildDate>
     
 	<atom:link href="http://duanenewman.net/speaking/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unit Testing Prism Apps With Ease</title>
+      <link>http://duanenewman.net/speaking/unit-testing-prism-apps-with-ease/</link>
+      <pubDate>Fri, 03 May 2019 11:24:25 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/speaking/unit-testing-prism-apps-with-ease/</guid>
+      <description>Prism makes it easy to use dependency injection and keep our apps modular. This modularity is great for testing, but all that dependency injection magic can make our test code seem more complex and filled with a lot of ceremony just to create a testable instance of a ViewModel and its dependencies. I&amp;rsquo;ve learned to embrace magic and I&amp;rsquo;ll share tips on how to take advantage of the same IoC container strategy used at runtime to make instantiating the class we want to test less painful.</description>
+    </item>
+    
+    <item>
+      <title>Building a Real App With Xamarin.Forms</title>
+      <link>http://duanenewman.net/speaking/building-a-real-app-with-xamarin-forms/</link>
+      <pubDate>Fri, 03 May 2019 11:20:59 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/speaking/building-a-real-app-with-xamarin-forms/</guid>
+      <description>Join me on a journey through the development of a real app using Xamarin.Forms, Azure Functions &amp;amp; Storage, third party integrations, and more. Instead of showing you &amp;ldquo;Hello World&amp;rdquo; or some contrived app that doesn&amp;rsquo;t show how things work in the real world, I&amp;rsquo;ll show you examples from a system built for our Kansas City .NET User Group as an extension to Meetup. We&amp;rsquo;ll explore real challenges, such as authenticating with third party providers, caching data locally for offline use, cross-platform UI, and more.</description>
+    </item>
     
     <item>
       <title>Adaptive User Interfaces with Xamarin.Forms</title>
