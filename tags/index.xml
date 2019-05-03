@@ -31,6 +31,15 @@
     </item>
     
     <item>
+      <title>Tips</title>
+      <link>http://duanenewman.net/tags/tips/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>http://duanenewman.net/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>csproj</title>
       <link>http://duanenewman.net/tags/csproj/</link>
       <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
@@ -81,15 +90,6 @@
       <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>http://duanenewman.net/tags/prismlib/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips</title>
-      <link>http://duanenewman.net/tags/tips/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>http://duanenewman.net/tags/tips/</guid>
       <description></description>
     </item>
     
@@ -292,15 +292,6 @@
     </item>
     
     <item>
-      <title>DevOps</title>
-      <link>http://duanenewman.net/tags/devops/</link>
-      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://duanenewman.net/tags/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>build</title>
       <link>http://duanenewman.net/tags/build/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
@@ -315,6 +306,15 @@
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>http://duanenewman.net/tags/cake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>http://duanenewman.net/tags/devops/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://duanenewman.net/tags/devops/</guid>
       <description></description>
     </item>
     
