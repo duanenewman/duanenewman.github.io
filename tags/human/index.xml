@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Human on Duane Newman</title>
-    <link>http://duanenewman.net/tags/human/</link>
+    <link>https://duanenewman.net/tags/human/</link>
     <description>Recent content in Human on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Thu, 31 Mar 2016 06:30:00 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/human/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/human/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bringing Sight to the Blind (Seeing AI)</title>
-      <link>http://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</link>
+      <link>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</link>
       <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</guid>
+      <guid>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</guid>
       <description>Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by Saqib Shaikh, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses.</description>
     </item>
     

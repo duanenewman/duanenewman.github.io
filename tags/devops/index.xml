@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>devops on Duane Newman</title>
-    <link>http://duanenewman.net/tags/devops/</link>
+    <link>https://duanenewman.net/tags/devops/</link>
     <description>Recent content in devops on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Sat, 23 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>All I want for Christmas is a C# Build System</title>
-      <link>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</link>
+      <link>https://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</guid>
+      <guid>https://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</guid>
       <description>Why So Jolly? This post is part of the The First C# Advent Calendar, celebrating all things C#. After you finish here check out the other great posts in the series.
 A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects.</description>
     </item>
     
     <item>
       <title>Speaking on DevOps at St. Louis Days of .NET 2015</title>
-      <link>http://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</link>
+      <link>https://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</link>
       <pubDate>Fri, 25 Sep 2015 09:10:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</guid>
+      <guid>https://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</guid>
       <description>I&#39;ve been selected to speak at the upcoming St. Louis Days of .NET (STLDODN) on November 12th-14th. I will be presenting my new talk on DevOps, Double Down with DevOps, and am excited about the opportunity to give this topic some attention. Why Speak on DevOps? As a developer I am often frustrated with the amount of manual processes that seem to exist between development and production. Many of us have found ourselves in the situation where we had a single point of failure for a process, the 1 person at the company that knows how to release the new software, or configure the server, or any number of other things that will invariably go wrong when when they are on vacation (or worse, just go on hold).</description>
     </item>
     
     <item>
       <title>Heartland Developers Conference 2015</title>
-      <link>http://duanenewman.net/blog/post/heartland-developers-conference-2015/</link>
+      <link>https://duanenewman.net/blog/post/heartland-developers-conference-2015/</link>
       <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/heartland-developers-conference-2015/</guid>
+      <guid>https://duanenewman.net/blog/post/heartland-developers-conference-2015/</guid>
       <description>This was my first year speaking at the Heartland Developers Conference in Omaha, although I’ve attended many times through the years as an attendee. The experience was quite a lot of fun, and I had a good time hanging out with old friends and making a few new ones. My wife came with me and good time watching all of us “geeks” hangout. This was the first time doing a new talk, and the first talk that didn’t involve any demo’s, and it was not scheduled until Friday morning.</description>
     </item>
     

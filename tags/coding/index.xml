@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding on Duane Newman</title>
-    <link>http://duanenewman.net/tags/coding/</link>
+    <link>https://duanenewman.net/tags/coding/</link>
     <description>Recent content in Coding on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 23 May 2016 15:01:57 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Nebraska.Code() 2016</title>
-      <link>http://duanenewman.net/blog/post/nebraska-code-2016/</link>
+      <link>https://duanenewman.net/blog/post/nebraska-code-2016/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/nebraska-code-2016/</guid>
+      <guid>https://duanenewman.net/blog/post/nebraska-code-2016/</guid>
       <description>Another Nebraska.Code() is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference.</description>
     </item>
     
     <item>
       <title>Bluff v1.1 hot off the presses</title>
-      <link>http://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</link>
+      <link>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
+      <guid>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
       <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:
  Converting the project to .NET 3.5 (from 2.0)  Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now)  Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp  Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13)  And last, but not least, I added a WIX based installer to the project   If you just want grab the latest version jump over to the GitHub release page.</description>
     </item>
     
     <item>
       <title>Xamarin Build Errors: Please Install Package Xamarin.Android.Support.v4</title>
-      <link>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</link>
+      <link>https://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</link>
       <pubDate>Wed, 16 Mar 2016 08:45:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</guid>
+      <guid>https://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</guid>
       <description>I was out of active Xamarin development for a couple months and recently wanted to jump back in and work on a couple new project ideas. I fired up VS2015 and created a project. It was then that I realized I had not installed the official Xamarin tools since I got my new Surface Book. So I decided it was a good idea to install that latest Xamarin Tools before I did anything else.</description>
     </item>
     
     <item>
       <title>Getting your brand’s Twitter timeline in your mobile app</title>
-      <link>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
+      <link>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
       <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
+      <guid>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
       <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
     </item>
     
     <item>
       <title>SkillsUSA Coding Competition</title>
-      <link>http://duanenewman.net/blog/post/skillsusa-coding-competition/</link>
+      <link>https://duanenewman.net/blog/post/skillsusa-coding-competition/</link>
       <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/skillsusa-coding-competition/</guid>
+      <guid>https://duanenewman.net/blog/post/skillsusa-coding-competition/</guid>
       <description>On Saturday I had an opportunity to be involved in a SkillsUSA district competition as a judge for the coding competition. I was really impressed with the skill that some of these students (all with less than a year of experience) had. The quality of some of the code they wrote really surprised me.
 It was a really enjoyable experience and I was happy to be able to get more involved in the community with the next generation of coders.</description>
     </item>

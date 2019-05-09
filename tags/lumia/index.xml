@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lumia on Duane Newman</title>
-    <link>http://duanenewman.net/tags/lumia/</link>
+    <link>https://duanenewman.net/tags/lumia/</link>
     <description>Recent content in Lumia on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 18 Apr 2016 16:58:41 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/lumia/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/lumia/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Return of Visual Voicemail to the Lumia 950 XL (Dual Sim)</title>
-      <link>http://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</link>
+      <link>https://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</link>
       <pubDate>Mon, 18 Apr 2016 16:58:41 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</guid>
+      <guid>https://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</guid>
       <description>For those that purchased an unlocked Lumia 950 XL from Microsoft in the last few months and have been frustrated at the lack of Visual Voice (that’s everyone who bought one) you can rejoice. Last week I had sketchy WiFi access so I just discovered that I had an update available last night. When I went to take a look at the change log I discovered this little gem:
  Support for Visual Voicemail on Dual SIM phones   It sounds like this has been available in the Windows Insiders build for a little while, but I’ve been hesitant to put my primary phone on the insiders builds.</description>
     </item>

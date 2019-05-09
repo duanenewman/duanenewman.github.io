@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>STLDODN on Duane Newman</title>
-    <link>http://duanenewman.net/tags/stldodn/</link>
+    <link>https://duanenewman.net/tags/stldodn/</link>
     <description>Recent content in STLDODN on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Fri, 25 Sep 2015 09:10:00 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/stldodn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/stldodn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Speaking on DevOps at St. Louis Days of .NET 2015</title>
-      <link>http://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</link>
+      <link>https://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</link>
       <pubDate>Fri, 25 Sep 2015 09:10:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</guid>
+      <guid>https://duanenewman.net/blog/post/speaking-on-devops-at-st-louis-days-of-net-2015/</guid>
       <description>I&#39;ve been selected to speak at the upcoming St. Louis Days of .NET (STLDODN) on November 12th-14th. I will be presenting my new talk on DevOps, Double Down with DevOps, and am excited about the opportunity to give this topic some attention. Why Speak on DevOps? As a developer I am often frustrated with the amount of manual processes that seem to exist between development and production. Many of us have found ourselves in the situation where we had a single point of failure for a process, the 1 person at the company that knows how to release the new software, or configure the server, or any number of other things that will invariably go wrong when when they are on vacation (or worse, just go on hold).</description>
     </item>
     
     <item>
       <title>Interview with STL Tech Talk at STLDODN 2014</title>
-      <link>http://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</link>
+      <link>https://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</link>
       <pubDate>Thu, 02 Apr 2015 08:23:02 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</guid>
+      <guid>https://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</guid>
       <description>Back in November 2014 at the St. Louis Days of .NET conference I sat down with JJ Hammond from STL Tech Talk for an interview. It was a lot of fun and I had a great time talking about Xamarin, Xamarin.Forms, and mobile development for the C# developer. It got lost somewhere among all the other interview videos, but thanks to Kevin and JJ it is was found and is now posted for your viewing pleasure.</description>
     </item>
     
     <item>
       <title>Lessons Learned from My First Speaking Experience</title>
-      <link>http://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</link>
+      <link>https://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</link>
       <pubDate>Thu, 20 Nov 2014 09:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</guid>
+      <guid>https://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</guid>
       <description>First off, speaking is a rush. It is hard to describe the feeling just after completing a talk. I had to move around, talk to people, see what was going on; it really energized me. I am definitely going to continue to pursue future speaking opportunities as they present themselves, and I’ll keep you posted when they get accepted.
 
 As I mentioned in previous posts, my first talk was on Xamarin Forms, a new technology in a toolset that we are using at Alien Arc, but that is still new to us.</description>
@@ -43,10 +43,10 @@ As I mentioned in previous posts, my first talk was on Xamarin Forms, a new tech
     
     <item>
       <title>Jumping Headfirst Into My First Speaking Engagement</title>
-      <link>http://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</link>
+      <link>https://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</link>
       <pubDate>Fri, 26 Sep 2014 15:28:28 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</guid>
+      <guid>https://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</guid>
       <description>I’ve been wanting to start speaking at conferences for a while now, but have always been nervous about it. I’ve really wanted to do this for a long time but I specifically remember in 2013 I went to KCDC and was all energized about sharing as a speaker. I decided that I was going to work on having a presentation for the next year. When KCDC 2014 was announced earlier this year I realized I hadn’t even thought about a topic since the week after last years conference.</description>
     </item>
     

@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>video on Duane Newman</title>
-    <link>http://duanenewman.net/tags/video/</link>
+    <link>https://duanenewman.net/tags/video/</link>
     <description>Recent content in video on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Fri, 29 Jul 2016 14:46:23 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/video/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/video/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Diving in Bonaire - 2016</title>
-      <link>http://duanenewman.net/blog/post/diving-in-bonaire-2016./</link>
+      <link>https://duanenewman.net/blog/post/diving-in-bonaire-2016./</link>
       <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/diving-in-bonaire-2016./</guid>
+      <guid>https://duanenewman.net/blog/post/diving-in-bonaire-2016./</guid>
       <description>I decided to take a few minutes and reflect on my recent trip to Bonaire and share some accomplishments and observations. To begin with, the flight there is long. We had two options, 45 minute layover to catch an international flight with all our luggage, or 5 hour layover waiting in the airport. We chose the later since no on wanted to miss a flight that only happens once a day and only on Saturday and Sunday each week.</description>
     </item>
     
     <item>
       <title>Bluff v1.1 hot off the presses</title>
-      <link>http://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</link>
+      <link>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
+      <guid>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
       <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:
  Converting the project to .NET 3.5 (from 2.0)  Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now)  Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp  Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13)  And last, but not least, I added a WIX based installer to the project   If you just want grab the latest version jump over to the GitHub release page.</description>
     </item>
     
     <item>
       <title>Merging GoPro Segments Into a Single File</title>
-      <link>http://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
+      <link>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
       <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
+      <guid>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
       <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.
 If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
     </item>
     
     <item>
       <title>Bluff: An OSS Extension for Sony Vegas Pro</title>
-      <link>http://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</link>
+      <link>https://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</link>
       <pubDate>Wed, 09 Mar 2016 08:30:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</guid>
+      <guid>https://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</guid>
       <description>Yesterday, my business Alien Arc Technologies, LLC announced the release of version 1.0 of an open source project I’ve been tinkering on recently, called Bluff. This is my first OSS project and I’m excited to have created something that I hope others will find useful, and better yet, will contribute their own ideas to.
 History The project came out of my own personal needs and interest. In 2015 I was introduced to the world of scuba diving and I’ve fallen totally in love with it.</description>
     </item>

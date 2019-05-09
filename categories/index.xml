@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Duane Newman</title>
-    <link>http://duanenewman.net/categories/</link>
+    <link>https://duanenewman.net/categories/</link>
     <description>Recent content in Categories on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 01 Apr 2019 00:00:00 -0600</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Coding</title>
-      <link>http://duanenewman.net/categories/coding/</link>
+      <link>https://duanenewman.net/categories/coding/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
       
-      <guid>http://duanenewman.net/categories/coding/</guid>
+      <guid>https://duanenewman.net/categories/coding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Technology</title>
-      <link>http://duanenewman.net/categories/technology/</link>
+      <link>https://duanenewman.net/categories/technology/</link>
       <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/categories/technology/</guid>
+      <guid>https://duanenewman.net/categories/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scuba</title>
-      <link>http://duanenewman.net/categories/scuba/</link>
+      <link>https://duanenewman.net/categories/scuba/</link>
       <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
       
-      <guid>http://duanenewman.net/categories/scuba/</guid>
+      <guid>https://duanenewman.net/categories/scuba/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Speaking</title>
-      <link>http://duanenewman.net/categories/speaking/</link>
+      <link>https://duanenewman.net/categories/speaking/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
-      <guid>http://duanenewman.net/categories/speaking/</guid>
+      <guid>https://duanenewman.net/categories/speaking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Video</title>
-      <link>http://duanenewman.net/categories/video/</link>
+      <link>https://duanenewman.net/categories/video/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
       
-      <guid>http://duanenewman.net/categories/video/</guid>
+      <guid>https://duanenewman.net/categories/video/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Musings</title>
-      <link>http://duanenewman.net/categories/musings/</link>
+      <link>https://duanenewman.net/categories/musings/</link>
       <pubDate>Mon, 10 Nov 2014 08:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/categories/musings/</guid>
+      <guid>https://duanenewman.net/categories/musings/</guid>
       <description></description>
     </item>
     

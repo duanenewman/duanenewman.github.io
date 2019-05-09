@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WinPhone on Duane Newman</title>
-    <link>http://duanenewman.net/tags/winphone/</link>
+    <link>https://duanenewman.net/tags/winphone/</link>
     <description>Recent content in WinPhone on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Wed, 27 Jul 2016 11:45:00 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/winphone/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/winphone/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Strange Keyboard Layout on Windows 10 Mobile &amp; Lumia 950XL</title>
-      <link>http://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</link>
+      <link>https://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</link>
       <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</guid>
+      <guid>https://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</guid>
       <description>I recently encountered a strange issue with the layout of the keyboard on my Lumia 950XL. This happened after a one of the recent OS updates and it took me a little while researching to figure it out. The issue was that my keyboard was all squashed to the left, instead of taking up the full width of the phone. In addition to that the cursor point was on the right hand side of the keyboard.</description>
     </item>
     
     <item>
       <title>The Return of Visual Voicemail to the Lumia 950 XL (Dual Sim)</title>
-      <link>http://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</link>
+      <link>https://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</link>
       <pubDate>Mon, 18 Apr 2016 16:58:41 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</guid>
+      <guid>https://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</guid>
       <description>For those that purchased an unlocked Lumia 950 XL from Microsoft in the last few months and have been frustrated at the lack of Visual Voice (that’s everyone who bought one) you can rejoice. Last week I had sketchy WiFi access so I just discovered that I had an update available last night. When I went to take a look at the change log I discovered this little gem:
  Support for Visual Voicemail on Dual SIM phones   It sounds like this has been available in the Windows Insiders build for a little while, but I’ve been hesitant to put my primary phone on the insiders builds.</description>
     </item>
     
     <item>
       <title>Xamarin Forms Windows Phone Deployment Tip #1</title>
-      <link>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</link>
+      <link>https://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</link>
       <pubDate>Tue, 17 Mar 2015 08:40:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</guid>
+      <guid>https://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</guid>
       <description>Here is a helpful tip if you are developing a mobile app using Xamarin Forms and targeting Windows Phone 8.0 (or if you are just writing a WP8.0 Silverlight based app). If you are ready to deploy and filling everything out online it is easier than it first seems. On the Windows Phone Dev Center you will find a helpful link to this article telling you to add some info to the Package.</description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>buiness on Duane Newman</title>
-    <link>http://duanenewman.net/tags/buiness/</link>
+    <link>https://duanenewman.net/tags/buiness/</link>
     <description>Recent content in buiness on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 21 Oct 2014 16:04:44 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/buiness/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/buiness/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Agile Operations</title>
-      <link>http://duanenewman.net/blog/post/agile-operations/</link>
+      <link>https://duanenewman.net/blog/post/agile-operations/</link>
       <pubDate>Tue, 21 Oct 2014 16:04:44 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/agile-operations/</guid>
+      <guid>https://duanenewman.net/blog/post/agile-operations/</guid>
       <description>With a new and busy business it is easy to lose track of the little things that need to be done when you are spending every usable minute on billable tasks. This is the challenge we found ourselves faced with a few months into operating Alien Arc.
 Enter Aglie We started a Trello board back when we started the business to track tasks like getting our insurance setup and creating a logo.</description>
     </item>

@@ -2,133 +2,133 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xamarin on Duane Newman</title>
-    <link>http://duanenewman.net/tags/xamarin/</link>
+    <link>https://duanenewman.net/tags/xamarin/</link>
     <description>Recent content in Xamarin on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 12 Mar 2019 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/xamarin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/xamarin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Prism With Xamarin.Forms &amp; GTK</title>
-      <link>http://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</link>
+      <link>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</guid>
+      <guid>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</guid>
       <description>I&amp;rsquo;m working on project to replace my car radio with a custom digital dashboard. I&amp;rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.
 Adding the GTK# Backend Project Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to The Mono Project to download and run the GTK# for .</description>
     </item>
     
     <item>
       <title>Keeping Observable Collections Up To Date</title>
-      <link>http://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</link>
+      <link>https://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</guid>
+      <guid>https://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</guid>
       <description>One of the powerful capabilities we&amp;rsquo;ve learned to leverage when using the MVVM pattern for XAML based apps, whether for the desktop or mobile platforms, is data binding. Binding allows us to easily keep our View up to date with changes in the ViewModel. These bindings are typically pretty quick when not abused, but there are situations where they can become less than performant, causing visual anomalies such as flickering or even impacting general app performance.</description>
     </item>
     
     <item>
       <title>My First MVP Summit</title>
-      <link>http://duanenewman.net/blog/post/my-first-mvp-summit/</link>
+      <link>https://duanenewman.net/blog/post/my-first-mvp-summit/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/my-first-mvp-summit/</guid>
+      <guid>https://duanenewman.net/blog/post/my-first-mvp-summit/</guid>
       <description>A couple weeks ago I went to my first MVP Summit. The MVP program is a way that Microsoft recognizes &amp;ldquo;technology experts who passionately share their knowledge with the community&amp;rdquo;*. There are several perks to being an MVP. While many may immediately think of the compliemntary MSDN subscription and software licenses from other vendors, I was most excited about the opportunity to go to MVP Summit. As an MVP (under tight NDA) I am able to meet over skype with the various product teams at MS to get a view into where they are headed with thier technologies.</description>
     </item>
     
     <item>
       <title>Nebraska.Code() 2016</title>
-      <link>http://duanenewman.net/blog/post/nebraska-code-2016/</link>
+      <link>https://duanenewman.net/blog/post/nebraska-code-2016/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/nebraska-code-2016/</guid>
+      <guid>https://duanenewman.net/blog/post/nebraska-code-2016/</guid>
       <description>Another Nebraska.Code() is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference.</description>
     </item>
     
     <item>
       <title>Microsoft Build 2016</title>
-      <link>http://duanenewman.net/blog/post/microsoft-build-2016/</link>
+      <link>https://duanenewman.net/blog/post/microsoft-build-2016/</link>
       <pubDate>Wed, 27 Apr 2016 09:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/microsoft-build-2016/</guid>
+      <guid>https://duanenewman.net/blog/post/microsoft-build-2016/</guid>
       <description>I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.
 This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces.</description>
     </item>
     
     <item>
       <title>Xamarin Build Errors: Please Install Package Xamarin.Android.Support.v4</title>
-      <link>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</link>
+      <link>https://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</link>
       <pubDate>Wed, 16 Mar 2016 08:45:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</guid>
+      <guid>https://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</guid>
       <description>I was out of active Xamarin development for a couple months and recently wanted to jump back in and work on a couple new project ideas. I fired up VS2015 and created a project. It was then that I realized I had not installed the official Xamarin tools since I got my new Surface Book. So I decided it was a good idea to install that latest Xamarin Tools before I did anything else.</description>
     </item>
     
     <item>
       <title>Kansas City Developers Conference 2015 Recap</title>
-      <link>http://duanenewman.net/blog/post/kcdc-2015-recap/</link>
+      <link>https://duanenewman.net/blog/post/kcdc-2015-recap/</link>
       <pubDate>Thu, 03 Sep 2015 09:30:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/kcdc-2015-recap/</guid>
+      <guid>https://duanenewman.net/blog/post/kcdc-2015-recap/</guid>
       <description>In preparation for my fall conference lineup I thought I would take a minute to reflect on this year’s Kansas City Developers Conference. Once again, I am impressed with the quality of conference that the KCDC crew puts together. Kudos go to Boone, Jon, and Lee for nurturing a small weekend event into what is, today, one of the top conferences in the Midwest for developers (of any discipline). I’ve had the opportunity to go to some of the “BIG” (and expensive) developer conferences out there and experience what they feel like, and to me KCDC has that same polished feel of conferences that cost 10x as much to attend.</description>
     </item>
     
     <item>
       <title>KCDC 2015 Sessions</title>
-      <link>http://duanenewman.net/blog/post/kcdc-2015-sessions/</link>
+      <link>https://duanenewman.net/blog/post/kcdc-2015-sessions/</link>
       <pubDate>Tue, 16 Jun 2015 11:15:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/kcdc-2015-sessions/</guid>
+      <guid>https://duanenewman.net/blog/post/kcdc-2015-sessions/</guid>
       <description>KCDC is just a week away and I&#39;m busy updating my materials. I&#39;m looking forward to meeting some great developers and catching up with what is quickly becoming a close group of speaker friends.
 I&#39;ll be presenting my Xamarin.Forms talk on Thursday morning at 10:10 AM. Conference mornings are always a little rough, but I like getting the talk done early, then I get to relax, network, and enjoy seeing my friends presenting their talks.</description>
     </item>
     
     <item>
       <title>Interview with STL Tech Talk at STLDODN 2014</title>
-      <link>http://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</link>
+      <link>https://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</link>
       <pubDate>Thu, 02 Apr 2015 08:23:02 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</guid>
+      <guid>https://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</guid>
       <description>Back in November 2014 at the St. Louis Days of .NET conference I sat down with JJ Hammond from STL Tech Talk for an interview. It was a lot of fun and I had a great time talking about Xamarin, Xamarin.Forms, and mobile development for the C# developer. It got lost somewhere among all the other interview videos, but thanks to Kevin and JJ it is was found and is now posted for your viewing pleasure.</description>
     </item>
     
     <item>
       <title>Nebraska.Code() 2015 Retrospect</title>
-      <link>http://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</link>
+      <link>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</link>
       <pubDate>Fri, 27 Mar 2015 09:48:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</guid>
+      <guid>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</guid>
       <description>It was a pleasure to attend and speak at Nebraska.Code() this year. The guys in Lincoln are great and really put on a good conference. One of the neat parts of being a speaker is getting to know a lot of other great speakers as you go from one conference to another together. I&#39;ve found that as soon as one conference is over I&#39;m looking forward to the next one and the chance to hang out with the gang.</description>
     </item>
     
     <item>
       <title>Xamarin Forms Windows Phone Deployment Tip #1</title>
-      <link>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</link>
+      <link>https://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</link>
       <pubDate>Tue, 17 Mar 2015 08:40:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</guid>
+      <guid>https://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</guid>
       <description>Here is a helpful tip if you are developing a mobile app using Xamarin Forms and targeting Windows Phone 8.0 (or if you are just writing a WP8.0 Silverlight based app). If you are ready to deploy and filling everything out online it is easier than it first seems. On the Windows Phone Dev Center you will find a helpful link to this article telling you to add some info to the Package.</description>
     </item>
     
     <item>
       <title>Getting your brand’s Twitter timeline in your mobile app</title>
-      <link>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
+      <link>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
       <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
+      <guid>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
       <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
     </item>
     
     <item>
       <title>Lessons Learned from My First Speaking Experience</title>
-      <link>http://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</link>
+      <link>https://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</link>
       <pubDate>Thu, 20 Nov 2014 09:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</guid>
+      <guid>https://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</guid>
       <description>First off, speaking is a rush. It is hard to describe the feeling just after completing a talk. I had to move around, talk to people, see what was going on; it really energized me. I am definitely going to continue to pursue future speaking opportunities as they present themselves, and I’ll keep you posted when they get accepted.
 
 As I mentioned in previous posts, my first talk was on Xamarin Forms, a new technology in a toolset that we are using at Alien Arc, but that is still new to us.</description>
@@ -136,20 +136,20 @@ As I mentioned in previous posts, my first talk was on Xamarin Forms, a new tech
     
     <item>
       <title>Why doesn’t my code work in Xamarin.Forms?</title>
-      <link>http://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</link>
+      <link>https://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</link>
       <pubDate>Mon, 10 Nov 2014 13:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</guid>
+      <guid>https://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</guid>
       <description>If you have tried something in Xamarin.Forms that should work but didn&amp;rsquo;t, don&amp;rsquo;t worry you might not be going crazy (I can&amp;rsquo;t say for sure, I&amp;rsquo;m a programmer, not a psychologist).
 I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months while working on a small project we have as well as in preparation for my upcoming talk at St. Louis Days of .NET. Sometimes in the course of creating a sample project I write some code that I know should work and then watch the exceptions pop-up (or worse, see nothing at all) when I run it.</description>
     </item>
     
     <item>
       <title>Jumping Headfirst Into My First Speaking Engagement</title>
-      <link>http://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</link>
+      <link>https://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</link>
       <pubDate>Fri, 26 Sep 2014 15:28:28 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</guid>
+      <guid>https://duanenewman.net/blog/post/jumping-headfirst-into-my-first-speaking-engagement/</guid>
       <description>I’ve been wanting to start speaking at conferences for a while now, but have always been nervous about it. I’ve really wanted to do this for a long time but I specifically remember in 2013 I went to KCDC and was all energized about sharing as a speaker. I decided that I was going to work on having a presentation for the next year. When KCDC 2014 was announced earlier this year I realized I hadn’t even thought about a topic since the week after last years conference.</description>
     </item>
     

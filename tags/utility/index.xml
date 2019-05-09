@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>utility on Duane Newman</title>
-    <link>http://duanenewman.net/tags/utility/</link>
+    <link>https://duanenewman.net/tags/utility/</link>
     <description>Recent content in utility on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Thu, 24 Mar 2016 11:15:00 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/utility/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/utility/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Merging GoPro Segments Into a Single File</title>
-      <link>http://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
+      <link>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
       <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
+      <guid>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
       <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.
 If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
     </item>
     
     <item>
       <title>Installing Chocolatey behind a corporate proxy</title>
-      <link>http://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</link>
+      <link>https://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</link>
       <pubDate>Fri, 22 Jan 2016 12:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</guid>
+      <guid>https://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</guid>
       <description>Recently I was working at a project at a new client and needed to add some tools to my development machine. So I turned to one of my favorite tools for getting the apps and tools I need, Chocolatey. The only problem was that I was getting an error installing Chocolatey using the command on their website.
 Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; argument(s): &amp;quot;The remote server returned an error: (407) Proxy Authentication Required.</description>
     </item>

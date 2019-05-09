@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Troubleshooting on Duane Newman</title>
-    <link>http://duanenewman.net/tags/troubleshooting/</link>
+    <link>https://duanenewman.net/tags/troubleshooting/</link>
     <description>Recent content in Troubleshooting on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Wed, 27 Jul 2016 11:45:00 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Strange Keyboard Layout on Windows 10 Mobile &amp; Lumia 950XL</title>
-      <link>http://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</link>
+      <link>https://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</link>
       <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</guid>
+      <guid>https://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</guid>
       <description>I recently encountered a strange issue with the layout of the keyboard on my Lumia 950XL. This happened after a one of the recent OS updates and it took me a little while researching to figure it out. The issue was that my keyboard was all squashed to the left, instead of taking up the full width of the phone. In addition to that the cursor point was on the right hand side of the keyboard.</description>
     </item>
     
     <item>
       <title>Xamarin Build Errors: Please Install Package Xamarin.Android.Support.v4</title>
-      <link>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</link>
+      <link>https://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</link>
       <pubDate>Wed, 16 Mar 2016 08:45:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</guid>
+      <guid>https://duanenewman.net/blog/post/xamarin-build-errors-please-install-package-xamarinandroidsupportv4/</guid>
       <description>I was out of active Xamarin development for a couple months and recently wanted to jump back in and work on a couple new project ideas. I fired up VS2015 and created a project. It was then that I realized I had not installed the official Xamarin tools since I got my new Surface Book. So I decided it was a good idea to install that latest Xamarin Tools before I did anything else.</description>
     </item>
     

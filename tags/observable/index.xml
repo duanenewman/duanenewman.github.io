@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>observable on Duane Newman</title>
-    <link>http://duanenewman.net/tags/observable/</link>
+    <link>https://duanenewman.net/tags/observable/</link>
     <description>Recent content in observable on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 18 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/observable/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/observable/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Keeping Observable Collections Up To Date</title>
-      <link>http://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</link>
+      <link>https://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</guid>
+      <guid>https://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</guid>
       <description>One of the powerful capabilities we&amp;rsquo;ve learned to leverage when using the MVVM pattern for XAML based apps, whether for the desktop or mobile platforms, is data binding. Binding allows us to easily keep our View up to date with changes in the ViewModel. These bindings are typically pretty quick when not abused, but there are situations where they can become less than performant, causing visual anomalies such as flickering or even impacting general app performance.</description>
     </item>
     

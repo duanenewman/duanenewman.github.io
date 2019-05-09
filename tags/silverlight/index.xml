@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Silverlight on Duane Newman</title>
-    <link>http://duanenewman.net/tags/silverlight/</link>
+    <link>https://duanenewman.net/tags/silverlight/</link>
     <description>Recent content in Silverlight on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 17 Mar 2015 08:40:00 +0000</lastBuildDate>
     
-	<atom:link href="http://duanenewman.net/tags/silverlight/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://duanenewman.net/tags/silverlight/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Xamarin Forms Windows Phone Deployment Tip #1</title>
-      <link>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</link>
+      <link>https://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</link>
       <pubDate>Tue, 17 Mar 2015 08:40:00 +0000</pubDate>
       
-      <guid>http://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</guid>
+      <guid>https://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</guid>
       <description>Here is a helpful tip if you are developing a mobile app using Xamarin Forms and targeting Windows Phone 8.0 (or if you are just writing a WP8.0 Silverlight based app). If you are ready to deploy and filling everything out online it is easier than it first seems. On the Windows Phone Dev Center you will find a helpful link to this article telling you to add some info to the Package.</description>
     </item>
     
