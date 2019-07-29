@@ -7,26 +7,89 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://duanenewman.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>authentication</title>
+      <link>https://duanenewman.net/tags/authentication/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://duanenewman.net/tags/authentication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>csharp</title>
       <link>https://duanenewman.net/tags/csharp/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
       
       <guid>https://duanenewman.net/tags/csharp/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>domain</title>
+      <link>https://duanenewman.net/tags/domain/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://duanenewman.net/tags/domain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>dotnet</title>
       <link>https://duanenewman.net/tags/dotnet/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
       
       <guid>https://duanenewman.net/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mac</title>
+      <link>https://duanenewman.net/tags/mac/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://duanenewman.net/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nuget</title>
+      <link>https://duanenewman.net/tags/nuget/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://duanenewman.net/tags/nuget/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>osx</title>
+      <link>https://duanenewman.net/tags/osx/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://duanenewman.net/tags/osx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>packaging</title>
+      <link>https://duanenewman.net/tags/packaging/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://duanenewman.net/tags/packaging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tfs</title>
+      <link>https://duanenewman.net/tags/tfs/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://duanenewman.net/tags/tfs/</guid>
       <description></description>
     </item>
     
@@ -54,15 +117,6 @@
       <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>https://duanenewman.net/tags/netstandard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nuget</title>
-      <link>https://duanenewman.net/tags/nuget/</link>
-      <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://duanenewman.net/tags/nuget/</guid>
       <description></description>
     </item>
     
@@ -454,6 +508,15 @@
     </item>
     
     <item>
+      <title>Speaking</title>
+      <link>https://duanenewman.net/tags/speaking/</link>
+      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      
+      <guid>https://duanenewman.net/tags/speaking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Xamarin Forms</title>
       <link>https://duanenewman.net/tags/xamarin-forms/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
@@ -468,15 +531,6 @@
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
       <guid>https://duanenewman.net/tags/mobile/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>speaking</title>
-      <link>https://duanenewman.net/tags/speaking/</link>
-      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
-      
-      <guid>https://duanenewman.net/tags/speaking/</guid>
       <description></description>
     </item>
     

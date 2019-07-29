@@ -202,7 +202,7 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
         Container = <span style="color:#66d9ef">new</span> UnityContainer();
     }
 
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> RegisterResettableType&lt;T&gt;(<span style="color:#66d9ef">params</span> InjectionMember<span style="color:#a6e22e">[]</span> injectionMembers)
+    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> RegisterResettableType&lt;T&gt;(<span style="color:#66d9ef">params</span> InjectionMember[] injectionMembers)
     {
         Container.RegisterType&lt;T&gt;(<span style="color:#66d9ef">new</span> ResettableLifetimeManager(Resetter), injectionMembers);
     }
@@ -238,8 +238,8 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
 <p>Now in our test we can register a type and upon creation it will call our setup method passing in the newly mocked instance, allowing us to add Setup calls or get a reference for checking execution with a Verify call later in the test.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#a6e22e">[TestFixture]</span>
 <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">OrderViewModelTest</span> : BaseTest
-{<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">    [SetUp]</span>
+{
+<span style="color:#a6e22e">    [SetUp]</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> TestSetup()
     {
         <span style="color:#75715e">//setup the IOrderService for all tests
@@ -248,8 +248,8 @@ Install-Package Moq -Version 4.8.2</code></pre></div>
             mock.Setup(s =&gt; s.GetOrders())
                 .Returns(<span style="color:#66d9ef">new</span> List&lt;Order&gt;());
         });
-    }<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">
+    }
+<span style="color:#a6e22e">
 </span><span style="color:#a6e22e">    [Test]</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> CreatingOrderViewModelCallsOrderServiceGetOrdersOnce()
     {

@@ -161,9 +161,9 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 
 <p>Now that you have the needed references you need to add a Program class (or rename the default Class1.cs) with a Main method that loads the Xamarin.Forms and GTK libraries and starts up your app. This is also a good time to add an IPlatformInitializer for your GTK project.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>
-{<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">    [STAThread]</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Main(<span style="color:#66d9ef">string</span><span style="color:#a6e22e">[]</span> args)
+{
+<span style="color:#a6e22e">    [STAThread]</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Main(<span style="color:#66d9ef">string</span>[] args)
     {
         Gtk.Application.Init();
         Forms.Init();

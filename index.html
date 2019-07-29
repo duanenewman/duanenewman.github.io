@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-	<meta name="generator" content="Hugo 0.55.5" />
+	<meta name="generator" content="Hugo 0.56.1" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -123,23 +123,22 @@
 				
 				
 					               <div class="post-preview">
-                 <a href="https://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/">
-                      <h2 class="post-title">A Better Way to Override References With PackageReference</h2>
+                 <a href="https://duanenewman.net/blog/post/2019-07-29-basic-auth-with-tfs-package-server/">
+                      <h2 class="post-title">Basic Authentication with TFS Package Server</h2>
                       <h3 class="post-subtitle"></h3>
                     </a>
                     <p class="post-meta">
                       
-  A 1 minute read,
+  A 2 minute read,
 
-Posted on Mon, Apr 1, 2019 In <a href="https://duanenewman.net/categories/coding">Coding</a>
+Posted on Mon, Jul 29, 2019 In <a href="https://duanenewman.net/categories/coding">Coding</a>
 
 <br />
-Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://duanenewman.net/tags/dotnet">dotnet</a>
+Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://duanenewman.net/tags/dotnet">dotnet</a>, <a href="https://duanenewman.net/tags/nuget">nuget</a>, <a href="https://duanenewman.net/tags/mac">mac</a>, <a href="https://duanenewman.net/tags/osx">osx</a>, <a href="https://duanenewman.net/tags/packaging">packaging</a>, <a href="https://duanenewman.net/tags/tfs">tfs</a>, <a href="https://duanenewman.net/tags/domain">domain</a>, <a href="https://duanenewman.net/tags/authentication">authentication</a>
 
 				  </p>
-				  <p> Recently, there was a new feature added to msbuild (working in Visual Studio 2019 15.9.9) that generates a variable for each package that contains the full path to the package version being used. All you have to do is add an attribute to each &lt;PackageReference&gt; you want need to work with.
-There are just two changes to what we did before:
- Add GeneratePathProperty attribute to &lt;PackageReference&gt; Switch to Pkg&lt;Package_Name&gt; variable in &lt;HintPath&gt;  Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</p>
+				  <p> I recently encountered some authentication issues connecting my Mac to the package service hosted on a client&rsquo;s on-prem TFS server. The server is on a Windows domain and normally I access TFS from a windows VM that is joined to the domain. However, I&rsquo;ve recently found myself on my Mac more often while working on one of thier Xamarin mobile apps. This is when I began having problems.
+The Poblem The client has a couple NuGet packages hosted on the TFS server using the Package Management extension, and whenever I tried to do a NuGet restore I would run into authentication errors.</p>
                 </div>
                 <hr>
 

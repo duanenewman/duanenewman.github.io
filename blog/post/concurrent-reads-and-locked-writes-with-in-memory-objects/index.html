@@ -127,51 +127,51 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 <p>They needed a quick solution to the exceptions so I put together a simple class to manage locking on updates, while allowing concurrent reads.  (I won&rsquo;t get into if there was a better overall solution to what they already had implemented)</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReadUpdateLocker</span>
 {
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">object</span> UpdateLock = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">object</span>();
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">object</span> CounterLock = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">object</span>();
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">object</span> UpdateLock = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">object</span>();
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">object</span> CounterLock = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">object</span>();
 
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> ReadCount = <span style="color:#ae81ff">0</span>;
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> ReadCount = <span style="color:#ae81ff">0</span>;
 
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> IncrementReadCounter()
-    {       
-        <span style="color:#66d9ef">lock</span> (UpdateLock)
-        {
-            Interlocked.Increment(<span style="color:#66d9ef">ref</span> ReadCount);
-        }
-    }
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> IncrementReadCounter()
+	{		
+		<span style="color:#66d9ef">lock</span> (UpdateLock)
+		{
+			Interlocked.Increment(<span style="color:#66d9ef">ref</span> ReadCount);
+		}
+	}
 
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> DecrementReadCounter()
-    {
-        Interlocked.Decrement(<span style="color:#66d9ef">ref</span> ReadCount);
-    }
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> DecrementReadCounter()
+	{
+		Interlocked.Decrement(<span style="color:#66d9ef">ref</span> ReadCount);
+	}
 
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoRead(Action readAction)
-    {
-        <span style="color:#66d9ef">try</span>
-        {
-            IncrementReadCounter();
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoRead(Action readAction)
+	{
+		<span style="color:#66d9ef">try</span>
+		{
+			IncrementReadCounter();
 
-            readAction.Invoke();
-        }
-        <span style="color:#66d9ef">finally</span>
-        {
-            DecrementReadCounter();
-        }
-    }
+			readAction.Invoke();
+		}
+		<span style="color:#66d9ef">finally</span>
+		{
+			DecrementReadCounter();
+		}
+	}
 
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoUpdate(Action updateAction)
-    {
-        <span style="color:#66d9ef">lock</span> (UpdateLock)
-        {
-            <span style="color:#75715e">//wait for counter to hit 0;        
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">while</span> (ReadCount &gt; <span style="color:#ae81ff">0</span>)
-            {
-                Thread.Sleep(<span style="color:#ae81ff">0</span>);
-            }
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoUpdate(Action updateAction)
+	{
+		<span style="color:#66d9ef">lock</span> (UpdateLock)
+		{
+			<span style="color:#75715e">//wait for counter to hit 0;		
+</span><span style="color:#75715e"></span>			<span style="color:#66d9ef">while</span> (ReadCount &gt; <span style="color:#ae81ff">0</span>)
+			{
+				Thread.Sleep(<span style="color:#ae81ff">0</span>);
+			}
 
-            updateAction.Invoke();
-        }
-    }
+			updateAction.Invoke();
+		}
+	}
 }
 </code></pre></div>
 <p>Basically this allowed the reads to come in concurrently without being blocked, until an update was requested. When an update came in it would lock on the UpdateLock object and hold the lock until all the active read threads finished, which decremented the read counter back to 0. After the update finished and released the lock any incoming reads would resume with minimal impact.</p>
@@ -181,25 +181,25 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 <p>So we had a solution that worked, but it required reading and updating code to keep track of both the in-memory list of data as well as the instance of the locking class. So I did a little refactoring so that the data was hidden behind the locking mechanism, which then guarded all access to the collection through the locks. This  simplified the calling code by removing the need to keep track of two objects, and preventing exceptions for accidental unlocked access to the data.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InstanceReadUpdateLocker</span>&lt;T&gt;
 {
-    <span style="color:#66d9ef">private</span> ReadUpdateLocker locker = <span style="color:#66d9ef">new</span> ReadUpdateLocker();
-    <span style="color:#66d9ef">private</span> T Data { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+	<span style="color:#66d9ef">private</span> ReadUpdateLocker locker = <span style="color:#66d9ef">new</span> ReadUpdateLocker();
+	<span style="color:#66d9ef">private</span> T Data { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
 
-    <span style="color:#66d9ef">public</span> InstanceReadUpdateLocker(T data)
-    {
-        Data = data;
-    }
-    
-    <span style="color:#66d9ef">public</span> T DoRead(Func&lt;T, T&gt; readAction)
-    {
-        <span style="color:#66d9ef">var</span> result = <span style="color:#66d9ef">default</span>(T);
-        locker.DoRead (() =&gt; result = readAction(Data));
-        <span style="color:#66d9ef">return</span> result;
-    }
+	<span style="color:#66d9ef">public</span> InstanceReadUpdateLocker(T data)
+	{
+		Data = data;
+	}
+	
+	<span style="color:#66d9ef">public</span> T DoRead(Func&lt;T, T&gt; readAction)
+	{
+		<span style="color:#66d9ef">var</span> result = <span style="color:#66d9ef">default</span>(T);
+		locker.DoRead (() =&gt; result = readAction(Data));
+		<span style="color:#66d9ef">return</span> result;
+	}
 
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoUpdate(Action&lt;T&gt; updateAction)
-    {
-        locker.DoUpdate (() =&gt; updateAction(Data));
-    }
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoUpdate(Action&lt;T&gt; updateAction)
+	{
+		locker.DoUpdate (() =&gt; updateAction(Data));
+	}
 }
 </code></pre></div>
 <p>Now all reads and updates to the data went through the class and this worked well.</p>
@@ -211,42 +211,42 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 <p>I present to you the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.readerwriterlock" target="_blank">ReaderWriterLock</a> class. Yes, a class designed to allow your code to track read and write locks. However, if you look at the sample implementation it is a bit more involved to use, because it is also more flexible. I wanted to be able to use it as simply as my above <code>InstanceReadUpdateLocker</code> class. So I wrote this little class to wrap the locking functionality, but still provide simple usage from calling code.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InstanceReaderWriterLock</span>&lt;T&gt;
 {
-    <span style="color:#66d9ef">private</span> ReaderWriterLock locker = <span style="color:#66d9ef">new</span> ReaderWriterLock();
-    <span style="color:#66d9ef">private</span> T Data { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> timeout = <span style="color:#ae81ff">500</span>;
+	<span style="color:#66d9ef">private</span> ReaderWriterLock locker = <span style="color:#66d9ef">new</span> ReaderWriterLock();
+	<span style="color:#66d9ef">private</span> T Data { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> timeout = <span style="color:#ae81ff">500</span>;
 
-    <span style="color:#66d9ef">public</span> InstanceReaderWriterLock(T data)
-    {
-        Data = data;
-    }
+	<span style="color:#66d9ef">public</span> InstanceReaderWriterLock(T data)
+	{
+		Data = data;
+	}
 
-    <span style="color:#66d9ef">public</span> T DoRead(Func&lt;T, T&gt; readAction)
-    {
-        <span style="color:#66d9ef">try</span>
-        {
-            locker.AcquireReaderLock(timeout);
+	<span style="color:#66d9ef">public</span> T DoRead(Func&lt;T, T&gt; readAction)
+	{
+		<span style="color:#66d9ef">try</span>
+		{
+			locker.AcquireReaderLock(timeout);
 
-            <span style="color:#66d9ef">return</span> readAction.Invoke(Data);
-        }
-        <span style="color:#66d9ef">finally</span>
-        {
-            locker.ReleaseReaderLock();
-        }
-    }
+			<span style="color:#66d9ef">return</span> readAction.Invoke(Data);
+		}
+		<span style="color:#66d9ef">finally</span>
+		{
+			locker.ReleaseReaderLock();
+		}
+	}
 
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoUpdate(Action&lt;T&gt; updateAction)
-    {
-        <span style="color:#66d9ef">try</span>
-        {
-            locker.AcquireWriterLock(timeout);
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DoUpdate(Action&lt;T&gt; updateAction)
+	{
+		<span style="color:#66d9ef">try</span>
+		{
+			locker.AcquireWriterLock(timeout);
 
-            updateAction.Invoke(Data);
-        }
-        <span style="color:#66d9ef">finally</span>
-        {
-            locker.ReleaseWriterLock();
-        }
-    }
+			updateAction.Invoke(Data);
+		}
+		<span style="color:#66d9ef">finally</span>
+		{
+			locker.ReleaseWriterLock();
+		}
+	}
 }
 </code></pre></div>
 <p>After implementing this class and doing a little testing it turns out that using the <code>ReaderWriterLock</code> to handle the locking was faster (and more consistent). It ran about 30% faster than my <code>ReadUpdateLocker</code>&rsquo;s best time and always came in with very consistent results, while my results would sometimes be up to 30% longer than my best time (making it almost twice as long as the <code>ReadUpdateLocker</code>). I&rsquo;m sure Microsoft has taken the time to implement optimizations at the IL or machine level.</p>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Basic Authentication with TFS Package Server -- Duane Newman</title>
+
+    
+
+    
+    <link href="https://duanenewman.net/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="https://duanenewman.net/css/clean-blog.min.css" rel="stylesheet">
+
+	
+    <link href="https://duanenewman.net/css/prism.css" rel="stylesheet">
+
+    
+    <link href="https://duanenewman.net/css/custom.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://duanenewman.net">Duane Newman</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="https://duanenewman.net/">Home</a>
+                    </li>
+					
+                    <li>
+                        <a href="https://duanenewman.net/blog/">Blog</a>
+                    </li>
+					
+                    <li>
+                        <a href="https://duanenewman.net/appearances/">Appearances</a>
+                    </li>
+					
+                    <li>
+                        <a href="https://duanenewman.net/speaking/">Speaking</a>
+                    </li>
+					
+                    <li>
+                        <a href="https://duanenewman.net/about/">About</a>
+                    </li>
+					
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('https://duanenewman.net/img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Basic Authentication with TFS Package Server</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">
+                 
+  A 2 minute read,
+
+Posted on Mon, Jul 29, 2019 In <a href="https://duanenewman.net/categories/coding">Coding</a>
+
+<br />
+Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://duanenewman.net/tags/dotnet">dotnet</a>, <a href="https://duanenewman.net/tags/nuget">nuget</a>, <a href="https://duanenewman.net/tags/mac">mac</a>, <a href="https://duanenewman.net/tags/osx">osx</a>, <a href="https://duanenewman.net/tags/packaging">packaging</a>, <a href="https://duanenewman.net/tags/tfs">tfs</a>, <a href="https://duanenewman.net/tags/domain">domain</a>, <a href="https://duanenewman.net/tags/authentication">authentication</a>
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<p>I recently encountered some authentication issues connecting my Mac to the package service hosted on a client&rsquo;s on-prem TFS server. The server is on a Windows domain and normally I access TFS from a windows VM that is joined to the domain. However, I&rsquo;ve recently found myself on my Mac more often while working on one of thier Xamarin mobile apps. This is when I began having problems.</p>
+
+<h2 id="the-poblem">The Poblem</h2>
+
+<p>The client has a couple NuGet packages hosted on the TFS server using the Package Management extension, and whenever I tried to do a NuGet restore I would run into authentication errors. I tried my normal domain user &amp; password as well as a Personal Access Token (the method I wanted to use) and consistently was told my credentials were no good.</p>
+
+<pre><code>Please provide credentials for: http://TfsServer/tfs/collection/_packaging/PackageCollection/nuget/v3/index.json
+
+UserName: duane
+Password: *****
+
+Unable to load the service index for source http://TfsServer/tfs/collection/_packaging/PackageCollection/nuget/v3/index.json.
+
+Response status code does not indicate success: 401 (Unauthorized).
+</code></pre>
+
+<p>I finally thought I was going mad, so I fired up Postman and supplied my index.json url and personal access token using Basic Authentication and it immediately connected! After some searching with a new search phrase that hinted at a problem with TFS Package Manager and Basic Authentication I hit the jackpot on <a href="https://stackoverflow.com/a/55245837">Stack Overflow</a>.</p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>With NuGet 5.0 there was a new parameter added to the <code>nuget sources</code> command that allows you to specify the valid authentication types to use when connecting to a package feed. You can use it when adding a source:</p>
+
+<pre><code>nuget sources add -Name MyPackageSource -Server http:/Server/feed/path/index.json -ValidAuthenticationTypes basic -username user -password password
+</code></pre>
+
+<p>You can also specify it directly in your NuGet.config file using the <code>packageSourceCredentials</code> section:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;packageSourceCredentials&gt;</span>
+    <span style="color:#f92672">&lt;MyPackageSourceName&gt;</span>
+        <span style="color:#f92672">&lt;add</span> <span style="color:#a6e22e">key=</span><span style="color:#e6db74">&#34;Username&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;unsused&#34;</span> <span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;add</span> <span style="color:#a6e22e">key=</span><span style="color:#e6db74">&#34;Password&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;EncryptedPersonalAccessToken&#34;</span> <span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;add</span> <span style="color:#a6e22e">key=</span><span style="color:#e6db74">&#34;ValidAuthenticationTypes&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;basic&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/MyPackageSourceName&gt;</span>
+<span style="color:#f92672">&lt;/packageSourceCredentials&gt;</span></code></pre></div>
+<p>Once I had this in place my <code>nuget restore</code> executed with no issues and I was back in business.</p>
+
+<h2 id="why">Why?</h2>
+
+<p>I never ran into this issue on my Windows VM, and I think it is because the TFS server responds with a request to negotiate credentials and so Windows goes into action and authenticates me with my domain login and everything just works. I&rsquo;m pretty sure this would be an issue if I attemted to connect with a Windows machine that was not joined to the domain.</p>
+
+<p>I hope this saves you some time (and me, next time I run into this).</p>
+
+                  <div style="clear:both"></div>
+
+
+   <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "duanenewmannet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                      <a href="https://twitter.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.instagram.com/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="http://youtube.com/dnewman31">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.flickr.com/duane_newman/">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.kickstarter.com/profile/duanenewman">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-usd fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted">Copyright Duane Newman</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://duanenewman.net/js/jquery.min.js"></script>
+
+    
+    <script src="https://duanenewman.net/js/bootstrap.min.js"></script>
+
+    
+    <script src="https://duanenewman.net/js/prism.js"></script>
+
+    
+    <script src="https://duanenewman.net/js/clean-blog.js"></script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-2838107-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+
+</html>
+

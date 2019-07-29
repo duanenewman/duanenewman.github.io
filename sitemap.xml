@@ -4,7 +4,89 @@
   
   <url>
     <loc>https://duanenewman.net/</loc>
-    <lastmod>2019-05-03T11:24:25-05:00</lastmod>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/blog/post/2019-07-29-basic-auth-with-tfs-package-server/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/blog/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/categories/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/categories/coding/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/authentication/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/csharp/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/domain/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/dotnet/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/mac/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/nuget/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/osx/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/packaging/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/tfs/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -20,41 +102,6 @@
   <url>
     <loc>https://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</loc>
     <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/blog/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/categories/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/categories/coding/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/csharp/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/dotnet/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -76,12 +123,6 @@
   
   <url>
     <loc>https://duanenewman.net/tags/netstandard/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/nuget/</loc>
     <lastmod>2019-03-18T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -458,6 +499,12 @@
   </url>
   
   <url>
+    <loc>https://duanenewman.net/tags/speaking/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://duanenewman.net/tags/xamarin-forms/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
     <priority>0</priority>
@@ -465,12 +512,6 @@
   
   <url>
     <loc>https://duanenewman.net/tags/mobile/</loc>
-    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/speaking/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
     <priority>0</priority>
   </url>
