@@ -148,20 +148,20 @@
     </item>
     
     <item>
-      <title>Xamarin</title>
-      <link>https://duanenewman.net/tags/xamarin/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://duanenewman.net/tags/xamarin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>gtk</title>
       <link>https://duanenewman.net/tags/gtk/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>https://duanenewman.net/tags/gtk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xamarin</title>
+      <link>https://duanenewman.net/tags/xamarin/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://duanenewman.net/tags/xamarin/</guid>
       <description></description>
     </item>
     
@@ -346,15 +346,6 @@
     </item>
     
     <item>
-      <title>DevOps</title>
-      <link>https://duanenewman.net/tags/devops/</link>
-      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://duanenewman.net/tags/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>build</title>
       <link>https://duanenewman.net/tags/build/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
@@ -369,6 +360,15 @@
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://duanenewman.net/tags/cake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://duanenewman.net/tags/devops/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://duanenewman.net/tags/devops/</guid>
       <description></description>
     </item>
     
@@ -508,15 +508,6 @@
     </item>
     
     <item>
-      <title>Speaking</title>
-      <link>https://duanenewman.net/tags/speaking/</link>
-      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
-      
-      <guid>https://duanenewman.net/tags/speaking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Xamarin Forms</title>
       <link>https://duanenewman.net/tags/xamarin-forms/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
@@ -531,6 +522,15 @@
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
       <guid>https://duanenewman.net/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>speaking</title>
+      <link>https://duanenewman.net/tags/speaking/</link>
+      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      
+      <guid>https://duanenewman.net/tags/speaking/</guid>
       <description></description>
     </item>
     
