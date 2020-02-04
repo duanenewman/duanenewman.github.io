@@ -121,35 +121,34 @@ Tags <a href="https://duanenewman.net/tags/dotnet">dotnet</a>, <a href="https://
 <p>&nbsp;</p>
 <pre class="brush: c-sharp;">public class Item
 {
-    public bool Value1 { get; set; }
-    public bool Value2 { get; set; }
+	public bool Value1 { get; set; }
+	public bool Value2 { get; set; }
 }
-
-void Main()
+<p>void Main()
 {
-    var Items = new List&lt;Item&gt;()
-    {
-        new Item() { Value1 = true, Value2 = false },
-        new Item() { Value1 = true, Value2 = false },
-        new Item() { Value1 = true, Value2 = true },
-        new Item() { Value1 = true, Value2 = true },
-        new Item() { Value1 = false, Value2 = true },
-        new Item() { Value1 = false, Value2 = true },
-        new Item() { Value1 = true, Value2 = false },
-        new Item() { Value1 = true, Value2 = false },
-    };
-        //Number of Times Value1 entered the on state.
-    int count1 = 0; 
-        //Number of Times Value2 entered the on state.
-    int count2 = 0;
-
-    Items.Aggregate (null, (Func&lt;Item, Item, Item&gt;)((a, b)=&gt;
-    {
-        count1 += ((a == null || a.Value1 != b.Value1) &amp;&amp; b.Value1 == true ? 1 : 0);
-        count2 += ((a == null || a.Value2 != b.Value2) &amp;&amp; b.Value2 == true ? 1 : 0);
-        return b;
-    }));
-}</pre>
+var Items = new List&lt;Item&gt;()
+{
+new Item() { Value1 = true, Value2 = false },
+new Item() { Value1 = true, Value2 = false },
+new Item() { Value1 = true, Value2 = true },
+new Item() { Value1 = true, Value2 = true },
+new Item() { Value1 = false, Value2 = true },
+new Item() { Value1 = false, Value2 = true },
+new Item() { Value1 = true, Value2 = false },
+new Item() { Value1 = true, Value2 = false },
+};
+//Number of Times Value1 entered the on state.
+int count1 = 0;
+//Number of Times Value2 entered the on state.
+int count2 = 0;</p>
+<pre><code>Items.Aggregate (null, (Func&amp;lt;Item, Item, Item&amp;gt;)((a, b)=&amp;gt;
+{
+    count1 += ((a == null || a.Value1 != b.Value1) &amp;amp;&amp;amp; b.Value1 == true ? 1 : 0);
+    count2 += ((a == null || a.Value2 != b.Value2) &amp;amp;&amp;amp; b.Value2 == true ? 1 : 0);
+    return b;
+}));
+</code></pre>
+<p>}</pre></p>
 <p>I hope you find this helpful. &nbsp;Obviously you could have an actual method defined to do this processing istead of an anonymous Func, but I like having this simple code inline with local variables.</p>
 
                   <div style="clear:both"></div>

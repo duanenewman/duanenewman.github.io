@@ -114,34 +114,24 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  
-
-<p>I&rsquo;m working on project to replace my car radio with a custom digital dashboard. I&rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.</p>
-
+                  <p>I&rsquo;m working on project to replace my car radio with a custom digital dashboard. I&rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.</p>
 <h2 id="adding-the-gtk-backend-project">Adding the GTK# Backend Project</h2>
-
 <p>Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to <a href="https://www.mono-project.com/download/stable/#download-win" target="_blank">The Mono Project</a> to download and run the GTK# for .NET installer for Windows.</p>
-
 <p>Now that we have GTK# installed on our machine we need to add a new project to our solution for the GTK backend. Go to File-&gt;New Project, select Windows Desktop from the tree and choose <code>Class Library (.NET Framework)</code>. Make sure to select .NET Framework 4.7 or higher. Name the project something useful, in my case <code>Cadi.UI.Gtk</code> and click ok. Once the project is added we need to add a reference to Prism, Xamarin.Forms, and the Xamarin.Forms GTK backend. In my case, I&rsquo;m using DryIoc, so I added the following packages:</p>
-
 <ul>
 <li>Prism.DryIoc.Forms
-
 <ul>
 <li>Prism.Forms</li>
 <li>Prism.Core</li>
 <li>DryIoc.dll</li>
 <li>Xamarin.Forms</li>
-</ul></li>
+</ul>
+</li>
 <li>Xamarin.Forms.Platform.GTK</li>
 </ul>
-
 <!-- <img class="img-thumbnail  pull-left" src="AddClassLibraryProject.png" alt="Add new project 'Class Library (.NET Framework)'" width="300" /> -->
-
-<p><img src="AddClassLibraryProject.png" alt="Add new project 'Class Library (.NET Framework)'" /></p>
-
+<p><img src="AddClassLibraryProject.png" alt="Add new project &lsquo;Class Library (.NET Framework)'"></p>
 <p>Next we need to manually add DLL references to the GTK Sharp library files we installed earlier. You want to add a reference to the following DLLs from the GTK# install folder (typically <code>C:\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0</code>):</p>
-
 <ul>
 <li>atk-sharp.dll</li>
 <li>gdk-sharp.dll</li>
@@ -150,13 +140,9 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 <li>gtk-dotnet.dll</li>
 <li>gtk-sharp.dll</li>
 </ul>
-
 <!-- <img class="img-thumbnail  pull-right" src="AddGtkReferences.png" alt="Add GTK# References" width="300" /> -->
-
-<p><img src="AddGtkReferences.png" alt="Add GTK# References" /></p>
-
+<p><img src="AddGtkReferences.png" alt="Add GTK# References"></p>
 <h2 id="setup-startup-code">Setup Startup Code</h2>
-
 <p>Now that you have the needed references you need to add a Program class (or rename the default Class1.cs) with a Main method that loads the Xamarin.Forms and GTK libraries and starts up your app. This is also a good time to add an IPlatformInitializer for your GTK project.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>
 {
@@ -183,41 +169,30 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
         <span style="color:#75715e">// Register any platform specific implementations
 </span><span style="color:#75715e"></span>    }
 }
-</code></pre></div>
-<p>After we&rsquo;ve made these changes we need to go to the project properties and change the Output Type from &lsquo;Class Library&rsquo; to &lsquo;Windows Application&rsquo;.</p>
-
-<h2 id="build-run">Build &amp; Run</h2>
-
+</code></pre></div><p>After we&rsquo;ve made these changes we need to go to the project properties and change the Output Type from &lsquo;Class Library&rsquo; to &lsquo;Windows Application&rsquo;.</p>
+<h2 id="build--run">Build &amp; Run</h2>
 <p>At this point you are probably thinking you can select your new project for startup and hit run, right? If you do you will get this error message: <code>System.TypeLoadException: 'Could not load type 'Prism.Navigation.INavigationService' from assembly 'Prism, Version=7.1.0.431 ... '</code></p>
-
-<p><img src="TypeLoadException.png" alt="System.TypeLoadException" /></p>
-
+<p><img src="TypeLoadException.png" alt="System.TypeLoadException"></p>
 <p>Turns out that we inadvertently are loading the desktop/WPF version of Prism, thanks to how NuGet works it&rsquo;s magic, and that fact that this is, after all, a regular Windows console app project using .NET. This is actually an easy fix, but does require editing our project file. To begin, right click on the GTK project and select <code>Unload Project</code>. You&rsquo;ll now have a grayed out entry for the project, right click on it and select <code>edit (ProjectName).csproj</code>. We are looking for the hint paths for the DLLs from the Prism package: Prism &amp; Prism.Forms.</p>
-
 <p>We want to go from references like these (<code>..\packages\Prism.Core.7.1.0.431\lib\net45\*.dll</code>):</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="color:#f92672">&lt;Reference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Prism, Version=7.1.0.431, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;HintPath&gt;</span>..\packages\Prism.Core.7.1.0.431\lib\net45\Prism.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
+      <span style="color:#f92672">&lt;HintPath</span><span style="color:#f92672">&gt;</span>..\packages\Prism.Core.7.1.0.431\lib\net45\Prism.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
     <span style="color:#f92672">&lt;/Reference&gt;</span>
     <span style="color:#f92672">&lt;Reference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Prism.Forms, Version=7.1.0.431, Culture=neutral, processorArchitecture=MSIL&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;HintPath&gt;</span>..\packages\Prism.Forms.7.1.0.431\lib\net45\Prism.Forms.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
-    <span style="color:#f92672">&lt;/Reference&gt;</span></code></pre></div>
-<p>To NetStandard 2.0 references like these (<code>..\packages\Prism.Core.7.1.0.431\lib\netstandard2.0\*.dll</code>):</p>
+      <span style="color:#f92672">&lt;HintPath</span><span style="color:#f92672">&gt;</span>..\packages\Prism.Forms.7.1.0.431\lib\net45\Prism.Forms.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
+    <span style="color:#f92672">&lt;/Reference&gt;</span>
+</code></pre></div><p>To NetStandard 2.0 references like these (<code>..\packages\Prism.Core.7.1.0.431\lib\netstandard2.0\*.dll</code>):</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="color:#f92672">&lt;Reference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Prism, Version=7.1.0.431, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;HintPath&gt;</span>..\packages\Prism.Core.7.1.0.431\lib\netstandard2.0\Prism.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
+      <span style="color:#f92672">&lt;HintPath</span><span style="color:#f92672">&gt;</span>..\packages\Prism.Core.7.1.0.431\lib\netstandard2.0\Prism.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
     <span style="color:#f92672">&lt;/Reference&gt;</span>
     <span style="color:#f92672">&lt;Reference</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Prism.Forms, Version=7.1.0.431, Culture=neutral, processorArchitecture=MSIL&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;HintPath&gt;</span>..\packages\Prism.Forms.7.1.0.431\lib\netstandard2.0\Prism.Forms.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
-    <span style="color:#f92672">&lt;/Reference&gt;</span></code></pre></div>
-<h2 id="success">Success</h2>
-
+      <span style="color:#f92672">&lt;HintPath</span><span style="color:#f92672">&gt;</span>..\packages\Prism.Forms.7.1.0.431\lib\netstandard2.0\Prism.Forms.dll<span style="color:#f92672">&lt;/HintPath&gt;</span>
+    <span style="color:#f92672">&lt;/Reference&gt;</span>
+</code></pre></div><h2 id="success">Success</h2>
 <p>Now right click the project node and select <code>Reload Project</code>. After it loads do a Rebuild and run it again and you will be rewarded with your app running!</p>
-
-<p><img src="RunningScreen.png" alt="Running" /></p>
-
+<p><img src="RunningScreen.png" alt="Running"></p>
 <p>I hope this get&rsquo;s you on your way to playing with Xamrin.Forms and Prism on GTK. Up next is getting the project to run in Linux and on the RaspberryPi, stay tuned!</p>
-
-<h2 id="tl-dr">TL;DR;</h2>
-
+<h2 id="tldr">TL;DR;</h2>
 <p>You need to manually edit your GTK project&rsquo;s csproj and switch the Prism.dll and Prism.Forms.dll from net45 to netstandard2.0 via the hint path.</p>
 
                   <div style="clear:both"></div>

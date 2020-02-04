@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Speaking on Duane Newman</title>
@@ -63,7 +63,7 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://duanenewman.net/speaking/hands-free-mobile-ui-testing/</guid>
-      <description>Testing your mobile app against the sea of mobile devices can be daunting, and even limiting to testing with recent popular devices can be cumbersome and expensive. Not to mention the wear and tear on your thumbs with all that tapping and swiping! Wouldn&amp;rsquo;t it be great if you could apply your well-honed app logic unit testing skills and practices to your UI testing? I&amp;rsquo;ve got great news, you can!</description>
+      <description>Testing your mobile app against the sea of mobile devices can be daunting, and even limiting to testing with recent popular devices can be cumbersome and expensive. Not to mention the wear and tear on your thumbs with all that tapping and swiping! Wouldn&amp;rsquo;t it be great if you could apply your well-honed app logic unit testing skills and practices to your UI testing? I&amp;rsquo;ve got great news, you can! We&amp;rsquo;ll explore how you can create coded UI tests with C# and Xamarin UITest to automate all that tapping and swiping in your existing mobile apps, and how to plan for it moving forward.</description>
     </item>
     
     <item>
@@ -72,7 +72,7 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://duanenewman.net/speaking/packaging-your-world-with-nuget/</guid>
-      <description>Whether you are creating an open source library or building enterprise app core components, you need to get that functionality into other projects. But developing these resources is usually easier than consuming them. How about a worry free way to distribute and reference those resources in your project that will let you stay up to date, but allow you to avoid problems that may introduce breaking changes or new bugs?</description>
+      <description>Whether you are creating an open source library or building enterprise app core components, you need to get that functionality into other projects. But developing these resources is usually easier than consuming them. How about a worry free way to distribute and reference those resources in your project that will let you stay up to date, but allow you to avoid problems that may introduce breaking changes or new bugs? NuGet packages to the rescue!</description>
     </item>
     
     <item>

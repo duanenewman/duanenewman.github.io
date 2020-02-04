@@ -114,14 +114,9 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  
-
-<h2 id="the-problem">The Problem</h2>
-
+                  <h2 id="the-problem">The Problem</h2>
 <p>On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a <code>List&lt;T&gt;</code> that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads. The multi-threading was perfect for reading, but as soon as they started updating the collection (or any sub-collections on the individual items involved in queries) they, unsurprisingly, started getting <a href="https://docs.microsoft.com/en-us/dotnet/api/system.invalidoperationexception" target="_blank">InvalidOperationExceptions</a> with the message &ldquo;Collection was modified; enumeration operation may not execute.&rdquo;</p>
-
 <h2 id="quick-fix">Quick Fix</h2>
-
 <p>They needed a quick solution to the exceptions so I put together a simple class to manage locking on updates, while allowing concurrent reads.  (I won&rsquo;t get into if there was a better overall solution to what they already had implemented)</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReadUpdateLocker</span>
 {
@@ -171,11 +166,8 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 		}
 	}
 }
-</code></pre></div>
-<p>Basically this allowed the reads to come in concurrently without being blocked, until an update was requested. When an update came in it would lock on the UpdateLock object and hold the lock until all the active read threads finished, which decremented the read counter back to 0. After the update finished and released the lock any incoming reads would resume with minimal impact.</p>
-
+</code></pre></div><p>Basically this allowed the reads to come in concurrently without being blocked, until an update was requested. When an update came in it would lock on the UpdateLock object and hold the lock until all the active read threads finished, which decremented the read counter back to 0. After the update finished and released the lock any incoming reads would resume with minimal impact.</p>
 <h2 id="making-it-easier">Making it Easier</h2>
-
 <p>So we had a solution that worked, but it required reading and updating code to keep track of both the in-memory list of data as well as the instance of the locking class. So I did a little refactoring so that the data was hidden behind the locking mechanism, which then guarded all access to the collection through the locks. This  simplified the calling code by removing the need to keep track of two objects, and preventing exceptions for accidental unlocked access to the data.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InstanceReadUpdateLocker</span>&lt;T&gt;
 {
@@ -199,19 +191,15 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 		locker.DoUpdate (() =&gt; updateAction(Data));
 	}
 }
-</code></pre></div>
-<p>Now all reads and updates to the data went through the class and this worked well.</p>
-
+</code></pre></div><p>Now all reads and updates to the data went through the class and this worked well.</p>
 <h2 id="reinventing-the-wheel">Reinventing the Wheel</h2>
-
 <p>After I finished the proof of concept and implemented it around their calls I got to thinking this has to be a common problem and there must be other implementations out there. What I found was the need to constantly investigate what the .NET framework has to offer and avoid reinventing the wheel.</p>
-
 <p>I present to you the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.readerwriterlock" target="_blank">ReaderWriterLock</a> class. Yes, a class designed to allow your code to track read and write locks. However, if you look at the sample implementation it is a bit more involved to use, because it is also more flexible. I wanted to be able to use it as simply as my above <code>InstanceReadUpdateLocker</code> class. So I wrote this little class to wrap the locking functionality, but still provide simple usage from calling code.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InstanceReaderWriterLock</span>&lt;T&gt;
 {
 	<span style="color:#66d9ef">private</span> ReaderWriterLock locker = <span style="color:#66d9ef">new</span> ReaderWriterLock();
 	<span style="color:#66d9ef">private</span> T Data { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
-	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> timeout = <span style="color:#ae81ff">500</span>;
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> timeout = <span style="color:#ae81ff">5</span><span style="color:#ae81ff">0</span><span style="color:#ae81ff">0</span>;
 
 	<span style="color:#66d9ef">public</span> InstanceReaderWriterLock(T data)
 	{
@@ -246,17 +234,11 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 		}
 	}
 }
-</code></pre></div>
-<p>After implementing this class and doing a little testing it turns out that using the <code>ReaderWriterLock</code> to handle the locking was faster (and more consistent). It ran about 30% faster than my <code>ReadUpdateLocker</code>&rsquo;s best time and always came in with very consistent results, while my results would sometimes be up to 30% longer than my best time (making it almost twice as long as the <code>ReadUpdateLocker</code>). I&rsquo;m sure Microsoft has taken the time to implement optimizations at the IL or machine level.</p>
-
+</code></pre></div><p>After implementing this class and doing a little testing it turns out that using the <code>ReaderWriterLock</code> to handle the locking was faster (and more consistent). It ran about 30% faster than my <code>ReadUpdateLocker</code>'s best time and always came in with very consistent results, while my results would sometimes be up to 30% longer than my best time (making it almost twice as long as the <code>ReadUpdateLocker</code>). I&rsquo;m sure Microsoft has taken the time to implement optimizations at the IL or machine level.</p>
 <h2 id="wrap-up">Wrap-up</h2>
-
 <p>The moral of the story is if you think you are creating something that seems like a common need, take a quick look to make sure there isn&rsquo;t already one built for you.</p>
-
 <p>Here is a <a href="https://gist.github.com/duanenewman/6bf027fae3aab5aa85342eb34c94d9d4" target="_blank">gist</a> that you can drop in LINQPad to see the initial problem and all the above solutions with some random multi-threaded calls.</p>
-
 <h2 id="update-even-more-built-in-types">Update, Even More Built-In Types</h2>
-
 <p>Thanks to a <a href="https://www.linkedin.com/feed/update/urn:li:activity:6503777687096553474/" target="_blank">comment</a> from <a href="https://twitter.com/chaseaucoin" target="_blank">Chase</a>, another class to checkout is <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentbag-1" target="_blank">ConcurrentBag&lt;T&gt;</a>, which gives you thread safe access to the collection. The .NET framework has a wealth of types out there!</p>
 
                   <div style="clear:both"></div>

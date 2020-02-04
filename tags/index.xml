@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Duane Newman</title>
@@ -139,7 +139,7 @@
     </item>
     
     <item>
-      <title>tips</title>
+      <title>Tips</title>
       <link>https://duanenewman.net/tags/tips/</link>
       <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
       
@@ -157,7 +157,7 @@
     </item>
     
     <item>
-      <title>xamarin</title>
+      <title>Xamarin</title>
       <link>https://duanenewman.net/tags/xamarin/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
       
@@ -364,7 +364,7 @@
     </item>
     
     <item>
-      <title>devops</title>
+      <title>DevOps</title>
       <link>https://duanenewman.net/tags/devops/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
@@ -378,24 +378,6 @@
       <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
       
       <guid>https://duanenewman.net/tags/photography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scuba</title>
-      <link>https://duanenewman.net/tags/scuba/</link>
-      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
-      
-      <guid>https://duanenewman.net/tags/scuba/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Travel</title>
-      <link>https://duanenewman.net/tags/travel/</link>
-      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
-      
-      <guid>https://duanenewman.net/tags/travel/</guid>
       <description></description>
     </item>
     
@@ -414,6 +396,24 @@
       <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
       
       <guid>https://duanenewman.net/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scuba</title>
+      <link>https://duanenewman.net/tags/scuba/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>https://duanenewman.net/tags/scuba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>https://duanenewman.net/tags/travel/</link>
+      <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
+      <guid>https://duanenewman.net/tags/travel/</guid>
       <description></description>
     </item>
     
@@ -481,6 +481,15 @@
     </item>
     
     <item>
+      <title>mobile</title>
+      <link>https://duanenewman.net/tags/mobile/</link>
+      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      
+      <guid>https://duanenewman.net/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>NCC</title>
       <link>https://duanenewman.net/tags/ncc/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
@@ -508,29 +517,20 @@
     </item>
     
     <item>
+      <title>Speaking</title>
+      <link>https://duanenewman.net/tags/speaking/</link>
+      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      
+      <guid>https://duanenewman.net/tags/speaking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Xamarin Forms</title>
       <link>https://duanenewman.net/tags/xamarin-forms/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
       
       <guid>https://duanenewman.net/tags/xamarin-forms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mobile</title>
-      <link>https://duanenewman.net/tags/mobile/</link>
-      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
-      
-      <guid>https://duanenewman.net/tags/mobile/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>speaking</title>
-      <link>https://duanenewman.net/tags/speaking/</link>
-      <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
-      
-      <guid>https://duanenewman.net/tags/speaking/</guid>
       <description></description>
     </item>
     
@@ -679,20 +679,20 @@
     </item>
     
     <item>
-      <title>HDC</title>
-      <link>https://duanenewman.net/tags/hdc/</link>
-      <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
-      
-      <guid>https://duanenewman.net/tags/hdc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>agile</title>
       <link>https://duanenewman.net/tags/agile/</link>
       <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
       
       <guid>https://duanenewman.net/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HDC</title>
+      <link>https://duanenewman.net/tags/hdc/</link>
+      <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
+      
+      <guid>https://duanenewman.net/tags/hdc/</guid>
       <description></description>
     </item>
     

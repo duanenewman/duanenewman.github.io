@@ -114,20 +114,12 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  
-
-<p>Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.</p>
-
+                  <p>Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.</p>
 <h1 id="what-are-extension-methods">What are Extension Methods?</h1>
-
 <p>They are this cool concept introduced with .NET 3.0 and are central to making LINQ usable and convenient (more on that later). They basically allow you to write a method that acts as an extension to an existing class, even if you don&rsquo;t have access to the source code, or if the class is sealed. This can be a great way to make your code flow better and wrap up utilitarian functionality for easy reuse. There are some limitations to extension methods: the code inside an extension method has the same level of access to the class as you would writing any other code outside of the class, meaning you can&rsquo;t access non-public properties or methods.</p>
-
 <h1 id="where-can-i-find-extension-methods-in-net">Where can I find Extension Methods in .NET?</h1>
-
 <p>A great example of extension methods is the implementation of LINQ. If you take a close look at all the functionality that was provided as a part of the LINQ standard you see that all of it was created through extension methods. This was vital to allowing LINQ to be provided through a separate assembly from mscorelib while still being convenient to use and supporting the fluent coding style we are used to today. To provide the same level of functionality it would have required making all classes that inherit IEnumerable<T> instead inherit from some abstract base. That&rsquo;s right, did I forget to mention that Extension Methods can extend on Interfaces too, not just concrete classes? This is another key feature of extension methods, since there is no other convenient way to provide methods with implementations on an interface.</p>
-
 <h1 id="how-do-you-make-an-extension-method">How do you make an extension method?</h1>
-
 <p>To create an extension method you need to adhere to 3 things: the class has to be static, the method has to be static, and the first parameter the method takes has to be of the type you want to extend, and it has to use the [this] keyword.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">namespace</span> MyExtensions
 {
@@ -139,27 +131,21 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
         }
     }
 }
-</code></pre></div>
-<p>Using an extension method is really easy, there is just one real requirement (aside from referencing the assembly with the extension methods), you have to either be in the same namespace as your extension method&rsquo;s class or include a using statement for that namespace so the compiler knows where to look for your extension methods. Then you just call it like a regular method.</p>
+</code></pre></div><p>Using an extension method is really easy, there is just one real requirement (aside from referencing the assembly with the extension methods), you have to either be in the same namespace as your extension method&rsquo;s class or include a using statement for that namespace so the compiler knows where to look for your extension methods. Then you just call it like a regular method.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> MyExtensions;
 ...
 <span style="color:#66d9ef">var</span> test = <span style="color:#e6db74">&#34;*&#34;</span>;
 <span style="color:#66d9ef">var</span> pass = test.IsNotEmptyOrAsterisk();
-</code></pre></div>
-<p>This can be a great way to build a library of functionality that extends base CLR types that you can easily include an reference in all your projects. It also allows you to break code into separate assemblies that you can pick and choose when they are relevant and needed. I use this often when I am working with a third party library that might common code I have to perform on one of the libraries embedded types.</p>
-
+</code></pre></div><p>This can be a great way to build a library of functionality that extends base CLR types that you can easily include an reference in all your projects. It also allows you to break code into separate assemblies that you can pick and choose when they are relevant and needed. I use this often when I am working with a third party library that might common code I have to perform on one of the libraries embedded types.</p>
 <h1 id="what-can-you-do-with-an-extension-method">What can you do with an Extension Method?</h1>
-
 <p>Anything you can write normally. Here are a couple ideas to get you thinking:</p>
-
 <p>IsIn: I get tired of if statements that require checking a single variable for multiple conditions. For one, I can lose track of where I am, if the conditional check is complex, and then it is often very verbose. This is especially true if I&rsquo;m checking a property of a property in a LINQ statement. Consider the following:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> OrderLinesICareAbout = orders.Sum(o =&gt; o.Items.Count(l =&gt;
     (l.ItemType == ItemType.KeyBoard ||
     l.ItemType == ItemType.Mouse ||
     l.ItemType == ItemType.GamePad) &amp;&amp;
-    l.Price &lt; <span style="color:#ae81ff">50</span>));
-</code></pre></div>
-<p>Here is my Extension Method:</p>
+    l.Price &lt; <span style="color:#ae81ff">5</span><span style="color:#ae81ff">0</span>));
+</code></pre></div><p>Here is my Extension Method:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsIn&lt;T&gt;(<span style="color:#66d9ef">this</span> T input, <span style="color:#66d9ef">params</span> T[] values)
 {
     <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> <span style="color:#66d9ef">value</span> <span style="color:#66d9ef">in</span> values)
@@ -169,25 +155,20 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
     }
     <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
 }
-</code></pre></div>
-<p>Now I can rewrite my code like this:</p>
+</code></pre></div><p>Now I can rewrite my code like this:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">OrderLinesICareAbout = orders.Sum(o =&gt; o.Items.Count(l =&gt;
     l.ItemType.IsIn(ItemType.KeyBoard, ItemType.Mouse, ItemType.GamePad) &amp;&amp;
-    l.Price &lt; <span style="color:#ae81ff">50</span>));
-</code></pre></div>
-<p>Another common annoyance is checking if a date is between two dates can be verbose and take a moment to visually parse:</p>
+    l.Price &lt; <span style="color:#ae81ff">5</span><span style="color:#ae81ff">0</span>));
+</code></pre></div><p>Another common annoyance is checking if a date is between two dates can be verbose and take a moment to visually parse:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue &gt;= startDate &amp;&amp; DateValue &lt;= endDate;
-</code></pre></div>
-<p>Add an extension method:</p>
+</code></pre></div><p>Add an extension method:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsBetween(<span style="color:#66d9ef">this</span> DateTime input, DateTime start, DateTime end)
 {
     <span style="color:#66d9ef">return</span> input &gt;= start &amp;&amp; input &lt;= end;
 }
-</code></pre></div>
-<p>And it becomes much clearer:</p>
+</code></pre></div><p>And it becomes much clearer:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> isInRange = DateValue.IsBetween(startDate, endDate);
-</code></pre></div>
-<p>What have you done with extension methods? Drop a comment below with some of your favorites.</p>
+</code></pre></div><p>What have you done with extension methods? Drop a comment below with some of your favorites.</p>
 
                   <div style="clear:both"></div>
 

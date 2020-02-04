@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://duanenewman.net/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/authentication/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
   </url>
   
@@ -20,73 +25,56 @@
   <url>
     <loc>https://duanenewman.net/categories/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/categories/coding/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/</loc>
-    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/authentication/</loc>
-    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/csharp/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/domain/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/dotnet/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/mac/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/nuget/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/osx/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/packaging/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/</loc>
+    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/tfs/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -105,44 +93,43 @@
   </url>
   
   <url>
+    <loc>https://duanenewman.net/tags/csproj/</loc>
+    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</loc>
     <lastmod>2019-03-18T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/csproj/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/msbuild/</loc>
     <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/netstandard/</loc>
     <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/packagereference/</loc>
     <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/prismlib/</loc>
     <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/tips/</loc>
     <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/gtk/</loc>
+    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -151,15 +138,13 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/gtk/</loc>
+    <loc>https://duanenewman.net/tags/xamarin/</loc>
     <lastmod>2019-03-12T00:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/xamarin/</loc>
-    <lastmod>2019-03-12T00:00:00-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://duanenewman.net/tags/powershell/</loc>
+    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
   </url>
   
   <url>
@@ -168,9 +153,8 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/powershell/</loc>
-    <lastmod>2019-03-06T00:00:00-06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://duanenewman.net/tags/builtin/</loc>
+    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -179,21 +163,13 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/builtin/</loc>
-    <lastmod>2019-02-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/framework/</loc>
     <lastmod>2019-02-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/lock/</loc>
     <lastmod>2019-02-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -202,27 +178,33 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/categories/technology/</loc>
-    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/network/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/pfsense/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/plex/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/categories/technology/</loc>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/api/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/csadvent/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -231,39 +213,23 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/api/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/csadvent/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/mvvm/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/observable/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/uwp/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/wpf/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -274,48 +240,41 @@
   <url>
     <loc>https://duanenewman.net/tags/dependency-injection/</loc>
     <lastmod>2018-03-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/di/</loc>
     <lastmod>2018-03-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/ioc/</loc>
     <lastmod>2018-03-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/tdd/</loc>
     <lastmod>2018-03-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/unit-testing/</loc>
     <lastmod>2018-03-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/blog/post/my-first-mvp-summit/</loc>
-    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/microsoft/</loc>
     <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/mvp/</loc>
     <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/blog/post/my-first-mvp-summit/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -361,19 +320,16 @@
   <url>
     <loc>https://duanenewman.net/tags/build/</loc>
     <lastmod>2017-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/cake/</loc>
     <lastmod>2017-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/devops/</loc>
     <lastmod>2017-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -389,49 +345,41 @@
   <url>
     <loc>https://duanenewman.net/tags/photography/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/categories/scuba/</loc>
-    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/scuba/</loc>
-    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/travel/</loc>
-    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/planning/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/review/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/categories/scuba/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/scuba/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/travel/</loc>
+    <lastmod>2016-07-29T14:46:23+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/video/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/950xl/</loc>
     <lastmod>2016-07-27T11:45:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -442,37 +390,36 @@
   <url>
     <loc>https://duanenewman.net/tags/troubleshooting/</loc>
     <lastmod>2016-07-27T11:45:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/winphone/</loc>
     <lastmod>2016-07-27T11:45:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/coding/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/community/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/deployment/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/mobile/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/ncc/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -483,43 +430,31 @@
   <url>
     <loc>https://duanenewman.net/tags/nebraskacode/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/oss/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/categories/speaking/</loc>
-    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/xamarin-forms/</loc>
-    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/mobile/</loc>
-    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/speaking/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/categories/speaking/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/xamarin-forms/</loc>
+    <lastmod>2016-05-23T15:01:57+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/build2016/</loc>
     <lastmod>2016-04-27T09:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -530,13 +465,11 @@
   <url>
     <loc>https://duanenewman.net/tags/technology/</loc>
     <lastmod>2016-04-27T09:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/lumia/</loc>
     <lastmod>2016-04-18T16:58:41+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -567,13 +500,11 @@
   <url>
     <loc>https://duanenewman.net/tags/human/</loc>
     <lastmod>2016-03-31T06:30:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/nui/</loc>
     <lastmod>2016-03-31T06:30:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -584,7 +515,6 @@
   <url>
     <loc>https://duanenewman.net/tags/bluff/</loc>
     <lastmod>2016-03-26T11:46:24+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -593,21 +523,28 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/categories/video/</loc>
-    <lastmod>2016-03-26T11:46:24+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/plugin/</loc>
     <lastmod>2016-03-26T11:46:24+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/vegas/</loc>
     <lastmod>2016-03-26T11:46:24+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/categories/video/</loc>
+    <lastmod>2016-03-26T11:46:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/chocolatey/</loc>
+    <lastmod>2016-03-24T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/media/</loc>
+    <lastmod>2016-03-24T11:15:00+00:00</lastmod>
   </url>
   
   <url>
@@ -616,21 +553,8 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/chocolatey/</loc>
-    <lastmod>2016-03-24T11:15:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/media/</loc>
-    <lastmod>2016-03-24T11:15:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/utility/</loc>
     <lastmod>2016-03-24T11:15:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -646,13 +570,11 @@
   <url>
     <loc>https://duanenewman.net/tags/qrcode/</loc>
     <lastmod>2016-03-18T08:30:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/security/</loc>
     <lastmod>2016-03-18T08:30:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -666,26 +588,18 @@
   </url>
   
   <url>
+    <loc>https://duanenewman.net/tags/admin/</loc>
+    <lastmod>2016-01-22T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</loc>
     <lastmod>2016-01-22T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/admin/</loc>
-    <lastmod>2016-01-22T12:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/proxy/</loc>
     <lastmod>2016-01-22T12:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/stldodn/</loc>
-    <lastmod>2015-09-25T09:10:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -694,20 +608,23 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/hdc/</loc>
-    <lastmod>2015-09-24T11:45:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/blog/post/heartland-developers-conference-2015/</loc>
-    <lastmod>2015-09-24T11:45:00+00:00</lastmod>
+    <loc>https://duanenewman.net/tags/stldodn/</loc>
+    <lastmod>2015-09-25T09:10:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/agile/</loc>
     <lastmod>2015-09-24T11:45:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/hdc/</loc>
+    <lastmod>2015-09-24T11:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/blog/post/heartland-developers-conference-2015/</loc>
+    <lastmod>2015-09-24T11:45:00+00:00</lastmod>
   </url>
   
   <url>
@@ -718,7 +635,6 @@
   <url>
     <loc>https://duanenewman.net/tags/kcdc/</loc>
     <lastmod>2015-06-16T11:15:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -729,7 +645,6 @@
   <url>
     <loc>https://duanenewman.net/tags/interview/</loc>
     <lastmod>2015-04-02T08:23:02+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -740,7 +655,6 @@
   <url>
     <loc>https://duanenewman.net/tags/stltechtalk/</loc>
     <lastmod>2015-04-02T08:23:02+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -751,7 +665,6 @@
   <url>
     <loc>https://duanenewman.net/page/</loc>
     <lastmod>2015-03-31T17:43:05+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -772,7 +685,6 @@
   <url>
     <loc>https://duanenewman.net/tags/kcdnug/</loc>
     <lastmod>2015-03-24T22:30:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -783,7 +695,6 @@
   <url>
     <loc>https://duanenewman.net/tags/silverlight/</loc>
     <lastmod>2015-03-17T08:40:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -792,44 +703,38 @@
   </url>
   
   <url>
+    <loc>https://duanenewman.net/tags/business/</loc>
+    <lastmod>2015-03-03T08:55:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</loc>
     <lastmod>2015-03-03T08:55:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/business/</loc>
-    <lastmod>2015-03-03T08:55:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/linq/</loc>
     <lastmod>2015-03-03T08:55:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/social/</loc>
     <lastmod>2015-03-03T08:55:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/twitter/</loc>
     <lastmod>2015-03-03T08:55:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/judging/</loc>
     <lastmod>2015-02-09T12:30:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/skillsusa/</loc>
     <lastmod>2015-02-09T12:30:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -855,7 +760,6 @@
   <url>
     <loc>https://duanenewman.net/categories/musings/</loc>
     <lastmod>2014-11-10T08:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -866,13 +770,11 @@
   <url>
     <loc>https://duanenewman.net/tags/buiness/</loc>
     <lastmod>2014-10-21T16:04:44+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/reflection/</loc>
     <lastmod>2014-10-21T16:04:44+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -893,7 +795,6 @@
   <url>
     <loc>https://duanenewman.net/tags/surface/</loc>
     <lastmod>2013-02-09T08:56:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -909,7 +810,6 @@
   <url>
     <loc>https://duanenewman.net/tags/directshow/</loc>
     <lastmod>2011-09-14T18:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
