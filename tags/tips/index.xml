@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tips on Duane Newman</title>
+    <title>tips on Duane Newman</title>
     <link>https://duanenewman.net/tags/tips/</link>
-    <description>Recent content in Tips on Duane Newman</description>
+    <description>Recent content in tips on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 12:30:00 -0600</lastBuildDate>
     
 	<atom:link href="https://duanenewman.net/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Parallels Shared Network Fails to Connect</title>
+      <link>https://duanenewman.net/blog/post/parallels-shared-network-fails-to-connect/</link>
+      <pubDate>Mon, 10 Feb 2020 12:30:00 -0600</pubDate>
+      
+      <guid>https://duanenewman.net/blog/post/parallels-shared-network-fails-to-connect/</guid>
+      <description>Today (Monday), out of the blue, one of my Windows 10 Parallels virtual machines decided that it had no connection to the internet. Friday I was on site at a client using thier WiFi network to work through some changes they needed. Today, back at the office, I fired up my VM to push the changes and make a couple more tweaks. I was immediated greated by git telling me that my git host didn&amp;rsquo;t exist.</description>
+    </item>
     
     <item>
       <title>Forcing a Specific Target Platform With PackageReference</title>

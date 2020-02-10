@@ -2,7 +2,6 @@
 <html lang="en-us">
 
 <head>
-	<meta name="generator" content="Hugo 0.63.2" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> -- Duane Newman</title>
+    <title>Parallels Shared Network Fails to Connect -- Duane Newman</title>
 
-    <link href="https://duanenewman.net/index.xml" rel="alternate" type="application/rss+xml" title="Duane Newman" />
     
     <link href="https://duanenewman.net/css/bootstrap.min.css" rel="stylesheet">
 
@@ -86,42 +84,17 @@
 
 
     
-    <header class="intro-header" style="background-image: url('https://duanenewman.net/img/cadescove-bg.jpg')">
-                  
-     <div class="container">
-       <div class="row">
-         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-           <div class="site-heading">
-             <h1>Duane Newman</h1>
-             <hr class="small">
-             <span class="subheading">Coder - Speaker - Microsoft MVP - Scuba Instructor</span>
-           </div>
-         </div>
-       </div>
-     </div>
-    </header>
-
     
-    <div class="container">
+    <header class="intro-header" style="background-image: url('https://duanenewman.net/img/post-bg.jpg')">
+    
+      <div class="container">
         <div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
-
-				<p>I&rsquo;m a geek and I love sharing about the technologies that excite me. I do this through <a href="speaking">speaking</a> at conferences, user groups, and other local events, organizing the <a href="http://kcdnug.org" target="_blank">Kansas City .NET User Group</a>, providing technical <a href="training">training</a>, writing on my <a href="blog">blog</a>, and sometimes on other outlets like <a href="https://twitter.com/duanenewman" target="_blank">Twitter</a>, <a href="https://github.com/duanenewman" target="_blank">GitHub</a>, <a href="https://instagram.com/duanenewman" target="_blank">Instagram</a>, and <a href="https://www.youtube.com/user/dnewman31" target="_blank">YouTube</a>. I&rsquo;m honored to have my community involvement recognized by Microsoft with their <a href="https://mvp.microsoft.com/en-us/PublicProfile/5002703" target="_blank">MVP Award</a>.</p>
-<p>I don&rsquo;t just geek out over software development. I also teach SCUBA diving as a PADI Open Water Scuba Instructor. If you are interested in discovering the underwater world through SCUBA I&rsquo;d love to talk. You can learn more at <a href="http://dldadventures.com/" target="_blank">Duane &amp; Lisa&#39;s Diving Adventures</a>.</p>
-<p>Still haven&rsquo;t heard enough about me? <a href="about">Continue Reading</a></p>
-
-				
-				<hr/>
-
-				
-					               <div class="post-preview">
-                 <a href="https://duanenewman.net/blog/post/parallels-shared-network-fails-to-connect/">
-                      <h2 class="post-title">Parallels Shared Network Fails to Connect</h2>
-                      <h3 class="post-subtitle"></h3>
-                    </a>
-                    <p class="post-meta">
-                      
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Parallels Shared Network Fails to Connect</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">
+                 
   A 2 minute read,
 
 Posted on Mon, Feb 10, 2020 In <a href="https://duanenewman.net/categories/technology">Technology</a>
@@ -129,26 +102,68 @@ Posted on Mon, Feb 10, 2020 In <a href="https://duanenewman.net/categories/techn
 <br />
 Tags <a href="https://duanenewman.net/tags/parallels">parallels</a>, <a href="https://duanenewman.net/tags/network">network</a>, <a href="https://duanenewman.net/tags/tips">tips</a>
 
-				  </p>
-				  <p> Today (Monday), out of the blue, one of my Windows 10 Parallels virtual machines decided that it had no connection to the internet. Friday I was on site at a client using thier WiFi network to work through some changes they needed. Today, back at the office, I fired up my VM to push the changes and make a couple more tweaks. I was immediated greated by git telling me that my git host didn&rsquo;t exist.</p>
-                </div>
-                <hr>
-
-				
-				
-				<ul class="pager">
-				  <li class="next">
-					<a href="https://duanenewman.net/blog/">Older Posts &rarr;</a>
-				  </li>
-				</ul>
-	  
-
-
-			</div>
-            
+               </span>
+             </div>
+           </div>
         </div>
-    </div>
+      </div>
+    </header>
 
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <p>Today (Monday), out of the blue, one of my Windows 10 Parallels virtual machines decided that it had no connection to the internet. Friday I was on site at a client using thier WiFi network to work through some changes they needed. Today, back at the office, I fired up my VM to push the changes and make a couple more tweaks. I was immediated greated by git telling me that my git host didn&rsquo;t exist. I realized that Windows was reporting that I had no internet connection.</p>
+<h2 id="attempts-at-self-help">Attempts at self-help</h2>
+<ul>
+<li>My first instinct was to reboot the VM, this didn&rsquo;t work.</li>
+<li>Next, I tried to use Window&rsquo;s network troubleshooter to fix the problem, this didn&rsquo;t work.</li>
+<li>I rebooted again, because why not? Still no internet (or local network) connectivity.</li>
+<li>I turned to the internet: A realatively quick search for &lsquo;parallels shared network no internet&rsquo; got me to <a href="https://forum.parallels.com/threads/shared-networking-not-working-no-internet.98918/" target="_blank">this forum post</a> on the Parallels forums. The post was from 2010, and the OP was having issues on Windows XP, but I figured I&rsquo;d give the solution a try, and it worked!</li>
+</ul>
+<h2 id="the-solution">The Solution</h2>
+<p>The Parallels developer (Elric) stated that it may be the Windows TCP/IP Stack wigging out and to try to do a reset on the stack. Here are the steps so I can find this faster in the future, and in case that forum post dissapears.</p>
+<ol>
+<li>Open an elevated command prompt</li>
+<li>Run this command <code>netsh winsock reset</code></li>
+<li>Reboot</li>
+<li>Open an elevated command prompt, again</li>
+<li>Run this command <code>netsh int ip reset reset.log</code></li>
+<li>Reboot, again</li>
+<li>You should have a working internet connection!</li>
+</ol>
+<p>This is another post that exists mostly to help me remember how I got this working, but I hope this helps someone else in the future.</p>
+
+                  <div style="clear:both"></div>
+
+
+   <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "duanenewmannet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
 
     <hr>
     

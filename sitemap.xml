@@ -4,7 +4,47 @@
   
   <url>
     <loc>https://duanenewman.net/</loc>
-    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
+    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/blog/</loc>
+    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/categories/</loc>
+    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/network/</loc>
+    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/parallels/</loc>
+    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/blog/post/parallels-shared-network-fails-to-connect/</loc>
+    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/</loc>
+    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/categories/technology/</loc>
+    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duanenewman.net/tags/tips/</loc>
+    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +54,6 @@
   
   <url>
     <loc>https://duanenewman.net/blog/post/2019-07-29-basic-auth-with-tfs-package-server/</loc>
-    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/blog/</loc>
-    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/categories/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
   </url>
   
@@ -64,11 +94,6 @@
   
   <url>
     <loc>https://duanenewman.net/tags/packaging/</loc>
-    <lastmod>2019-07-29T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/tags/</loc>
     <lastmod>2019-07-29T00:00:00-05:00</lastmod>
   </url>
   
@@ -123,11 +148,6 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/tips/</loc>
-    <lastmod>2019-03-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/gtk/</loc>
     <lastmod>2019-03-12T00:00:00-05:00</lastmod>
   </url>
@@ -178,22 +198,12 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/network/</loc>
-    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/tags/pfsense/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duanenewman.net/tags/plex/</loc>
-    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duanenewman.net/categories/technology/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -438,12 +448,12 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/speaking/</loc>
+    <loc>https://duanenewman.net/categories/speaking/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duanenewman.net/categories/speaking/</loc>
+    <loc>https://duanenewman.net/tags/speaking/</loc>
     <lastmod>2016-05-23T15:01:57+00:00</lastmod>
   </url>
   
