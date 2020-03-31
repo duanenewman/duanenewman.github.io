@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Unit Testing With Ease</title>
+      <link>https://duanenewman.net/speaking/unit-testing-with-ease/</link>
+      <pubDate>Fri, 03 May 2019 11:24:25 -0500</pubDate>
+      
+      <guid>https://duanenewman.net/speaking/unit-testing-with-ease/</guid>
+      <description>Do you want to skip all the setup ceremony and get straight to the actual testing when writing unit tests? Leveraging dependency injection and IoC makes it a breeze to build solutions that are modular and testable, but building out those dependency chains in our unit tests can leave them cluttered and overly complex. It&amp;rsquo;s time to learn to embrace the magic of IoC, DI, and mocking to lower the friction of writing and maintaining unit tests.</description>
+    </item>
+    
+    <item>
       <title>Building a Real App With Xamarin.Forms</title>
       <link>https://duanenewman.net/speaking/building-a-real-app-with-xamarin-forms/</link>
       <pubDate>Fri, 03 May 2019 11:20:59 -0500</pubDate>

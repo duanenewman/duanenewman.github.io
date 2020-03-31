@@ -114,8 +114,8 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <p>I recently encountered some authentication issues connecting my Mac to the package service hosted on a client&rsquo;s on-prem TFS server. The server is on a Windows domain and normally I access TFS from a windows VM that is joined to the domain. However, I&rsquo;ve recently found myself on my Mac more often while working on one of thier Xamarin mobile apps. This is when I began having problems.</p>
-<h2 id="the-poblem">The Poblem</h2>
+                  <p>I recently encountered some authentication issues connecting my Mac to the package service hosted on a client&rsquo;s on-prem TFS server. The server is on a Windows domain and normally I access TFS from a windows VM that is joined to the domain. However, I&rsquo;ve recently found myself on my Mac more often while working on one of their Xamarin mobile apps. This is when I began having problems.</p>
+<h2 id="the-problem">The Problem</h2>
 <p>The client has a couple NuGet packages hosted on the TFS server using the Package Management extension, and whenever I tried to do a NuGet restore I would run into authentication errors. I tried my normal domain user &amp; password as well as a Personal Access Token (the method I wanted to use) and consistently was told my credentials were no good.</p>
 <pre><code>Please provide credentials for: http://TfsServer/tfs/collection/_packaging/PackageCollection/nuget/v3/index.json
 
@@ -139,7 +139,7 @@ Response status code does not indicate success: 401 (Unauthorized).
 <span style="color:#f92672">&lt;/packageSourceCredentials&gt;</span>
 </code></pre></div><p>Once I had this in place my <code>nuget restore</code> executed with no issues and I was back in business.</p>
 <h2 id="why">Why?</h2>
-<p>I never ran into this issue on my Windows VM, and I think it is because the TFS server responds with a request to negotiate credentials and so Windows goes into action and authenticates me with my domain login and everything just works. I&rsquo;m pretty sure this would be an issue if I attemted to connect with a Windows machine that was not joined to the domain.</p>
+<p>I never ran into this issue on my Windows VM, and I think it is because the TFS server responds with a request to negotiate credentials and so Windows goes into action and authenticates me with my domain login and everything just works. I&rsquo;m pretty sure this would be an issue if I attempted to connect with a Windows machine that was not joined to the domain.</p>
 <p>I hope this saves you some time (and me, next time I run into this).</p>
 
                   <div style="clear:both"></div>

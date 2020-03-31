@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Parallels Shared Network Fails to Connect -- Duane Newman</title>
+    <title>Unit Testing With Ease -- Duane Newman</title>
 
     
     <link href="https://duanenewman.net/css/bootstrap.min.css" rel="stylesheet">
@@ -84,86 +84,36 @@
 
 
     
-    
-    <header class="intro-header" style="background-image: url('https://duanenewman.net/img/post-bg.jpg')">
-    
-      <div class="container">
-        <div class="row">
-           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-             <div class="post-heading">
-               <h1>Parallels Shared Network Fails to Connect</h1>
-               <h2 class="subheading"></h2>
-               <span class="meta">
-                 
-  A 2 minute read,
-
-Posted on Mon, Feb 10, 2020 In <a href="https://duanenewman.net/categories/technology">Technology</a>
-
-<br />
-Tags <a href="https://duanenewman.net/tags/parallels">parallels</a>, <a href="https://duanenewman.net/tags/network">network</a>, <a href="https://duanenewman.net/tags/tips">tips</a>
-
-               </span>
-             </div>
+    <header class="intro-header" style="background-image: url('https://duanenewman.net/img/speaking-bg.jpg')">
+        
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+           <div class="site-heading">
+             <h1>Unit Testing With Ease</h1>
            </div>
-        </div>
-      </div>
+         </div>
+       </div>
+     </div>
     </header>
 
     
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <p>Today (Monday), out of the blue, one of my Windows 10 Parallels virtual machines decided that it had no connection to the internet. Friday I was on site at a client using their WiFi network to work through some changes they needed. Today, back at the office, I fired up my VM to push the changes and make a couple more tweaks. I was immediately greeted by git telling me that my git host didn&rsquo;t exist. I realized that Windows was reporting that I had no internet connection.</p>
-<h2 id="attempts-at-self-help">Attempts at self-help</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <p>Do you want to skip all the setup ceremony and get straight to the actual testing when writing unit tests? Leveraging dependency injection and IoC makes it a breeze to build solutions that are modular and testable, but building out those dependency chains in our unit tests can leave them cluttered and overly complex. It&rsquo;s time to learn to embrace the magic of IoC, DI, and mocking to lower the friction of writing and maintaining unit tests. Taking cues from the open-source library Ease, you can see how to tap into the life-cycle of unit testing frameworks and integrate it with an IoC container to give you a fresh start for each test. Throw in a little mocking and a flexible pattern for managing setup and now you are testing in high gear! A great side-effect of using Ease, or a similar methodology, is that tests become more resilient against changes in the dependencies that are not a direct concern of the test, so you end up breaking fewer tests and changing less test code. What are you waiting for? Stop the ceremony, and start testing!</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li>My first instinct was to reboot the VM, this didn&rsquo;t work.</li>
-<li>Next, I tried to use Window&rsquo;s network troubleshooter to fix the problem, this didn&rsquo;t work.</li>
-<li>I rebooted again, because why not? Still no internet (or local network) connectivity.</li>
-<li>I turned to the internet: A relatively quick search for &lsquo;parallels shared network no internet&rsquo; got me to <a href="https://forum.parallels.com/threads/shared-networking-not-working-no-internet.98918/" target="_blank">this forum post</a> on the Parallels forums. The post was from 2010, and the OP was having issues on Windows XP, but I figured I&rsquo;d give the solution a try, and it worked!</li>
+<li>Attendees will learn how to harness IoC in their unit tests to simplify instance creation</li>
+<li>Attendees will learn how to use Action<T> delegate methods to manage setup of mocked types and override/append setup per test</li>
+<li>Attendees will be shown How to convert existing tests to use these methodologies</li>
 </ul>
-<h2 id="the-solution">The Solution</h2>
-<p>The Parallels developer (Elric) stated that it may be the Windows TCP/IP Stack wigging out and to try to do a reset on the stack. Here are the steps so I can find this faster in the future, and in case that forum post disappears.</p>
-<ol>
-<li>Open an elevated command prompt</li>
-<li>Run this command <code>netsh winsock reset</code></li>
-<li>Reboot</li>
-<li>Open an elevated command prompt, again</li>
-<li>Run this command <code>netsh int ip reset reset.log</code></li>
-<li>Reboot, again</li>
-<li>You should have a working internet connection!</li>
-</ol>
-<p>This is another post that exists mostly to help me remember how I got this working, but I hope this helps someone else in the future.</p>
+<h2 id="level-intermediate">Level: Intermediate</h2>
 
-                  <div style="clear:both"></div>
-
-
-   <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "duanenewmannet" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-                </div>
             </div>
         </div>
-    </article>
+    </div>
+
 
     <hr>
     
