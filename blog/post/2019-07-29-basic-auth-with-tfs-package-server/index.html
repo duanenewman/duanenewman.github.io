@@ -130,8 +130,8 @@ Response status code does not indicate success: 401 (Unauthorized).
 <p>With NuGet 5.0 there was a new parameter added to the <code>nuget sources</code> command that allows you to specify the valid authentication types to use when connecting to a package feed. You can use it when adding a source:</p>
 <pre><code>nuget sources add -Name MyPackageSource -Server http:/Server/feed/path/index.json -ValidAuthenticationTypes basic -username user -password password
 </code></pre><p>You can also specify it directly in your NuGet.config file using the <code>packageSourceCredentials</code> section:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;packageSourceCredentials</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;MyPackageSourceName</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;packageSourceCredentials&gt;</span>
+    <span style="color:#f92672">&lt;MyPackageSourceName&gt;</span>
         <span style="color:#f92672">&lt;add</span> <span style="color:#a6e22e">key=</span><span style="color:#e6db74">&#34;Username&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;unsused&#34;</span> <span style="color:#f92672">/&gt;</span>
         <span style="color:#f92672">&lt;add</span> <span style="color:#a6e22e">key=</span><span style="color:#e6db74">&#34;Password&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;EncryptedPersonalAccessToken&#34;</span> <span style="color:#f92672">/&gt;</span>
         <span style="color:#f92672">&lt;add</span> <span style="color:#a6e22e">key=</span><span style="color:#e6db74">&#34;ValidAuthenticationTypes&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;basic&#34;</span> <span style="color:#f92672">/&gt;</span>

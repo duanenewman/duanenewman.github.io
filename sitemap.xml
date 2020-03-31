@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://duanenewman.net/</loc>
-    <lastmod>2020-02-10T12:30:00-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://duanenewman.net/blog/</loc>
     <lastmod>2020-02-10T12:30:00-06:00</lastmod>
   </url>
@@ -343,6 +338,11 @@
   </url>
   
   <url>
+    <loc>https://duanenewman.net/</loc>
+    <lastmod>2017-11-09T11:27:06-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://duanenewman.net/about/</loc>
     <lastmod>2017-11-09T11:27:06-06:00</lastmod>
   </url>
@@ -368,12 +368,12 @@
   </url>
   
   <url>
-    <loc>https://duanenewman.net/categories/scuba/</loc>
+    <loc>https://duanenewman.net/tags/scuba/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duanenewman.net/tags/scuba/</loc>
+    <loc>https://duanenewman.net/categories/scuba/</loc>
     <lastmod>2016-07-29T14:46:23+00:00</lastmod>
   </url>
   
