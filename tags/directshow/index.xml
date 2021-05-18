@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Wed, 14 Sep 2011 18:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://duanenewman.net/tags/directshow/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 14 Sep 2011 18:00:00 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/directshow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Attaching to external DirectShow graphs using Graph Edit</title>
       <link>https://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</link>

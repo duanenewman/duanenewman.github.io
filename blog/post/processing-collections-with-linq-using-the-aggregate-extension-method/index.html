@@ -138,14 +138,14 @@ new Item() { Value1 = true, Value2 = false },
 new Item() { Value1 = true, Value2 = false },
 };
 //Number of Times Value1 entered the on state.
-int count1 = 0;
+int count1 = 0; 
 //Number of Times Value2 entered the on state.
 int count2 = 0;</p>
 <pre><code>Items.Aggregate (null, (Func&amp;lt;Item, Item, Item&amp;gt;)((a, b)=&amp;gt;
 {
-    count1 += ((a == null || a.Value1 != b.Value1) &amp;amp;&amp;amp; b.Value1 == true ? 1 : 0);
-    count2 += ((a == null || a.Value2 != b.Value2) &amp;amp;&amp;amp; b.Value2 == true ? 1 : 0);
-    return b;
+	count1 += ((a == null || a.Value1 != b.Value1) &amp;amp;&amp;amp; b.Value1 == true ? 1 : 0);
+	count2 += ((a == null || a.Value2 != b.Value2) &amp;amp;&amp;amp; b.Value2 == true ? 1 : 0);
+	return b;
 }));
 </code></pre>
 <p>}</pre></p>
@@ -276,7 +276,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 </body>
 

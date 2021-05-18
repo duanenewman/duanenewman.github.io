@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate>
-    
-	<atom:link href="https://duanenewman.net/tags/packagereference/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate><atom:link href="https://duanenewman.net/tags/packagereference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forcing a Specific Target Platform With PackageReference</title>
       <link>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</link>

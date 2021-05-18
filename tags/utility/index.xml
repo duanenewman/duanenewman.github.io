@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Thu, 24 Mar 2016 11:15:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://duanenewman.net/tags/utility/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 24 Mar 2016 11:15:00 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/utility/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Merging GoPro Segments Into a Single File</title>
       <link>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>

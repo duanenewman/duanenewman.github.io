@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Tue, 27 Mar 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://duanenewman.net/tags/di/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 27 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/di/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Better Unit Testing with IoC, DI, and Mocking</title>
       <link>https://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</link>

@@ -234,7 +234,7 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 		}
 	}
 }
-</code></pre></div><p>After implementing this class and doing a little testing it turns out that using the <code>ReaderWriterLock</code> to handle the locking was faster (and more consistent). It ran about 30% faster than my <code>ReadUpdateLocker</code>'s best time and always came in with very consistent results, while my results would sometimes be up to 30% longer than my best time (making it almost twice as long as the <code>ReadUpdateLocker</code>). I&rsquo;m sure Microsoft has taken the time to implement optimizations at the IL or machine level.</p>
+</code></pre></div><p>After implementing this class and doing a little testing it turns out that using the <code>ReaderWriterLock</code> to handle the locking was faster (and more consistent). It ran about 30% faster than my <code>ReadUpdateLocker</code>&rsquo;s best time and always came in with very consistent results, while my results would sometimes be up to 30% longer than my best time (making it almost twice as long as the <code>ReadUpdateLocker</code>). I&rsquo;m sure Microsoft has taken the time to implement optimizations at the IL or machine level.</p>
 <h2 id="wrap-up">Wrap-up</h2>
 <p>The moral of the story is if you think you are creating something that seems like a common need, take a quick look to make sure there isn&rsquo;t already one built for you.</p>
 <p>Here is a <a href="https://gist.github.com/duanenewman/6bf027fae3aab5aa85342eb34c94d9d4" target="_blank">gist</a> that you can drop in LINQPad to see the initial problem and all the above solutions with some random multi-threaded calls.</p>
@@ -366,7 +366,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 </body>
 

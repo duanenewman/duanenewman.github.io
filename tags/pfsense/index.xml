@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Tue, 12 Feb 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://duanenewman.net/tags/pfsense/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 12 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/pfsense/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Indirect connections with Plex and pfSense</title>
       <link>https://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/</link>
