@@ -9,6 +9,15 @@
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Fri, 26 Sep 2014 16:13:57 +0000</lastBuildDate><atom:link href="https://duanenewman.net/speaking/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to Mock Objects and Influence Unit Tests</title>
+      <link>https://duanenewman.net/speaking/how-to-mock-objects-and-influence-unit-tests/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://duanenewman.net/speaking/how-to-mock-objects-and-influence-unit-tests/</guid>
+      <description>In this session we will take a look at how AutoFixture can simplify the arranging and asserting portions of your .NET unit tests. We&amp;rsquo;ll explore how it integrates with mocking libraries to allow you to easily write tests and have dependency types automatically mocked and injected into your object under test. We&amp;rsquo;ll also look at how AutoFixture can be extended and customized to make you more productive with your domain specific types.</description>
+    </item>
+    
+    <item>
       <title>Unit Testing Prism Apps With Ease</title>
       <link>https://duanenewman.net/speaking/unit-testing-prism-apps-with-ease/</link>
       <pubDate>Fri, 03 May 2019 11:24:25 -0500</pubDate>
