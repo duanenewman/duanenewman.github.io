@@ -136,31 +136,31 @@ Tags <a href="https://duanenewman.net/tags/devops">devops</a>, <a href="https://
 <ol>
 <li>Download the needed bootstrapper (you can grab the others too)</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
-Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/osx -OutFile buildm.sh
-Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/linux -OutFile buildl.sh
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-PowerShell" data-lang="PowerShell"><span style="display:flex;"><span>Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
+</span></span><span style="display:flex;"><span>Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/osx -OutFile buildm.sh
+</span></span><span style="display:flex;"><span>Invoke-WebRequest https<span style="color:#960050;background-color:#1e0010">:</span>//cakebuild.net/download/bootstrapper/linux -OutFile buildl.sh
+</span></span></code></pre></div><ol start="2">
 <li>Create your Cake Build file (build.cake)</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> target = Argument(<span style="color:#e6db74">&#34;target&#34;</span>, <span style="color:#e6db74">&#34;Default&#34;</span>);
-
-Task(<span style="color:#e6db74">&#34;Default&#34;</span>)
-	.Does(() =&gt;
-	{
-	<span style="color:#66d9ef">var</span> christmasDay = <span style="color:#66d9ef">new</span> DateTime(<span style="color:#ae81ff">2017</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">25</span>);
-	<span style="color:#66d9ef">var</span> daysToChristmas = (christmasDay - DateTime.Now.Date).TotalDays;
-	<span style="color:#66d9ef">var</span> message = daysToChristmas == <span style="color:#ae81ff">0</span>
-				? <span style="color:#e6db74">&#34;Merry Christmas!&#34;</span>
-				: <span style="color:#66d9ef">string</span>.Format(<span style="color:#e6db74">&#34;{0} days to Christmas!&#34;</span>, daysToChristmas);
-	Information(message);
-	});
-
-RunTarget(target);
-</code></pre></div><ol start="3">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> target = Argument(<span style="color:#e6db74">&#34;target&#34;</span>, <span style="color:#e6db74">&#34;Default&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Task(<span style="color:#e6db74">&#34;Default&#34;</span>)
+</span></span><span style="display:flex;"><span>	.Does(() =&gt;
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> christmasDay = <span style="color:#66d9ef">new</span> DateTime(<span style="color:#ae81ff">2017</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">25</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> daysToChristmas = (christmasDay - DateTime.Now.Date).TotalDays;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> message = daysToChristmas == <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>				? <span style="color:#e6db74">&#34;Merry Christmas!&#34;</span>
+</span></span><span style="display:flex;"><span>				: <span style="color:#66d9ef">string</span>.Format(<span style="color:#e6db74">&#34;{0} days to Christmas!&#34;</span>, daysToChristmas);
+</span></span><span style="display:flex;"><span>	Information(message);
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>RunTarget(target);
+</span></span></code></pre></div><ol start="3">
 <li>Run your build</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">./build.ps1
-</code></pre></div><ol start="4">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-PowerShell" data-lang="PowerShell"><span style="display:flex;"><span>./build.ps1
+</span></span></code></pre></div><ol start="4">
 <li>Commit it to version control, get latest on your Mac, and build</li>
 </ol>
 <h1 id="vs-code">VS Code</h1>
@@ -179,7 +179,7 @@ Get it, use it, you&rsquo;ll love it.</p>
 
    <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

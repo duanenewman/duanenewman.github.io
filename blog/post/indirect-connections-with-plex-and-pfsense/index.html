@@ -117,17 +117,17 @@ Tags <a href="https://duanenewman.net/tags/pfsense">pfsense</a>, <a href="https:
                   <p>I&rsquo;ve recently built a custom FreeNAS file server in my house to act as high capacity storage for my personal photos &amp; videos, a Plex Media Server, and an S3 server for offsite backup for my business and family, among a few other minor things. At the same time I also replaced my Ubiquiti EdgeRouter X with a custom pfSense router (primarily for better remote VPN and P2P VPN support).</p>
 <h2 id="enabling-remote-access-for-plex">Enabling Remote Access for Plex</h2>
 <p>Once I had it all done and configured I noticed that my plex server was reporting as unreachable to the outside world.. Not ideal, if I want to watch a movie from my collection while I&rsquo;m traveling. It didn&rsquo;t take long to realize that pfSense had UPnP disabled by default..</p>
-<p><img class="img-thumbnail pull-right" src="pfsenseupnp.png" alt="UPnP & NAT-PMP Settings" width="300" /></p>
+<img class="img-thumbnail pull-right" src="pfsenseupnp.png" alt="UPnP & NAT-PMP Settings" width="300" />
 <p>In the pfSense WebUI I navigated to <strong>Services -&gt; UPnP &amp; NAT-PMP</strong>. There I checked Enable UPnP &amp; NAT-PMP, Allow UPnP Port Mapping, &amp; Allow NAT-PMP Port Mapping. I could have done a static port forward (and maybe I still will) but I figured UPnP also might be useful to make sure my XBox and Steam games didn&rsquo;t have issues either. After saving and applying these changes and having plex recheck remote access it came up green with &ldquo;Fully accessible outside your network&rdquo;.</p>
 <h2 id="fixing-indirect-access-on-the-lan">Fixing Indirect Access on the LAN</h2>
 <p>I thought it was all great then I noticed that when I accessed Plex from my local network it was showing up as <strong>indirect</strong>, which caused it to transcode everything like it was coming from the internet.</p>
-<p><img class="img-thumbnail  pull-right" src="plexindirect.png" alt="Plex Server Indirect" width="300" /></p>
+<img class="img-thumbnail  pull-right" src="plexindirect.png" alt="Plex Server Indirect" width="300" />
 <p>After too much time searching for things like &ldquo;plex indirect pfsense&rdquo; and trying solutions for <em>similar</em> problems the closest I got was a forum post indicating it was a DNS Rebinding issue with plex Secure Connections, but I didn&rsquo;t know how to fix it. I finally stumbled across a link to <a href="https://support.plex.tv/articles/206225077-how-to-use-secure-server-connections/">this plex support article</a> that directly pointed the way on pfSense (which never showed up on my normal searches because it doesn&rsquo;t have the word &ldquo;indirect&rdquo; anywhere). The solution was pretty easy too, I navigated over to <strong>Services -&gt; DNS Resolver -&gt; General Settings</strong> and scrolled down and clicked the &ldquo;Show Custom Options&rdquo; button, which displayed the <strong>Custom options</strong> entry where I added the following:</p>
-<pre><code>server:
-private-domain: &quot;plex.direct&quot;
-</code></pre><p><img class="img-thumbnail " src="customoptions.png" alt="pfSense DNS Resolver Custom Options"  /></p>
+<pre tabindex="0"><code>server:
+private-domain: &#34;plex.direct&#34;
+</code></pre><img class="img-thumbnail " src="customoptions.png" alt="pfSense DNS Resolver Custom Options"  />
 <h2 id="bingo-direct--secure-lan-connection">Bingo! Direct &amp; Secure LAN Connection</h2>
-<p><img class="img-thumbnail pull-left" src="plexdirect.png" alt="Plex Server Direct" width="300" /></p>
+<img class="img-thumbnail pull-left" src="plexdirect.png" alt="Plex Server Direct" width="300" />
 <p>I wasted a lot of time trying to figure out the solution to this and while I have mostly written up this post to help me remember how I got this working, I hope this helps someone else waste a little less time.</p>
 
                   <div style="clear:both"></div>
@@ -135,7 +135,7 @@ private-domain: &quot;plex.direct&quot;
 
    <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
