@@ -15,7 +15,7 @@
       
       <guid>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
       <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:
- Converting the project to .NET 3.5 (from 2.0)  Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now)  Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp  Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13)  And last, but not least, I added a WIX based installer to the project   If you just want grab the latest version jump over to the GitHub release page.</description>
+Converting the project to .NET 3.5 (from 2.0) Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) And last, but not least, I added a WIX based installer to the project If you just want grab the latest version jump over to the GitHub release page.</description>
     </item>
     
   </channel>

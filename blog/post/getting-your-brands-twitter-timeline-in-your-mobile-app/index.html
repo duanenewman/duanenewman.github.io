@@ -126,9 +126,9 @@ Tags <a href="https://duanenewman.net/tags/twitter">twitter</a>, <a href="https:
 <p>var twitter = new TwitterContext(auth);</p>
 <p>var timeline =
 twitter.Status
-.Where(t =&gt; 
-t.Type == StatusType.User &amp;&amp; 
-t.ScreenName == &quot;duanenewman&quot; &amp;&amp; 
+.Where(t =&gt;
+t.Type == StatusType.User &amp;&amp;
+t.ScreenName == &quot;duanenewman&quot; &amp;&amp;
 t.IncludeRetweets == true)
 .OrderByDescending(t =&gt; t.CreatedAt)
 .ToList();</p>

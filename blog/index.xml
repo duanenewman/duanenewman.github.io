@@ -35,7 +35,7 @@ The Problem The client has a couple NuGet packages hosted on the TFS server usin
       <guid>https://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</guid>
       <description>Recently, there was a new feature added to msbuild (working in Visual Studio 2019 15.9.9) that generates a variable for each package that contains the full path to the package version being used. All you have to do is add an attribute to each &amp;lt;PackageReference&amp;gt; you want need to work with.
 There are just two changes to what we did before:
- Add GeneratePathProperty attribute to &amp;lt;PackageReference&amp;gt; Switch to Pkg&amp;lt;Package_Name&amp;gt; variable in &amp;lt;HintPath&amp;gt;  Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</description>
+Add GeneratePathProperty attribute to &amp;lt;PackageReference&amp;gt; Switch to Pkg&amp;lt;Package_Name&amp;gt; variable in &amp;lt;HintPath&amp;gt; Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</description>
     </item>
     
     <item>
@@ -175,7 +175,7 @@ This year&#39;s build was pretty exciting for .NET developers. With strong progr
       
       <guid>https://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</guid>
       <description>For those that purchased an unlocked Lumia 950 XL from Microsoft in the last few months and have been frustrated at the lack of Visual Voice (that’s everyone who bought one) you can rejoice. Last week I had sketchy WiFi access so I just discovered that I had an update available last night. When I went to take a look at the change log I discovered this little gem:
- Support for Visual Voicemail on Dual SIM phones   It sounds like this has been available in the Windows Insiders build for a little while, but I’ve been hesitant to put my primary phone on the insiders builds.</description>
+Support for Visual Voicemail on Dual SIM phones It sounds like this has been available in the Windows Insiders build for a little while, but I’ve been hesitant to put my primary phone on the insiders builds.</description>
     </item>
     
     <item>
@@ -186,7 +186,7 @@ This year&#39;s build was pretty exciting for .NET developers. With strong progr
       <guid>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-5-diving/</guid>
       <description>This is part 5 in a series on scuba travel and our trip to Honduras.
 Related Posts
- Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)  Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)  Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)  Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   Guanaja Diving The diving in Guanaja is fantastic.</description>
+Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer) Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving) Guanaja Diving The diving in Guanaja is fantastic.</description>
     </item>
     
     <item>
@@ -197,7 +197,7 @@ Related Posts
       <guid>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-4-lodging/</guid>
       <description>This is part 4 in a series on scuba travel and our trip to Honduras.
 Related Posts
- Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)  Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)  Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   The Villa   You can read my review of the Villa over on TripAdvisor.</description>
+Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer) Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving) The Villa You can read my review of the Villa over on TripAdvisor.</description>
     </item>
     
     <item>
@@ -208,7 +208,7 @@ Related Posts
       <guid>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-3-on-the-road/</guid>
       <description>This is part 3 in a series on scuba travel and our trip to Honduras.
 Related Posts
- Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)  Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)  Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)   Travel We were traveling from cold weather to warm weather, so we planned ahead and packed shorts in our carry-on so that while we stopped for a layover in Atlanta we could change out of our warmer weather pants.</description>
+Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer) Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving) Travel We were traveling from cold weather to warm weather, so we planned ahead and packed shorts in our carry-on so that while we stopped for a layover in Atlanta we could change out of our warmer weather pants.</description>
     </item>
     
     <item>
@@ -236,7 +236,7 @@ Related Posts
       
       <guid>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
       <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:
- Converting the project to .NET 3.5 (from 2.0)  Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now)  Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp  Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13)  And last, but not least, I added a WIX based installer to the project   If you just want grab the latest version jump over to the GitHub release page.</description>
+Converting the project to .NET 3.5 (from 2.0) Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) And last, but not least, I added a WIX based installer to the project If you just want grab the latest version jump over to the GitHub release page.</description>
     </item>
     
     <item>
@@ -257,7 +257,7 @@ If you are not familiar with file systems this may seem odd, but it is a well kn
       <guid>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-1-packing/</guid>
       <description>This is part 1 in a series on scuba travel and our trip to Honduras.
 Related Posts
- Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)  Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)  Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)  Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)  In January my wife and I took our first real scuba diving vacation with our dive shop, The Playground Dive Shop, to the island of Guanaja, Honduras where we stayed and dived with the Villa on Dunbar Rock.</description>
+Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer) Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving) In January my wife and I took our first real scuba diving vacation with our dive shop, The Playground Dive Shop, to the island of Guanaja, Honduras where we stayed and dived with the Villa on Dunbar Rock.</description>
     </item>
     
     <item>
@@ -397,7 +397,6 @@ It was a really enjoyable experience and I was happy to be able to get more invo
       
       <guid>https://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</guid>
       <description>First off, speaking is a rush. It is hard to describe the feeling just after completing a talk. I had to move around, talk to people, see what was going on; it really energized me. I am definitely going to continue to pursue future speaking opportunities as they present themselves, and I’ll keep you posted when they get accepted.
-
 As I mentioned in previous posts, my first talk was on Xamarin Forms, a new technology in a toolset that we are using at Alien Arc, but that is still new to us.</description>
     </item>
     
@@ -418,7 +417,7 @@ I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months
       
       <guid>https://duanenewman.net/blog/post/making-progress-on-your-small-business-goals/</guid>
       <description>When Brent and I started Alien Arc we had a few basic goals:
-To have more flexible working conditionsTo be more active with the developer community and conferencesTo create our own productsWe&amp;rsquo;ve done a pretty good job in our first 6 months getting started on some of these goals. We are on-site with our primary client, but they are closer and with the consultant relationship it is much easier to deal with any needs for a flexible schedule.</description>
+To have more flexible working conditionsTo be more active with the developer community and conferencesTo create our own productsWe&amp;rsquo;ve done a pretty good job in our first 6 months getting started on some of these goals. We are on-site with our primary client, but they are closer and with the consultant relationship it is much easier to deal with any needs for a flexible schedule.</description>
     </item>
     
     <item>

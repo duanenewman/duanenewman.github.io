@@ -26,7 +26,7 @@ The Problem The client has a couple NuGet packages hosted on the TFS server usin
       <guid>https://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</guid>
       <description>Recently, there was a new feature added to msbuild (working in Visual Studio 2019 15.9.9) that generates a variable for each package that contains the full path to the package version being used. All you have to do is add an attribute to each &amp;lt;PackageReference&amp;gt; you want need to work with.
 There are just two changes to what we did before:
- Add GeneratePathProperty attribute to &amp;lt;PackageReference&amp;gt; Switch to Pkg&amp;lt;Package_Name&amp;gt; variable in &amp;lt;HintPath&amp;gt;  Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</description>
+Add GeneratePathProperty attribute to &amp;lt;PackageReference&amp;gt; Switch to Pkg&amp;lt;Package_Name&amp;gt; variable in &amp;lt;HintPath&amp;gt; Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</description>
     </item>
     
     <item>
@@ -111,7 +111,7 @@ A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds
       
       <guid>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
       <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:
- Converting the project to .NET 3.5 (from 2.0)  Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now)  Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp  Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13)  And last, but not least, I added a WIX based installer to the project   If you just want grab the latest version jump over to the GitHub release page.</description>
+Converting the project to .NET 3.5 (from 2.0) Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) And last, but not least, I added a WIX based installer to the project If you just want grab the latest version jump over to the GitHub release page.</description>
     </item>
     
     <item>
