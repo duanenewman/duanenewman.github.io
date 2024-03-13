@@ -1,48 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mobile on Duane Newman</title>
+    <title>Mobile on Duane Newman</title>
     <link>https://duanenewman.net/tags/mobile/</link>
-    <description>Recent content in mobile on Duane Newman</description>
+    <description>Recent content in Mobile on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Mon, 23 May 2016 15:01:57 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 May 2016 15:01:57 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nebraska.Code() 2016</title>
       <link>https://duanenewman.net/blog/post/nebraska-code-2016/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/nebraska-code-2016/</guid>
       <description>Another Nebraska.Code() is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference.</description>
     </item>
-    
     <item>
       <title>Nebraska.Code() 2015 Retrospect</title>
       <link>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</link>
       <pubDate>Fri, 27 Mar 2015 09:48:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</guid>
       <description>It was a pleasure to attend and speak at Nebraska.Code() this year. The guys in Lincoln are great and really put on a good conference. One of the neat parts of being a speaker is getting to know a lot of other great speakers as you go from one conference to another together. I&#39;ve found that as soon as one conference is over I&#39;m looking forward to the next one and the chance to hang out with the gang.</description>
     </item>
-    
     <item>
       <title>Xamarin Forms Windows Phone Deployment Tip #1</title>
       <link>https://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</link>
       <pubDate>Tue, 17 Mar 2015 08:40:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/xamarin-forms-windows-phone-deployment-tip-1/</guid>
       <description>Here is a helpful tip if you are developing a mobile app using Xamarin Forms and targeting Windows Phone 8.0 (or if you are just writing a WP8.0 Silverlight based app). If you are ready to deploy and filling everything out online it is easier than it first seems. On the Windows Phone Dev Center you will find a helpful link to this article telling you to add some info to the Package.</description>
     </item>
-    
     <item>
       <title>Getting your brand’s Twitter timeline in your mobile app</title>
       <link>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
       <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
       <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
     </item>
-    
   </channel>
 </rss>

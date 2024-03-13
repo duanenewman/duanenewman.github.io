@@ -7,16 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Tue, 16 Jun 2015 11:15:00 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/kcdc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jun 2015 11:15:00 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/kcdc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KCDC 2015 Sessions</title>
       <link>https://duanenewman.net/blog/post/kcdc-2015-sessions/</link>
       <pubDate>Tue, 16 Jun 2015 11:15:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/kcdc-2015-sessions/</guid>
-      <description>KCDC is just a week away and I&#39;m busy updating my materials. I&#39;m looking forward to meeting some great developers and catching up with what is quickly becoming a close group of speaker friends.
-I&#39;ll be presenting my Xamarin.Forms talk on Thursday morning at 10:10 AM. Conference mornings are always a little rough, but I like getting the talk done early, then I get to relax, network, and enjoy seeing my friends presenting their talks.</description>
+      <description>KCDC is just a week away and I&#39;m busy updating my materials. I&#39;m looking forward to meeting some great developers and catching up with what is quickly becoming a close group of speaker friends.&#xA;I&#39;ll be presenting my Xamarin.Forms talk on Thursday morning at 10:10 AM. Conference mornings are always a little rough, but I like getting the talk done early, then I get to relax, network, and enjoy seeing my friends presenting their talks.</description>
     </item>
-    
   </channel>
 </rss>

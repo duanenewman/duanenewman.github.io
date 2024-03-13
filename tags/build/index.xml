@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>build on Duane Newman</title>
+    <title>Build on Duane Newman</title>
     <link>https://duanenewman.net/tags/build/</link>
-    <description>Recent content in build on Duane Newman</description>
+    <description>Recent content in Build on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Sat, 23 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/build/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/build/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All I want for Christmas is a C# Build System</title>
       <link>https://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</guid>
-      <description>Why So Jolly? This post is part of the The First C# Advent Calendar, celebrating all things C#. After you finish here check out the other great posts in the series.
-A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects.</description>
+      <description>Why So Jolly? This post is part of the The First C# Advent Calendar, celebrating all things C#. After you finish here check out the other great posts in the series.&#xA;A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects.</description>
     </item>
-    
   </channel>
 </rss>

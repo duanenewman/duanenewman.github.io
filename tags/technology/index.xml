@@ -7,44 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 09:00:00 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Apr 2016 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microsoft Build 2016</title>
       <link>https://duanenewman.net/blog/post/microsoft-build-2016/</link>
       <pubDate>Wed, 27 Apr 2016 09:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/microsoft-build-2016/</guid>
-      <description>I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.
-This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces.</description>
+      <description>I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.&#xA;This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces.</description>
     </item>
-    
     <item>
       <title>Bringing Sight to the Blind (Seeing AI)</title>
       <link>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</link>
       <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</guid>
       <description>Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by Saqib Shaikh, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses.</description>
     </item>
-    
     <item>
       <title>Generating Authenticator QR Codes</title>
       <link>https://duanenewman.net/blog/post/generating-authenticator-qr-codes/</link>
       <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/generating-authenticator-qr-codes/</guid>
       <description>I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.</description>
     </item>
-    
     <item>
       <title>SkillsUSA Coding Competition</title>
       <link>https://duanenewman.net/blog/post/skillsusa-coding-competition/</link>
       <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/skillsusa-coding-competition/</guid>
-      <description>On Saturday I had an opportunity to be involved in a SkillsUSA district competition as a judge for the coding competition. I was really impressed with the skill that some of these students (all with less than a year of experience) had. The quality of some of the code they wrote really surprised me.
-It was a really enjoyable experience and I was happy to be able to get more involved in the community with the next generation of coders.</description>
+      <description>On Saturday I had an opportunity to be involved in a SkillsUSA district competition as a judge for the coding competition. I was really impressed with the skill that some of these students (all with less than a year of experience) had. The quality of some of the code they wrote really surprised me.&#xA;It was a really enjoyable experience and I was happy to be able to get more involved in the community with the next generation of coders.</description>
     </item>
-    
   </channel>
 </rss>

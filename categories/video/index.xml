@@ -7,26 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Sat, 26 Mar 2016 11:46:24 +0000</lastBuildDate><atom:link href="https://duanenewman.net/categories/video/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Mar 2016 11:46:24 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/categories/video/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bluff v1.1 hot off the presses</title>
       <link>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
-      <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:
-Converting the project to .NET 3.5 (from 2.0) Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) And last, but not least, I added a WIX based installer to the project If you just want grab the latest version jump over to the GitHub release page.</description>
+      <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:&#xA;Converting the project to .NET 3.5 (from 2.0) Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) And last, but not least, I added a WIX based installer to the project If you just want grab the latest version jump over to the GitHub release page.</description>
     </item>
-    
     <item>
       <title>Merging GoPro Segments Into a Single File</title>
       <link>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
       <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
-      <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.
-If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
+      <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&#xA;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
     </item>
-    
   </channel>
 </rss>

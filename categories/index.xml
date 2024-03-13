@@ -7,60 +7,49 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Mon, 10 Feb 2020 12:30:00 -0600</lastBuildDate><atom:link href="https://duanenewman.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2020 12:30:00 -0600</lastBuildDate>
+    <atom:link href="https://duanenewman.net/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Technology</title>
       <link>https://duanenewman.net/categories/technology/</link>
       <pubDate>Mon, 10 Feb 2020 12:30:00 -0600</pubDate>
-      
       <guid>https://duanenewman.net/categories/technology/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Coding</title>
       <link>https://duanenewman.net/categories/coding/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
-      
       <guid>https://duanenewman.net/categories/coding/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Scuba</title>
       <link>https://duanenewman.net/categories/scuba/</link>
       <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
-      
       <guid>https://duanenewman.net/categories/scuba/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Speaking</title>
       <link>https://duanenewman.net/categories/speaking/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
-      
       <guid>https://duanenewman.net/categories/speaking/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Video</title>
       <link>https://duanenewman.net/categories/video/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
-      
       <guid>https://duanenewman.net/categories/video/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Musings</title>
       <link>https://duanenewman.net/categories/musings/</link>
       <pubDate>Mon, 10 Nov 2014 08:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/categories/musings/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

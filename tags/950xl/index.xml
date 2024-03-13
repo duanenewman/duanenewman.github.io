@@ -7,15 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Wed, 27 Jul 2016 11:45:00 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/950xl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2016 11:45:00 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/950xl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Strange Keyboard Layout on Windows 10 Mobile &amp; Lumia 950XL</title>
       <link>https://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</link>
       <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</guid>
       <description>I recently encountered a strange issue with the layout of the keyboard on my Lumia 950XL. This happened after a one of the recent OS updates and it took me a little while researching to figure it out. The issue was that my keyboard was all squashed to the left, instead of taking up the full width of the phone. In addition to that the cursor point was on the right hand side of the keyboard.</description>
     </item>
-    
   </channel>
 </rss>

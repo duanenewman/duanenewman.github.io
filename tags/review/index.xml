@@ -1,39 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>review on Duane Newman</title>
+    <title>Review on Duane Newman</title>
     <link>https://duanenewman.net/tags/review/</link>
-    <description>Recent content in review on Duane Newman</description>
+    <description>Recent content in Review on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Fri, 29 Jul 2016 14:46:23 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jul 2016 14:46:23 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Diving in Bonaire - 2016</title>
       <link>https://duanenewman.net/blog/post/diving-in-bonaire-2016/</link>
       <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/diving-in-bonaire-2016/</guid>
       <description>I decided to take a few minutes and reflect on my recent trip to Bonaire and share some accomplishments and observations. To begin with, the flight there is long. We had two options, 45 minute layover to catch an international flight with all our luggage, or 5 hour layover waiting in the airport. We chose the later since no on wanted to miss a flight that only happens once a day and only on Saturday and Sunday each week.</description>
     </item>
-    
     <item>
       <title>Nebraska.Code() 2015 Retrospect</title>
       <link>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</link>
       <pubDate>Fri, 27 Mar 2015 09:48:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</guid>
       <description>It was a pleasure to attend and speak at Nebraska.Code() this year. The guys in Lincoln are great and really put on a good conference. One of the neat parts of being a speaker is getting to know a lot of other great speakers as you go from one conference to another together. I&#39;ve found that as soon as one conference is over I&#39;m looking forward to the next one and the chance to hang out with the gang.</description>
     </item>
-    
     <item>
       <title>I Can Has Pen Input? (or, My first moments with a Surface Pro)</title>
       <link>https://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</link>
       <pubDate>Sat, 09 Feb 2013 08:56:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</guid>
       <description>I just picked up my Surface Pro from my local Microsoft Store this morning. I&amp;rsquo;m no stranger to Windows 8; I&amp;rsquo;ve been using it on my desktop since RTM (and a little before) and I bought the RT back on launch day. In general I like the changes that have been made and no longer feel at home on Windows 7. I have especially been digging the way the interface was built around touch with my RT, I think that has helped me accept some of the changes experienced with mouse and keyboard only input.</description>
     </item>
-    
   </channel>
 </rss>

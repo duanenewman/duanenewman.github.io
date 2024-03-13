@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gtk on Duane Newman</title>
+    <title>Gtk on Duane Newman</title>
     <link>https://duanenewman.net/tags/gtk/</link>
-    <description>Recent content in gtk on Duane Newman</description>
+    <description>Recent content in Gtk on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Tue, 12 Mar 2019 00:00:00 -0500</lastBuildDate><atom:link href="https://duanenewman.net/tags/gtk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Mar 2019 00:00:00 -0500</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/gtk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Prism With Xamarin.Forms &amp; GTK</title>
       <link>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</guid>
-      <description>I&amp;rsquo;m working on project to replace my car radio with a custom digital dashboard. I&amp;rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.
-Adding the GTK# Backend Project Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to The Mono Project to download and run the GTK# for .</description>
+      <description>I&amp;rsquo;m working on project to replace my car radio with a custom digital dashboard. I&amp;rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.&#xA;Adding the GTK# Backend Project Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to The Mono Project to download and run the GTK# for .</description>
     </item>
-    
   </channel>
 </rss>

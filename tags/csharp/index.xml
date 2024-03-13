@@ -1,108 +1,83 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>csharp on Duane Newman</title>
+    <title>Csharp on Duane Newman</title>
     <link>https://duanenewman.net/tags/csharp/</link>
-    <description>Recent content in csharp on Duane Newman</description>
+    <description>Recent content in Csharp on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Mon, 29 Jul 2019 00:00:00 -0500</lastBuildDate><atom:link href="https://duanenewman.net/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Jul 2019 00:00:00 -0500</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic Authentication with TFS Package Server</title>
       <link>https://duanenewman.net/blog/post/2019-07-29-basic-auth-with-tfs-package-server/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/2019-07-29-basic-auth-with-tfs-package-server/</guid>
-      <description>I recently encountered some authentication issues connecting my Mac to the package service hosted on a client&amp;rsquo;s on-prem TFS server. The server is on a Windows domain and normally I access TFS from a windows VM that is joined to the domain. However, I&amp;rsquo;ve recently found myself on my Mac more often while working on one of their Xamarin mobile apps. This is when I began having problems.
-The Problem The client has a couple NuGet packages hosted on the TFS server using the Package Management extension, and whenever I tried to do a NuGet restore I would run into authentication errors.</description>
+      <description>I recently encountered some authentication issues connecting my Mac to the package service hosted on a client&amp;rsquo;s on-prem TFS server. The server is on a Windows domain and normally I access TFS from a windows VM that is joined to the domain. However, I&amp;rsquo;ve recently found myself on my Mac more often while working on one of their Xamarin mobile apps. This is when I began having problems.&#xA;The Problem The client has a couple NuGet packages hosted on the TFS server using the Package Management extension, and whenever I tried to do a NuGet restore I would run into authentication errors.</description>
     </item>
-    
     <item>
       <title>A Better Way to Override References With PackageReference</title>
       <link>https://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</guid>
-      <description>Recently, there was a new feature added to msbuild (working in Visual Studio 2019 15.9.9) that generates a variable for each package that contains the full path to the package version being used. All you have to do is add an attribute to each &amp;lt;PackageReference&amp;gt; you want need to work with.
-There are just two changes to what we did before:
-Add GeneratePathProperty attribute to &amp;lt;PackageReference&amp;gt; Switch to Pkg&amp;lt;Package_Name&amp;gt; variable in &amp;lt;HintPath&amp;gt; Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</description>
+      <description>Recently, there was a new feature added to msbuild (working in Visual Studio 2019 15.9.9) that generates a variable for each package that contains the full path to the package version being used. All you have to do is add an attribute to each &amp;lt;PackageReference&amp;gt; you want need to work with.&#xA;There are just two changes to what we did before:&#xA;Add GeneratePathProperty attribute to &amp;lt;PackageReference&amp;gt; Switch to Pkg&amp;lt;Package_Name&amp;gt; variable in &amp;lt;HintPath&amp;gt; Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</description>
     </item>
-    
     <item>
       <title>Forcing a Specific Target Platform With PackageReference</title>
       <link>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</link>
       <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</guid>
-      <description>In my last post about Using Prism with Xamarin.Forms &amp;amp; GTK# I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &amp;lt;PackageReference&amp;gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.
-Using Package Reference If you already have packages installed and are using a packages.</description>
+      <description>In my last post about Using Prism with Xamarin.Forms &amp;amp; GTK# I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &amp;lt;PackageReference&amp;gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.&#xA;Using Package Reference If you already have packages installed and are using a packages.</description>
     </item>
-    
     <item>
       <title>Using Prism With Xamarin.Forms &amp; GTK</title>
       <link>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</guid>
-      <description>I&amp;rsquo;m working on project to replace my car radio with a custom digital dashboard. I&amp;rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.
-Adding the GTK# Backend Project Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to The Mono Project to download and run the GTK# for .</description>
+      <description>I&amp;rsquo;m working on project to replace my car radio with a custom digital dashboard. I&amp;rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.&#xA;Adding the GTK# Backend Project Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to The Mono Project to download and run the GTK# for .</description>
     </item>
-    
     <item>
       <title>Running PowerShell Scripts From C#</title>
       <link>https://duanenewman.net/blog/post/running-powershell-scripts-from-csharp/</link>
       <pubDate>Wed, 06 Mar 2019 00:00:00 -0600</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/running-powershell-scripts-from-csharp/</guid>
       <description>Sometimes the little things can trip up your code, even when you think you are doing all the right things. We recently ran into an issue with a utility that runs an included PowerShell script as part of it operation. When the app was first put into use it seemed to be fine. Recently, it was deployed into a folder with spaces in the name and it began to blow up.</description>
     </item>
-    
     <item>
       <title>Concurrent Reads and Locked Writes with In-Memory Objects</title>
       <link>https://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</guid>
       <description>The Problem On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a List&amp;lt;T&amp;gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads.</description>
     </item>
-    
     <item>
       <title>Keeping Observable Collections Up To Date</title>
       <link>https://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</guid>
       <description>One of the powerful capabilities we&amp;rsquo;ve learned to leverage when using the MVVM pattern for XAML based apps, whether for the desktop or mobile platforms, is data binding. Binding allows us to easily keep our View up to date with changes in the ViewModel. These bindings are typically pretty quick when not abused, but there are situations where they can become less than performant, causing visual anomalies such as flickering or even impacting general app performance.</description>
     </item>
-    
     <item>
       <title>Better Unit Testing with IoC, DI, and Mocking</title>
       <link>https://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</link>
       <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</guid>
       <description>When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instantiating the class we want to test less painful.</description>
     </item>
-    
     <item>
       <title>Teach an old Type new tricks with Extension Methods</title>
       <link>https://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</guid>
       <description>Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&amp;rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.</description>
     </item>
-    
     <item>
       <title>All I want for Christmas is a C# Build System</title>
       <link>https://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</guid>
-      <description>Why So Jolly? This post is part of the The First C# Advent Calendar, celebrating all things C#. After you finish here check out the other great posts in the series.
-A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects.</description>
+      <description>Why So Jolly? This post is part of the The First C# Advent Calendar, celebrating all things C#. After you finish here check out the other great posts in the series.&#xA;A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects.</description>
     </item>
-    
   </channel>
 </rss>

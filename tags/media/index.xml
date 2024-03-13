@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>media on Duane Newman</title>
+    <title>Media on Duane Newman</title>
     <link>https://duanenewman.net/tags/media/</link>
-    <description>Recent content in media on Duane Newman</description>
+    <description>Recent content in Media on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Thu, 24 Mar 2016 11:15:00 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/media/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Mar 2016 11:15:00 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/media/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Merging GoPro Segments Into a Single File</title>
       <link>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
       <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
-      <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.
-If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
+      <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&#xA;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
     </item>
-    
     <item>
       <title>Attaching to external DirectShow graphs using Graph Edit</title>
       <link>https://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</link>
       <pubDate>Wed, 14 Sep 2011 18:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</guid>
-      <description>In my day job I work on a product that does a lot of video work and in fact has a custom DirectShow player that gets all our video into WPF. &amp;nbsp;It plays multiple files all synchronized (a real challenge).
-While looking into ways to improve performance I found myself needing to see how my filter graph was being built. &amp;nbsp;I did a little looking and found that creating an instance of DsROTEntry with a reference to the graph makes it available for external viewing.</description>
+      <description>In my day job I work on a product that does a lot of video work and in fact has a custom DirectShow player that gets all our video into WPF. &amp;nbsp;It plays multiple files all synchronized (a real challenge).&#xA;While looking into ways to improve performance I found myself needing to see how my filter graph was being built. &amp;nbsp;I did a little looking and found that creating an instance of DsROTEntry with a reference to the graph makes it available for external viewing.</description>
     </item>
-    
   </channel>
 </rss>

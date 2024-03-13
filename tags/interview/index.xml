@@ -7,15 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Thu, 02 Apr 2015 08:23:02 +0000</lastBuildDate><atom:link href="https://duanenewman.net/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Apr 2015 08:23:02 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/interview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Interview with STL Tech Talk at STLDODN 2014</title>
       <link>https://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</link>
       <pubDate>Thu, 02 Apr 2015 08:23:02 +0000</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/interview-with-stl-tech-talk-at-stldodn-2014/</guid>
       <description>Back in November 2014 at the St. Louis Days of .NET conference I sat down with JJ Hammond from STL Tech Talk for an interview. It was a lot of fun and I had a great time talking about Xamarin, Xamarin.Forms, and mobile development for the C# developer. It got lost somewhere among all the other interview videos, but thanks to Kevin and JJ it is was found and is now posted for your viewing pleasure.</description>
     </item>
-    
   </channel>
 </rss>

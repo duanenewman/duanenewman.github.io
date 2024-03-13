@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>netstandard on Duane Newman</title>
+    <title>Netstandard on Duane Newman</title>
     <link>https://duanenewman.net/tags/netstandard/</link>
-    <description>Recent content in netstandard on Duane Newman</description>
+    <description>Recent content in Netstandard on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate><atom:link href="https://duanenewman.net/tags/netstandard/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate>
+    <atom:link href="https://duanenewman.net/tags/netstandard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forcing a Specific Target Platform With PackageReference</title>
       <link>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</link>
       <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</guid>
-      <description>In my last post about Using Prism with Xamarin.Forms &amp;amp; GTK# I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &amp;lt;PackageReference&amp;gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.
-Using Package Reference If you already have packages installed and are using a packages.</description>
+      <description>In my last post about Using Prism with Xamarin.Forms &amp;amp; GTK# I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &amp;lt;PackageReference&amp;gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.&#xA;Using Package Reference If you already have packages installed and are using a packages.</description>
     </item>
-    
     <item>
       <title>Using Prism With Xamarin.Forms &amp; GTK</title>
       <link>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
-      
       <guid>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</guid>
-      <description>I&amp;rsquo;m working on project to replace my car radio with a custom digital dashboard. I&amp;rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.
-Adding the GTK# Backend Project Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to The Mono Project to download and run the GTK# for .</description>
+      <description>I&amp;rsquo;m working on project to replace my car radio with a custom digital dashboard. I&amp;rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.&#xA;Adding the GTK# Backend Project Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to The Mono Project to download and run the GTK# for .</description>
     </item>
-    
   </channel>
 </rss>

@@ -7,96 +7,77 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
-    <lastBuildDate>Fri, 26 Sep 2014 16:13:57 +0000</lastBuildDate><atom:link href="https://duanenewman.net/speaking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://duanenewman.net/speaking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Mock Objects and Influence Unit Tests</title>
       <link>https://duanenewman.net/speaking/how-to-mock-objects-and-influence-unit-tests/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/speaking/how-to-mock-objects-and-influence-unit-tests/</guid>
       <description>In this session we will take a look at how AutoFixture can simplify the arranging and asserting portions of your .NET unit tests. We&amp;rsquo;ll explore how it integrates with mocking libraries to allow you to easily write tests and have dependency types automatically mocked and injected into your object under test. We&amp;rsquo;ll also look at how AutoFixture can be extended and customized to make you more productive with your domain specific types.</description>
     </item>
-    
     <item>
       <title>Unit Testing Prism Apps With Ease</title>
       <link>https://duanenewman.net/speaking/unit-testing-prism-apps-with-ease/</link>
       <pubDate>Fri, 03 May 2019 11:24:25 -0500</pubDate>
-      
       <guid>https://duanenewman.net/speaking/unit-testing-prism-apps-with-ease/</guid>
       <description>Prism makes it easy to use dependency injection and keep our apps modular. This modularity is great for testing, but all that dependency injection magic can make our test code seem more complex and filled with a lot of ceremony just to create a testable instance of a ViewModel and its dependencies. I&amp;rsquo;ve learned to embrace magic and I&amp;rsquo;ll share tips on how to take advantage of the same IoC container strategy used at runtime to make instantiating the class we want to test less painful.</description>
     </item>
-    
     <item>
       <title>Unit Testing With Ease</title>
       <link>https://duanenewman.net/speaking/unit-testing-with-ease/</link>
       <pubDate>Fri, 03 May 2019 11:24:25 -0500</pubDate>
-      
       <guid>https://duanenewman.net/speaking/unit-testing-with-ease/</guid>
       <description>Do you want to skip all the setup ceremony and get straight to the actual testing when writing unit tests? Leveraging dependency injection and IoC makes it a breeze to build solutions that are modular and testable, but building out those dependency chains in our unit tests can leave them cluttered and overly complex. It&amp;rsquo;s time to learn to embrace the magic of IoC, DI, and mocking to lower the friction of writing and maintaining unit tests.</description>
     </item>
-    
     <item>
       <title>Building a Real App With Xamarin.Forms</title>
       <link>https://duanenewman.net/speaking/building-a-real-app-with-xamarin-forms/</link>
       <pubDate>Fri, 03 May 2019 11:20:59 -0500</pubDate>
-      
       <guid>https://duanenewman.net/speaking/building-a-real-app-with-xamarin-forms/</guid>
       <description>Join me on a journey through the development of a real app using Xamarin.Forms, Azure Functions &amp;amp; Storage, third party integrations, and more. Instead of showing you &amp;ldquo;Hello World&amp;rdquo; or some contrived app that doesn&amp;rsquo;t show how things work in the real world, I&amp;rsquo;ll show you examples from a system built for our Kansas City .NET User Group as an extension to Meetup. We&amp;rsquo;ll explore real challenges, such as authenticating with third party providers, caching data locally for offline use, cross-platform UI, and more.</description>
     </item>
-    
     <item>
       <title>Adaptive User Interfaces with Xamarin.Forms</title>
       <link>https://duanenewman.net/speaking/adaptive-ui-with-xamarin-forms/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/speaking/adaptive-ui-with-xamarin-forms/</guid>
       <description>Let&amp;rsquo;s take Xamarin.Forms beyond Hello World and explore how to create apps that adapt to your users devices in the real-world. As an app developer, you don&amp;rsquo;t want your apps to just look great in portrait or landscape on a phone, you want to provide a larger display experience option. In this session we will build an app that spans platforms and device types, giving users a rich experience , regardless of platform or form factor.</description>
     </item>
-    
     <item>
       <title>Creating Reusable Packages for Mobile Development with Xamarin and NuGet</title>
       <link>https://duanenewman.net/speaking/reusable-packages-mobile-development-xamarin-nuget/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/speaking/reusable-packages-mobile-development-xamarin-nuget/</guid>
       <description>Living in the Xamarin mobile development trenches? Then you have probably created or at least thought about a few cross-platform aids. Sharing that platform agnostic code with new projects is easy, but things can get tricky with platform-specific implementations, right? Wouldn&amp;rsquo;t it be great if you could manage and maintain that functionality in reusable packages? We&amp;rsquo;ll explore how to structure your projects and configure a single NuGet package to install shared and platform libraries.</description>
     </item>
-    
     <item>
       <title>Hacking Your Car - Driving Towards a smarter future</title>
       <link>https://duanenewman.net/speaking/hacking-your-car/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/speaking/hacking-your-car/</guid>
       <description>Inspired by everything from Star Trek to the Tesla car, I&amp;rsquo;ve embarked on a journey to transform my truck from mundane to something that is more than meets the eye. Ever since I was old enough to drive, I&amp;rsquo;ve dreamed of having a car with a computerized dashboard, but it seemed out of reach until recently. With the advent of affordable tiny embedded computers like the Arduino and Raspberry Pi I was finally ready to make this a reality.</description>
     </item>
-    
     <item>
       <title>Hands Free Mobile UI Testing</title>
       <link>https://duanenewman.net/speaking/hands-free-mobile-ui-testing/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/speaking/hands-free-mobile-ui-testing/</guid>
       <description>Testing your mobile app against the sea of mobile devices can be daunting, and even limiting to testing with recent popular devices can be cumbersome and expensive. Not to mention the wear and tear on your thumbs with all that tapping and swiping! Wouldn&amp;rsquo;t it be great if you could apply your well-honed app logic unit testing skills and practices to your UI testing? I&amp;rsquo;ve got great news, you can! We&amp;rsquo;ll explore how you can create coded UI tests with C# and Xamarin UITest to automate all that tapping and swiping in your existing mobile apps, and how to plan for it moving forward.</description>
     </item>
-    
     <item>
       <title>Packaging your world with NuGet</title>
       <link>https://duanenewman.net/speaking/packaging-your-world-with-nuget/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/speaking/packaging-your-world-with-nuget/</guid>
       <description>Whether you are creating an open source library or building enterprise app core components, you need to get that functionality into other projects. But developing these resources is usually easier than consuming them. How about a worry free way to distribute and reference those resources in your project that will let you stay up to date, but allow you to avoid problems that may introduce breaking changes or new bugs? NuGet packages to the rescue!</description>
     </item>
-    
     <item>
       <title>Putting the Fun in Func with Lambdas &amp; LINQ</title>
       <link>https://duanenewman.net/speaking/putting-the-fun-in-func-with-lambdas-and-linq/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://duanenewman.net/speaking/putting-the-fun-in-func-with-lambdas-and-linq/</guid>
       <description>Working with delegates in C# is easier than ever with .NET&amp;rsquo;s generic Action and Func types. Understanding .NET delegates is key to harnessing the power of language features like Lambdas and LINQ. In this session, we&amp;rsquo;ll dig into delegates, exploring what they are, how they work, and how they can help you be a SOLID developer. Don&amp;rsquo;t let delegates put you in a Func, take Action, and learn how to make your code simpler, cleaner, and more flexible.</description>
     </item>
-    
   </channel>
 </rss>
