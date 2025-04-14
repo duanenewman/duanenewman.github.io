@@ -1,55 +1,143 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community on Duane Newman</title>
     <link>https://duanenewman.net/tags/community/</link>
     <description>Recent content in Community on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 23 May 2016 15:01:57 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Nebraska.Code() 2016</title>
       <link>https://duanenewman.net/blog/post/nebraska-code-2016/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/nebraska-code-2016/</guid>
-      <description>Another Nebraska.Code() is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference.</description>
+      <description>&lt;p&gt;Another &lt;a href=&#34;http://nebraskacode.com/&#34; target=&#34;_blank&#34;&gt;Nebraska.Code()&lt;/a&gt; is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference. We had lots of deep, and many more entertaining conversations.&lt;/p&gt;</description>
+      
+      <category>Coding</category>
+      
+      <category>Community</category>
+      
+      <category>Deployment</category>
+      
+      <category>mobile</category>
+      
+      <category>NCC</category>
+      
+      <category>NebraskaCode</category>
+      
+      <category>OSS</category>
+      
+      <category>Speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
     </item>
+    
     <item>
       <title>Heartland Developers Conference 2015</title>
       <link>https://duanenewman.net/blog/post/heartland-developers-conference-2015/</link>
       <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/heartland-developers-conference-2015/</guid>
-      <description>This was my first year speaking at the Heartland Developers Conference in Omaha, although I’ve attended many times through the years as an attendee. The experience was quite a lot of fun, and I had a good time hanging out with old friends and making a few new ones. My wife came with me and good time watching all of us “geeks” hangout. This was the first time doing a new talk, and the first talk that didn’t involve any demo’s, and it was not scheduled until Friday morning.</description>
+      <description>&lt;p&gt;This was my first year speaking at the Heartland Developers Conference in Omaha, although I’ve attended many times through the years as an attendee. The experience was quite a lot of fun, and I had a good time hanging out with old friends and making a few new ones. My wife came with me and good time watching all of us “geeks” hangout. &lt;/p&gt;  &lt;p&gt;This was the first time doing a new talk, and the first talk that didn’t involve any demo’s, and it was not scheduled until Friday morning. Needless to say I spent a lot of time fretting about the talk and was constantly tweaking my slides. The talk itself went really well, the audience was very involved with a lot of great questions. My talk was on DevOps and I brought to light the importance and advantages of getting a DevOps friendly environment established. I was happy to see I had a mix of developers, IT guys and managers as I really tried to target the talk to a broad audience. All-in-all I’m looking forward to what HDC might bring next year.&lt;/p&gt;</description>
+      
+      <category>agile</category>
+      
+      <category>DevOps</category>
+      
+      <category>Community</category>
+      
+      <category>Speaking</category>
+      
+      <category>HDC</category>
+      
     </item>
+    
     <item>
       <title>Kansas City Developers Conference 2015 Recap</title>
       <link>https://duanenewman.net/blog/post/kcdc-2015-recap/</link>
       <pubDate>Thu, 03 Sep 2015 09:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/kcdc-2015-recap/</guid>
-      <description>In preparation for my fall conference lineup I thought I would take a minute to reflect on this year’s Kansas City Developers Conference. Once again, I am impressed with the quality of conference that the KCDC crew puts together. Kudos go to Boone, Jon, and Lee for nurturing a small weekend event into what is, today, one of the top conferences in the Midwest for developers (of any discipline). I’ve had the opportunity to go to some of the “BIG” (and expensive) developer conferences out there and experience what they feel like, and to me KCDC has that same polished feel of conferences that cost 10x as much to attend.</description>
+      <description>&lt;p&gt;In preparation for my fall conference lineup I thought I would take a minute to reflect on this year’s Kansas City Developers Conference. Once again, I am impressed with the quality of conference that the KCDC crew puts together. Kudos go to &lt;a href=&#34;https://twitter.com/boontlee&#34; target=&#34;_blank&#34;&gt;Boone&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/jonathanfmills&#34; target=&#34;_blank&#34;&gt;Jon&lt;/a&gt;, and &lt;a href=&#34;https://twitter.com/leebrandt&#34; target=&#34;_blank&#34;&gt;Lee&lt;/a&gt; for nurturing a small weekend event into what is, today, one of the top conferences in the Midwest for developers (of any discipline). I’ve had the opportunity to go to some of the “BIG” (and expensive) developer conferences out there and experience what they feel like, and to me KCDC has that same polished feel of conferences that cost 10x as much to attend. It is great to be able to attend a developer conference of that caliber without ever leaving town.&lt;/p&gt;</description>
+      
+      <category>Community</category>
+      
+      <category>speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
     </item>
+    
     <item>
       <title>Nebraska.Code() 2015 Retrospect</title>
       <link>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</link>
       <pubDate>Fri, 27 Mar 2015 09:48:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</guid>
-      <description>It was a pleasure to attend and speak at Nebraska.Code() this year. The guys in Lincoln are great and really put on a good conference. One of the neat parts of being a speaker is getting to know a lot of other great speakers as you go from one conference to another together. I&#39;ve found that as soon as one conference is over I&#39;m looking forward to the next one and the chance to hang out with the gang.</description>
+      <description>&lt;p&gt;It was a pleasure to attend and speak at Nebraska.Code() this year. The guys in Lincoln are great and really put on a good conference. One of the neat parts of being a speaker is getting to know a lot of other great speakers as you go from one conference to another together. I&#39;ve found that as soon as one conference is over I&#39;m looking forward to the next one and the chance to hang out with the gang.&lt;/p&gt;</description>
+      
+      <category>speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
+      <category>Community</category>
+      
+      <category>mobile</category>
+      
+      <category>review</category>
+      
+      <category>NCC</category>
+      
     </item>
+    
     <item>
       <title>KCDNUG Last Minute Speaking (or, the perils of running a user group)</title>
       <link>https://duanenewman.net/blog/post/kcdnug-last-minute-speaking-or-the-perils-of-running-a-user-group/</link>
       <pubDate>Tue, 24 Mar 2015 22:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/kcdnug-last-minute-speaking-or-the-perils-of-running-a-user-group/</guid>
-      <description>What a crazy user group meeting tonight. Through some schedule mix-ups (partly due to having things scheduled too far in advance and not following up) we ended up with no sponsor and no speaker. I was originally not going to make it to tonight’s meeting due to some schedule conflicts, but they cleared up at the last minute so I joined Brent to help run the meeting. When we go there we discovered that due to schedule conflicts they had we were in a different room, so we got busy redirecting everyone to the new room.</description>
+      <description>&lt;p&gt;What a crazy user group meeting tonight. Through some schedule mix-ups (partly due to having things scheduled too far in advance and not following up) we ended up with no sponsor and no speaker.   &lt;br /&gt;&lt;/p&gt;  &lt;p&gt;I was originally not going to make it to tonight’s meeting due to some schedule conflicts, but they cleared up at the last minute so I joined Brent to help run the meeting. When we go there we discovered that due to schedule conflicts they had we were in a different room, so we got busy redirecting everyone to the new room. After a while we started wondering where the scheduled sponsor was... Then we also started wondering where the speaker was. We soon learned the sponsor didn&#39;t realize they were scheduled for tonight and would not be there, so Brent got on the phone and Alien Arc became the new sponsor. When it was just a few minutes from go-time and still no speaker (didn&#39;t have contact info) it became apparent that one of us was going to speak.    &lt;br /&gt;&lt;/p&gt;</description>
+      
+      <category>speaking</category>
+      
+      <category>Community</category>
+      
+      <category>KCDNUG</category>
+      
     </item>
+    
     <item>
       <title>SkillsUSA Coding Competition</title>
       <link>https://duanenewman.net/blog/post/skillsusa-coding-competition/</link>
       <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/skillsusa-coding-competition/</guid>
-      <description>On Saturday I had an opportunity to be involved in a SkillsUSA district competition as a judge for the coding competition. I was really impressed with the skill that some of these students (all with less than a year of experience) had. The quality of some of the code they wrote really surprised me.&#xA;It was a really enjoyable experience and I was happy to be able to get more involved in the community with the next generation of coders.</description>
+      <description>&lt;div&gt;&lt;a href=&#34;https://duanenewman.net/img/posts/201402-SkillsUSA.png&#34;&gt;&lt;img title=&#34;201402-SkillsUSA&#34; style=&#34;float: right&#34; border=&#34;0&#34; alt=&#34;201402-SkillsUSA&#34; src=&#34;https://duanenewman.net/img/posts/201402-SkillsUSA_thumb.png&#34; width=&#34;244&#34; align=&#34;right&#34; height=&#34;160&#34; /&gt;&lt;/a&gt;     &lt;p&gt;On Saturday I had an opportunity to be involved in a SkillsUSA district competition as a judge for the coding competition. I was really impressed with the skill that some of these students (all with less than a year of experience) had. The quality of some of the code they wrote really surprised me.&lt;/p&gt;    &lt;p&gt;It was a really enjoyable experience and I was happy to be able to get more involved in the community with the next generation of coders. I look forward to other opportunities to work with the future of software development and technology.&lt;/p&gt;</description>
+      
+      <category>Technology</category>
+      
+      <category>SkillsUSA</category>
+      
+      <category>Judging</category>
+      
+      <category>Coding</category>
+      
+      <category>Community</category>
+      
     </item>
+    
   </channel>
 </rss>

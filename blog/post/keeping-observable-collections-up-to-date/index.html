@@ -116,8 +116,7 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   <p>One of the powerful capabilities we&rsquo;ve learned to leverage when using the MVVM pattern for XAML based apps, whether for the desktop or mobile platforms, is data binding. Binding allows us to easily keep our View up to date with changes in the ViewModel. These bindings are typically pretty quick when not abused, but there are situations where they can become less than performant, causing visual anomalies such as flickering or even impacting general app performance.</p>
 <blockquote>
-<p>This post is part of <a href="https://crosscuttingconcerns.com/The-Second-Annual-C-Advent">The Second Annual C# Advent</a> organized by Matthew Groves. Check out the article for a bunch of other great posts about C# development.</p>
-</blockquote>
+<p>This post is part of <a href="https://crosscuttingconcerns.com/The-Second-Annual-C-Advent">The Second Annual C# Advent</a> organized by Matthew Groves. Check out the article for a bunch of other great posts about C# development.</p></blockquote>
 <h2 id="the-problem">The Problem</h2>
 <p>One of these situations that can really affect performance is binding a frequently changing observable collection to your UI, especially with a complex DataTemplate. We can run into this problem when we are doing something like polling an API that returns a collection that updates frequently. This can be even worse if an item can be added or removed from the list over time.</p>
 <p>A simple solution to this problem might be to just rebuild the list each time. While that might seem to work well enough with just a few items or a basic UI layout it will result in the creation and disposal of a lot of objects. That constant churn of object construction and destruction will ramp up both the CPU and memory usage of your application.</p>
@@ -372,8 +371,6 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
     <script src="https://duanenewman.net//js/clean-blog.js"></script>
 
     
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=386221517"></script>
       <script>
         var doNotTrack = false;
@@ -388,10 +385,6 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
           gtag('config', '386221517');
         }
       </script>
-    
-  
-
-
 
 </body>
 

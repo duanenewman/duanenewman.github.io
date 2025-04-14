@@ -1,83 +1,190 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on Duane Newman</title>
     <link>https://duanenewman.net/categories/technology/</link>
     <description>Recent content in Technology on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 10 Feb 2020 12:30:00 -0600</lastBuildDate>
-    <atom:link href="https://duanenewman.net/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Parallels Shared Network Fails to Connect</title>
       <link>https://duanenewman.net/blog/post/parallels-shared-network-fails-to-connect/</link>
       <pubDate>Mon, 10 Feb 2020 12:30:00 -0600</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/parallels-shared-network-fails-to-connect/</guid>
-      <description>Today (Monday), out of the blue, one of my Windows 10 Parallels virtual machines decided that it had no connection to the internet. Friday I was on site at a client using their WiFi network to work through some changes they needed. Today, back at the office, I fired up my VM to push the changes and make a couple more tweaks. I was immediately greeted by git telling me that my git host didn&amp;rsquo;t exist.</description>
+      <description>&lt;p&gt;Today (Monday), out of the blue, one of my Windows 10 Parallels virtual machines decided that it had no connection to the internet. Friday I was on site at a client using their WiFi network to work through some changes they needed. Today, back at the office, I fired up my VM to push the changes and make a couple more tweaks. I was immediately greeted by git telling me that my git host didn&amp;rsquo;t exist. I realized that Windows was reporting that I had no internet connection.&lt;/p&gt;</description>
+      
+      <category>parallels</category>
+      
+      <category>network</category>
+      
+      <category>tips</category>
+      
     </item>
+    
     <item>
       <title>Indirect connections with Plex and pfSense</title>
       <link>https://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/</link>
       <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/indirect-connections-with-plex-and-pfsense/</guid>
-      <description>I&amp;rsquo;ve recently built a custom FreeNAS file server in my house to act as high capacity storage for my personal photos &amp;amp; videos, a Plex Media Server, and an S3 server for offsite backup for my business and family, among a few other minor things. At the same time I also replaced my Ubiquiti EdgeRouter X with a custom pfSense router (primarily for better remote VPN and P2P VPN support).</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently built a custom FreeNAS file server in my house to act as high capacity storage for my personal photos &amp;amp; videos, a Plex Media Server, and an S3 server for offsite backup for my business and family, among a few other minor things. At the same time I also replaced my Ubiquiti EdgeRouter X with a custom pfSense router (primarily for better remote VPN and P2P VPN support).&lt;/p&gt;</description>
+      
+      <category>pfsense</category>
+      
+      <category>plex</category>
+      
+      <category>network</category>
+      
     </item>
+    
     <item>
       <title>My First MVP Summit</title>
       <link>https://duanenewman.net/blog/post/my-first-mvp-summit/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/my-first-mvp-summit/</guid>
-      <description>A couple weeks ago I went to my first MVP Summit. The MVP program is a way that Microsoft recognizes &#34;technology experts who passionately share their knowledge with the community&#34;[*](https://mvp.microsoft.com/en-us/Overview). There are several perks to being an MVP. While many may immediately think of the compliemntary MSDN subscription and software licenses from other vendors, I was most excited about the opportunity to go to MVP Summit. As an MVP (under tight NDA) I am able to meet over skype with the various product teams at MS to get a view into where they are headed with thier technologies.</description>
+      <description>&lt;img class=&#34;img-thumbnail pull-left&#34; src=&#34;microsoftsign.png&#34; alt=&#34;Me at the Microsoft Sign&#34; width=&#34;300&#34; /&gt;
+A couple weeks ago I went to my first MVP Summit. The MVP program is a way that Microsoft recognizes &#34;technology experts who passionately share their knowledge with the community&#34;[*](https://mvp.microsoft.com/en-us/Overview). There are several perks to being an MVP. While many may immediately think of the compliemntary MSDN subscription and software licenses from other vendors, I was most excited about the opportunity to go to MVP Summit. As an MVP (under tight NDA) I am able to meet over skype with the various product teams at MS to get a view into where they are headed with thier technologies. This is invaluable as a consultant tring to stear my customers in the best direction and as a speaker shaping my future presentations.
+&lt;img class=&#34;img-thumbnail pull-right&#34; src=&#34;mvplookslike.png&#34; alt=&#34;This is What an MVP Looks Like&#34; width=&#34;300&#34; /&gt;
+These skype meetings are great, but once a year Micorosoft puts on the MVP Summit and brings in thousands of MVPs to Redmond for in-person sessions with the developers creating the tools I use every day. As a speaker I approach most conferences differently than I used to. I often don&#39;t get to sessions as I&#39;m either prepping for my own or I&#39;ve ran into a friend in the hallway and we get busy catching up or having our own technology conversations. It is great, but I do sometimes miss the opportunity to just hop from session to session gleaning the information from the speaker without the stress of presenting. Well, MVP Summit allowed me to do just that: be an attendee again, and it was really cool.
+&lt;img class=&#34;img-thumbnail pull-left&#34; src=&#34;FirstMvpLanyard.png&#34; alt=&#34;My First MVP Lanyard&#34; width=&#34;200&#34; /&gt;
+One of the things that stuck out the most to me at MVP Summit was the willingness that the teams had to get feedback. As a developer I can totally understand it, and I always hope for good feedback from users so that I can improve, but it just surprised me to see that same interest from Microsoft. It was a treat to get to meet most of the Xamarin PMs while I there, and one of the best sessions I went to was a panel discussion with all of them, including Miguel. I was impressed with how they reacted and replied when questions were asked about what the teams were doing (especially with critical feedback). It was cool getting straight answers on why a feature is (or isn&#39;t) being implemented with explanations of what they&#39;ve tried, rather than just being told it isn&#39;t happening. At one point when a new feature was being talked about and one of the MVPs raised a question that the team had not considered the PM polled the room for our opinion on what would be most useful and when he saw that it was for the oposite aproach they were taking there was real interest in making changes. 
+&lt;p&gt;I also had a great oportunity to see friends I usually just see when we are speaking at the same conference as well as meet many new friends. It was cool getting to have face-to-face encounters with some of the &amp;ldquo;big&amp;rdquo; names in the developer community. The networking was fantastic, and I look forward to seeing many of the other MVPs and MS employees again in the future.&lt;/p&gt;</description>
+      
+      <category>mvp</category>
+      
+      <category>dotnet</category>
+      
+      <category>xamarin</category>
+      
+      <category>microsoft</category>
+      
     </item>
+    
     <item>
       <title>Strange Keyboard Layout on Windows 10 Mobile &amp; Lumia 950XL</title>
       <link>https://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</link>
       <pubDate>Wed, 27 Jul 2016 11:45:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/strange-keyboard-layout-on-windows-10-mobile-lumia-950xl/</guid>
-      <description>I recently encountered a strange issue with the layout of the keyboard on my Lumia 950XL. This happened after a one of the recent OS updates and it took me a little while researching to figure it out. The issue was that my keyboard was all squashed to the left, instead of taking up the full width of the phone. In addition to that the cursor point was on the right hand side of the keyboard.</description>
+      <description>&lt;p&gt;I recently encountered a strange issue with the layout of the keyboard on my Lumia 950XL. This happened after a one of the recent OS updates and it took me a little while researching to figure it out. The issue was that my keyboard was all squashed to the left, instead of taking up the full width of the phone. In addition to that the cursor point was on the right hand side of the keyboard.&lt;/p&gt;</description>
+      
+      <category>WinPhone</category>
+      
+      <category>950XL</category>
+      
+      <category>Troubleshooting</category>
+      
     </item>
+    
     <item>
       <title>Microsoft Build 2016</title>
       <link>https://duanenewman.net/blog/post/microsoft-build-2016/</link>
       <pubDate>Wed, 27 Apr 2016 09:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/microsoft-build-2016/</guid>
-      <description>I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.&#xA;This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces.</description>
+      <description>&lt;p&gt;I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.&lt;/p&gt;  &lt;p&gt;This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces. Here are some of my reactions to the announcements, activities, and experience of the Build 2016 day one keynote.&lt;/p&gt;</description>
+      
+      <category>Xamarin</category>
+      
+      <category>Technology</category>
+      
+      <category>Build2016</category>
+      
+      <category>OSS</category>
+      
     </item>
+    
     <item>
       <title>The Return of Visual Voicemail to the Lumia 950 XL (Dual Sim)</title>
       <link>https://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</link>
       <pubDate>Mon, 18 Apr 2016 16:58:41 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/the-return-of-visual-voicemail-to-the-lumia-950-xl-dual-sim/</guid>
-      <description>For those that purchased an unlocked Lumia 950 XL from Microsoft in the last few months and have been frustrated at the lack of Visual Voice (that’s everyone who bought one) you can rejoice. Last week I had sketchy WiFi access so I just discovered that I had an update available last night. When I went to take a look at the change log I discovered this little gem:&#xA;Support for Visual Voicemail on Dual SIM phones It sounds like this has been available in the Windows Insiders build for a little while, but I’ve been hesitant to put my primary phone on the insiders builds.</description>
+      <description>&lt;p&gt;For those that purchased an unlocked Lumia 950 XL from Microsoft in the last few months and have been frustrated at the lack of Visual Voice (that’s everyone who bought one) you can rejoice. Last week I had sketchy WiFi access so I just discovered that I had an update available last night. When I went to take a look at the change log I discovered this little gem:&lt;/p&gt;  &lt;ul&gt;   &lt;li&gt;Support for Visual Voicemail on Dual SIM phones &lt;/li&gt; &lt;/ul&gt;  &lt;p&gt;It sounds like this has been available in the Windows Insiders build for a little while, but I’ve been hesitant to put my primary phone on the insiders builds. So I didn’t realize it was in the wild.. If I had I might have bit the bullet and jumped on the fast ring.&lt;/p&gt;</description>
+      
+      <category>Lumia</category>
+      
+      <category>WinPhone</category>
+      
     </item>
+    
     <item>
       <title>Bringing Sight to the Blind (Seeing AI)</title>
       <link>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</link>
       <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</guid>
-      <description>Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by Saqib Shaikh, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses.</description>
+      <description>&lt;div style=&#34;float: right; margin-left: 5px&#34;&gt;&lt;a href=&#34;https://duanenewman.net/img/posts/0X1A4514.png&#34;&gt;&lt;img title=&#34;0X1A4514&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;0X1A4514&#34; src=&#34;https://duanenewman.net/img/posts/0X1A4514_thumb.png&#34; width=&#34;244&#34; height=&#34;170&#34; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;p&gt;Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by &lt;a href=&#34;https://twitter.com/saqibs&#34; target=&#34;_blank&#34;&gt;Saqib Shaikh&lt;/a&gt;, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses. &lt;/p&gt;</description>
+      
+      <category>Technology</category>
+      
+      <category>Human</category>
+      
+      <category>NUI</category>
+      
+      <category>Build2016</category>
+      
     </item>
+    
     <item>
       <title>Generating Authenticator QR Codes</title>
       <link>https://duanenewman.net/blog/post/generating-authenticator-qr-codes/</link>
       <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/generating-authenticator-qr-codes/</guid>
-      <description>I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.</description>
+      <description>&lt;p&gt;I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.&lt;/p&gt;</description>
+      
+      <category>QRCode</category>
+      
+      <category>Security</category>
+      
+      <category>tips</category>
+      
+      <category>Technology</category>
+      
     </item>
+    
     <item>
       <title>Installing Chocolatey behind a corporate proxy</title>
       <link>https://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</link>
       <pubDate>Fri, 22 Jan 2016 12:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</guid>
-      <description>Recently I was working at a project at a new client and needed to add some tools to my development machine. So I turned to one of my favorite tools for getting the apps and tools I need, Chocolatey. The only problem was that I was getting an error installing Chocolatey using the command on their website.&#xA;Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; argument(s): &amp;quot;The remote server returned an error: (407) Proxy Authentication Required.</description>
+      <description>&lt;p&gt;Recently I was working at a project at a new client and needed to add some tools to my development machine. So I turned to one of my favorite tools for getting the apps and tools I need, Chocolatey. The only problem was that I was getting an error installing Chocolatey using the command on their website.&lt;/p&gt;  &lt;pre&gt;Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; argument(s): &amp;quot;The remote server returned an error: (407) Proxy Authentication Required.&amp;quot;&lt;br /&gt;At line:1 char:47&lt;br /&gt;+ iex ((new-object net.webclient).DownloadString &amp;lt;&amp;lt;&amp;lt;&amp;lt; (&#39;https://chocolatey.org/install.ps1&#39;))&lt;br /&gt;+ CategoryInfo : NotSpecified: (:) [], MethodInvocationException&lt;br /&gt;+ FullyQualifiedErrorId : DotNetMethodException&lt;/pre&gt;
+&lt;p&gt;After some google-binging I found a useful article on Stack Overflow that got me the hints I needed. I had to modify the command to force the WebRequest to use (of all things) the Default Credentials for the proxy setting. I didn’t have to add username/password info or anything. This is what seemed odd to me, having to set the setting to the “default”. &lt;/p&gt;</description>
+      
+      <category>chocolatey</category>
+      
+      <category>proxy</category>
+      
+      <category>powershell</category>
+      
+      <category>admin</category>
+      
+      <category>utility</category>
+      
     </item>
+    
     <item>
       <title>I Can Has Pen Input? (or, My first moments with a Surface Pro)</title>
       <link>https://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</link>
       <pubDate>Sat, 09 Feb 2013 08:56:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/i-can-has-pen-input-or-my-first-moments-with-a-surface-pro/</guid>
-      <description>I just picked up my Surface Pro from my local Microsoft Store this morning. I&amp;rsquo;m no stranger to Windows 8; I&amp;rsquo;ve been using it on my desktop since RTM (and a little before) and I bought the RT back on launch day. In general I like the changes that have been made and no longer feel at home on Windows 7. I have especially been digging the way the interface was built around touch with my RT, I think that has helped me accept some of the changes experienced with mouse and keyboard only input.</description>
+      <description>&lt;p&gt;I just picked up my Surface Pro from my local Microsoft Store this morning. I&amp;rsquo;m no stranger to Windows 8; I&amp;rsquo;ve been using it on my desktop since RTM (and a little before) and I bought the RT back on launch day. In general I like the changes that have been made and no longer feel at home on Windows 7. I have especially been digging the way the interface was built around touch with my RT, I think that has helped me accept some of the changes experienced with mouse and keyboard only input.&lt;/p&gt;</description>
+      
+      <category>review</category>
+      
+      <category>surface</category>
+      
     </item>
+    
   </channel>
 </rss>

@@ -1,27 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Agile on Duane Newman</title>
     <link>https://duanenewman.net/tags/agile/</link>
     <description>Recent content in Agile on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Thu, 24 Sep 2015 11:45:00 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Heartland Developers Conference 2015</title>
       <link>https://duanenewman.net/blog/post/heartland-developers-conference-2015/</link>
       <pubDate>Thu, 24 Sep 2015 11:45:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/heartland-developers-conference-2015/</guid>
-      <description>This was my first year speaking at the Heartland Developers Conference in Omaha, although I’ve attended many times through the years as an attendee. The experience was quite a lot of fun, and I had a good time hanging out with old friends and making a few new ones. My wife came with me and good time watching all of us “geeks” hangout. This was the first time doing a new talk, and the first talk that didn’t involve any demo’s, and it was not scheduled until Friday morning.</description>
+      <description>&lt;p&gt;This was my first year speaking at the Heartland Developers Conference in Omaha, although I’ve attended many times through the years as an attendee. The experience was quite a lot of fun, and I had a good time hanging out with old friends and making a few new ones. My wife came with me and good time watching all of us “geeks” hangout. &lt;/p&gt;  &lt;p&gt;This was the first time doing a new talk, and the first talk that didn’t involve any demo’s, and it was not scheduled until Friday morning. Needless to say I spent a lot of time fretting about the talk and was constantly tweaking my slides. The talk itself went really well, the audience was very involved with a lot of great questions. My talk was on DevOps and I brought to light the importance and advantages of getting a DevOps friendly environment established. I was happy to see I had a mix of developers, IT guys and managers as I really tried to target the talk to a broad audience. All-in-all I’m looking forward to what HDC might bring next year.&lt;/p&gt;</description>
+      
+      <category>agile</category>
+      
+      <category>DevOps</category>
+      
+      <category>Community</category>
+      
+      <category>Speaking</category>
+      
+      <category>HDC</category>
+      
     </item>
+    
     <item>
       <title>Agile Operations</title>
       <link>https://duanenewman.net/blog/post/agile-operations/</link>
       <pubDate>Tue, 21 Oct 2014 16:04:44 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/agile-operations/</guid>
-      <description>With a new and busy business it is easy to lose track of the little things that need to be done when you are spending every usable minute on billable tasks. This is the challenge we found ourselves faced with a few months into operating Alien Arc.&#xA;Enter Aglie We started a Trello board back when we started the business to track tasks like getting our insurance setup and creating a logo.</description>
+      <description>&lt;p&gt;With a new and busy business it is easy to lose track of the little things that need to be done when you are spending every usable minute on billable tasks. This is the challenge we found ourselves faced with a few months into operating Alien Arc.&lt;/p&gt;  &lt;h5&gt;Enter Aglie&lt;/h5&gt;  &lt;p&gt;We started a &lt;a href=&#34;http://www.Trello.com&#34; target=&#34;_blank&#34;&gt;Trello&lt;/a&gt; board back when we started the business to track tasks like getting our insurance setup and creating a logo. But when we got done with many of those we stopped using the board and focused on making money. Recently we decided that we needed to start making progress on other business goals and we did three things: &lt;/p&gt;</description>
+      
+      <category>reflection</category>
+      
+      <category>buiness</category>
+      
+      <category>agile</category>
+      
     </item>
+    
   </channel>
 </rss>

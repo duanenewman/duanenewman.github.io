@@ -1,27 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Duane Newman</title>
     <link>https://duanenewman.net/page/</link>
     <description>Recent content in Pages on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 31 Mar 2015 17:43:05 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/page/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Xamarin Forms: One App to Rule All Your Platforms</title>
-      <link>https://duanenewman.net/page/xamarin-forms-one-app-to-rule-all-your-platforms/</link>
-      <pubDate>Tue, 31 Mar 2015 17:43:05 +0000</pubDate>
-      <guid>https://duanenewman.net/page/xamarin-forms-one-app-to-rule-all-your-platforms/</guid>
-      <description>Are you seeking the Holy Grail of Write Once Run Anywhere app development? Then Xamarin Forms might be what you are looking for. This session will give you the information you need to understand Xamarin Forms and how it can be used to lower the friction of cross platform mobile development. You will see how easy it is to simultaneously create your app for iOS, Android, and Windows Phone.&#xA;What People have said about this talk The demo was good for the level of .</description>
-    </item>
-    <item>
-      <title>About Duane</title>
-      <link>https://duanenewman.net/page/about-duane/</link>
-      <pubDate>Mon, 14 Feb 2011 13:49:42 +0000</pubDate>
-      <guid>https://duanenewman.net/page/about-duane/</guid>
-      <description>I am a technology enthusiast with a passion for good software. I’ve been programming professionally since the mid ‘90s and have worked on software solutions in many industries including warehousing, real estate, insurance, and law enforcement.&#xA;Like many software developers my interest in programming began as a kid playing video games on my C-64 and the families first “IBM-Compatible” computer. On the PC I learned the ins and outs of system configuration to get the latest revolutionary games (like Doom and DN3D) to run.</description>
-    </item>
+    
+        <atom:link href="https://duanenewman.net/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

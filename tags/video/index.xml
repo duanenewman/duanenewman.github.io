@@ -1,41 +1,99 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Video on Duane Newman</title>
     <link>https://duanenewman.net/tags/video/</link>
     <description>Recent content in Video on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Fri, 29 Jul 2016 14:46:23 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Diving in Bonaire - 2016</title>
       <link>https://duanenewman.net/blog/post/diving-in-bonaire-2016/</link>
       <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/diving-in-bonaire-2016/</guid>
-      <description>I decided to take a few minutes and reflect on my recent trip to Bonaire and share some accomplishments and observations. To begin with, the flight there is long. We had two options, 45 minute layover to catch an international flight with all our luggage, or 5 hour layover waiting in the airport. We chose the later since no on wanted to miss a flight that only happens once a day and only on Saturday and Sunday each week.</description>
+      <description>&lt;div class=&#34;asside-left&#34; style=&#34;text-align:center;width:auto;&#34;&gt;&lt;a href=&#34;https://duanenewman.net/img/posts/WeHaveLanded.jpg&#34;&gt;&lt;img title=&#34;WeHaveLanded&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;WeHaveLanded&#34; src=&#34;https://duanenewman.net/img/posts/WeHaveLanded_thumb.jpg&#34; width=&#34;244&#34; height=&#34;136&#34; /&gt;&lt;/a&gt; &lt;/div&gt;  &lt;p&gt;I decided to take a few minutes and reflect on my recent trip to Bonaire and share some accomplishments and observations. To begin with, the flight there is long. We had two options, 45 minute layover to catch an international flight with all our luggage, or 5 hour layover waiting in the airport. We chose the later since no on wanted to miss a flight that only happens once a day and only on Saturday and Sunday each week. This turned out to be a good thing, simply because it gave us time to be out of airplane seats for a while as well as plenty of time to eat and no stress about missing a flight. Other than the length of the flight it was pleasant and smooth. We arrived in Bonaire early evening and the weather was amazing, the sun was on it&#39;s way down and there was a breeze that made the open air airport very comfortable. We waited a few minutes in a very short line to go through what was a very friendly customs check. I&#39;m told that the daytime arrival that some of our party had previously experienced consisted of a very long wait in the hot midday sunshine. After we got our luggage and exited the arrival area we found the bus for our resort, handed over our luggage again and climbed in for a quick ride to the resort.&lt;/p&gt;</description>
+      
+      <category>Photography</category>
+      
+      <category>planning</category>
+      
+      <category>review</category>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>Tips</category>
+      
+      <category>video</category>
+      
     </item>
+    
     <item>
       <title>Bluff v1.1 hot off the presses</title>
       <link>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
-      <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:&#xA;Converting the project to .NET 3.5 (from 2.0) Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) And last, but not least, I added a WIX based installer to the project If you just want grab the latest version jump over to the GitHub release page.</description>
+      <description>&lt;p&gt;I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:&lt;/p&gt;  &lt;ul&gt;   &lt;li&gt;Converting the project to .NET 3.5 (from 2.0) &lt;/li&gt;    &lt;li&gt;Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) &lt;/li&gt;    &lt;li&gt;Add a new command called &lt;em&gt;Arrange Events By Created Timestamp&lt;/em&gt; that spaces the events out on the timeline relative to each others created timestamp &lt;/li&gt;    &lt;li&gt;Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) &lt;/li&gt;    &lt;li&gt;And last, but not least, I added a WIX based installer to the project &lt;/li&gt; &lt;/ul&gt;  &lt;p&gt;If you just want grab the latest version jump over to the GitHub release page.&lt;/p&gt;</description>
+      
+      <category>Bluff</category>
+      
+      <category>Coding</category>
+      
+      <category>OSS</category>
+      
+      <category>plugin</category>
+      
+      <category>vegas</category>
+      
+      <category>video</category>
+      
     </item>
+    
     <item>
       <title>Merging GoPro Segments Into a Single File</title>
       <link>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
       <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
-      <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&#xA;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
+      <description>&lt;p&gt;If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&lt;/p&gt;  &lt;p&gt;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage. The FAT file system has been around for a long time and pretty much every OS out there can readily access the contents of a disk formatted with FAT, so it makes a good choice for a device that will be used by consumers. The downside is that FAT has a file size limit of about 4GB, this seemed huge back in the day when hard drives were not even half that size, but is a little lacking in todays world where we measure local storage often in terabytes rather than gigabytes. It is especially small in today’s world of HD (or 4k) video. Fortunately there is a solution once you get it on NTFS (or HFS on OS X) to make your video files all one again. The best part is there is no re-encoding, just re-wrapping of the existing encoded data into a new file, so it is quick and will not degrade your video.&lt;/p&gt;</description>
+      
+      <category>video</category>
+      
+      <category>tips</category>
+      
+      <category>chocolatey</category>
+      
+      <category>media</category>
+      
+      <category>utility</category>
+      
     </item>
+    
     <item>
       <title>Bluff: An OSS Extension for Sony Vegas Pro</title>
       <link>https://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</link>
       <pubDate>Wed, 09 Mar 2016 08:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</guid>
-      <description>Yesterday, my business Alien Arc Technologies, LLC announced the release of version 1.0 of an open source project I’ve been tinkering on recently, called Bluff. This is my first OSS project and I’m excited to have created something that I hope others will find useful, and better yet, will contribute their own ideas to.&#xA;History The project came out of my own personal needs and interest. In 2015 I was introduced to the world of scuba diving and I’ve fallen totally in love with it.</description>
+      <description>&lt;p&gt;Yesterday, my business Alien Arc Technologies, LLC &lt;a title=&#34;Alien Arc Technologies, LLC Announces Bluff, an OSS Project for Sony Vegas Pro&#34; href=&#34;http://alienarc.com/post/announcing-new-oss-project-bluff-for-vegas-pro-12&#34; target=&#34;_blank&#34;&gt;announced&lt;/a&gt; the release of version 1.0 of an open source project I’ve been tinkering on recently, called Bluff. This is my first OSS project and I’m excited to have created something that I hope others will find useful, and better yet, will contribute their own ideas to.&lt;/p&gt;  &lt;h3&gt;History&lt;/h3&gt;  &lt;p&gt;The project came out of my own personal needs and interest. In 2015 I was introduced to the world of scuba diving and I’ve fallen totally in love with it. It didn’t take long before I was combining scuba with my photography hobby.. And suddenly I found I had the perfect environment to do video. &lt;/p&gt;</description>
+      
+      <category>OSS</category>
+      
+      <category>vegas</category>
+      
+      <category>video</category>
+      
+      <category>plugin</category>
+      
     </item>
+    
   </channel>
 </rss>

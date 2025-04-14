@@ -1,20 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social on Duane Newman</title>
     <link>https://duanenewman.net/tags/social/</link>
     <description>Recent content in Social on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 03 Mar 2015 08:55:00 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/social/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/social/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Getting your brand’s Twitter timeline in your mobile app</title>
       <link>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
       <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
-      <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
+      <description>&lt;p&gt;I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for &lt;a href=&#34;http://www.alienarc.com&#34; target=&#34;_blank&#34;&gt;Alien Arc&lt;/a&gt;). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts. That went really quick and next on my list was to load my twitter timeline and show recent tweets. The blog was so easy and quick to do that I thought it would take no time to get twitter integrated.&lt;/p&gt;</description>
+      
+      <category>twitter</category>
+      
+      <category>Xamarin</category>
+      
+      <category>business</category>
+      
+      <category>Coding</category>
+      
+      <category>tips</category>
+      
+      <category>linq</category>
+      
+      <category>social</category>
+      
+      <category>mobile</category>
+      
     </item>
+    
   </channel>
 </rss>

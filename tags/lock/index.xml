@@ -1,20 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lock on Duane Newman</title>
     <link>https://duanenewman.net/tags/lock/</link>
     <description>Recent content in Lock on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/lock/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/lock/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Concurrent Reads and Locked Writes with In-Memory Objects</title>
       <link>https://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</guid>
-      <description>The Problem On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a List&amp;lt;T&amp;gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads.</description>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a &lt;code&gt;List&amp;lt;T&amp;gt;&lt;/code&gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads. The multi-threading was perfect for reading, but as soon as they started updating the collection (or any sub-collections on the individual items involved in queries) they, unsurprisingly, started getting &lt;a href=&#34;https://docs.microsoft.com/en-us/dotnet/api/system.invalidoperationexception&#34; target=&#34;_blank&#34;&gt;InvalidOperationExceptions&lt;/a&gt; with the message &amp;ldquo;Collection was modified; enumeration operation may not execute.&amp;rdquo;&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>framework</category>
+      
+      <category>builtin</category>
+      
+      <category>tips</category>
+      
+      <category>lock</category>
+      
     </item>
+    
   </channel>
 </rss>

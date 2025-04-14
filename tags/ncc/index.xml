@@ -1,27 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NCC on Duane Newman</title>
     <link>https://duanenewman.net/tags/ncc/</link>
     <description>Recent content in NCC on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 23 May 2016 15:01:57 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/ncc/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/ncc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Nebraska.Code() 2016</title>
       <link>https://duanenewman.net/blog/post/nebraska-code-2016/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/nebraska-code-2016/</guid>
-      <description>Another Nebraska.Code() is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference.</description>
+      <description>&lt;p&gt;Another &lt;a href=&#34;http://nebraskacode.com/&#34; target=&#34;_blank&#34;&gt;Nebraska.Code()&lt;/a&gt; is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference. We had lots of deep, and many more entertaining conversations.&lt;/p&gt;</description>
+      
+      <category>Coding</category>
+      
+      <category>Community</category>
+      
+      <category>Deployment</category>
+      
+      <category>mobile</category>
+      
+      <category>NCC</category>
+      
+      <category>NebraskaCode</category>
+      
+      <category>OSS</category>
+      
+      <category>Speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
     </item>
+    
     <item>
       <title>Nebraska.Code() 2015 Retrospect</title>
       <link>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</link>
       <pubDate>Fri, 27 Mar 2015 09:48:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/nebraskacode-2015-retrospect/</guid>
-      <description>It was a pleasure to attend and speak at Nebraska.Code() this year. The guys in Lincoln are great and really put on a good conference. One of the neat parts of being a speaker is getting to know a lot of other great speakers as you go from one conference to another together. I&#39;ve found that as soon as one conference is over I&#39;m looking forward to the next one and the chance to hang out with the gang.</description>
+      <description>&lt;p&gt;It was a pleasure to attend and speak at Nebraska.Code() this year. The guys in Lincoln are great and really put on a good conference. One of the neat parts of being a speaker is getting to know a lot of other great speakers as you go from one conference to another together. I&#39;ve found that as soon as one conference is over I&#39;m looking forward to the next one and the chance to hang out with the gang.&lt;/p&gt;</description>
+      
+      <category>speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
+      <category>Community</category>
+      
+      <category>mobile</category>
+      
+      <category>review</category>
+      
+      <category>NCC</category>
+      
     </item>
+    
   </channel>
 </rss>

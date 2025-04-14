@@ -1,20 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unit Testing on Duane Newman</title>
     <link>https://duanenewman.net/tags/unit-testing/</link>
     <description>Recent content in Unit Testing on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 27 Mar 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/unit-testing/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/unit-testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Better Unit Testing with IoC, DI, and Mocking</title>
       <link>https://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</link>
       <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</guid>
-      <description>When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instantiating the class we want to test less painful.</description>
+      <description>&lt;p&gt;When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instantiating the class we want to test less painful.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>unit testing</category>
+      
+      <category>di</category>
+      
+      <category>dependency injection</category>
+      
+      <category>ioc</category>
+      
+      <category>dotnet</category>
+      
+      <category>tips</category>
+      
+      <category>tdd</category>
+      
     </item>
+    
   </channel>
 </rss>

@@ -1,125 +1,334 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tips on Duane Newman</title>
     <link>https://duanenewman.net/tags/tips/</link>
     <description>Recent content in Tips on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 10 Feb 2020 12:30:00 -0600</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Parallels Shared Network Fails to Connect</title>
       <link>https://duanenewman.net/blog/post/parallels-shared-network-fails-to-connect/</link>
       <pubDate>Mon, 10 Feb 2020 12:30:00 -0600</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/parallels-shared-network-fails-to-connect/</guid>
-      <description>Today (Monday), out of the blue, one of my Windows 10 Parallels virtual machines decided that it had no connection to the internet. Friday I was on site at a client using their WiFi network to work through some changes they needed. Today, back at the office, I fired up my VM to push the changes and make a couple more tweaks. I was immediately greeted by git telling me that my git host didn&amp;rsquo;t exist.</description>
+      <description>&lt;p&gt;Today (Monday), out of the blue, one of my Windows 10 Parallels virtual machines decided that it had no connection to the internet. Friday I was on site at a client using their WiFi network to work through some changes they needed. Today, back at the office, I fired up my VM to push the changes and make a couple more tweaks. I was immediately greeted by git telling me that my git host didn&amp;rsquo;t exist. I realized that Windows was reporting that I had no internet connection.&lt;/p&gt;</description>
+      
+      <category>parallels</category>
+      
+      <category>network</category>
+      
+      <category>tips</category>
+      
     </item>
+    
     <item>
       <title>Forcing a Specific Target Platform With PackageReference</title>
       <link>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</link>
       <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</guid>
-      <description>In my last post about Using Prism with Xamarin.Forms &amp;amp; GTK# I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &amp;lt;PackageReference&amp;gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.&#xA;Using Package Reference If you already have packages installed and are using a packages.</description>
+      <description>&lt;p&gt;In my last post about &lt;a href=&#34;../using-prism-with-xamarin-forms-and-gtk&#34;&gt;Using Prism with Xamarin.Forms &amp;amp; GTK#&lt;/a&gt; I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &lt;code&gt;&amp;lt;PackageReference&amp;gt;&lt;/code&gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.&lt;/p&gt;
+&lt;h2 id=&#34;using-package-reference&#34;&gt;Using Package Reference&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;convertconfigtoreference2.png&#34; class=&#34;img-thumbnail pull-right&#34; alt=&#34;Convert Packages.config to PackageReference&#34; /&gt; If you already have packages installed and are using a &lt;code&gt;packages.config&lt;/code&gt; file then you will need to convert your project to use &lt;code&gt;PackageReference&lt;/code&gt;. You can follow the steps here: &lt;a href=&#34;https://docs.microsoft.com/en-us/nuget/reference/migrate-packages-config-to-package-reference&#34; target=&#34;_blank&#34;&gt;Migrate from packages.config to PackageReference&lt;/a&gt;. The short version is to right-click on &lt;code&gt;packages.config&lt;/code&gt; and select &lt;code&gt;Migrate Packages.config to PackageReference...&lt;/code&gt;.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>netstandard</category>
+      
+      <category>csproj</category>
+      
+      <category>packagereference</category>
+      
+      <category>nuget</category>
+      
+      <category>prismlib</category>
+      
+      <category>msbuild</category>
+      
+      <category>tips</category>
+      
     </item>
+    
     <item>
       <title>Concurrent Reads and Locked Writes with In-Memory Objects</title>
       <link>https://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</guid>
-      <description>The Problem On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a List&amp;lt;T&amp;gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads.</description>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a &lt;code&gt;List&amp;lt;T&amp;gt;&lt;/code&gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads. The multi-threading was perfect for reading, but as soon as they started updating the collection (or any sub-collections on the individual items involved in queries) they, unsurprisingly, started getting &lt;a href=&#34;https://docs.microsoft.com/en-us/dotnet/api/system.invalidoperationexception&#34; target=&#34;_blank&#34;&gt;InvalidOperationExceptions&lt;/a&gt; with the message &amp;ldquo;Collection was modified; enumeration operation may not execute.&amp;rdquo;&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>framework</category>
+      
+      <category>builtin</category>
+      
+      <category>tips</category>
+      
+      <category>lock</category>
+      
     </item>
+    
     <item>
       <title>Better Unit Testing with IoC, DI, and Mocking</title>
       <link>https://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</link>
       <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</guid>
-      <description>When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instantiating the class we want to test less painful.</description>
+      <description>&lt;p&gt;When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instantiating the class we want to test less painful.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>unit testing</category>
+      
+      <category>di</category>
+      
+      <category>dependency injection</category>
+      
+      <category>ioc</category>
+      
+      <category>dotnet</category>
+      
+      <category>tips</category>
+      
+      <category>tdd</category>
+      
     </item>
+    
     <item>
       <title>Teach an old Type new tricks with Extension Methods</title>
       <link>https://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</guid>
-      <description>Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&amp;rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.</description>
+      <description>&lt;p&gt;Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&amp;rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>tips</category>
+      
     </item>
+    
     <item>
       <title>Diving in Bonaire - 2016</title>
       <link>https://duanenewman.net/blog/post/diving-in-bonaire-2016/</link>
       <pubDate>Fri, 29 Jul 2016 14:46:23 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/diving-in-bonaire-2016/</guid>
-      <description>I decided to take a few minutes and reflect on my recent trip to Bonaire and share some accomplishments and observations. To begin with, the flight there is long. We had two options, 45 minute layover to catch an international flight with all our luggage, or 5 hour layover waiting in the airport. We chose the later since no on wanted to miss a flight that only happens once a day and only on Saturday and Sunday each week.</description>
+      <description>&lt;div class=&#34;asside-left&#34; style=&#34;text-align:center;width:auto;&#34;&gt;&lt;a href=&#34;https://duanenewman.net/img/posts/WeHaveLanded.jpg&#34;&gt;&lt;img title=&#34;WeHaveLanded&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;WeHaveLanded&#34; src=&#34;https://duanenewman.net/img/posts/WeHaveLanded_thumb.jpg&#34; width=&#34;244&#34; height=&#34;136&#34; /&gt;&lt;/a&gt; &lt;/div&gt;  &lt;p&gt;I decided to take a few minutes and reflect on my recent trip to Bonaire and share some accomplishments and observations. To begin with, the flight there is long. We had two options, 45 minute layover to catch an international flight with all our luggage, or 5 hour layover waiting in the airport. We chose the later since no on wanted to miss a flight that only happens once a day and only on Saturday and Sunday each week. This turned out to be a good thing, simply because it gave us time to be out of airplane seats for a while as well as plenty of time to eat and no stress about missing a flight. Other than the length of the flight it was pleasant and smooth. We arrived in Bonaire early evening and the weather was amazing, the sun was on it&#39;s way down and there was a breeze that made the open air airport very comfortable. We waited a few minutes in a very short line to go through what was a very friendly customs check. I&#39;m told that the daytime arrival that some of our party had previously experienced consisted of a very long wait in the hot midday sunshine. After we got our luggage and exited the arrival area we found the bus for our resort, handed over our luggage again and climbed in for a quick ride to the resort.&lt;/p&gt;</description>
+      
+      <category>Photography</category>
+      
+      <category>planning</category>
+      
+      <category>review</category>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>Tips</category>
+      
+      <category>video</category>
+      
     </item>
+    
     <item>
       <title>Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)</title>
       <link>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-5-diving/</link>
       <pubDate>Mon, 18 Apr 2016 11:15:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-5-diving/</guid>
-      <description>This is part 5 in a series on scuba travel and our trip to Honduras.&#xA;Related Posts&#xA;Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer) Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving) Guanaja Diving The diving in Guanaja is fantastic.</description>
+      <description>&lt;p&gt;This is part 5 in a series on scuba travel and our trip to Honduras.&lt;/p&gt;  &lt;p&gt;Related Posts&lt;/p&gt;  &lt;ul&gt;   &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/03/22/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-1-Packing).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/03/28/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-2-Traveling-Photographer).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/04/04/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-3-On-the-Road).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/04/11/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-4-Lodging).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving) &lt;/li&gt; &lt;/ul&gt;  &lt;h3&gt;Guanaja Diving&lt;/h3&gt;  &lt;p&gt;The diving in Guanaja is fantastic. Sure, I don’t have years and hundreds of dives to compare it to, but the reefs were healthy, the fish were plentiful and there were wrecks, swimthroughs and plenty of deep diving. They are very aggressive about controlling or removing the invasive Lionfish population and encourage you to spearfish them if desired. Several of the group were interested and the guides taught each of them to safely use the Hawaiian sling. The population is under much better control than it used to be and you had to actually hunt for the Lionfish, but everyone that went in with a spear came out with a Lionfish at least once.&lt;/p&gt;</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>Tips</category>
+      
     </item>
+    
     <item>
       <title>Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)</title>
       <link>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-4-lodging/</link>
       <pubDate>Mon, 11 Apr 2016 11:15:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-4-lodging/</guid>
-      <description>This is part 4 in a series on scuba travel and our trip to Honduras.&#xA;Related Posts&#xA;Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer) Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving) The Villa You can read my review of the Villa over on TripAdvisor.</description>
+      <description>&lt;p&gt;This is part 4 in a series on scuba travel and our trip to Honduras.&lt;/p&gt;    &lt;p&gt;Related Posts&lt;/p&gt;  &lt;ul&gt;   &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/03/22/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-1-Packing).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/03/28/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-2-Traveling-Photographer).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/04/04/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-3-On-the-Road).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)&lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/04/18/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-5-Diving).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt;  &lt;h3&gt;The Villa&lt;/h3&gt;  &lt;div style=&#34;float: right; margin-left: 6px&#34;&gt;&lt;a href=&#34;https://www.flickr.com/photos/duane_newman/24582234595/in/album-72157663757529681/&#34;&gt;&lt;img src=&#34;https://farm2.staticflickr.com/1720/24582234595_d8a038ec22_m_d.jpg&#34;&gt;&lt;/a&gt; &lt;/div&gt;  &lt;p&gt;You can read &lt;a title=&#34;A dive resort you won&#39;t regret visiting&#34; href=&#34;https://www.tripadvisor.com/ShowUserReviews-g292018-d1070439-r340967881-Villa_On_Dunbar_Rock-Guanaja_Bay_Islands.html&#34; target=&#34;_blank&#34;&gt;my review of the Villa over on TripAdvisor&lt;/a&gt;. To summarize, the place is amazing! As I mentioned, it sit atop Dunbar Rock, a massive rock structure protruding from the bay waters. The Villa itself is quite large and the main living spaces are about 3 flights of stairs up from the dock. There is also a ramp the rises around 3 sides of the rock to allow handicap access and a give a nice covered area to stroll and view of the ocean waters all around you. The Villa is staffed with very pleasant and professional staff, but by the time we left they felt more like family than just our staff. We laughed and had fun together, and all the while they were taking care of our every need. The food and Chef Manuel were excellent. &lt;/p&gt;</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>tips</category>
+      
     </item>
+    
     <item>
       <title>Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)</title>
       <link>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-3-on-the-road/</link>
       <pubDate>Mon, 04 Apr 2016 11:15:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-3-on-the-road/</guid>
-      <description>This is part 3 in a series on scuba travel and our trip to Honduras.&#xA;Related Posts&#xA;Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer) Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving) Travel We were traveling from cold weather to warm weather, so we planned ahead and packed shorts in our carry-on so that while we stopped for a layover in Atlanta we could change out of our warmer weather pants.</description>
+      <description>&lt;p&gt;This is part 3 in a series on scuba travel and our trip to Honduras.&lt;/p&gt;    &lt;p&gt;Related Posts&lt;/p&gt;  &lt;ul&gt;   &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/03/22/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-1-Packing).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/03/28/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-2-Traveling-Photographer).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)&lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/04/11/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-4-Lodging).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/04/18/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-5-Diving).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt;  &lt;h3&gt;Travel&lt;/h3&gt;  
+&lt;img style=&#34;float:right;margin-left:5px;&#34; src=&#34;https://duanenewman.net/blog/image.axd?picture=%2f2016%2f04%2fGuanajaAirplane.jpg&#34;&gt;
+&lt;p&gt;We were traveling from cold weather to warm weather, so we planned ahead and packed shorts in our carry-on so that while we stopped for a layover in Atlanta we could change out of our warmer weather pants. This worked out really well and I recommend this to anyone traveling under similar conditions. I’m a tall (and big) guy, so we upgraded our seats to the comfort+ (or whatever they called it) package so my knees wouldn’t be shoved in the back of a seat for 2-3 hours at a time. As a tall guy, it was totally worth it. It’s just too bad that doesn’t do anything for the width of the seat… I still felt a little packed in, but my budget is far from getting first class tickets. The most interesting part of our travels was between Roatan and Guanaja. Landing in Roatan and going through customs wasn’t bad. It took a while for the line to move, but we spent more time waiting on luggage then going through customs. Eventually we got our bags and headed over to check in for our puddle-jumper flight over to Guanaja. So we got to the “terminal” grabbed some food and waited.. and waited.. and waited.. I think we finally boarded about a half hour after our posted flight departure time. The ride over was fun, in a a little ~20 seater and took about 20 minutes from tarmac to “tarmac.” The little airport at Guanaja was part of the charm of the trip and as a first time small island visitor, it looked just like it is depicted in all the movies, barely there. The airport was actually a nice little building and was even air-conditioned (important for the return trip).&lt;/p&gt;</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>tips</category>
+      
     </item>
+    
     <item>
       <title>Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)</title>
       <link>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-2-traveling-photographer/</link>
       <pubDate>Mon, 28 Mar 2016 11:15:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-2-traveling-photographer/</guid>
-      <description>Traveling with your photography equipment can be challenging when you are taking all your pictures on dry (or at least solid) ground. Add all the equipment you need if you are going to get wet with you camera and it becomes a production just getting it all to your destination. When I first looked into what to do I had a hard time finding information on what other were doing, so I hope you find this helpful as you plan your underwater photography dive trip.</description>
+      <description>&lt;p&gt;Traveling with your photography equipment can be challenging when you are taking all your pictures on dry (or at least solid) ground. Add all the equipment you need if you are going to get wet with you camera and it becomes a production just getting it all to your destination. When I first looked into what to do I had a hard time finding information on what other were doing, so I hope you find this helpful as you plan your underwater photography dive trip.&lt;/p&gt;</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>tips</category>
+      
     </item>
+    
     <item>
       <title>Merging GoPro Segments Into a Single File</title>
       <link>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
       <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
-      <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&#xA;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
+      <description>&lt;p&gt;If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&lt;/p&gt;  &lt;p&gt;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage. The FAT file system has been around for a long time and pretty much every OS out there can readily access the contents of a disk formatted with FAT, so it makes a good choice for a device that will be used by consumers. The downside is that FAT has a file size limit of about 4GB, this seemed huge back in the day when hard drives were not even half that size, but is a little lacking in todays world where we measure local storage often in terabytes rather than gigabytes. It is especially small in today’s world of HD (or 4k) video. Fortunately there is a solution once you get it on NTFS (or HFS on OS X) to make your video files all one again. The best part is there is no re-encoding, just re-wrapping of the existing encoded data into a new file, so it is quick and will not degrade your video.&lt;/p&gt;</description>
+      
+      <category>video</category>
+      
+      <category>tips</category>
+      
+      <category>chocolatey</category>
+      
+      <category>media</category>
+      
+      <category>utility</category>
+      
     </item>
+    
     <item>
       <title>Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)</title>
       <link>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-1-packing/</link>
       <pubDate>Tue, 22 Mar 2016 11:15:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/diving-the-bay-island-of-guanaja-honduras-part-1-packing/</guid>
-      <description>This is part 1 in a series on scuba travel and our trip to Honduras.&#xA;Related Posts&#xA;Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing) Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer) Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road) Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging) Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving) In January my wife and I took our first real scuba diving vacation with our dive shop, The Playground Dive Shop, to the island of Guanaja, Honduras where we stayed and dived with the Villa on Dunbar Rock.</description>
+      <description>&lt;p&gt;This is part 1 in a series on scuba travel and our trip to Honduras.&lt;/p&gt;  &lt;p&gt;Related Posts&lt;/p&gt;  &lt;ul&gt;   &lt;li&gt;Diving the Bay Island of Guanaja, Honduras (Part 1 - Packing)&lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/03/28/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-2-Traveling-Photographer).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 2 - Traveling Photographer)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/04/04/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-3-On-the-Road).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 3 - On the Road)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/04/11/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-4-Lodging).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 4 - Lodging)&lt;/a&gt; &lt;/li&gt;    &lt;li&gt;&lt;a href=&#34;http://duanenewman.net/blog/post/2016/04/18/Diving-the-Bay-Island-of-Guanaja-Honduras-(Part-5-Diving).aspx&#34;&gt;Diving the Bay Island of Guanaja, Honduras (Part 5 - Diving)&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt;
+&lt;p&gt;In January my wife and I took our first real scuba diving vacation with our dive shop, The Playground Dive Shop, to the island of Guanaja, Honduras where we stayed and dived with the Villa on Dunbar Rock. We were excited about have a week dedicated getting some good bottom time. Having just been introduced to scuba less than 1 year earlier we had only logged a total of 20 dives, 4 of those dives were the ocean in Hawaii and the other 16 where all lake dives, and most of them were check-out dives for our Open Water, Advanced and a few specialty certifications. This trip promised to nearly double our total number of dives and at least quadruple our ocean dives.&lt;/p&gt;</description>
+      
+      <category>Scuba</category>
+      
+      <category>Travel</category>
+      
+      <category>Tips</category>
+      
     </item>
+    
     <item>
       <title>Generating Authenticator QR Codes</title>
       <link>https://duanenewman.net/blog/post/generating-authenticator-qr-codes/</link>
       <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/generating-authenticator-qr-codes/</guid>
-      <description>I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.</description>
+      <description>&lt;p&gt;I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.&lt;/p&gt;</description>
+      
+      <category>QRCode</category>
+      
+      <category>Security</category>
+      
+      <category>tips</category>
+      
+      <category>Technology</category>
+      
     </item>
+    
     <item>
       <title>Getting your brand’s Twitter timeline in your mobile app</title>
       <link>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</link>
       <pubDate>Tue, 03 Mar 2015 08:55:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/getting-your-brands-twitter-timeline-in-your-mobile-app/</guid>
-      <description>I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for Alien Arc). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts.</description>
+      <description>&lt;p&gt;I’m working on a demo app to show some simple functionality that can be done with Xamarin Forms. I’m using the opportunity to also make a business card app for myself (and ultimately for &lt;a href=&#34;http://www.alienarc.com&#34; target=&#34;_blank&#34;&gt;Alien Arc&lt;/a&gt;). The app has my picture, name, short bio, and other relevant information. This also seemed like a good place to tie in some of my various social network feeds. I quickly added a page that pulls my blog RSS feed and lists my recent posts. That went really quick and next on my list was to load my twitter timeline and show recent tweets. The blog was so easy and quick to do that I thought it would take no time to get twitter integrated.&lt;/p&gt;</description>
+      
+      <category>twitter</category>
+      
+      <category>Xamarin</category>
+      
+      <category>business</category>
+      
+      <category>Coding</category>
+      
+      <category>tips</category>
+      
+      <category>linq</category>
+      
+      <category>social</category>
+      
+      <category>mobile</category>
+      
     </item>
+    
     <item>
       <title>Lessons Learned from My First Speaking Experience</title>
       <link>https://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</link>
       <pubDate>Thu, 20 Nov 2014 09:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/lessons-learned-from-my-first-speaking-experience/</guid>
-      <description>First off, speaking is a rush. It is hard to describe the feeling just after completing a talk. I had to move around, talk to people, see what was going on; it really energized me. I am definitely going to continue to pursue future speaking opportunities as they present themselves, and I’ll keep you posted when they get accepted.&#xA;As I mentioned in previous posts, my first talk was on Xamarin Forms, a new technology in a toolset that we are using at Alien Arc, but that is still new to us.</description>
+      <description>&lt;p&gt;First off, speaking is a rush. It is hard to describe the feeling just after completing a talk. I had to move around, talk to people, see what was going on; it really energized me. I am definitely going to continue to pursue future speaking opportunities as they present themselves, and I’ll keep you posted when they get accepted.&lt;/p&gt;  &lt;p&gt;&lt;a href=&#34;https://duanenewman.net/img/posts/OS7A6321_1.jpg&#34;&gt;&lt;img title=&#34;OS7A6321&#34; style=&#34;border-left-width: 0px; max-width: 100%; height: auto; border-right-width: 0px; width: 100%; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto&#34; border=&#34;0&#34; alt=&#34;OS7A6321&#34; src=&#34;https://duanenewman.net/img/posts/OS7A6321_thumb_1.jpg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
+      <category>tips</category>
+      
+      <category>speaking</category>
+      
+      <category>STLDODN</category>
+      
     </item>
+    
     <item>
       <title>Why doesn’t my code work in Xamarin.Forms?</title>
       <link>https://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</link>
       <pubDate>Mon, 10 Nov 2014 13:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/why-doesnt-my-code-work-in-xamarinforms/</guid>
-      <description>If you have tried something in Xamarin.Forms that should work but didn&amp;rsquo;t, don&amp;rsquo;t worry you might not be going crazy (I can&amp;rsquo;t say for sure, I&amp;rsquo;m a programmer, not a psychologist).&#xA;I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months while working on a small project we have as well as in preparation for my upcoming talk at St. Louis Days of .NET. Sometimes in the course of creating a sample project I write some code that I know should work and then watch the exceptions pop-up (or worse, see nothing at all) when I run it.</description>
+      <description>&lt;p&gt;If you have tried something in Xamarin.Forms that should work but didn&amp;rsquo;t, don&amp;rsquo;t worry you might not be going crazy (I can&amp;rsquo;t say for sure, I&amp;rsquo;m a programmer, not a psychologist).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been diving deeper into Xamarin.Forms over the last couple months while working on a small project we have as well as in preparation for my upcoming talk at St. Louis Days of .NET. &lt;br /&gt;Sometimes in the course of creating a sample project I write some code that I know should work and then watch the exceptions pop-up (or worse, see nothing at all) when I run it. Then I go do a quick search and find that this is a known issue&amp;hellip; and that it has been fixed. That is when I remember that I didn&amp;rsquo;t update my Xamarin.Forms nuget packages.&lt;/p&gt;</description>
+      
+      <category>tips</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
     </item>
+    
   </channel>
 </rss>

@@ -1,27 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Build2016 on Duane Newman</title>
     <link>https://duanenewman.net/tags/build2016/</link>
     <description>Recent content in Build2016 on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 09:00:00 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/build2016/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/build2016/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Microsoft Build 2016</title>
       <link>https://duanenewman.net/blog/post/microsoft-build-2016/</link>
       <pubDate>Wed, 27 Apr 2016 09:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/microsoft-build-2016/</guid>
-      <description>I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.&#xA;This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces.</description>
+      <description>&lt;p&gt;I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.&lt;/p&gt;  &lt;p&gt;This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces. Here are some of my reactions to the announcements, activities, and experience of the Build 2016 day one keynote.&lt;/p&gt;</description>
+      
+      <category>Xamarin</category>
+      
+      <category>Technology</category>
+      
+      <category>Build2016</category>
+      
+      <category>OSS</category>
+      
     </item>
+    
     <item>
       <title>Bringing Sight to the Blind (Seeing AI)</title>
       <link>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</link>
       <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</guid>
-      <description>Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by Saqib Shaikh, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses.</description>
+      <description>&lt;div style=&#34;float: right; margin-left: 5px&#34;&gt;&lt;a href=&#34;https://duanenewman.net/img/posts/0X1A4514.png&#34;&gt;&lt;img title=&#34;0X1A4514&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;0X1A4514&#34; src=&#34;https://duanenewman.net/img/posts/0X1A4514_thumb.png&#34; width=&#34;244&#34; height=&#34;170&#34; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;p&gt;Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by &lt;a href=&#34;https://twitter.com/saqibs&#34; target=&#34;_blank&#34;&gt;Saqib Shaikh&lt;/a&gt;, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses. &lt;/p&gt;</description>
+      
+      <category>Technology</category>
+      
+      <category>Human</category>
+      
+      <category>NUI</category>
+      
+      <category>Build2016</category>
+      
     </item>
+    
   </channel>
 </rss>

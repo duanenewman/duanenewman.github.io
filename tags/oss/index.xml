@@ -1,41 +1,103 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OSS on Duane Newman</title>
     <link>https://duanenewman.net/tags/oss/</link>
     <description>Recent content in OSS on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 23 May 2016 15:01:57 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/oss/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/oss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Nebraska.Code() 2016</title>
       <link>https://duanenewman.net/blog/post/nebraska-code-2016/</link>
       <pubDate>Mon, 23 May 2016 15:01:57 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/nebraska-code-2016/</guid>
-      <description>Another Nebraska.Code() is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference.</description>
+      <description>&lt;p&gt;Another &lt;a href=&#34;http://nebraskacode.com/&#34; target=&#34;_blank&#34;&gt;Nebraska.Code()&lt;/a&gt; is in the books and it was a real blast. The organizers, Adam &amp;amp; Ken, really put in the effort and run a great conference. The other speakers are always quality company and I really enjoyed meeting a few new ones and getting to know some much better. One of the things I enjoy about conference is the circle of friends you make and meet across the country as you travel to this conference and that conference. We had lots of deep, and many more entertaining conversations.&lt;/p&gt;</description>
+      
+      <category>Coding</category>
+      
+      <category>Community</category>
+      
+      <category>Deployment</category>
+      
+      <category>mobile</category>
+      
+      <category>NCC</category>
+      
+      <category>NebraskaCode</category>
+      
+      <category>OSS</category>
+      
+      <category>Speaking</category>
+      
+      <category>Xamarin</category>
+      
+      <category>Xamarin Forms</category>
+      
     </item>
+    
     <item>
       <title>Microsoft Build 2016</title>
       <link>https://duanenewman.net/blog/post/microsoft-build-2016/</link>
       <pubDate>Wed, 27 Apr 2016 09:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/microsoft-build-2016/</guid>
-      <description>I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.&#xA;This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces.</description>
+      <description>&lt;p&gt;I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.&lt;/p&gt;  &lt;p&gt;This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces. Here are some of my reactions to the announcements, activities, and experience of the Build 2016 day one keynote.&lt;/p&gt;</description>
+      
+      <category>Xamarin</category>
+      
+      <category>Technology</category>
+      
+      <category>Build2016</category>
+      
+      <category>OSS</category>
+      
     </item>
+    
     <item>
       <title>Bluff v1.1 hot off the presses</title>
       <link>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
-      <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:&#xA;Converting the project to .NET 3.5 (from 2.0) Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) And last, but not least, I added a WIX based installer to the project If you just want grab the latest version jump over to the GitHub release page.</description>
+      <description>&lt;p&gt;I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:&lt;/p&gt;  &lt;ul&gt;   &lt;li&gt;Converting the project to .NET 3.5 (from 2.0) &lt;/li&gt;    &lt;li&gt;Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) &lt;/li&gt;    &lt;li&gt;Add a new command called &lt;em&gt;Arrange Events By Created Timestamp&lt;/em&gt; that spaces the events out on the timeline relative to each others created timestamp &lt;/li&gt;    &lt;li&gt;Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) &lt;/li&gt;    &lt;li&gt;And last, but not least, I added a WIX based installer to the project &lt;/li&gt; &lt;/ul&gt;  &lt;p&gt;If you just want grab the latest version jump over to the GitHub release page.&lt;/p&gt;</description>
+      
+      <category>Bluff</category>
+      
+      <category>Coding</category>
+      
+      <category>OSS</category>
+      
+      <category>plugin</category>
+      
+      <category>vegas</category>
+      
+      <category>video</category>
+      
     </item>
+    
     <item>
       <title>Bluff: An OSS Extension for Sony Vegas Pro</title>
       <link>https://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</link>
       <pubDate>Wed, 09 Mar 2016 08:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/bluff-oss-extension-for-sony-vegas-pro/</guid>
-      <description>Yesterday, my business Alien Arc Technologies, LLC announced the release of version 1.0 of an open source project I’ve been tinkering on recently, called Bluff. This is my first OSS project and I’m excited to have created something that I hope others will find useful, and better yet, will contribute their own ideas to.&#xA;History The project came out of my own personal needs and interest. In 2015 I was introduced to the world of scuba diving and I’ve fallen totally in love with it.</description>
+      <description>&lt;p&gt;Yesterday, my business Alien Arc Technologies, LLC &lt;a title=&#34;Alien Arc Technologies, LLC Announces Bluff, an OSS Project for Sony Vegas Pro&#34; href=&#34;http://alienarc.com/post/announcing-new-oss-project-bluff-for-vegas-pro-12&#34; target=&#34;_blank&#34;&gt;announced&lt;/a&gt; the release of version 1.0 of an open source project I’ve been tinkering on recently, called Bluff. This is my first OSS project and I’m excited to have created something that I hope others will find useful, and better yet, will contribute their own ideas to.&lt;/p&gt;  &lt;h3&gt;History&lt;/h3&gt;  &lt;p&gt;The project came out of my own personal needs and interest. In 2015 I was introduced to the world of scuba diving and I’ve fallen totally in love with it. It didn’t take long before I was combining scuba with my photography hobby.. And suddenly I found I had the perfect environment to do video. &lt;/p&gt;</description>
+      
+      <category>OSS</category>
+      
+      <category>vegas</category>
+      
+      <category>video</category>
+      
+      <category>plugin</category>
+      
     </item>
+    
   </channel>
 </rss>

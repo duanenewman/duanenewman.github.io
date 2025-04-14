@@ -1,20 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reflection on Duane Newman</title>
     <link>https://duanenewman.net/tags/reflection/</link>
     <description>Recent content in Reflection on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 21 Oct 2014 16:04:44 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Agile Operations</title>
       <link>https://duanenewman.net/blog/post/agile-operations/</link>
       <pubDate>Tue, 21 Oct 2014 16:04:44 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/agile-operations/</guid>
-      <description>With a new and busy business it is easy to lose track of the little things that need to be done when you are spending every usable minute on billable tasks. This is the challenge we found ourselves faced with a few months into operating Alien Arc.&#xA;Enter Aglie We started a Trello board back when we started the business to track tasks like getting our insurance setup and creating a logo.</description>
+      <description>&lt;p&gt;With a new and busy business it is easy to lose track of the little things that need to be done when you are spending every usable minute on billable tasks. This is the challenge we found ourselves faced with a few months into operating Alien Arc.&lt;/p&gt;  &lt;h5&gt;Enter Aglie&lt;/h5&gt;  &lt;p&gt;We started a &lt;a href=&#34;http://www.Trello.com&#34; target=&#34;_blank&#34;&gt;Trello&lt;/a&gt; board back when we started the business to track tasks like getting our insurance setup and creating a logo. But when we got done with many of those we stopped using the board and focused on making money. Recently we decided that we needed to start making progress on other business goals and we did three things: &lt;/p&gt;</description>
+      
+      <category>reflection</category>
+      
+      <category>buiness</category>
+      
+      <category>agile</category>
+      
     </item>
+    
   </channel>
 </rss>

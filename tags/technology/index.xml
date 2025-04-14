@@ -1,41 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on Duane Newman</title>
     <link>https://duanenewman.net/tags/technology/</link>
     <description>Recent content in Technology on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 09:00:00 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Microsoft Build 2016</title>
       <link>https://duanenewman.net/blog/post/microsoft-build-2016/</link>
       <pubDate>Wed, 27 Apr 2016 09:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/microsoft-build-2016/</guid>
-      <description>I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.&#xA;This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces.</description>
+      <description>&lt;p&gt;I hate it when I find a blog post draft that I forgot to post for *weeks*, it’s a little late, but here are some of my impressions from Microsoft’s Build conference this year.&lt;/p&gt;  &lt;p&gt;This year&#39;s build was pretty exciting for .NET developers. With strong progress around the Windows platform and major announcements in the mobile developer space. Build was an fun experience and I was able to both reconnect with friends I&#39;ve made on the conference circuit and meet a lot of new faces. Here are some of my reactions to the announcements, activities, and experience of the Build 2016 day one keynote.&lt;/p&gt;</description>
+      
+      <category>Xamarin</category>
+      
+      <category>Technology</category>
+      
+      <category>Build2016</category>
+      
+      <category>OSS</category>
+      
     </item>
+    
     <item>
       <title>Bringing Sight to the Blind (Seeing AI)</title>
       <link>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</link>
       <pubDate>Thu, 31 Mar 2016 06:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/bringing-sight-to-the-blind-seeing-ai/</guid>
-      <description>Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by Saqib Shaikh, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses.</description>
+      <description>&lt;div style=&#34;float: right; margin-left: 5px&#34;&gt;&lt;a href=&#34;https://duanenewman.net/img/posts/0X1A4514.png&#34;&gt;&lt;img title=&#34;0X1A4514&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;0X1A4514&#34; src=&#34;https://duanenewman.net/img/posts/0X1A4514_thumb.png&#34; width=&#34;244&#34; height=&#34;170&#34; /&gt;&lt;/a&gt;&lt;/div&gt;  &lt;p&gt;Perhaps the coolest (and definitely the most heartwarming) announcement at Build today was project Seeing AI. A project spearheaded by &lt;a href=&#34;https://twitter.com/saqibs&#34; target=&#34;_blank&#34;&gt;Saqib Shaikh&lt;/a&gt;, a blind software engineer at Microsoft. This project will enable the blind to “hear” what they are looking at with voice descriptions of the scene in front of them and to be read text (like a menu). This project is a collaboration between Microsoft and Pivothead and will run on both smartphones and the Pivothead smart glasses. &lt;/p&gt;</description>
+      
+      <category>Technology</category>
+      
+      <category>Human</category>
+      
+      <category>NUI</category>
+      
+      <category>Build2016</category>
+      
     </item>
+    
     <item>
       <title>Generating Authenticator QR Codes</title>
       <link>https://duanenewman.net/blog/post/generating-authenticator-qr-codes/</link>
       <pubDate>Fri, 18 Mar 2016 08:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/generating-authenticator-qr-codes/</guid>
-      <description>I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.</description>
+      <description>&lt;p&gt;I’ve taken to saving my Authenticator secrets so that I can recover from a lost, damaged or replaced phone with less pain. After actually replacing a phone and having to re-enter all my codes I decided there was a better way then pecking on the phone’s keyboard one letter at a time. I thought that they deliver them to me as a QR code I can scan in the first place, surely I can generate my own to speed up the process.&lt;/p&gt;</description>
+      
+      <category>QRCode</category>
+      
+      <category>Security</category>
+      
+      <category>tips</category>
+      
+      <category>Technology</category>
+      
     </item>
+    
     <item>
       <title>SkillsUSA Coding Competition</title>
       <link>https://duanenewman.net/blog/post/skillsusa-coding-competition/</link>
       <pubDate>Mon, 09 Feb 2015 12:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/skillsusa-coding-competition/</guid>
-      <description>On Saturday I had an opportunity to be involved in a SkillsUSA district competition as a judge for the coding competition. I was really impressed with the skill that some of these students (all with less than a year of experience) had. The quality of some of the code they wrote really surprised me.&#xA;It was a really enjoyable experience and I was happy to be able to get more involved in the community with the next generation of coders.</description>
+      <description>&lt;div&gt;&lt;a href=&#34;https://duanenewman.net/img/posts/201402-SkillsUSA.png&#34;&gt;&lt;img title=&#34;201402-SkillsUSA&#34; style=&#34;float: right&#34; border=&#34;0&#34; alt=&#34;201402-SkillsUSA&#34; src=&#34;https://duanenewman.net/img/posts/201402-SkillsUSA_thumb.png&#34; width=&#34;244&#34; align=&#34;right&#34; height=&#34;160&#34; /&gt;&lt;/a&gt;     &lt;p&gt;On Saturday I had an opportunity to be involved in a SkillsUSA district competition as a judge for the coding competition. I was really impressed with the skill that some of these students (all with less than a year of experience) had. The quality of some of the code they wrote really surprised me.&lt;/p&gt;    &lt;p&gt;It was a really enjoyable experience and I was happy to be able to get more involved in the community with the next generation of coders. I look forward to other opportunities to work with the future of software development and technology.&lt;/p&gt;</description>
+      
+      <category>Technology</category>
+      
+      <category>SkillsUSA</category>
+      
+      <category>Judging</category>
+      
+      <category>Coding</category>
+      
+      <category>Community</category>
+      
     </item>
+    
   </channel>
 </rss>

@@ -172,8 +172,7 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><blockquote>
-<p>I implemented these as nested classes inside my BaseTest class since they are only used internally by the base class.</p>
-</blockquote>
+<p>I implemented these as nested classes inside my BaseTest class since they are only used internally by the base class.</p></blockquote>
 <h2 id="resetting-for-each-test">Resetting For Each Test</h2>
 <p>Using our ResettableLifetimeManager for each type we register and a shared instance of the LifetimeResetter allows us to clear our all instances our Unity container has created by calling the LifetimeResetter&rsquo;s Reset method. After the reset is called and all the instances are cleared Unity will automatically create new instances the next time one is requested, giving each test a fresh instance. Let&rsquo;s wire it all together with some helper methods to register the type. The new BaseTest class now looks like this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseTest</span>
@@ -356,8 +355,6 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
     <script src="https://duanenewman.net//js/clean-blog.js"></script>
 
     
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=386221517"></script>
       <script>
         var doNotTrack = false;
@@ -372,10 +369,6 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
           gtag('config', '386221517');
         }
       </script>
-    
-  
-
-
 
 </body>
 

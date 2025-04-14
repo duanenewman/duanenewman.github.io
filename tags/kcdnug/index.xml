@@ -1,20 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KCDNUG on Duane Newman</title>
     <link>https://duanenewman.net/tags/kcdnug/</link>
     <description>Recent content in KCDNUG on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Tue, 24 Mar 2015 22:30:00 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/kcdnug/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/kcdnug/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>KCDNUG Last Minute Speaking (or, the perils of running a user group)</title>
       <link>https://duanenewman.net/blog/post/kcdnug-last-minute-speaking-or-the-perils-of-running-a-user-group/</link>
       <pubDate>Tue, 24 Mar 2015 22:30:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/kcdnug-last-minute-speaking-or-the-perils-of-running-a-user-group/</guid>
-      <description>What a crazy user group meeting tonight. Through some schedule mix-ups (partly due to having things scheduled too far in advance and not following up) we ended up with no sponsor and no speaker. I was originally not going to make it to tonight’s meeting due to some schedule conflicts, but they cleared up at the last minute so I joined Brent to help run the meeting. When we go there we discovered that due to schedule conflicts they had we were in a different room, so we got busy redirecting everyone to the new room.</description>
+      <description>&lt;p&gt;What a crazy user group meeting tonight. Through some schedule mix-ups (partly due to having things scheduled too far in advance and not following up) we ended up with no sponsor and no speaker.   &lt;br /&gt;&lt;/p&gt;  &lt;p&gt;I was originally not going to make it to tonight’s meeting due to some schedule conflicts, but they cleared up at the last minute so I joined Brent to help run the meeting. When we go there we discovered that due to schedule conflicts they had we were in a different room, so we got busy redirecting everyone to the new room. After a while we started wondering where the scheduled sponsor was... Then we also started wondering where the speaker was. We soon learned the sponsor didn&#39;t realize they were scheduled for tonight and would not be there, so Brent got on the phone and Alien Arc became the new sponsor. When it was just a few minutes from go-time and still no speaker (didn&#39;t have contact info) it became apparent that one of us was going to speak.    &lt;br /&gt;&lt;/p&gt;</description>
+      
+      <category>speaking</category>
+      
+      <category>Community</category>
+      
+      <category>KCDNUG</category>
+      
     </item>
+    
   </channel>
 </rss>

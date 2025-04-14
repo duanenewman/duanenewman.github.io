@@ -1,27 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Video on Duane Newman</title>
     <link>https://duanenewman.net/categories/video/</link>
     <description>Recent content in Video on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Sat, 26 Mar 2016 11:46:24 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/categories/video/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/categories/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Bluff v1.1 hot off the presses</title>
       <link>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</link>
       <pubDate>Sat, 26 Mar 2016 11:46:24 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/bluff-v11-hot-off-the-presses/</guid>
-      <description>I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:&#xA;Converting the project to .NET 3.5 (from 2.0) Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) Add a new command called Arrange Events By Created Timestamp that spaces the events out on the timeline relative to each others created timestamp Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) And last, but not least, I added a WIX based installer to the project If you just want grab the latest version jump over to the GitHub release page.</description>
+      <description>&lt;p&gt;I had a little time today to work on Bluff, my extension for Sony Vegas Pro. Over the last couple weeks I’ve done several things to the project, including:&lt;/p&gt;  &lt;ul&gt;   &lt;li&gt;Converting the project to .NET 3.5 (from 2.0) &lt;/li&gt;    &lt;li&gt;Converting the UI to WPF (still a little cleanup to do on that UI, but it is a lot easier to work with now) &lt;/li&gt;    &lt;li&gt;Add a new command called &lt;em&gt;Arrange Events By Created Timestamp&lt;/em&gt; that spaces the events out on the timeline relative to each others created timestamp &lt;/li&gt;    &lt;li&gt;Changed the Vegas DLL reference to a v8 dll (to provide better compatibility form Vegas Pro 8 – 13) &lt;/li&gt;    &lt;li&gt;And last, but not least, I added a WIX based installer to the project &lt;/li&gt; &lt;/ul&gt;  &lt;p&gt;If you just want grab the latest version jump over to the GitHub release page.&lt;/p&gt;</description>
+      
+      <category>Bluff</category>
+      
+      <category>Coding</category>
+      
+      <category>OSS</category>
+      
+      <category>plugin</category>
+      
+      <category>vegas</category>
+      
+      <category>video</category>
+      
     </item>
+    
     <item>
       <title>Merging GoPro Segments Into a Single File</title>
       <link>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
       <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
-      <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&#xA;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
+      <description>&lt;p&gt;If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&lt;/p&gt;  &lt;p&gt;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage. The FAT file system has been around for a long time and pretty much every OS out there can readily access the contents of a disk formatted with FAT, so it makes a good choice for a device that will be used by consumers. The downside is that FAT has a file size limit of about 4GB, this seemed huge back in the day when hard drives were not even half that size, but is a little lacking in todays world where we measure local storage often in terabytes rather than gigabytes. It is especially small in today’s world of HD (or 4k) video. Fortunately there is a solution once you get it on NTFS (or HFS on OS X) to make your video files all one again. The best part is there is no re-encoding, just re-wrapping of the existing encoded data into a new file, so it is quick and will not degrade your video.&lt;/p&gt;</description>
+      
+      <category>video</category>
+      
+      <category>tips</category>
+      
+      <category>chocolatey</category>
+      
+      <category>media</category>
+      
+      <category>utility</category>
+      
     </item>
+    
   </channel>
 </rss>

@@ -1,20 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Msbuild on Duane Newman</title>
     <link>https://duanenewman.net/tags/msbuild/</link>
     <description>Recent content in Msbuild on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 18 Mar 2019 00:00:00 -0500</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/msbuild/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/msbuild/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Forcing a Specific Target Platform With PackageReference</title>
       <link>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</link>
       <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</guid>
-      <description>In my last post about Using Prism with Xamarin.Forms &amp;amp; GTK# I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &amp;lt;PackageReference&amp;gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.&#xA;Using Package Reference If you already have packages installed and are using a packages.</description>
+      <description>&lt;p&gt;In my last post about &lt;a href=&#34;../using-prism-with-xamarin-forms-and-gtk&#34;&gt;Using Prism with Xamarin.Forms &amp;amp; GTK#&lt;/a&gt; I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &lt;code&gt;&amp;lt;PackageReference&amp;gt;&lt;/code&gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.&lt;/p&gt;
+&lt;h2 id=&#34;using-package-reference&#34;&gt;Using Package Reference&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;convertconfigtoreference2.png&#34; class=&#34;img-thumbnail pull-right&#34; alt=&#34;Convert Packages.config to PackageReference&#34; /&gt; If you already have packages installed and are using a &lt;code&gt;packages.config&lt;/code&gt; file then you will need to convert your project to use &lt;code&gt;PackageReference&lt;/code&gt;. You can follow the steps here: &lt;a href=&#34;https://docs.microsoft.com/en-us/nuget/reference/migrate-packages-config-to-package-reference&#34; target=&#34;_blank&#34;&gt;Migrate from packages.config to PackageReference&lt;/a&gt;. The short version is to right-click on &lt;code&gt;packages.config&lt;/code&gt; and select &lt;code&gt;Migrate Packages.config to PackageReference...&lt;/code&gt;.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>netstandard</category>
+      
+      <category>csproj</category>
+      
+      <category>packagereference</category>
+      
+      <category>nuget</category>
+      
+      <category>prismlib</category>
+      
+      <category>msbuild</category>
+      
+      <category>tips</category>
+      
     </item>
+    
   </channel>
 </rss>

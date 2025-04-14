@@ -1,104 +1,307 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dotnet on Duane Newman</title>
     <link>https://duanenewman.net/tags/dotnet/</link>
     <description>Recent content in Dotnet on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Mon, 29 Jul 2019 00:00:00 -0500</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Basic Authentication with TFS Package Server</title>
       <link>https://duanenewman.net/blog/post/2019-07-29-basic-auth-with-tfs-package-server/</link>
       <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/2019-07-29-basic-auth-with-tfs-package-server/</guid>
-      <description>I recently encountered some authentication issues connecting my Mac to the package service hosted on a client&amp;rsquo;s on-prem TFS server. The server is on a Windows domain and normally I access TFS from a windows VM that is joined to the domain. However, I&amp;rsquo;ve recently found myself on my Mac more often while working on one of their Xamarin mobile apps. This is when I began having problems.&#xA;The Problem The client has a couple NuGet packages hosted on the TFS server using the Package Management extension, and whenever I tried to do a NuGet restore I would run into authentication errors.</description>
+      <description>&lt;p&gt;I recently encountered some authentication issues connecting my Mac to the package service hosted on a client&amp;rsquo;s on-prem TFS server. The server is on a Windows domain and normally I access TFS from a windows VM that is joined to the domain. However, I&amp;rsquo;ve recently found myself on my Mac more often while working on one of their Xamarin mobile apps. This is when I began having problems.&lt;/p&gt;
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;The client has a couple NuGet packages hosted on the TFS server using the Package Management extension, and whenever I tried to do a NuGet restore I would run into authentication errors. I tried my normal domain user &amp;amp; password as well as a Personal Access Token (the method I wanted to use) and consistently was told my credentials were no good.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>nuget</category>
+      
+      <category>mac</category>
+      
+      <category>osx</category>
+      
+      <category>packaging</category>
+      
+      <category>tfs</category>
+      
+      <category>domain</category>
+      
+      <category>authentication</category>
+      
     </item>
+    
     <item>
       <title>A Better Way to Override References With PackageReference</title>
       <link>https://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/a-better-way-to-override-references-with-packagereference/</guid>
-      <description>Recently, there was a new feature added to msbuild (working in Visual Studio 2019 15.9.9) that generates a variable for each package that contains the full path to the package version being used. All you have to do is add an attribute to each &amp;lt;PackageReference&amp;gt; you want need to work with.&#xA;There are just two changes to what we did before:&#xA;Add GeneratePathProperty attribute to &amp;lt;PackageReference&amp;gt; Switch to Pkg&amp;lt;Package_Name&amp;gt; variable in &amp;lt;HintPath&amp;gt; Step one is pretty simple, add the attribute GeneratePathProperty with a value of true:</description>
+      <description>&lt;p&gt;Recently, there was a &lt;a href=&#34;https://github.com/NuGet/Home/issues/6949&#34; target=&#34;_blank&#34;&gt;new feature added&lt;/a&gt; to msbuild (working in Visual Studio 2019 15.9.9) that generates a variable for each package that contains the full path to the package version being used. All you have to do is add an attribute to each &lt;code&gt;&amp;lt;PackageReference&amp;gt;&lt;/code&gt; you want need to work with.&lt;/p&gt;
+&lt;p&gt;There are just two changes to what we did &lt;a href=&#34;https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference&#34;&gt;before&lt;/a&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add &lt;code&gt;GeneratePathProperty&lt;/code&gt; attribute to &lt;code&gt;&amp;lt;PackageReference&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Switch to &lt;code&gt;Pkg&amp;lt;Package_Name&amp;gt;&lt;/code&gt; variable in &lt;code&gt;&amp;lt;HintPath&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Step one is pretty simple, add the attribute &lt;code&gt;GeneratePathProperty&lt;/code&gt; with a value of &lt;code&gt;true&lt;/code&gt;:&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
     </item>
+    
     <item>
       <title>Forcing a Specific Target Platform With PackageReference</title>
       <link>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</link>
       <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/forcing-a-specific-target-platform-with-packagereference/</guid>
-      <description>In my last post about Using Prism with Xamarin.Forms &amp;amp; GTK# I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &amp;lt;PackageReference&amp;gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.&#xA;Using Package Reference If you already have packages installed and are using a packages.</description>
+      <description>&lt;p&gt;In my last post about &lt;a href=&#34;../using-prism-with-xamarin-forms-and-gtk&#34;&gt;Using Prism with Xamarin.Forms &amp;amp; GTK#&lt;/a&gt; I showed how to force the use of .NET Standard reference when using NuGet with packages.config. You may prefer using the &lt;code&gt;&amp;lt;PackageReference&amp;gt;&lt;/code&gt; tag in your csproj and found that those changes do not work for your scenario. This post will show you how to achieve the same override with PackageReference based projects.&lt;/p&gt;
+&lt;h2 id=&#34;using-package-reference&#34;&gt;Using Package Reference&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;convertconfigtoreference2.png&#34; class=&#34;img-thumbnail pull-right&#34; alt=&#34;Convert Packages.config to PackageReference&#34; /&gt; If you already have packages installed and are using a &lt;code&gt;packages.config&lt;/code&gt; file then you will need to convert your project to use &lt;code&gt;PackageReference&lt;/code&gt;. You can follow the steps here: &lt;a href=&#34;https://docs.microsoft.com/en-us/nuget/reference/migrate-packages-config-to-package-reference&#34; target=&#34;_blank&#34;&gt;Migrate from packages.config to PackageReference&lt;/a&gt;. The short version is to right-click on &lt;code&gt;packages.config&lt;/code&gt; and select &lt;code&gt;Migrate Packages.config to PackageReference...&lt;/code&gt;.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>netstandard</category>
+      
+      <category>csproj</category>
+      
+      <category>packagereference</category>
+      
+      <category>nuget</category>
+      
+      <category>prismlib</category>
+      
+      <category>msbuild</category>
+      
+      <category>tips</category>
+      
     </item>
+    
     <item>
       <title>Using Prism With Xamarin.Forms &amp; GTK</title>
       <link>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</link>
       <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/using-prism-with-xamarin-forms-and-gtk/</guid>
-      <description>I&amp;rsquo;m working on project to replace my car radio with a custom digital dashboard. I&amp;rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.&#xA;Adding the GTK# Backend Project Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to The Mono Project to download and run the GTK# for .</description>
+      <description>&lt;p&gt;I&amp;rsquo;m working on project to replace my car radio with a custom digital dashboard. I&amp;rsquo;m building it on a RaspberryPi and would really like to use Xamarin.Forms and Prism, so I started out with adding a GTK# frontend to my Xamarin.Forms project.&lt;/p&gt;
+&lt;h2 id=&#34;adding-the-gtk-backend-project&#34;&gt;Adding the GTK# Backend Project&lt;/h2&gt;
+&lt;p&gt;Before we can add the GTK# project we need to actually install the GTK# libraries. Head over to &lt;a href=&#34;https://www.mono-project.com/download/stable/#download-win&#34; target=&#34;_blank&#34;&gt;The Mono Project&lt;/a&gt; to download and run the GTK# for .NET installer for Windows.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>xamarin</category>
+      
+      <category>gtk</category>
+      
+      <category>netstandard</category>
+      
+      <category>prismlib</category>
+      
     </item>
+    
     <item>
       <title>Running PowerShell Scripts From C#</title>
       <link>https://duanenewman.net/blog/post/running-powershell-scripts-from-csharp/</link>
       <pubDate>Wed, 06 Mar 2019 00:00:00 -0600</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/running-powershell-scripts-from-csharp/</guid>
-      <description>Sometimes the little things can trip up your code, even when you think you are doing all the right things. We recently ran into an issue with a utility that runs an included PowerShell script as part of it operation. When the app was first put into use it seemed to be fine. Recently, it was deployed into a folder with spaces in the name and it began to blow up.</description>
+      <description>&lt;p&gt;Sometimes the little things can trip up your code, even when you think you are doing all the right things. We recently ran into an issue with a utility that runs an included PowerShell script as part of it operation. When the app was first put into use it seemed to be fine. Recently, it was deployed into a folder with spaces in the name and it began to blow up. Here is a simplified example of what it was running:&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>powershell</category>
+      
     </item>
+    
     <item>
       <title>Concurrent Reads and Locked Writes with In-Memory Objects</title>
       <link>https://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/concurrent-reads-and-locked-writes-with-in-memory-objects/</guid>
-      <description>The Problem On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a List&amp;lt;T&amp;gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads.</description>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;On a recent project one of our clients had implemented an in-memory cache of some high read, low write data. The ultimate solution they had was a &lt;code&gt;List&amp;lt;T&amp;gt;&lt;/code&gt; that they could search against while periodically updating when the database was updated. The reads worked great and were incredibly fast. The trouble came when they started to implement the updates. This was in their API layer and so incoming calls were on multiple threads. The multi-threading was perfect for reading, but as soon as they started updating the collection (or any sub-collections on the individual items involved in queries) they, unsurprisingly, started getting &lt;a href=&#34;https://docs.microsoft.com/en-us/dotnet/api/system.invalidoperationexception&#34; target=&#34;_blank&#34;&gt;InvalidOperationExceptions&lt;/a&gt; with the message &amp;ldquo;Collection was modified; enumeration operation may not execute.&amp;rdquo;&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>framework</category>
+      
+      <category>builtin</category>
+      
+      <category>tips</category>
+      
+      <category>lock</category>
+      
     </item>
+    
     <item>
       <title>Keeping Observable Collections Up To Date</title>
       <link>https://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/keeping-observable-collections-up-to-date/</guid>
-      <description>One of the powerful capabilities we&amp;rsquo;ve learned to leverage when using the MVVM pattern for XAML based apps, whether for the desktop or mobile platforms, is data binding. Binding allows us to easily keep our View up to date with changes in the ViewModel. These bindings are typically pretty quick when not abused, but there are situations where they can become less than performant, causing visual anomalies such as flickering or even impacting general app performance.</description>
+      <description>&lt;p&gt;One of the powerful capabilities we&amp;rsquo;ve learned to leverage when using the MVVM pattern for XAML based apps, whether for the desktop or mobile platforms, is data binding. Binding allows us to easily keep our View up to date with changes in the ViewModel. These bindings are typically pretty quick when not abused, but there are situations where they can become less than performant, causing visual anomalies such as flickering or even impacting general app performance.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>csadvent</category>
+      
+      <category>mvvm</category>
+      
+      <category>observable</category>
+      
+      <category>api</category>
+      
+      <category>wpf</category>
+      
+      <category>uwp</category>
+      
+      <category>xamarin</category>
+      
     </item>
+    
     <item>
       <title>Better Unit Testing with IoC, DI, and Mocking</title>
       <link>https://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</link>
       <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/better-unit-testing-with-ioc-di-and-mocking/</guid>
-      <description>When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instantiating the class we want to test less painful.</description>
+      <description>&lt;p&gt;When you write code designed for dependency injection it can make testing easier.. But it can also make it seem more complex and add a lot of ceremony to creating your testable instances. I thought I would share some tips I use when setting up a new cross-platform mobile project with unit testing. We can take advantage of the same IoC container strategy to make instantiating the class we want to test less painful.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>unit testing</category>
+      
+      <category>di</category>
+      
+      <category>dependency injection</category>
+      
+      <category>ioc</category>
+      
+      <category>dotnet</category>
+      
+      <category>tips</category>
+      
+      <category>tdd</category>
+      
     </item>
+    
     <item>
       <title>My First MVP Summit</title>
       <link>https://duanenewman.net/blog/post/my-first-mvp-summit/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/my-first-mvp-summit/</guid>
-      <description>A couple weeks ago I went to my first MVP Summit. The MVP program is a way that Microsoft recognizes &#34;technology experts who passionately share their knowledge with the community&#34;[*](https://mvp.microsoft.com/en-us/Overview). There are several perks to being an MVP. While many may immediately think of the compliemntary MSDN subscription and software licenses from other vendors, I was most excited about the opportunity to go to MVP Summit. As an MVP (under tight NDA) I am able to meet over skype with the various product teams at MS to get a view into where they are headed with thier technologies.</description>
+      <description>&lt;img class=&#34;img-thumbnail pull-left&#34; src=&#34;microsoftsign.png&#34; alt=&#34;Me at the Microsoft Sign&#34; width=&#34;300&#34; /&gt;
+A couple weeks ago I went to my first MVP Summit. The MVP program is a way that Microsoft recognizes &#34;technology experts who passionately share their knowledge with the community&#34;[*](https://mvp.microsoft.com/en-us/Overview). There are several perks to being an MVP. While many may immediately think of the compliemntary MSDN subscription and software licenses from other vendors, I was most excited about the opportunity to go to MVP Summit. As an MVP (under tight NDA) I am able to meet over skype with the various product teams at MS to get a view into where they are headed with thier technologies. This is invaluable as a consultant tring to stear my customers in the best direction and as a speaker shaping my future presentations.
+&lt;img class=&#34;img-thumbnail pull-right&#34; src=&#34;mvplookslike.png&#34; alt=&#34;This is What an MVP Looks Like&#34; width=&#34;300&#34; /&gt;
+These skype meetings are great, but once a year Micorosoft puts on the MVP Summit and brings in thousands of MVPs to Redmond for in-person sessions with the developers creating the tools I use every day. As a speaker I approach most conferences differently than I used to. I often don&#39;t get to sessions as I&#39;m either prepping for my own or I&#39;ve ran into a friend in the hallway and we get busy catching up or having our own technology conversations. It is great, but I do sometimes miss the opportunity to just hop from session to session gleaning the information from the speaker without the stress of presenting. Well, MVP Summit allowed me to do just that: be an attendee again, and it was really cool.
+&lt;img class=&#34;img-thumbnail pull-left&#34; src=&#34;FirstMvpLanyard.png&#34; alt=&#34;My First MVP Lanyard&#34; width=&#34;200&#34; /&gt;
+One of the things that stuck out the most to me at MVP Summit was the willingness that the teams had to get feedback. As a developer I can totally understand it, and I always hope for good feedback from users so that I can improve, but it just surprised me to see that same interest from Microsoft. It was a treat to get to meet most of the Xamarin PMs while I there, and one of the best sessions I went to was a panel discussion with all of them, including Miguel. I was impressed with how they reacted and replied when questions were asked about what the teams were doing (especially with critical feedback). It was cool getting straight answers on why a feature is (or isn&#39;t) being implemented with explanations of what they&#39;ve tried, rather than just being told it isn&#39;t happening. At one point when a new feature was being talked about and one of the MVPs raised a question that the team had not considered the PM polled the room for our opinion on what would be most useful and when he saw that it was for the oposite aproach they were taking there was real interest in making changes. 
+&lt;p&gt;I also had a great oportunity to see friends I usually just see when we are speaking at the same conference as well as meet many new friends. It was cool getting to have face-to-face encounters with some of the &amp;ldquo;big&amp;rdquo; names in the developer community. The networking was fantastic, and I look forward to seeing many of the other MVPs and MS employees again in the future.&lt;/p&gt;</description>
+      
+      <category>mvp</category>
+      
+      <category>dotnet</category>
+      
+      <category>xamarin</category>
+      
+      <category>microsoft</category>
+      
     </item>
+    
     <item>
       <title>Teach an old Type new tricks with Extension Methods</title>
       <link>https://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</link>
       <pubDate>Tue, 27 Feb 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/teach-an-old-type-new-tricks-with-extension-methods/</guid>
-      <description>Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&amp;rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.</description>
+      <description>&lt;p&gt;Extension methods are a great way to add functionality or integration for established types. Learn about some of the cool things that you can do without the need to subclass or modify a class directly. You can even use extension methods to supply specialized functionality that is only relevant in a particular situation or when also making use of another type or library. We&amp;rsquo;ll take a look at a few quick tricks and explore how you can get started with Extension Methods today.&lt;/p&gt;</description>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>tips</category>
+      
     </item>
+    
     <item>
       <title>All I want for Christmas is a C# Build System</title>
       <link>https://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/all-i-want-for-christmas-is-a-c-sharp-build-system/</guid>
-      <description>Why So Jolly? This post is part of the The First C# Advent Calendar, celebrating all things C#. After you finish here check out the other great posts in the series.&#xA;A C# Build System I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects.</description>
+      <description>&lt;h1 id=&#34;why-so-jolly&#34;&gt;Why So Jolly?&lt;/h1&gt;
+&lt;p&gt;This post is part of the &lt;a href=&#34;https://crosscuttingconcerns.com/The-First-C-Advent-Calendar&#34;&gt;The First C# Advent Calendar&lt;/a&gt;, celebrating all things C#. After you finish here check out the other great posts in the series.&lt;/p&gt;
+&lt;h1 id=&#34;a-c-build-system&#34;&gt;A C# Build System&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;ve used many tools over the years to manage builds of large .NET projects including custom BAT/CMD files, customer PowerShell scripts, NAnt, and of course MSBuild. While I&amp;rsquo;ve been happy with the solutions I provided with each of these I&amp;rsquo;ve always found them either awkward to extend or limiting in their extensibility and more recently I needed them to work on a Mac for building Xamarin projects. In the hunt to find something that would work outside of Windows I discovered &lt;a href=&#34;https://cakebuild.net/&#34;&gt;Cake&lt;/a&gt;, and I couldn&amp;rsquo;t be happier.&lt;/p&gt;</description>
+      
+      <category>devops</category>
+      
+      <category>csharp</category>
+      
+      <category>dotnet</category>
+      
+      <category>cake</category>
+      
+      <category>build</category>
+      
     </item>
+    
     <item>
       <title>Processing collections with LINQ using the Aggregate extension method</title>
       <link>https://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</link>
       <pubDate>Wed, 14 Sep 2011 22:19:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/processing-collections-with-linq-using-the-aggregate-extension-method/</guid>
-      <description>Everyone knows one of the easiest ways to process collections of objects is using foreach, it is much more elegant and less error prone (IMHO) than using a for (int x..) and looping by index. &amp;nbsp;However, sometimes you get forced into using the indexer to process a collection. &amp;nbsp;This usually happens when you need to look at the current object in context of the previous. &amp;nbsp;&#xA;The need to use the indexer and have code like obj[i] == obj[i -1] bugged me.</description>
+      <description>&lt;p&gt;Everyone knows one of the easiest ways to process collections of objects is using foreach, it is much more elegant and less error prone (IMHO) than using a for (int x..) and looping by index. &amp;nbsp;However, sometimes you get forced into using the indexer to process a collection. &amp;nbsp;This usually happens when you need to look at the current object in context of the previous. &amp;nbsp;&lt;/p&gt;
+&lt;p&gt;The need to use the indexer and have code like obj[i] == obj[i -1] bugged me. I spent a little time digging into the LINQ extensions to see if anything could help. &amp;nbsp;Then i stumbled upon an explanation of the various aggregation methods that got me thinking. &amp;nbsp;After a little play time in Linq Pad I had a working solution.&lt;/p&gt;</description>
+      
+      <category>dotnet</category>
+      
+      <category>linq</category>
+      
     </item>
+    
     <item>
       <title>Attaching to external DirectShow graphs using Graph Edit</title>
       <link>https://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</link>
       <pubDate>Wed, 14 Sep 2011 18:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/attaching-to-external-directshow-graphs-using-graph-edit/</guid>
-      <description>In my day job I work on a product that does a lot of video work and in fact has a custom DirectShow player that gets all our video into WPF. &amp;nbsp;It plays multiple files all synchronized (a real challenge).&#xA;While looking into ways to improve performance I found myself needing to see how my filter graph was being built. &amp;nbsp;I did a little looking and found that creating an instance of DsROTEntry with a reference to the graph makes it available for external viewing.</description>
+      <description>&lt;p&gt;In my day job I work on a product that does a lot of video work and in fact has a custom DirectShow player that gets all our video into WPF. &amp;nbsp;It plays multiple files all synchronized (a real challenge).&lt;/p&gt;
+&lt;p&gt;While looking into ways to improve performance I found myself needing to see how my filter graph was being built. &amp;nbsp;I did a little looking and found that creating an instance of DsROTEntry with a reference to the graph makes it available for external viewing. The code is really quite simple:&lt;/p&gt;</description>
+      
+      <category>media</category>
+      
+      <category>directshow</category>
+      
+      <category>dotnet</category>
+      
     </item>
+    
   </channel>
 </rss>

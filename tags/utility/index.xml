@@ -1,27 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Utility on Duane Newman</title>
     <link>https://duanenewman.net/tags/utility/</link>
     <description>Recent content in Utility on Duane Newman</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Thu, 24 Mar 2016 11:15:00 +0000</lastBuildDate>
-    <atom:link href="https://duanenewman.net/tags/utility/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="https://duanenewman.net/tags/utility/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Merging GoPro Segments Into a Single File</title>
       <link>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</link>
       <pubDate>Thu, 24 Mar 2016 11:15:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/merging-gopro-segments-into-a-single-file/</guid>
-      <description>If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&#xA;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage.</description>
+      <description>&lt;p&gt;If you have ever done a long recording with your GoPro you know that you will end up with several ~4GB files instead of a single video file. This can be very inconvenient if you just want to be able to watch the video start to finish, or if you want to apply effects (like de-shaker) across a file boundary.&lt;/p&gt;  &lt;p&gt;If you are not familiar with file systems this may seem odd, but it is a well known limitation of the FAT file system which the GoPro, and many other small electronics, use for file storage. The FAT file system has been around for a long time and pretty much every OS out there can readily access the contents of a disk formatted with FAT, so it makes a good choice for a device that will be used by consumers. The downside is that FAT has a file size limit of about 4GB, this seemed huge back in the day when hard drives were not even half that size, but is a little lacking in todays world where we measure local storage often in terabytes rather than gigabytes. It is especially small in today’s world of HD (or 4k) video. Fortunately there is a solution once you get it on NTFS (or HFS on OS X) to make your video files all one again. The best part is there is no re-encoding, just re-wrapping of the existing encoded data into a new file, so it is quick and will not degrade your video.&lt;/p&gt;</description>
+      
+      <category>video</category>
+      
+      <category>tips</category>
+      
+      <category>chocolatey</category>
+      
+      <category>media</category>
+      
+      <category>utility</category>
+      
     </item>
+    
     <item>
       <title>Installing Chocolatey behind a corporate proxy</title>
       <link>https://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</link>
       <pubDate>Fri, 22 Jan 2016 12:00:00 +0000</pubDate>
+      
       <guid>https://duanenewman.net/blog/post/installing-chocolatey-behind-a-corporate-proxy/</guid>
-      <description>Recently I was working at a project at a new client and needed to add some tools to my development machine. So I turned to one of my favorite tools for getting the apps and tools I need, Chocolatey. The only problem was that I was getting an error installing Chocolatey using the command on their website.&#xA;Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; argument(s): &amp;quot;The remote server returned an error: (407) Proxy Authentication Required.</description>
+      <description>&lt;p&gt;Recently I was working at a project at a new client and needed to add some tools to my development machine. So I turned to one of my favorite tools for getting the apps and tools I need, Chocolatey. The only problem was that I was getting an error installing Chocolatey using the command on their website.&lt;/p&gt;  &lt;pre&gt;Exception calling &amp;quot;DownloadString&amp;quot; with &amp;quot;1&amp;quot; argument(s): &amp;quot;The remote server returned an error: (407) Proxy Authentication Required.&amp;quot;&lt;br /&gt;At line:1 char:47&lt;br /&gt;+ iex ((new-object net.webclient).DownloadString &amp;lt;&amp;lt;&amp;lt;&amp;lt; (&#39;https://chocolatey.org/install.ps1&#39;))&lt;br /&gt;+ CategoryInfo : NotSpecified: (:) [], MethodInvocationException&lt;br /&gt;+ FullyQualifiedErrorId : DotNetMethodException&lt;/pre&gt;
+&lt;p&gt;After some google-binging I found a useful article on Stack Overflow that got me the hints I needed. I had to modify the command to force the WebRequest to use (of all things) the Default Credentials for the proxy setting. I didn’t have to add username/password info or anything. This is what seemed odd to me, having to set the setting to the “default”. &lt;/p&gt;</description>
+      
+      <category>chocolatey</category>
+      
+      <category>proxy</category>
+      
+      <category>powershell</category>
+      
+      <category>admin</category>
+      
+      <category>utility</category>
+      
     </item>
+    
   </channel>
 </rss>
