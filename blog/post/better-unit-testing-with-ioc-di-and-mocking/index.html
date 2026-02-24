@@ -119,13 +119,13 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 <h3 id="packages-and-versions">Packages and Versions</h3>
 <p>This article is based on Unity 4 as that is what my current project is in. I&rsquo;ll soon be converting to the latest version of Prism, and thus Unity 5.x, and will write a follow up article on how to implement this pattern with the changes that Unity 5 introduces.</p>
 <p>To install the same version of the packages used in this post run these commands in your package manager console:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Install-Package Unity -Version 4.0.1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Install-Package Unity -Version 4.0.1
 </span></span><span style="display:flex;"><span>Install-Package NUnit -Version 3.10.1
 </span></span><span style="display:flex;"><span>Install-Package NUnit3TestAdapter -Version 3.10.0
 </span></span><span style="display:flex;"><span>Install-Package Moq -Version 4.8.2
 </span></span></code></pre></div><h2 id="a-common-base">A Common Base</h2>
 <p>To begin with I create a base test class that provides the Unity container for any testing.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseTest</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseTest</span>
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> UnityContainer Container;
 </span></span><span style="display:flex;"><span>
@@ -137,7 +137,7 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 </span></span></code></pre></div><p>With all my tests inheriting from BaseTest I will always have a container ready for testing. I can now register implementations into this container and use it to resolve my view models. There is one problem though, this container is common across all my tests, and the objects it creates will be dirty from each previous test.</p>
 <h2 id="lifetime-manager">Lifetime Manager</h2>
 <p>Using Unity we can handle this by adding a custom LifetimeManager that we can reset on demand. The LifetimeManager is responsible for holding the reference to an instance that the Unity IoC container creates. Since we can create a custom LifetimeManager we can control how it keeps track of the instance. We will also create a class that will let us initiate a reset to release the instance that our custom LifetimeManager is holding. We&rsquo;ll pass this into our custom LifetimeManager on instantiation of the manager.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LifetimeResetter</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LifetimeResetter</span>
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">event</span> EventHandler&lt;EventArgs&gt; OnReset;
 </span></span><span style="display:flex;"><span>
@@ -172,10 +172,11 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><blockquote>
-<p>I implemented these as nested classes inside my BaseTest class since they are only used internally by the base class.</p></blockquote>
+<p>I implemented these as nested classes inside my BaseTest class since they are only used internally by the base class.</p>
+</blockquote>
 <h2 id="resetting-for-each-test">Resetting For Each Test</h2>
 <p>Using our ResettableLifetimeManager for each type we register and a shared instance of the LifetimeResetter allows us to clear our all instances our Unity container has created by calling the LifetimeResetter&rsquo;s Reset method. After the reset is called and all the instances are cleared Unity will automatically create new instances the next time one is requested, giving each test a fresh instance. Let&rsquo;s wire it all together with some helper methods to register the type. The new BaseTest class now looks like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseTest</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseTest</span>
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> UnityContainer Container;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> LifetimeResetter Resetter { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
@@ -193,14 +194,14 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="automating-the-reset">Automating the reset</h2>
 <p>NUnit allows us to add a method to our test class that will be called before each individual test is ran. This is done by adding the SetUp attribute to the method. This gives us a convenient way to call the Reset method on our LifetimeResetter before each test in any test class that inherits from our base. A nice feature of NUnit is that this SetUp attribute can be used in both a base class as well as on our actual test class, allowing someone using our BaseTest class to add their own test initialization code without stomping on our lifetime management.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#a6e22e">[SetUp]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#a6e22e">[SetUp]</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> OnTestSetup()
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    Resetter.Reset();
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="adding-support-for-mocking">Adding Support for Mocking</h2>
 <p>This gives us everything we need to be able to register all our dependency types and resolve instances. However, using mocking we can simplify things a little more. I like to use Moq for my mocking framework, and that usually requires doing some setup work beyond just creating a Mock of your type. To handle this setup, which could vary by each test, we&rsquo;ll pass in a Func that can either be set once during the class constructor, or can be swapped at the start of each test.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> RegisterResettableType&lt;T&gt;(Func&lt;Action&lt;Mock&lt;T&gt;&gt;&gt; onCreatedCallbackFactory) <span style="color:#66d9ef">where</span> T : <span style="color:#66d9ef">class</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> RegisterResettableType&lt;T&gt;(Func&lt;Action&lt;Mock&lt;T&gt;&gt;&gt; onCreatedCallbackFactory) <span style="color:#66d9ef">where</span> T : <span style="color:#66d9ef">class</span>
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    RegisterResettableType&lt;T&gt;(<span style="color:#66d9ef">new</span> InjectionFactory(c =&gt; CreateMockInstance(onCreatedCallbackFactory)));
 </span></span><span style="display:flex;"><span>}
@@ -214,7 +215,7 @@ Tags <a href="https://duanenewman.net/tags/csharp">csharp</a>, <a href="https://
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="putting-it-all-together">Putting it All Together</h2>
 <p>Now in our test we can register a type and upon creation it will call our setup method passing in the newly mocked instance, allowing us to add Setup calls or get a reference for checking execution with a Verify call later in the test.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#a6e22e">[TestFixture]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#a6e22e">[TestFixture]</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">OrderViewModelTest</span> : BaseTest
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SetUp]</span>
