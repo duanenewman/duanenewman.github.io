@@ -1,10 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Devops on Duane Newman</title>
+    <title>DevOps on Duane Newman</title>
     <link>https://duanenewman.net/tags/devops/</link>
-    <description>Recent content in Devops on Duane Newman</description>
+    <description>Recent content in DevOps on Duane Newman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>Duane Newman (Duane Newman)</managingEditor>
     <copyright>Copyright Duane Newman</copyright>
     <lastBuildDate>Sat, 23 Dec 2017 00:00:00 +0000</lastBuildDate>
     

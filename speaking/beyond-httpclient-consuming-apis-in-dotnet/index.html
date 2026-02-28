@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Packaging your world with NuGet -- Duane Newman</title>
+    <title>Beyond HttpClient: Consuming APIs in .NET -- Duane Newman</title>
 
     
     <link href="https://duanenewman.net//css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +90,7 @@
        <div class="row">
          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
            <div class="site-heading">
-             <h1>Packaging your world with NuGet</h1>
+             <h1>Beyond HttpClient: Consuming APIs in .NET</h1>
            </div>
          </div>
        </div>
@@ -101,12 +101,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <p>Whether you are creating an open source library or building enterprise app core components, you need to get that functionality into other projects. But developing these resources is usually easier than consuming them. How about a worry free way to distribute and reference those resources in your project that will let you stay up to date, but allow you to avoid problems that may introduce breaking changes or new bugs? NuGet packages to the rescue! We&rsquo;ll also take a look at where you can find NuGet (packages aren&rsquo;t just for code any more) and how to create, distribute, and maintain your very own package. Then, you’ll be ready to share your package with your team, your enterprise, or even… The world!</p>
+              <p>We’ve all written that one-liner HttpClient call that “just works” in a quick console app or small feature. It’s the fastest way to get data moving, but that simplicity is deceptive. As applications grow, those quick calls often turn into duplicated logic, hardcoded strings, and brittle integrations that are difficult to test and painful to maintain. In modern applications, APIs are a critical dependency—and how you consume them matters just as much as how they’re built.</p>
+<p>In this session, we’ll move beyond the “quick and dirty” approach and treat API consumption as a first-class architectural concern. We’ll look at common pitfalls like improper connection lifetimes, messy error handling, and subtle production issues such as socket exhaustion and DNS blind spots. You’ll learn how HttpClientFactory and typed abstractions help bring structure, testability, and reliability to your integrations. By the end, you&rsquo;ll have a battle-tested strategy for building API integrations that don&rsquo;t just work on your machine, but actually survive the chaos of production.</p>
 <h2 id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li>Understanding the many ways to create a NuGet package, both with VS and NuGet command line</li>
-<li>Understanding versioning concerns, especially around a public package</li>
-<li>Understand things you can do to make your public packages self-documenting and ease new dev adoption</li>
+<li>Understand why naïve HttpClient usage causes problems in production</li>
+<li>Identify common failure modes when consuming APIs in .NET</li>
+<li>Learn patterns for building testable, maintainable, and resilient API integrations</li>
+<li>Treat API consumption as a first-class architectural concern</li>
 </ul>
 <h2 id="level-introductory">Level: Introductory</h2>
 

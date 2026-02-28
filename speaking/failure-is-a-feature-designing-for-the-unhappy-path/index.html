@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Packaging your world with NuGet -- Duane Newman</title>
+    <title>Failure Is a Feature: Designing for the Unhappy Path -- Duane Newman</title>
 
     
     <link href="https://duanenewman.net//css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +90,7 @@
        <div class="row">
          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
            <div class="site-heading">
-             <h1>Packaging your world with NuGet</h1>
+             <h1>Failure Is a Feature: Designing for the Unhappy Path</h1>
            </div>
          </div>
        </div>
@@ -101,14 +101,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <p>Whether you are creating an open source library or building enterprise app core components, you need to get that functionality into other projects. But developing these resources is usually easier than consuming them. How about a worry free way to distribute and reference those resources in your project that will let you stay up to date, but allow you to avoid problems that may introduce breaking changes or new bugs? NuGet packages to the rescue! We&rsquo;ll also take a look at where you can find NuGet (packages aren&rsquo;t just for code any more) and how to create, distribute, and maintain your very own package. Then, you’ll be ready to share your package with your team, your enterprise, or even… The world!</p>
-<h2 id="learning-objectives">Learning Objectives</h2>
+              <p>Most applications are designed around the happy path; where we have valid input, fast network responses, and dependencies that behave exactly as expected. We tend to treat failure as an annoying edge case, something to be buried in a try/catch block or ignored because it &ldquo;shouldn’t ever happen.&rdquo; But in a modern .NET environment, those assumptions are dangerous. Between flaky APIs, transient network timeouts, and users who will inevitably click the &ldquo;Submit&rdquo; button ten times in a row, failure isn&rsquo;t an accident; it’s a guarantee.</p>
+<p>This session is about learning to treat the unhappy path as a core part of your application’s design. We’ll dig into the common points of failure that plague .NET apps and why they shouldn&rsquo;t all be handled the same way. We’ll look at the trade-offs between using exceptions and functional return types, and how design choices around retries and timeouts can either make your system resilient or just hide a much bigger problem. Our goal is to develop a practical strategy for building systems that fail predictably and recover gracefully, so the next production outage becomes a managed event rather than a total surprise.</p>
+<h2 id="learning-objectives">Learning Objectives:</h2>
 <ul>
-<li>Understanding the many ways to create a NuGet package, both with VS and NuGet command line</li>
-<li>Understanding versioning concerns, especially around a public package</li>
-<li>Understand things you can do to make your public packages self-documenting and ease new dev adoption</li>
+<li>Recognize why designing only for the happy path is dangerous in modern .NET applications</li>
+<li>Identify different categories of failure and understand why they require different handling strategies</li>
+<li>Evaluate when exceptions are appropriate versus when functional return types are a better design choice</li>
+<li>Design retry and timeout strategies that improve resilience rather than masking deeper issues</li>
+<li>Adopt a failure-aware mindset that leads to predictable, manageable production behavior</li>
 </ul>
-<h2 id="level-introductory">Level: Introductory</h2>
+<h2 id="level-introductory-to-intermediate">Level: Introductory to Intermediate</h2>
 
             </div>
         </div>

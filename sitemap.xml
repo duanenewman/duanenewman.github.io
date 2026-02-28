@@ -3,7 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://duanenewman.net/</loc>
-    <lastmod>2026-02-24T13:30:19-06:00</lastmod>
+    <lastmod>2026-02-28T13:14:46-06:00</lastmod>
+  </url><url>
+    <loc>https://duanenewman.net/speaking/failure-is-a-feature-designing-for-the-unhappy-path/</loc>
+    <lastmod>2026-02-28T13:14:46-06:00</lastmod>
+  </url><url>
+    <loc>https://duanenewman.net/speaking/beyond-httpclient-consuming-apis-in-dotnet/</loc>
+    <lastmod>2026-02-28T09:47:06-06:00</lastmod>
+  </url><url>
+    <loc>https://duanenewman.net/speaking/building-connected-apps-with-dotnet-maui/</loc>
+    <lastmod>2026-02-28T09:43:40-06:00</lastmod>
   </url><url>
     <loc>https://duanenewman.net/speaking/coding-paradise-the-future-of-app-creation-with-dotnet-maui/</loc>
     <lastmod>2026-02-24T13:30:19-06:00</lastmod>
